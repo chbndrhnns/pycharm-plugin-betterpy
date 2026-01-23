@@ -1,4 +1,4 @@
-# intellij-platform-plugin-copy
+# BetterPy
 
 ![Build](https://github.com/chbndrhnns/intellij-platform-plugin-copy/workflows/Build/badge.svg)
 [![Version](https://img.shields.io/jetbrains/plugin/v/MARKETPLACE_ID.svg)](https://plugins.jetbrains.com/plugin/MARKETPLACE_ID)
