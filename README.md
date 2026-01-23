@@ -17,6 +17,12 @@ BetterPy is a productivity plugin for Python development in PyCharm / IntelliJ-b
 - **Line Markers**: Visual indicators in the gutter for functions eligible for parameter object refactoring
 - **Configurable Settings**: Customize parameter object behavior including base types and generation options
 
+### Parameter Optionality
+
+- **Make Parameter Optional**: Converts a required parameter to an optional one with a default value and adds `| None` to the type annotation
+- **Make Parameter Mandatory**: Converts an optional parameter to a required one by removing the default value and `None` from the type annotation
+- **Works on both**: Function parameters and class field annotations
+
 <!-- Plugin description end -->
 
 ## Installation
