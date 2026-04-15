@@ -1,28 +1,35 @@
 # BetterPy
 
 ![Build](https://github.com/chbndrhnns/intellij-platform-plugin-copy/workflows/Build/badge.svg)
-[![Version](https://img.shields.io/jetbrains/plugin/v/MARKETPLACE_ID.svg)](https://plugins.jetbrains.com/plugin/MARKETPLACE_ID)
-[![Downloads](https://img.shields.io/jetbrains/plugin/d/MARKETPLACE_ID.svg)](https://plugins.jetbrains.com/plugin/MARKETPLACE_ID)
+[![Version](https://img.shields.io/jetbrains/plugin/v/29896.svg)](https://plugins.jetbrains.com/plugin/29896)
+[![Downloads](https://img.shields.io/jetbrains/plugin/d/29896.svg)](https://plugins.jetbrains.com/plugin/29896)
 
 <!-- Plugin description -->
-BetterPy is a productivity plugin for Python development in PyCharm / IntelliJ-based IDEs.
+Python DDD Toolkit is a productivity plugin for Python codebases (especially DDD-style projects) in PyCharm / IntelliJ-based IDEs.
 
-## Currently Available Features
+Key features:
 
-### Parameter Object Refactoring
+- **Intentions / quick-fixes** for common refactorings:
+  - Populate missing arguments.
+  - Introduce a *parameter object*.
+  - Change visibility.
+  - Make parameters optional (type-hint helper).
+- **Type-mismatch helpers**: wrap/unwrap expressions to the expected type.
+- **Connexion / OpenAPI assistance**:
+  - Inspections for unresolved Connexion references (JSON).
+  - Gutter markers and navigation between Python/JSON references and OpenAPI operations.
+- **Protocol-oriented navigation**: custom protocol definition search/caching and an improved Python structure view.
 
-- **Introduce Parameter Object**: Extract multiple function parameters into a dedicated parameter object class (
-  dataclass, TypedDict, or Pydantic model)
-- **Inline Parameter Object**: Reverse the refactoring by expanding a parameter object back into individual parameters
-- **Line Markers**: Visual indicators in the gutter for functions eligible for parameter object refactoring
-- **Configurable Settings**: Customize parameter object behavior including base types and generation options
+This section is used as the plugin description for the built `plugin.xml` during the Gradle build.
 
-### Parameter Optionality
+### Pricing
+BetterPy is **free during the beta** period.
 
-- **Make Parameter Optional**: Converts a required parameter to an optional one with a default value and adds `| None` to the type annotation
-- **Make Parameter Mandatory**: Converts an optional parameter to a required one by removing the default value and `None` from the type annotation
-- **Works on both**: Function parameters and class field annotations
-
+### Personal Motivation
+I created BetterPy out of a personal need to improve my daily workflow. My main goals are to:
+- **Automate repeated actions** that otherwise take too much clicking around.
+- **Fix annoying behavior** and smooth out workflow friction.
+- **Extend PyCharm** based on personal and practical development needs.
 <!-- Plugin description end -->
 
 ## Installation
@@ -43,6 +50,23 @@ BetterPy is a productivity plugin for Python development in PyCharm / IntelliJ-b
 
   Download the [latest release](https://github.com/chbndrhnns/intellij-platform-plugin-copy/releases/latest) and install it manually using
   <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>⚙️</kbd> > <kbd>Install plugin from disk...</kbd>
+
+
+## Documentation
+
+This project's documentation is built with [Zensical](https://zensical.org/).
+
+To serve the documentation locally:
+
+1. Install [uv](https://docs.astral.sh/uv/) if you haven't already.
+2. Validate documentation: `uv run python scripts/validate_docs.py`
+3. Run `PYTHONPATH=. uv run zensical serve`
+
+To build the static site:
+
+```bash
+PYTHONPATH=. uv run zensical build
+```
 
 
 ---
