@@ -39,10 +39,10 @@ If you have any ideas, bug reports, or feature requests, please open an issue or
 
 ### Pricing
 
-BetterPy is **free during the beta** period. 
+BetterPy is **free during an extended beta** period. 
 
-I plan to offer a paid version in the future. The details are yet to be
-determined and also shaped by feedback I am able to collect
+I plan to offer a paid version in the future, probably using a freemium approach. 
+The details are yet to be determined and also shaped by feedback I am able to collect.
 
 ### Personal Motivation
 
