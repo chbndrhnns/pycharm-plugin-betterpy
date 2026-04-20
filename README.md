@@ -28,6 +28,20 @@
 
 ---
 
+### Coming Soon
+
+I'm actively working on the next wave of BetterPy. Without spoiling the surprise:
+
+- More intentions around **typing and annotations** — less ceremony, more signal.
+- Smarter **Protocol and custom-type workflows** — extracting, introducing, and reshaping types without the usual back-and-forth.
+- Better handling of **unions, generics, and type aliases** — because typing shouldn't feel like a second job.
+- Tighter feedback loops for **type-checker findings** — fewer detours between "problem spotted" and "problem fixed".
+- New tools for **test authoring and maintenance**.
+- Expanded **AI / MCP integrations** for workflows that go beyond a single file.
+- Quality-of-life upgrades to features already available.
+
+---
+
 ### Configuration
 
 Every feature can be individually toggled in **Settings → Tools → BetterPy**.
