@@ -1,0 +1,5239 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Supercharge your Python development in PyCharm">
+      
+      
+      
+        <link rel="canonical" href="https://chbndrhnns.github.io/pycharm-ddd-toolkit/features/feature-reference/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="zensical-0.0.32">
+    
+    
+      
+        <title>BetterPy Feature Reference - BetterPy – PyCharm Plugin</title>
+      
+    
+    
+      
+        
+      
+      <link rel="stylesheet" href="../../assets/stylesheets/modern/main.53a7feaf.min.css">
+      
+        
+          
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/modern/palette.dfe2e883.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,500,500i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,a=__md_scope)=>JSON.parse(t.getItem(a.pathname+"."+e)),__md_set=(e,t,a=localStorage,_=__md_scope)=>{try{a.setItem(_.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer" aria-label="Navigation"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#betterpy-feature-reference" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="BetterPy – PyCharm Plugin" class="md-header__button md-logo" aria-label="BetterPy – PyCharm Plugin" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 7v14M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer" aria-label="Navigation">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            BetterPy – PyCharm Plugin
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              BetterPy Feature Reference
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search" aria-label="Search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog" aria-label="Search">
+  <button type="button" class="md-search__button">
+    Search
+  </button>
+</div>
+      
+    
+    <div class="md-header__source">
+      
+    </div>
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../getting-started/installation/" class="md-tabs__link">
+          
+  
+  Getting Started
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../" class="md-tabs__link">
+          
+  
+  Features
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../reference/settings/" class="md-tabs__link">
+          
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../changelog/" class="md-tabs__link">
+        
+  
+  Changelog
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="BetterPy – PyCharm Plugin" class="md-nav__button md-logo" aria-label="BetterPy – PyCharm Plugin" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 7v14M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+
+    </a>
+    BetterPy – PyCharm Plugin
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Getting Started
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Features
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Features
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../typing-type-hints/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Typing & Type Hints
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../refactoring/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Refactoring & Code Transformations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Reference
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Settings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/inspections/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inspections
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  
+                    
+                    
+                    
+                      
+                    
+                    
+                      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+                      <div class="md-sidebar-button__wrapper">
+                        <label class="md-sidebar-button" for="__toc"></label>
+                      </div>
+                    
+                  
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#type-wrappingunwrapping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Type Wrapping/Unwrapping
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Type Wrapping&#x2f;Unwrapping">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#include-standard-library-types-in-union-wrapping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Include standard library types in union wrapping
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prefer-project-types-in-union-wrapping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prefer project types in union wrapping
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unwrap-items-to-expected-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unwrap items to expected type
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unwrap-to-expected-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unwrap to expected type
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wrap-items-with-expected-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wrap items with expected type
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wrap-with-expected-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wrap with expected type
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parameter-argument" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parameter &amp; Argument
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Parameter &amp; Argument">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#assign-statement-to-variable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assign statement to variable
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#capture-unused-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Capture unused parameters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-local-variable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Create local variable
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#make-parameter-mandatory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Make parameter mandatory
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#make-parameter-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Make parameter optional
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#populate-arguments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Populate arguments
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Code Structure
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Code Structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-exception-capture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Add exception capture
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-self-parameter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Add self parameter
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#change-visibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Change visibility
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#convert-callable-to-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Convert Callable to Protocol
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#convert-function-to-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Convert Function to Protocol
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#convert-function-to-lambda" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Convert function to lambda
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#convert-static-method-to-instance-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Convert static method to instance method
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#convert-static-method-to-instance-method-call-site-rewrite" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Convert static method to instance method — call-site rewrite
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copy-method-annotations-from-parent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Copy method annotations from parent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dict-access-conversion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dict access conversion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extract-protocol-from-class" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Extract Protocol from Class
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#move-to-inner-scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Move to inner scope
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#move-to-outer-scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Move to outer scope
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protocol-implementations-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Protocol Implementations Search
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strip-signature-type-annotations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Strip signature type annotations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#structural-search-profile-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Structural Search Profile (Python)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#toggle-enum-member-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Toggle enum member value
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#toggle-type-alias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Toggle type alias
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wrap-exceptions-with-parentheses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wrap exceptions with parentheses
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#abstract-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Abstract Methods
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Abstract Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#implement-abstract-method-in-child-classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Implement abstract method in child classes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#make-member-abstract" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Make member abstract
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pytest" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pytest
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pytest">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#advanced-pytest-fixture-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Advanced pytest fixture features
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#convert-parametrize-argnames-style" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Convert parametrize argnames style
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#convert-pytestparam" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Convert pytest.param
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-pytest-fixtures-from-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Create pytest fixtures from parameters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extract-pytest-fixture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Extract pytest fixture
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inline-pytest-fixture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inline pytest fixture
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jump-to-pytest-node-in-test-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Jump to pytest node in test tree
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mock-spec-implementations-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mock Spec Implementations Search
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mock-type-provider" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mock type provider
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#new-pytest-members" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        New pytest members
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parametrize-pytest-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parametrize pytest test
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pull-up-pytest-fixture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pull Up pytest fixture
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#push-down-pytest-fixture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Push Down pytest fixture
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytest-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pytest Explorer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytest-explorer-gutter-icons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pytest Explorer gutter icons
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytest-fixture-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pytest fixture documentation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytest-hooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pytest hooks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-pytest-with-debug-logging" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Run pytest with debug logging
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#surround-with-pytestraises" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Surround with pytest.raises()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#toggle-pytest-skip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Toggle pytest skip
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#toggle-pytest-skip-from-test-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Toggle pytest skip from test tree
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use-actual-test-outcome" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Use actual test outcome
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#web-framework-test-discovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Web framework test discovery
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#web-framework-test-gutter-icons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Web framework test gutter icons
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wrap-test-in-class" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wrap test in class
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inspections" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inspections
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Inspections">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pytestmarkusefixtures-on-fixture-is-a-no-op-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        @pytest.mark.usefixtures on fixture is a no-op inspection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abstract-method-not-implemented-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Abstract method not implemented inspection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-as-optional-field" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Add as optional field
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constant-should-be-final-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Constant should be Final inspection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataclass-missing-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataclass missing inspection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#missing-in-all-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Missing in all inspection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#missing-none-annotation-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Missing |None annotation inspection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mock-patch-object-attribute-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mock patch object attribute inspection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mock-patch-unresolved-reference-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mock patch unresolved reference inspection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mock-return-assignment-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mock return assignment inspection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mock-unresolved-reference-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mock unresolved reference inspection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overridden-method-missing-type-annotations-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overridden method missing type annotations inspection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#private-module-import-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Private module import inspection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytest-failed-line-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pytest failed line inspection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytest-fixture-direct-import-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pytest fixture direct import inspection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytest-fixture-redundant-parameter-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pytest fixture redundant parameter inspection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytest-fixture-scope-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pytest fixture scope inspection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytest-fixture-to-usefixtures-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pytest fixture to usefixtures inspection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytest-fixture-uninjected-reference-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pytest fixture uninjected reference inspection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytest-parametrize-count-mismatch-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pytest parametrize count mismatch inspection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytest-parametrize-ids-count-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pytest parametrize ids count inspection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytest-parametrize-unused-argname-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pytest parametrize unused argname inspection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quickfix-inspector" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        QuickFix Inspector
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shadowing-stdlib-module-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Shadowing stdlib module inspection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unresolved-reference-as-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unresolved reference as error
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unused-pytest-fixture-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unused pytest fixture inspection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytest_plugins-in-non-root-conftest-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        pytest_plugins in non-root conftest inspection
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Actions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#copy-fqns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Copy FQNs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copy-as-import-statement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Copy as import statement
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copy-block-with-dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Copy block with dependencies
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copy-build-number" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Copy build number
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copy-package-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Copy package content
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copy-pytest-node-id-from-editor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Copy pytest node ID from editor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copy-pytest-node-ids" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Copy pytest node IDs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copy-stacktrace" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Copy stacktrace
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generate-class-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Generate class actions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#introduce-custom-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introduce custom type
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#package-run-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Package run configuration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameter-object-mcp-tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parameter object MCP tool
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameter-object-gutter-icon" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parameter object gutter icon
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameter-object-refactoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parameter object refactoring
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#completion-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Completion &amp; References
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Completion &amp; References">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#asyncmock-parameter-completion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AsyncMock parameter completion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expected-type-completion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Expected type completion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filter-warnings-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Filter warnings reference
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mock-patch-object-attribute-completion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mock patch object attribute completion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mock-patch-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mock patch reference
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#named-argument-from-scope-completion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Named argument from scope completion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#newtypetypevarparamspec-reference-rename" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NewType/TypeVar/ParamSpec reference &amp; rename
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytest-identifier-in-search-everywhere" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pytest identifier in Search Everywhere
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytest-mark-completion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pytest mark completion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytest-tabs-in-search-everywhere" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pytest tabs in Search Everywhere
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#return-completion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Return completion
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#import-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Import &amp; Structure
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Import &amp; Structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enhanced-python-structure-view" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enhanced Python structure view
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#export-symbol-to-target" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Export symbol to target
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relative-import-preference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Relative import preference
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restore-source-root-prefix" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Restore source root prefix
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strict-source-root-import-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Strict source root import inspection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#structure-view-private-members-filter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Structure view private members filter
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#structure-view-pytest-kind-icons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Structure view pytest kind icons
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unexport-symbol" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unexport symbol
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#navigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Navigation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Navigation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enhanced-go-to-implementation-presentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enhanced Go to Implementation presentation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python-navigation-bar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Python navigation bar
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python-package-run-line-marker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Python package run line marker
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#filters-suppressors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Filters &amp; Suppressors
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Filters &amp; Suppressors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#message-console-filter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Message console filter
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rename-to-self-filter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rename to self filter
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#suppress-signature-change-intention" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Suppress signature change intention
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-usage-filtering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Test usage filtering
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-annotation-usage-filtering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Type annotation usage filtering
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#init-classmethod-usages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        init classmethod usages
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Documentation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#attribute-docstring-in-quick-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attribute Docstring in Quick Documentation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enhanced-dataclass-quick-info" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enhanced Dataclass Quick Info
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analytics-privacy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Analytics &amp; Privacy
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Analytics &amp; Privacy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#anonymous-usage-analytics-posthog" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anonymous usage analytics (PostHog)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#youtrack-issue-index" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        YouTrack Issue Index
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+<h1 id="betterpy-feature-reference">BetterPy Feature Reference<a class="headerlink" href="#betterpy-feature-reference" title="Permanent link">&para;</a></h1>
+<p>This document lists all features available in the BetterPy plugin.</p>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Stable</td>
+<td>99</td>
+</tr>
+<tr>
+<td>Incubating</td>
+<td>31</td>
+</tr>
+<tr>
+<td>Deprecated</td>
+<td>0</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td><strong>130</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="type-wrappingunwrapping">Type Wrapping/Unwrapping<a class="headerlink" href="#type-wrappingunwrapping" title="Permanent link">&para;</a></h2>
+<h3 id="include-standard-library-types-in-union-wrapping">Include standard library types in union wrapping<a class="headerlink" href="#include-standard-library-types-in-union-wrapping" title="Permanent link">&para;</a></h3>
+<p>Includes standard library types as candidates in union wrapping</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>include-stdlib-in-union-wrapping</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>includeStdlibInUnionWrapping</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="prefer-project-types-in-union-wrapping">Prefer project types in union wrapping<a class="headerlink" href="#prefer-project-types-in-union-wrapping" title="Permanent link">&para;</a></h3>
+<p>Always prioritizes project types over standard library types in union wrapping</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>prefer-own-types-in-union-wrapping</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>preferOwnTypesInUnionWrapping</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="unwrap-items-to-expected-type">Unwrap items to expected type<a class="headerlink" href="#unwrap-items-to-expected-type" title="Permanent link">&para;</a></h3>
+<p>Unwraps collection items to match the expected type annotation</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>unwrap-items-to-expected-type</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableUnwrapItemsToExpectedTypeIntention</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="unwrap-to-expected-type">Unwrap to expected type<a class="headerlink" href="#unwrap-to-expected-type" title="Permanent link">&para;</a></h3>
+<p>Unwraps an expression to match the expected type annotation</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>unwrap-to-expected-type</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableUnwrapToExpectedTypeIntention</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="wrap-items-with-expected-type">Wrap items with expected type<a class="headerlink" href="#wrap-items-with-expected-type" title="Permanent link">&para;</a></h3>
+<p>Wraps collection items with types matching the expected type annotation</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>wrap-items-with-expected-type</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableWrapItemsWithExpectedTypeIntention</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="wrap-with-expected-type">Wrap with expected type<a class="headerlink" href="#wrap-with-expected-type" title="Permanent link">&para;</a></h3>
+<p>Wraps an expression with a type that matches the expected type annotation</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>wrap-with-expected-type</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableWrapWithExpectedTypeIntention</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="parameter-argument">Parameter &amp; Argument<a class="headerlink" href="#parameter-argument" title="Permanent link">&para;</a></h2>
+<h3 id="assign-statement-to-variable">Assign statement to variable<a class="headerlink" href="#assign-statement-to-variable" title="Permanent link">&para;</a></h3>
+<p>Assigns a statement expression to a new local variable</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>assign-statement-to-variable</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableAssignStatementToVariableIntention</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="capture-unused-parameters">Capture unused parameters<a class="headerlink" href="#capture-unused-parameters" title="Permanent link">&para;</a></h3>
+<p>Assigns unused parameters to '_' in a single statement</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>capture-unused-parameters</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableCaptureUnusedParametersIntention</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="create-local-variable">Create local variable<a class="headerlink" href="#create-local-variable" title="Permanent link">&para;</a></h3>
+<p>Creates a local variable from an expression</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>create-local-variable</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableCreateLocalVariableIntention</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="make-parameter-mandatory">Make parameter mandatory<a class="headerlink" href="#make-parameter-mandatory" title="Permanent link">&para;</a></h3>
+<p>Converts an optional parameter to a required one by removing the default value</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>make-parameter-mandatory</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableMakeParameterMandatoryIntention</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="make-parameter-optional">Make parameter optional<a class="headerlink" href="#make-parameter-optional" title="Permanent link">&para;</a></h3>
+<p>Converts a required parameter to an optional one with a default value</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>make-parameter-optional</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableMakeParameterOptionalIntention</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="populate-arguments">Populate arguments<a class="headerlink" href="#populate-arguments" title="Permanent link">&para;</a></h3>
+<p>Automatically fills in function call arguments based on the function signature</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>populate-arguments</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enablePopulateArgumentsIntention</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="code-structure">Code Structure<a class="headerlink" href="#code-structure" title="Permanent link">&para;</a></h2>
+<h3 id="add-exception-capture">Add exception capture<a class="headerlink" href="#add-exception-capture" title="Permanent link">&para;</a></h3>
+<p>Adds an 'as' clause to capture the exception in an except block</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>add-exception-capture</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableAddExceptionCaptureIntention</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="add-self-parameter">Add self parameter<a class="headerlink" href="#add-self-parameter" title="Permanent link">&para;</a></h3>
+<p>Adds a missing self parameter to instance methods</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>add-self-parameter</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableAddSelfParameterIntention</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="change-visibility">Change visibility<a class="headerlink" href="#change-visibility" title="Permanent link">&para;</a></h3>
+<p>Changes the visibility of a symbol (public/protected/private)</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>change-visibility</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableChangeVisibilityIntention</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="convert-callable-to-protocol">Convert Callable to Protocol<a class="headerlink" href="#convert-callable-to-protocol" title="Permanent link">&para;</a></h3>
+<p>🧪 <strong>Status:</strong> Incubating</p>
+<p>Converts a Callable type hint to an equivalent Protocol definition</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>callable-to-protocol</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableCallableToProtocolIntention</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="convert-function-to-protocol">Convert Function to Protocol<a class="headerlink" href="#convert-function-to-protocol" title="Permanent link">&para;</a></h3>
+<p>🧪 <strong>Status:</strong> Incubating</p>
+<p>Generates a Protocol class from a function's signature, inserting it before the function definition</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>function-to-protocol</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableFunctionToProtocolIntention</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="convert-function-to-lambda">Convert function to lambda<a class="headerlink" href="#convert-function-to-lambda" title="Permanent link">&para;</a></h3>
+<p>Converts a simple single-expression function into a lambda assignment. Only available for module-level functions with a single return statement and no decorators.</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>convert-fn-to-lambda</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableConvertFunctionToLambdaIntention</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="convert-static-method-to-instance-method">Convert static method to instance method<a class="headerlink" href="#convert-static-method-to-instance-method" title="Permanent link">&para;</a></h3>
+<p>Removes the @staticmethod decorator and adds self as the first parameter, converting the method into a regular instance method</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>convert-static-to-instance-method</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableConvertStaticMethodToInstanceMethodIntention</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="convert-static-method-to-instance-method-call-site-rewrite">Convert static method to instance method — call-site rewrite<a class="headerlink" href="#convert-static-method-to-instance-method-call-site-rewrite" title="Permanent link">&para;</a></h3>
+<p>When converting a @staticmethod to an instance method, inserts TODO comments before class-qualified call sites and co-converts @staticmethod overrides in subclasses</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>convert-static-to-instance-method-call-site-rewrite</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableConvertStaticMethodCallSiteRewrite</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="copy-method-annotations-from-parent">Copy method annotations from parent<a class="headerlink" href="#copy-method-annotations-from-parent" title="Permanent link">&para;</a></h3>
+<p>Copies type annotations from a parent method to its overrides</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>copy-method-annotations-from-parent</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableCopyMethodAnnotationsFromParentIntention</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="dict-access-conversion">Dict access conversion<a class="headerlink" href="#dict-access-conversion" title="Permanent link">&para;</a></h3>
+<p>Converts between dict bracket access and .get() method calls</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>dict-access</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableDictAccessIntention</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="extract-protocol-from-class">Extract Protocol from Class<a class="headerlink" href="#extract-protocol-from-class" title="Permanent link">&para;</a></h3>
+<p>🧪 <strong>Status:</strong> Incubating</p>
+<p>Extracts the public interface of a class into a typing.Protocol subclass</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>extract-protocol</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableExtractProtocolIntention</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="move-to-inner-scope">Move to inner scope<a class="headerlink" href="#move-to-inner-scope" title="Permanent link">&para;</a></h3>
+<p>🧪 <strong>Status:</strong> Incubating</p>
+<p>Moves a top-level function into a class as a method</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>move-to-inner-scope</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableMoveToInnerScopeIntention</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="move-to-outer-scope">Move to outer scope<a class="headerlink" href="#move-to-outer-scope" title="Permanent link">&para;</a></h3>
+<p>🧪 <strong>Status:</strong> Incubating</p>
+<p>Moves a nested class to the outer (top-level) scope</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>move-to-outer-scope</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableMoveToOuterScopeIntention</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="protocol-implementations-search">Protocol Implementations Search<a class="headerlink" href="#protocol-implementations-search" title="Permanent link">&para;</a></h3>
+<p>🧪 <strong>Status:</strong> Incubating</p>
+<p>Finds callable implementations (functions, lambdas, classes with <strong>call</strong>) that structurally match a callable-only Protocol</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>protocol-implementations-search</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableProtocolImplementationsSearch</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="strip-signature-type-annotations">Strip signature type annotations<a class="headerlink" href="#strip-signature-type-annotations" title="Permanent link">&para;</a></h3>
+<p>Removes type annotations from a function signature</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>strip-signature-type-annotations</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableStripSignatureTypeAnnotationsIntention</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="structural-search-profile-python">Structural Search Profile (Python)<a class="headerlink" href="#structural-search-profile-python" title="Permanent link">&para;</a></h3>
+<p>🧪 <strong>Status:</strong> Incubating</p>
+<p>Adds a Python Structural Search profile integration for pattern matching and constraints</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>structural-search</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableStructuralSearchProfile</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="toggle-enum-member-value">Toggle enum member value<a class="headerlink" href="#toggle-enum-member-value" title="Permanent link">&para;</a></h3>
+<p>Toggles the explicit value of an enum member on or off</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>toggle-enum-member-value</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableToggleEnumMemberValueIntention</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="toggle-type-alias">Toggle type alias<a class="headerlink" href="#toggle-type-alias" title="Permanent link">&para;</a></h3>
+<p>🧪 <strong>Status:</strong> Incubating</p>
+<p>Converts between TypeAlias and type statement syntax</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>toggle-type-alias</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableToggleTypeAliasIntention</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="wrap-exceptions-with-parentheses">Wrap exceptions with parentheses<a class="headerlink" href="#wrap-exceptions-with-parentheses" title="Permanent link">&para;</a></h3>
+<p>Wraps multiple exception types in parentheses for proper syntax</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>wrap-exceptions-with-parentheses</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableWrapExceptionsWithParenthesesIntention</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="abstract-methods">Abstract Methods<a class="headerlink" href="#abstract-methods" title="Permanent link">&para;</a></h2>
+<h3 id="implement-abstract-method-in-child-classes">Implement abstract method in child classes<a class="headerlink" href="#implement-abstract-method-in-child-classes" title="Permanent link">&para;</a></h3>
+<p>Generates implementations of an abstract method in all child classes</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>implement-abstract-method-in-child-classes</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableImplementAbstractMethodInChildClassesIntention</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="make-member-abstract">Make member abstract<a class="headerlink" href="#make-member-abstract" title="Permanent link">&para;</a></h3>
+<p>Converts a concrete method to an abstract method in an abstract class</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>make-member-abstract-in-abstract-class</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableMakeMemberAbstractInAbstractClassIntention</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="pytest">Pytest<a class="headerlink" href="#pytest" title="Permanent link">&para;</a></h2>
+<h3 id="advanced-pytest-fixture-features">Advanced pytest fixture features<a class="headerlink" href="#advanced-pytest-fixture-features" title="Permanent link">&para;</a></h3>
+<p>🧪 <strong>Status:</strong> Incubating</p>
+<p>Adds navigation, hierarchy, and override support for pytest fixtures</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>advanced-pytest-fixtures</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableAdvancedPytestFixtureFeatures</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Related Issues:</strong>
+- <a href="https://youtrack.jetbrains.com/issue/PY-87756">PY-87756</a>
+- <a href="https://youtrack.jetbrains.com/issue/PY-81495">PY-81495</a>
+- <a href="https://youtrack.jetbrains.com/issue/PY-60973">PY-60973</a>
+- <a href="https://youtrack.jetbrains.com/issue/PY-56268">PY-56268</a>
+- <a href="https://youtrack.jetbrains.com/issue/PY-53176">PY-53176</a></p>
+<h3 id="convert-parametrize-argnames-style">Convert parametrize argnames style<a class="headerlink" href="#convert-parametrize-argnames-style" title="Permanent link">&para;</a></h3>
+<p>Converts pytest.mark.parametrize argnames between a comma-separated string and a tuple of separate strings</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>convert-parametrize-argnames</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableConvertParametrizeArgnamesIntention</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="convert-pytestparam">Convert pytest.param<a class="headerlink" href="#convert-pytestparam" title="Permanent link">&para;</a></h3>
+<p>Converts between different pytest parameter formats</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>convert-pytest-param</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableConvertPytestParamIntention</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="create-pytest-fixtures-from-parameters">Create pytest fixtures from parameters<a class="headerlink" href="#create-pytest-fixtures-from-parameters" title="Permanent link">&para;</a></h3>
+<p>🧪 <strong>Status:</strong> Incubating</p>
+<p>Offers a quick fix to generate pytest fixtures for unresolved fixture parameters</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>create-pytest-fixtures-from-parameters</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableCreatePytestFixtureFromParameter</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="extract-pytest-fixture">Extract pytest fixture<a class="headerlink" href="#extract-pytest-fixture" title="Permanent link">&para;</a></h3>
+<p>🧪 <strong>Status:</strong> Incubating</p>
+<p>Extract selected code as a new pytest fixture with proper fixture dependencies</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>extract-pytest-fixture</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableExtractPytestFixtureRefactoring</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="inline-pytest-fixture">Inline pytest fixture<a class="headerlink" href="#inline-pytest-fixture" title="Permanent link">&para;</a></h3>
+<p>🧪 <strong>Status:</strong> Incubating</p>
+<p>Inline a pytest fixture into its usage(s) with dependency promotion</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>inline-pytest-fixture</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableInlinePytestFixtureRefactoring</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Related Issues:</strong>
+- <a href="https://youtrack.jetbrains.com/issue/PY-66243">PY-66243</a></p>
+<h3 id="jump-to-pytest-node-in-test-tree">Jump to pytest node in test tree<a class="headerlink" href="#jump-to-pytest-node-in-test-tree" title="Permanent link">&para;</a></h3>
+<p>Navigates to the corresponding node in the test tree view</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>jump-to-pytest-node-in-test-tree</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableJumpToPytestNodeInTestTreeAction</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="mock-spec-implementations-search">Mock Spec Implementations Search<a class="headerlink" href="#mock-spec-implementations-search" title="Permanent link">&para;</a></h3>
+<p>🧪 <strong>Status:</strong> Incubating</p>
+<p>Shows Mock/AsyncMock instances with spec/spec_set as implementations of the referenced class</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>mock-spec-implementations-search</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableMockSpecImplementationsSearch</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="mock-type-provider">Mock type provider<a class="headerlink" href="#mock-type-provider" title="Permanent link">&para;</a></h3>
+<p>Provides type information for unittest.mock objects</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>mock-type-provider</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enablePyMockTypeProvider</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="new-pytest-members">New pytest members<a class="headerlink" href="#new-pytest-members" title="Permanent link">&para;</a></h3>
+<p>Adds Generate menu actions for new pytest tests and fixtures</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>new-pytest-members</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableNewPytestMemberActions</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="parametrize-pytest-test">Parametrize pytest test<a class="headerlink" href="#parametrize-pytest-test" title="Permanent link">&para;</a></h3>
+<p>Converts a test function to use @pytest.mark.parametrize</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>parametrize-pytest-test</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableParametrizePytestTestIntention</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="pull-up-pytest-fixture">Pull Up pytest fixture<a class="headerlink" href="#pull-up-pytest-fixture" title="Permanent link">&para;</a></h3>
+<p>🧪 <strong>Status:</strong> Incubating</p>
+<p>Move a pytest fixture one level higher in the conftest hierarchy to widen its availability</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>pull-up-pytest-fixture</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enablePullUpPytestFixture</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="push-down-pytest-fixture">Push Down pytest fixture<a class="headerlink" href="#push-down-pytest-fixture" title="Permanent link">&para;</a></h3>
+<p>🧪 <strong>Status:</strong> Incubating</p>
+<p>Move a pytest fixture one level lower in the conftest hierarchy to narrow its availability</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>push-down-pytest-fixture</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enablePushDownPytestFixture</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Related Issues:</strong>
+- <a href="https://youtrack.jetbrains.com/issue/PY-56186">PY-56186</a></p>
+<h3 id="pytest-explorer">Pytest Explorer<a class="headerlink" href="#pytest-explorer" title="Permanent link">&para;</a></h3>
+<p>🧪 <strong>Status:</strong> Incubating</p>
+<p>Collects pytest tests and fixtures via pytest collect-only and provides an interactive explorer</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>pytest-explorer</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enablePytestExplorer</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="pytest-explorer-gutter-icons">Pytest Explorer gutter icons<a class="headerlink" href="#pytest-explorer-gutter-icons" title="Permanent link">&para;</a></h3>
+<p>🧪 <strong>Status:</strong> Incubating</p>
+<p>Shows a gutter icon on test and fixture functions to jump to the corresponding item in the Pytest Explorer tool window</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>pytest-explorer-gutter-icons</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enablePytestExplorerGutterIcons</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="pytest-fixture-documentation">Pytest fixture documentation<a class="headerlink" href="#pytest-fixture-documentation" title="Permanent link">&para;</a></h3>
+<p>🧪 <strong>Status:</strong> Incubating</p>
+<p>Enhances Quick Documentation and member type inference for pytest fixtures across files</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>pytest-fixture-documentation</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enablePytestFixtureDocumentation</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Related Issues:</strong>
+- <a href="https://youtrack.jetbrains.com/issue/PY-66245">PY-66245</a></p>
+<h3 id="pytest-hooks">Pytest hooks<a class="headerlink" href="#pytest-hooks" title="Permanent link">&para;</a></h3>
+<p>Adds Generate menu action for pytest hook stubs in conftest.py and go-to-declaration for hook functions</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>pytest-hooks</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enablePytestHooks</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="run-pytest-with-debug-logging">Run pytest with debug logging<a class="headerlink" href="#run-pytest-with-debug-logging" title="Permanent link">&para;</a></h3>
+<p>Duplicates the selected pytest run configuration with debug logging flags for the chosen test tree node</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>run-with-debug-logging</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableRunWithDebugLoggingFromTestTreeAction</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="surround-with-pytestraises">Surround with pytest.raises()<a class="headerlink" href="#surround-with-pytestraises" title="Permanent link">&para;</a></h3>
+<p>Wraps a statement with pytest.raises() in test contexts</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>surround-with-pytest-raises</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableSurroundWithPytestRaisesIntention</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="toggle-pytest-skip">Toggle pytest skip<a class="headerlink" href="#toggle-pytest-skip" title="Permanent link">&para;</a></h3>
+<p>Adds or removes @pytest.mark.skip decorator from a test</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>toggle-pytest-skip</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableTogglePytestSkipIntention</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="toggle-pytest-skip-from-test-tree">Toggle pytest skip from test tree<a class="headerlink" href="#toggle-pytest-skip-from-test-tree" title="Permanent link">&para;</a></h3>
+<p>Adds or removes @pytest.mark.skip from the test tree context menu</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>toggle-pytest-skip-from-test-tree</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableTogglePytestSkipFromTestTreeAction</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="use-actual-test-outcome">Use actual test outcome<a class="headerlink" href="#use-actual-test-outcome" title="Permanent link">&para;</a></h3>
+<p>Replaces assertion expected values with the actual value from the last failed test run</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>use-actual-test-outcome</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableUseActualTestOutcomeIntention</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="web-framework-test-discovery">Web framework test discovery<a class="headerlink" href="#web-framework-test-discovery" title="Permanent link">&para;</a></h3>
+<p>🧪 <strong>Status:</strong> Incubating</p>
+<p>Indexes web endpoints and test client calls for HTTP verb/path matching</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>web-framework-test-discovery</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableWebFrameworkTestDiscovery</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="web-framework-test-gutter-icons">Web framework test gutter icons<a class="headerlink" href="#web-framework-test-gutter-icons" title="Permanent link">&para;</a></h3>
+<p>🧪 <strong>Status:</strong> Incubating</p>
+<p>Shows gutter navigation between web endpoints and matching test client calls</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>web-framework-test-gutter-icons</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableWebFrameworkTestGutterIcons</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="wrap-test-in-class">Wrap test in class<a class="headerlink" href="#wrap-test-in-class" title="Permanent link">&para;</a></h3>
+<p>Wraps a test function in a test class</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>wrap-test-in-class</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableWrapTestInClassIntention</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="inspections">Inspections<a class="headerlink" href="#inspections" title="Permanent link">&para;</a></h2>
+<h3 id="pytestmarkusefixtures-on-fixture-is-a-no-op-inspection">@pytest.mark.usefixtures on fixture is a no-op inspection<a class="headerlink" href="#pytestmarkusefixtures-on-fixture-is-a-no-op-inspection" title="Permanent link">&para;</a></h3>
+<p>Reports @pytest.mark.usefixtures decorators on fixture functions, where they have no effect — pytest only honours usefixtures on test functions</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>pytest-usefixtures-on-fixture-noop-inspection</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enablePytestUsefixturesOnFixtureNoopInspection</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="abstract-method-not-implemented-inspection">Abstract method not implemented inspection<a class="headerlink" href="#abstract-method-not-implemented-inspection" title="Permanent link">&para;</a></h3>
+<p>Reports abstract methods that are not implemented in concrete subclasses</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>abstract-method-not-implemented-inspection</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableAbstractMethodNotImplementedInspection</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="add-as-optional-field">Add as optional field<a class="headerlink" href="#add-as-optional-field" title="Permanent link">&para;</a></h3>
+<p>Adds an unresolved attribute as an optional field (T | None = None) to the owning dataclass or Pydantic model, with the type inferred from the usage site</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>add-optional-field</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableAddOptionalFieldQuickFix</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="constant-should-be-final-inspection">Constant should be Final inspection<a class="headerlink" href="#constant-should-be-final-inspection" title="Permanent link">&para;</a></h3>
+<p>Reports module-level constants that should be annotated with Final</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>constant-final-inspection</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableConstantFinalInspection</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="dataclass-missing-inspection">Dataclass missing inspection<a class="headerlink" href="#dataclass-missing-inspection" title="Permanent link">&para;</a></h3>
+<p>Reports missing dataclass decorator or field definitions</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>dataclass-missing-inspection</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableDataclassMissingInspection</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="missing-in-all-inspection">Missing in <strong>all</strong> inspection<a class="headerlink" href="#missing-in-all-inspection" title="Permanent link">&para;</a></h3>
+<p>Reports public symbols that are not listed in <strong>all</strong></p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>missing-in-dunder-all-inspection</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enablePyMissingInDunderAllInspection</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="missing-none-annotation-inspection">Missing |None annotation inspection<a class="headerlink" href="#missing-none-annotation-inspection" title="Permanent link">&para;</a></h3>
+<p>🧪 <strong>Status:</strong> Incubating</p>
+<p>Reports parameters with a None default value whose annotation is missing | None</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>missing-none-annotation-inspection</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableMissingNoneAnnotationInspection</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Related Issues:</strong>
+- <a href="https://youtrack.jetbrains.com/issue/PY-88504">PY-88504</a></p>
+<h3 id="mock-patch-object-attribute-inspection">Mock patch object attribute inspection<a class="headerlink" href="#mock-patch-object-attribute-inspection" title="Permanent link">&para;</a></h3>
+<p>Reports unresolved attributes in mock.patch.object calls</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>mock-patch-object-attribute-inspection</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enablePyMockPatchObjectAttributeInspection</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="mock-patch-unresolved-reference-inspection">Mock patch unresolved reference inspection<a class="headerlink" href="#mock-patch-unresolved-reference-inspection" title="Permanent link">&para;</a></h3>
+<p>Reports unresolved references in mock.patch target strings</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>mock-patch-unresolved-reference-inspection</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enablePyMockPatchUnresolvedReferenceInspection</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="mock-return-assignment-inspection">Mock return assignment inspection<a class="headerlink" href="#mock-return-assignment-inspection" title="Permanent link">&para;</a></h3>
+<p>Reports invalid assignments to mock return values</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>mock-return-assignment-inspection</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enablePyMockReturnAssignmentInspection</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="mock-unresolved-reference-inspection">Mock unresolved reference inspection<a class="headerlink" href="#mock-unresolved-reference-inspection" title="Permanent link">&para;</a></h3>
+<p>Reports unresolved references in mock usage</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>mock-unresolved-reference-inspection</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enablePyMockUnresolvedReferenceInspection</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="overridden-method-missing-type-annotations-inspection">Overridden method missing type annotations inspection<a class="headerlink" href="#overridden-method-missing-type-annotations-inspection" title="Permanent link">&para;</a></h3>
+<p>🧪 <strong>Status:</strong> Incubating</p>
+<p>Reports overrides missing type annotations present in parent methods</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>overridden-method-missing-type-annotations-inspection</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableOverriddenMethodMissingTypeAnnotationsInspection</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="private-module-import-inspection">Private module import inspection<a class="headerlink" href="#private-module-import-inspection" title="Permanent link">&para;</a></h3>
+<p>Reports imports from private modules (starting with underscore)</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>private-module-import-inspection</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enablePrivateModuleImportInspection</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="pytest-failed-line-inspection">Pytest failed line inspection<a class="headerlink" href="#pytest-failed-line-inspection" title="Permanent link">&para;</a></h3>
+<p>Marks the line where a pytest test failed</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>pytest-failed-line-inspection</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enablePyTestFailedLineInspection</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="pytest-fixture-direct-import-inspection">Pytest fixture direct import inspection<a class="headerlink" href="#pytest-fixture-direct-import-inspection" title="Permanent link">&para;</a></h3>
+<p>Reports pytest fixture functions imported directly into conftest.py — prefer pytest_plugins for explicit scoping</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>pytest-fixture-direct-import-inspection</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enablePytestFixtureDirectImportInspection</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="pytest-fixture-redundant-parameter-inspection">Pytest fixture redundant parameter inspection<a class="headerlink" href="#pytest-fixture-redundant-parameter-inspection" title="Permanent link">&para;</a></h3>
+<p>🧪 <strong>Status:</strong> Incubating</p>
+<p>Reports fixture parameters that are already injected automatically via autouse, usefixtures on the enclosing class, or module-level pytestmark, and are not referenced in the function body.</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>pytest-fixture-redundant-parameter-inspection</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enablePytestFixtureRedundantParameterInspection</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="pytest-fixture-scope-inspection">Pytest fixture scope inspection<a class="headerlink" href="#pytest-fixture-scope-inspection" title="Permanent link">&para;</a></h3>
+<p>Reports fixtures that narrow the scope compared to parent fixtures</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>pytest-fixture-scope-inspection</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enablePytestFixtureScopeInspection</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="pytest-fixture-to-usefixtures-inspection">Pytest fixture to usefixtures inspection<a class="headerlink" href="#pytest-fixture-to-usefixtures-inspection" title="Permanent link">&para;</a></h3>
+<p>🧪 <strong>Status:</strong> Incubating</p>
+<p>Reports unused fixture parameters in test functions and offers conversion to @pytest.mark.usefixtures()</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>pytest-fixture-to-usefixtures-inspection</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enablePytestFixtureToUsefixturesInspection</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Related Issues:</strong>
+- <a href="https://youtrack.jetbrains.com/issue/PY-55931">PY-55931</a></p>
+<h3 id="pytest-fixture-uninjected-reference-inspection">Pytest fixture uninjected reference inspection<a class="headerlink" href="#pytest-fixture-uninjected-reference-inspection" title="Permanent link">&para;</a></h3>
+<p>Reports fixture references inside tests/fixtures that are not declared as parameters</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>pytest-fixture-uninjected-reference-inspection</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enablePytestFixtureUninjectedReferenceInspection</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="pytest-parametrize-count-mismatch-inspection">Pytest parametrize count mismatch inspection<a class="headerlink" href="#pytest-parametrize-count-mismatch-inspection" title="Permanent link">&para;</a></h3>
+<p>🧪 <strong>Status:</strong> Incubating</p>
+<p>Reports when the number of values in a pytest.mark.parametrize value set does not match the number of parameter names</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>pytest-parametrize-count-mismatch-inspection</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enablePytestParametrizeCountMismatchInspection</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="pytest-parametrize-ids-count-inspection">Pytest parametrize ids count inspection<a class="headerlink" href="#pytest-parametrize-ids-count-inspection" title="Permanent link">&para;</a></h3>
+<p>🧪 <strong>Status:</strong> Incubating</p>
+<p>Reports when the number of ids in a pytest.mark.parametrize call does not match the number of parameter sets</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>pytest-parametrize-ids-count-inspection</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enablePytestParametrizeIdsCountInspection</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="pytest-parametrize-unused-argname-inspection">Pytest parametrize unused argname inspection<a class="headerlink" href="#pytest-parametrize-unused-argname-inspection" title="Permanent link">&para;</a></h3>
+<p>🧪 <strong>Status:</strong> Incubating</p>
+<p>Reports pytest.parametrize argnames that are never used inside the test function body</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>pytest-parametrize-unused-argname-inspection</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enablePytestParametrizeUnusedArgnameInspection</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="quickfix-inspector">QuickFix Inspector<a class="headerlink" href="#quickfix-inspector" title="Permanent link">&para;</a></h3>
+<p>🧪 <strong>Status:</strong> Incubating</p>
+<p>Tool window panel that shows all quickfix locations in the current file, with flat and grouped-by-fix views. Refresh is manual; clicking navigates to the location.</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>quickfix-inspector</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableQuickFixInspector</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="shadowing-stdlib-module-inspection">Shadowing stdlib module inspection<a class="headerlink" href="#shadowing-stdlib-module-inspection" title="Permanent link">&para;</a></h3>
+<p>Reports project modules that shadow Python standard library modules</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>shadowing-stdlib-module-inspection</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableShadowingStdlibModuleInspection</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="unresolved-reference-as-error">Unresolved reference as error<a class="headerlink" href="#unresolved-reference-as-error" title="Permanent link">&para;</a></h3>
+<p>Reports unresolved references as errors instead of warnings</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>unresolved-reference-as-error-inspection</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableUnresolvedReferenceAsErrorInspection</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="unused-pytest-fixture-inspection">Unused pytest fixture inspection<a class="headerlink" href="#unused-pytest-fixture-inspection" title="Permanent link">&para;</a></h3>
+<p>Reports pytest fixture functions that are never used as a parameter in any test or other fixture in the project, and offers a safe-delete quick fix</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>pytest-fixture-unused-inspection</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enablePytestFixtureUnusedInspection</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="pytest_plugins-in-non-root-conftest-inspection">pytest_plugins in non-root conftest inspection<a class="headerlink" href="#pytest_plugins-in-non-root-conftest-inspection" title="Permanent link">&para;</a></h3>
+<p>Reports pytest_plugins assignments that appear in a non-root conftest.py file, where they have no effect</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>pytest-plugins-in-non-root-conftest-inspection</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enablePytestPluginsInNonRootConftestInspection</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="actions">Actions<a class="headerlink" href="#actions" title="Permanent link">&para;</a></h2>
+<h3 id="copy-fqns">Copy FQNs<a class="headerlink" href="#copy-fqns" title="Permanent link">&para;</a></h3>
+<p>Copies fully qualified names of selected symbols to the clipboard</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>copy-fqns</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableCopyFQNsAction</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="copy-as-import-statement">Copy as import statement<a class="headerlink" href="#copy-as-import-statement" title="Permanent link">&para;</a></h3>
+<p>Copies a from-style absolute import statement for the symbol at the caret</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>copy-as-import-statement</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableCopyAsImportStatementAction</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="copy-block-with-dependencies">Copy block with dependencies<a class="headerlink" href="#copy-block-with-dependencies" title="Permanent link">&para;</a></h3>
+<p>Copies a code block along with its required imports and dependencies</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>copy-block-with-dependencies</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableCopyBlockWithDependenciesAction</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="copy-build-number">Copy build number<a class="headerlink" href="#copy-build-number" title="Permanent link">&para;</a></h3>
+<p>Copies the IDE build number to the clipboard</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>copy-build-number</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableCopyBuildNumberAction</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="copy-package-content">Copy package content<a class="headerlink" href="#copy-package-content" title="Permanent link">&para;</a></h3>
+<p>Copies the content of a Python package to the clipboard</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>copy-package-content</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableCopyPackageContentAction</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="copy-pytest-node-id-from-editor">Copy pytest node ID from editor<a class="headerlink" href="#copy-pytest-node-id-from-editor" title="Permanent link">&para;</a></h3>
+<p>Copies the pytest node ID for the test at the caret position</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>copy-pytest-node-id-from-editor</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableCopyPytestNodeIdFromEditorAction</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="copy-pytest-node-ids">Copy pytest node IDs<a class="headerlink" href="#copy-pytest-node-ids" title="Permanent link">&para;</a></h3>
+<p>Copies pytest node IDs for selected tests to the clipboard</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>copy-pytest-node-ids</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableCopyPytestNodeIdsAction</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="copy-stacktrace">Copy stacktrace<a class="headerlink" href="#copy-stacktrace" title="Permanent link">&para;</a></h3>
+<p>Copies a formatted stacktrace to the clipboard</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>copy-stacktrace</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableCopyStacktraceAction</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="generate-class-actions">Generate class actions<a class="headerlink" href="#generate-class-actions" title="Permanent link">&para;</a></h3>
+<p>Adds Generate menu actions for dataclass, frozen dataclass, and pydantic model</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>generate-class-actions</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableGenerateClassActions</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="introduce-custom-type">Introduce custom type<a class="headerlink" href="#introduce-custom-type" title="Permanent link">&para;</a></h3>
+<p>Creates a custom type from a stdlib type annotation</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>introduce-custom-type</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableIntroduceCustomTypeRefactoringAction</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="package-run-configuration">Package run configuration<a class="headerlink" href="#package-run-configuration" title="Permanent link">&para;</a></h3>
+<p>Enables run configuration for Python packages with -m flag</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>package-run-configuration</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enablePyPackageRunConfigurationAction</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="parameter-object-mcp-tool">Parameter object MCP tool<a class="headerlink" href="#parameter-object-mcp-tool" title="Permanent link">&para;</a></h3>
+<p>Enables MCP (Model Context Protocol) tools for parameter object refactoring</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>parameter-object-mcp-tool</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableParameterObjectMcpTool</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="parameter-object-gutter-icon">Parameter object gutter icon<a class="headerlink" href="#parameter-object-gutter-icon" title="Permanent link">&para;</a></h3>
+<p>Shows a gutter icon on functions that are candidates for 'Introduce Parameter Object' refactoring</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>parameter-object-gutter-icon</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableParameterObjectGutterIcon</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="parameter-object-refactoring">Parameter object refactoring<a class="headerlink" href="#parameter-object-refactoring" title="Permanent link">&para;</a></h3>
+<p>Enables introduce/inline parameter object refactoring actions</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>parameter-object-refactoring</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableParameterObjectRefactoring</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Related Issues:</strong>
+- <a href="https://youtrack.jetbrains.com/issue/PY-59270">PY-59270</a></p>
+<h2 id="completion-references">Completion &amp; References<a class="headerlink" href="#completion-references" title="Permanent link">&para;</a></h2>
+<h3 id="asyncmock-parameter-completion">AsyncMock parameter completion<a class="headerlink" href="#asyncmock-parameter-completion" title="Permanent link">&para;</a></h3>
+<p>Completes parameters for AsyncMock constructors</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>async-mock-parameter-completion</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableAsyncMockParameterCompletionContributor</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Related Issues:</strong>
+- <a href="https://youtrack.jetbrains.com/issue/PY-88482">PY-88482</a></p>
+<h3 id="expected-type-completion">Expected type completion<a class="headerlink" href="#expected-type-completion" title="Permanent link">&para;</a></h3>
+<p>Suggests values based on the expected type at the caret</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>expected-type-completion</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableExpectedTypeCompletionContributor</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="filter-warnings-reference">Filter warnings reference<a class="headerlink" href="#filter-warnings-reference" title="Permanent link">&para;</a></h3>
+<p>Provides reference resolution for filterwarnings category strings</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>filter-warnings-reference</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enablePyFilterWarningsReferenceContributor</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="mock-patch-object-attribute-completion">Mock patch object attribute completion<a class="headerlink" href="#mock-patch-object-attribute-completion" title="Permanent link">&para;</a></h3>
+<p>Completes attributes for mock.patch.object targets</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>mock-patch-object-attribute-completion</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableMockPatchObjectAttributeCompletionContributor</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="mock-patch-reference">Mock patch reference<a class="headerlink" href="#mock-patch-reference" title="Permanent link">&para;</a></h3>
+<p>Provides reference resolution for mock.patch target strings</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>mock-patch-reference</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enablePyMockPatchReferenceContributor</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="named-argument-from-scope-completion">Named argument from scope completion<a class="headerlink" href="#named-argument-from-scope-completion" title="Permanent link">&para;</a></h3>
+<p>Suggests keyword arguments using in-scope variables</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>named-argument-from-scope-completion</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableNamedArgumentFromScopeCompletionContributor</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="newtypetypevarparamspec-reference-rename">NewType/TypeVar/ParamSpec reference &amp; rename<a class="headerlink" href="#newtypetypevarparamspec-reference-rename" title="Permanent link">&para;</a></h3>
+<p>Adds references for NewType/TypeVar/ParamSpec name literals and keeps the name string in sync on rename</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>newtype-typevar-paramspec-reference</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableNewTypeTypeVarParamSpecReferenceContributor</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="pytest-identifier-in-search-everywhere">Pytest identifier in Search Everywhere<a class="headerlink" href="#pytest-identifier-in-search-everywhere" title="Permanent link">&para;</a></h3>
+<p>Includes pytest identifiers in Search Everywhere results</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>pytest-identifier-search-everywhere</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enablePytestIdentifierSearchEverywhereContributor</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="pytest-mark-completion">Pytest mark completion<a class="headerlink" href="#pytest-mark-completion" title="Permanent link">&para;</a></h3>
+<p>🧪 <strong>Status:</strong> Incubating</p>
+<p>Completes @pytest.mark.<name> decorators with built-in, config, and plugin markers</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>pytest-mark-completion</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enablePytestMarkCompletionContributor</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="pytest-tabs-in-search-everywhere">Pytest tabs in Search Everywhere<a class="headerlink" href="#pytest-tabs-in-search-everywhere" title="Permanent link">&para;</a></h3>
+<p>Adds dedicated "Pytest Tests" and "Pytest Fixtures" tabs in Search Everywhere showing collected tests and fixtures</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>pytest-search-everywhere</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enablePytestSearchEverywhereContributors</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-completion">Return completion<a class="headerlink" href="#return-completion" title="Permanent link">&para;</a></h3>
+<p>Provides completion suggestions for return statements based on return type</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>return-completion</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enablePyReturnCompletionContributor</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="import-structure">Import &amp; Structure<a class="headerlink" href="#import-structure" title="Permanent link">&para;</a></h2>
+<h3 id="enhanced-python-structure-view">Enhanced Python structure view<a class="headerlink" href="#enhanced-python-structure-view" title="Permanent link">&para;</a></h3>
+<p>Wraps the Python structure view with BetterPy filters</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>enhanced-python-structure-view</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableEnhancedPythonStructureView</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="export-symbol-to-target">Export symbol to target<a class="headerlink" href="#export-symbol-to-target" title="Permanent link">&para;</a></h3>
+<p>Exports a symbol to a specified target module's <strong>all</strong></p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>export-symbol-to-target</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableExportSymbolToTargetIntention</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="relative-import-preference">Relative import preference<a class="headerlink" href="#relative-import-preference" title="Permanent link">&para;</a></h3>
+<p>Prefers relative imports over absolute imports when applicable</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>relative-import-preference</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableRelativeImportPreference</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="restore-source-root-prefix">Restore source root prefix<a class="headerlink" href="#restore-source-root-prefix" title="Permanent link">&para;</a></h3>
+<p>Restores the source root prefix in import statements</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>restore-source-root-prefix</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableRestoreSourceRootPrefix</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="strict-source-root-import-inspection">Strict source root import inspection<a class="headerlink" href="#strict-source-root-import-inspection" title="Permanent link">&para;</a></h3>
+<p>Reports imports that are missing the source root prefix</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>strict-source-root-import-inspection</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableStrictSourceRootImportInspection</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="structure-view-private-members-filter">Structure view private members filter<a class="headerlink" href="#structure-view-private-members-filter" title="Permanent link">&para;</a></h3>
+<p>Adds a filter to hide private members in the structure view</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>structure-view-private-members-filter</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableStructureViewPrivateMembersFilter</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="structure-view-pytest-kind-icons">Structure view pytest kind icons<a class="headerlink" href="#structure-view-pytest-kind-icons" title="Permanent link">&para;</a></h3>
+<p>Renders tests, fixtures, and normal functions with distinct icons in the structure view. Filters to show/hide tests and fixtures are added when viewing a test file.</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>structure-view-pytest-kind-icons</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableStructureViewPytestKindIcons</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Related Issues:</strong>
+- <a href="https://youtrack.jetbrains.com/issue/PY-60483">PY-60483</a></p>
+<h3 id="unexport-symbol">Unexport symbol<a class="headerlink" href="#unexport-symbol" title="Permanent link">&para;</a></h3>
+<p>Removes a symbol from <strong>all</strong> and its corresponding import</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>unexport-symbol</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableUnexportSymbolIntention</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="navigation">Navigation<a class="headerlink" href="#navigation" title="Permanent link">&para;</a></h2>
+<h3 id="enhanced-go-to-implementation-presentation">Enhanced Go to Implementation presentation<a class="headerlink" href="#enhanced-go-to-implementation-presentation" title="Permanent link">&para;</a></h3>
+<p>Prepends class name to method name in Go to Implementation popup when names are identical</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>py-goto-target-presentation</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enablePyGotoTargetPresentation</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="python-navigation-bar">Python navigation bar<a class="headerlink" href="#python-navigation-bar" title="Permanent link">&para;</a></h3>
+<p>Enables enhanced Python navigation bar with module path display</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>python-navigation-bar</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enablePythonNavigationBar</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Related Issues:</strong>
+- <a href="https://youtrack.jetbrains.com/issue/PY-53757">PY-53757</a></p>
+<h3 id="python-package-run-line-marker">Python package run line marker<a class="headerlink" href="#python-package-run-line-marker" title="Permanent link">&para;</a></h3>
+<p>Adds a run gutter icon for Python package entry points</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>python-package-run-line-marker</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enablePyPackageRunLineMarkerContributor</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="filters-suppressors">Filters &amp; Suppressors<a class="headerlink" href="#filters-suppressors" title="Permanent link">&para;</a></h2>
+<h3 id="message-console-filter">Message console filter<a class="headerlink" href="#message-console-filter" title="Permanent link">&para;</a></h3>
+<p>Filters and formats Python messages in the console</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>message-console-filter</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enablePyMessageConsoleFilter</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="rename-to-self-filter">Rename to self filter<a class="headerlink" href="#rename-to-self-filter" title="Permanent link">&para;</a></h3>
+<p>Filters out 'rename to self' suggestions in certain contexts</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>rename-to-self-filter</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableRenameToSelfFilter</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="suppress-signature-change-intention">Suppress signature change intention<a class="headerlink" href="#suppress-signature-change-intention" title="Permanent link">&para;</a></h3>
+<p>Suppresses the suggested refactoring signature change intention</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>suppress-signature-change-intention</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>suppressSuggestedRefactoringSignatureChangeIntention</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="test-usage-filtering">Test usage filtering<a class="headerlink" href="#test-usage-filtering" title="Permanent link">&para;</a></h3>
+<p>Adds a Find Usages filter to show only test usages</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>test-usage-filtering</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableTestUsageFilteringRule</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="type-annotation-usage-filtering">Type annotation usage filtering<a class="headerlink" href="#type-annotation-usage-filtering" title="Permanent link">&para;</a></h3>
+<p>🧪 <strong>Status:</strong> Incubating</p>
+<p>Filters out type annotation usages from Find Usages results</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>type-annotation-usage-filtering</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableTypeAnnotationUsageFilteringRule</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="init-classmethod-usages"><strong>init</strong> classmethod usages<a class="headerlink" href="#init-classmethod-usages" title="Permanent link">&para;</a></h3>
+<p>🧪 <strong>Status:</strong> Incubating</p>
+<p>Registers usages of <strong>init</strong> in classmethods of the same class that return an instance</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>init-classmethod-usages</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableInitClassmethodUsages</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="documentation">Documentation<a class="headerlink" href="#documentation" title="Permanent link">&para;</a></h2>
+<h3 id="attribute-docstring-in-quick-documentation">Attribute Docstring in Quick Documentation<a class="headerlink" href="#attribute-docstring-in-quick-documentation" title="Permanent link">&para;</a></h3>
+<p>Shows the string literal below a class attribute (attribute docstring) in Quick Documentation. Fixes PY-63878.</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>attribute-docstring</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableAttributeDocstring</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Related Issues:</strong>
+- <a href="https://youtrack.jetbrains.com/issue/PY-63878">PY-63878</a></p>
+<h3 id="enhanced-dataclass-quick-info">Enhanced Dataclass Quick Info<a class="headerlink" href="#enhanced-dataclass-quick-info" title="Permanent link">&para;</a></h3>
+<p>Shows fields and inheritance details in Quick Documentation for dataclasses and Pydantic models</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>enhanced-dataclass-quick-info</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enableEnhancedDataclassQuickInfo</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="analytics-privacy">Analytics &amp; Privacy<a class="headerlink" href="#analytics-privacy" title="Permanent link">&para;</a></h2>
+<h3 id="anonymous-usage-analytics-posthog">Anonymous usage analytics (PostHog)<a class="headerlink" href="#anonymous-usage-analytics-posthog" title="Permanent link">&para;</a></h3>
+<p>Sends anonymous usage analytics to PostHog. Collects plugin version, IDE type/version, OS, JVM version, a random anonymous install ID, and coarse feature-usage signals. No personal data, no code content, no file paths are ever collected. Automatically disabled when the IDE's "Send usage statistics" setting is off. Can also be disabled in Settings → BetterPy.</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td><code>analytics-posthog</code></td>
+</tr>
+<tr>
+<td>Settings Key</td>
+<td><code>enablePosthogAnalytics</code></td>
+</tr>
+<tr>
+<td>Since</td>
+<td>2026.02</td>
+</tr>
+</tbody>
+</table>
+<h2 id="youtrack-issue-index">YouTrack Issue Index<a class="headerlink" href="#youtrack-issue-index" title="Permanent link">&para;</a></h2>
+<p>All PyCharm/YouTrack issues referenced by features in this plugin:</p>
+<ul>
+<li><a href="https://youtrack.jetbrains.com/issue/PY-53176">PY-53176</a> - Advanced pytest fixture features</li>
+<li><a href="https://youtrack.jetbrains.com/issue/PY-53757">PY-53757</a> - Python navigation bar</li>
+<li><a href="https://youtrack.jetbrains.com/issue/PY-55931">PY-55931</a> - Pytest fixture to usefixtures inspection</li>
+<li><a href="https://youtrack.jetbrains.com/issue/PY-56186">PY-56186</a> - Push Down pytest fixture</li>
+<li><a href="https://youtrack.jetbrains.com/issue/PY-56268">PY-56268</a> - Advanced pytest fixture features</li>
+<li><a href="https://youtrack.jetbrains.com/issue/PY-59270">PY-59270</a> - Parameter object refactoring</li>
+<li><a href="https://youtrack.jetbrains.com/issue/PY-60483">PY-60483</a> - Structure view pytest kind icons</li>
+<li><a href="https://youtrack.jetbrains.com/issue/PY-60973">PY-60973</a> - Advanced pytest fixture features</li>
+<li><a href="https://youtrack.jetbrains.com/issue/PY-63878">PY-63878</a> - Attribute Docstring in Quick Documentation</li>
+<li><a href="https://youtrack.jetbrains.com/issue/PY-66243">PY-66243</a> - Inline pytest fixture</li>
+<li><a href="https://youtrack.jetbrains.com/issue/PY-66245">PY-66245</a> - Pytest fixture documentation</li>
+<li><a href="https://youtrack.jetbrains.com/issue/PY-81495">PY-81495</a> - Advanced pytest fixture features</li>
+<li><a href="https://youtrack.jetbrains.com/issue/PY-87756">PY-87756</a> - Advanced pytest fixture features</li>
+<li><a href="https://youtrack.jetbrains.com/issue/PY-88482">PY-88482</a> - AsyncMock parameter completion</li>
+<li><a href="https://youtrack.jetbrains.com/issue/PY-88504">PY-88504</a> - Missing |None annotation inspection</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-circle-arrow-up" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 12-4-4-4 4M12 16V8"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://zensical.org/" target="_blank" rel="noopener">
+      Zensical
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["navigation.tabs","navigation.sections","navigation.expand","navigation.top","navigation.instant","navigation.path","content.code.copy","content.code.annotate","search.suggest","search.highlight"],"search":"../../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":{"provider":"mike"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.91a19a9e.min.js"></script>
+      
+    
+  </body>
+</html>
