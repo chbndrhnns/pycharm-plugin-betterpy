@@ -9,6 +9,12 @@
 
 📖 **Documentation:** [chbndrhnns.github.io/pycharm-plugin-betterpy](https://chbndrhnns.github.io/pycharm-plugin-betterpy/)
 
+<div id="install"></div>
+<script src="https://plugins.jetbrains.com/assets/scripts/mp-widget.js"></script>
+<script>
+  MarketplaceWidget.setupMarketplaceWidget('install', 29896, "#install");
+</script>
+
 ---
 
 ### Highlights
