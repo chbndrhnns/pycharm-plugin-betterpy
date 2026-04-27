@@ -1,0 +1,1136 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Supercharge your Python development in PyCharm">
+      
+      
+      
+        <link rel="canonical" href="https://chbndrhnns.github.io/pycharm-plugin-betterpy/2026.04.14/advanced/indexing-strategy/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="zensical-0.0.37">
+    
+    
+      
+        <title>Indexing strategy - BetterPy – PyCharm Plugin</title>
+      
+    
+    
+      
+        
+      
+      <link rel="stylesheet" href="../../assets/stylesheets/modern/main.1e981d71.min.css">
+      
+        
+          
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/modern/palette.dfe2e883.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,500,500i,700,700i%7CJetBrains+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,a=__md_scope)=>JSON.parse(t.getItem(a.pathname+"."+e)),__md_set=(e,t,a=localStorage,_=__md_scope)=>{try{a.setItem(_.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer" aria-label="Navigation"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#the-two-indexing-mechanisms" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="BetterPy – PyCharm Plugin" class="md-header__button md-logo" aria-label="BetterPy – PyCharm Plugin" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 7v14M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer" aria-label="Navigation">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            BetterPy – PyCharm Plugin
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Indexing strategy
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search" aria-label="Search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog" aria-label="Search">
+  <button type="button" class="md-search__button">
+    Search
+  </button>
+</div>
+      
+    
+    <div class="md-header__source">
+      
+    </div>
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../getting-started/installation/" class="md-tabs__link">
+          
+  
+  Getting Started
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../features/" class="md-tabs__link">
+          
+  
+  Features
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../reference/settings/" class="md-tabs__link">
+          
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../changelog/" class="md-tabs__link">
+        
+  
+  Changelog
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="BetterPy – PyCharm Plugin" class="md-nav__button md-logo" aria-label="BetterPy – PyCharm Plugin" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 7v14M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+
+    </a>
+    BetterPy – PyCharm Plugin
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Getting Started
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Features
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Features
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/typing-type-hints/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Typing & Type Hints
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/refactoring/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Refactoring & Code Transformations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/productivity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Productivity Actions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/ide-customization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IDE Customization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Reference
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Settings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/inspections/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inspections
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  
+                    
+                    
+                    
+                    
+                      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+                      <div class="md-sidebar-button__wrapper">
+                        <label class="md-sidebar-button" for="__toc"></label>
+                      </div>
+                    
+                  
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-two-indexing-mechanisms" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        The Two Indexing Mechanisms
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Two Indexing Mechanisms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#file-based-indices-filebasedindexextension" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        File-Based Indices (<code>FileBasedIndexExtension</code>)
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stub-based-indices-stubindexextension" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Stub-Based Indices (<code>StubIndexExtension</code>)
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-to-use-each" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        When to Use Each
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-pylambdafileindex-must-be-file-based" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Why <code>PyLambdaFileIndex</code> Must Be File-Based
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Why PyLambdaFileIndex Must Be File-Based">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-lambda-expressions-are-not-part-of-the-stub-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        1. Lambda expressions are not part of the stub tree
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-the-index-records-a-file-level-fact-not-a-named-declaration" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2. The index records a file-level fact, not a named declaration
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-the-indexer-uses-the-full-psi-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        3. The indexer uses the full PSI tree
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contrast-when-a-stub-index-would-be-correct" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Contrast: When a Stub Index Would Be Correct
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+<h1 id="file-based-vs-stub-based-indices-in-intellij-platform">File-Based vs Stub-Based Indices in IntelliJ Platform<a class="headerlink" href="#file-based-vs-stub-based-indices-in-intellij-platform" title="Permanent link">&para;</a></h1>
+<p>This document explains the two main indexing mechanisms available in the IntelliJ Platform, and why <code>PyLambdaFileIndex</code> correctly uses a file-based index rather than a stub-based one.</p>
+<hr />
+<h2 id="the-two-indexing-mechanisms">The Two Indexing Mechanisms<a class="headerlink" href="#the-two-indexing-mechanisms" title="Permanent link">&para;</a></h2>
+<h3 id="file-based-indices-filebasedindexextension">File-Based Indices (<code>FileBasedIndexExtension</code>)<a class="headerlink" href="#file-based-indices-filebasedindexextension" title="Permanent link">&para;</a></h3>
+<p>A <strong>file-based index</strong> operates directly on raw file content. The platform feeds each file's bytes (and optionally its PSI tree) to a <code>DataIndexer</code>, which produces a map of keys → values. The index is stored on disk and queried via <code>FileBasedIndex.getInstance()</code>.</p>
+<p>Key characteristics:</p>
+<ul>
+<li><strong>Input</strong>: raw <code>FileContent</code> (bytes + lazily-built PSI). The indexer receives a <code>FileContent</code> object and can call <code>inputData.psiFile</code> to get the PSI tree.</li>
+<li><strong>Scope</strong>: any file type — source files, library JARs, <code>.class</code> files, <code>.xml</code>, etc.</li>
+<li><strong>Query API</strong>: <code>FileBasedIndex.getContainingFiles(name, key, scope)</code>, <code>getValues(...)</code>, <code>getAllKeys(...)</code>.</li>
+<li><strong>Rebuild trigger</strong>: the file's content changes (timestamp/hash).</li>
+<li><strong>Base class</strong>: <code>ScalarIndexExtension&lt;K&gt;</code> (keys only, no values) or <code>FileBasedIndexExtension&lt;K, V&gt;</code>.</li>
+</ul>
+<h3 id="stub-based-indices-stubindexextension">Stub-Based Indices (<code>StubIndexExtension</code>)<a class="headerlink" href="#stub-based-indices-stubindexextension" title="Permanent link">&para;</a></h3>
+<p>A <strong>stub index</strong> operates on the <em>stub tree</em> — a lightweight, serialisable skeleton of the PSI tree that captures only the declarations (classes, functions, fields, top-level assignments, etc.) without method bodies or expressions.</p>
+<p>Key characteristics:</p>
+<ul>
+<li><strong>Input</strong>: a <code>StubElement</code> tree produced by the language's <code>IStubFileElementType</code> / <code>StubElementType</code>. The stub tree is built once and cached separately from the full PSI.</li>
+<li><strong>Scope</strong>: only files whose language has a stub-producing element type. For Python this means <code>.py</code> files processed by <code>PyFileElementType</code>.</li>
+<li><strong>Query API</strong>: <code>StubIndex.getInstance().get(key, name, project, scope)</code> — returns PSI elements directly (e.g. <code>PyFunction</code>, <code>PyClass</code>).</li>
+<li><strong>Rebuild trigger</strong>: the stub tree changes (i.e. the file's declarations change).</li>
+<li><strong>Base class</strong>: <code>StringStubIndexExtension&lt;Psi&gt;</code> or <code>StubIndexExtension&lt;K, Psi&gt;</code>.</li>
+<li><strong>Populated via</strong>: <code>indexStub(stub, sink)</code> on a <code>StubElementType</code>, or via a <code>CustomTargetExpressionStubType</code> extension point (see <code>fixture-stub-index.md</code>).</li>
+</ul>
+<hr />
+<h2 id="when-to-use-each">When to Use Each<a class="headerlink" href="#when-to-use-each" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Criterion</th>
+<th>File-Based Index</th>
+<th>Stub-Based Index</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>What you need to find</td>
+<td>Files (or arbitrary data)</td>
+<td>Named declarations (classes, functions, …)</td>
+</tr>
+<tr>
+<td>Data lives in</td>
+<td>Expressions, bodies, any syntax</td>
+<td>Top-level / class-level declarations only</td>
+</tr>
+<tr>
+<td>Language requirement</td>
+<td>Any file type</td>
+<td>Language must produce stubs</td>
+</tr>
+<tr>
+<td>Query returns</td>
+<td><code>VirtualFile</code> or raw values</td>
+<td>PSI elements</td>
+</tr>
+<tr>
+<td>Typical use case</td>
+<td>"Which files contain X?"</td>
+<td>"Give me the <code>PyFunction</code> named <code>foo</code>"</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Rule of thumb</strong>: use a stub index when you are indexing <em>named declarations</em> that appear in the stub tree. Use a file-based index when you need to record a fact about a <em>file as a whole</em>, or when the data you care about lives inside expressions or function bodies (which are not part of the stub tree).</p>
+<hr />
+<h2 id="why-pylambdafileindex-must-be-file-based">Why <code>PyLambdaFileIndex</code> Must Be File-Based<a class="headerlink" href="#why-pylambdafileindex-must-be-file-based" title="Permanent link">&para;</a></h2>
+<p><code>PyLambdaFileIndex</code> (in <code>core/index/PyLambdaFileIndex.kt</code>) answers the question:</p>
+<blockquote>
+<p>"Which Python source files contain at least one lambda expression?"</p>
+</blockquote>
+<p>There are two concrete reasons why a stub-based index cannot answer this question.</p>
+<h3 id="1-lambda-expressions-are-not-part-of-the-stub-tree">1. Lambda expressions are not part of the stub tree<a class="headerlink" href="#1-lambda-expressions-are-not-part-of-the-stub-tree" title="Permanent link">&para;</a></h3>
+<p>The Python stub tree captures <em>declarations</em>: <code>PyFunction</code>, <code>PyClass</code>, <code>PyTargetExpression</code> at module/class scope, etc. A <code>PyLambdaExpression</code> is an <em>expression</em> — it can appear inside a function body, a default argument, a list comprehension, or any other expression context. Expression nodes are deliberately excluded from stubs to keep them small and fast.</p>
+<p>Because <code>PyLambdaExpression</code> nodes are never present in the stub tree, a <code>StubElementType</code> for them cannot be registered, and <code>indexStub()</code> would never be called for them. A stub index simply has no access to this data.</p>
+<h3 id="2-the-index-records-a-file-level-fact-not-a-named-declaration">2. The index records a file-level fact, not a named declaration<a class="headerlink" href="#2-the-index-records-a-file-level-fact-not-a-named-declaration" title="Permanent link">&para;</a></h3>
+<p><code>PyLambdaFileIndex</code> stores a single marker key (<code>"lambda"</code>) per file — it is a boolean "this file has lambdas" flag. Stub indices are designed to map <em>names</em> to <em>PSI elements</em> (e.g. function name → <code>PyFunction</code>). There is no named declaration to return here; the caller only needs the <code>VirtualFile</code> to open it and inspect it further.</p>
+<p>The query call in the companion object reflects this exactly:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">// PyLambdaFileIndex.kt</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kd">fun</span><span class="w"> </span><span class="nf">findFilesWithLambdas</span><span class="p">(</span><span class="n">project</span><span class="p">:</span><span class="w"> </span><span class="n">Project</span><span class="p">,</span><span class="w"> </span><span class="n">scope</span><span class="p">:</span><span class="w"> </span><span class="n">GlobalSearchScope</span><span class="p">):</span><span class="w"> </span><span class="n">Collection</span><span class="o">&lt;</span><span class="n">VirtualFile</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">FileBasedIndex</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">getContainingFiles</span><span class="p">(</span><span class="n">NAME</span><span class="p">,</span><span class="w"> </span><span class="n">LAMBDA_MARKER</span><span class="p">,</span><span class="w"> </span><span class="n">scope</span><span class="p">)</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="p">}</span>
+</code></pre></div>
+<p><code>getContainingFiles</code> is a <code>FileBasedIndex</code> API — there is no equivalent on <code>StubIndex</code> because stub queries return PSI elements, not files.</p>
+<h3 id="3-the-indexer-uses-the-full-psi-tree">3. The indexer uses the full PSI tree<a class="headerlink" href="#3-the-indexer-uses-the-full-psi-tree" title="Permanent link">&para;</a></h3>
+<p>The indexer calls <code>PsiTreeUtil.findChildOfType(psiFile, PyLambdaExpression::class.java)</code>, which walks the <em>complete</em> PSI tree including all expression nodes. This is only possible in a <code>DataIndexer</code> that receives a <code>FileContent</code> object with a lazily-built full PSI tree. A stub-based indexer only ever sees the stub tree, which, as noted above, contains no <code>PyLambdaExpression</code> nodes.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">// PyLambdaFileIndex.kt — indexer body</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kd">override</span><span class="w"> </span><span class="kd">fun</span><span class="w"> </span><span class="nf">getIndexer</span><span class="p">():</span><span class="w"> </span><span class="n">DataIndexer</span><span class="o">&lt;</span><span class="kt">String</span><span class="p">,</span><span class="w"> </span><span class="n">Void</span><span class="p">,</span><span class="w"> </span><span class="n">FileContent</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">DataIndexer</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">inputData</span><span class="w"> </span><span class="o">-&gt;</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">        </span><span class="kd">val</span><span class="w"> </span><span class="nv">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mutableMapOf</span><span class="o">&lt;</span><span class="kt">String</span><span class="p">,</span><span class="w"> </span><span class="n">Void?&gt;</span><span class="p">()</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">inputData</span><span class="p">.</span><span class="na">fileType</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">PythonFileType</span><span class="p">.</span><span class="na">INSTANCE</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">            </span><span class="kd">val</span><span class="w"> </span><span class="nv">psiFile</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">inputData</span><span class="p">.</span><span class="na">psiFile</span><span class="w"> </span><span class="k">as?</span><span class="w"> </span><span class="n">PyFile</span><span class="w"> </span><span class="o">?:</span><span class="w"> </span><span class="k">return</span><span class="nd">@DataIndexer</span><span class="w"> </span><span class="n">result</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">            </span><span class="c1">// PsiTreeUtil walks the FULL PSI tree — not available in stub indexers</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">            </span><span class="kd">val</span><span class="w"> </span><span class="nv">hasLambda</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PsiTreeUtil</span><span class="p">.</span><span class="na">findChildOfType</span><span class="p">(</span><span class="n">psiFile</span><span class="p">,</span><span class="w"> </span><span class="n">PyLambdaExpression</span><span class="o">::</span><span class="n">class</span><span class="p">.</span><span class="na">java</span><span class="p">)</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="kc">null</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">hasLambda</span><span class="p">)</span><span class="w"> </span><span class="n">result</span><span class="o">[</span><span class="n">LAMBDA_MARKER</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">null</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">        </span><span class="n">result</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="p">}</span>
+</code></pre></div>
+<hr />
+<h2 id="contrast-when-a-stub-index-would-be-correct">Contrast: When a Stub Index Would Be Correct<a class="headerlink" href="#contrast-when-a-stub-index-would-be-correct" title="Permanent link">&para;</a></h2>
+<p>For comparison, consider <code>fixture-stub-index.md</code>, which describes indexing <em>assigned fixtures</em> of the form <code>x = pytest.fixture()(func)</code>. That case is a good fit for a stub index because:</p>
+<ul>
+<li>The indexed node is a <code>PyTargetExpression</code> — a top-level assignment, which <em>is</em> part of the stub tree.</li>
+<li>The query returns a named PSI element (<code>PyTargetExpression</code> for fixture name <code>x</code>).</li>
+<li>The <code>CustomTargetExpressionStubType</code> extension point already hooks into stub building for exactly this pattern.</li>
+</ul>
+<p><code>PyLambdaFileIndex</code> is the opposite: the data lives in expressions (not declarations), the result is a file (not a PSI element), and the detection requires a full-PSI walk. A file-based index is therefore not just acceptable — it is the only correct choice.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-circle-arrow-up" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 12-4-4-4 4M12 16V8"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://zensical.org/" target="_blank" rel="noopener">
+      Zensical
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/chbndrhnns/pycharm-plugin-betterpy" target="_blank" rel="noopener" title="BetterPy on GitHub" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://plugins.jetbrains.com/plugin/29896" target="_blank" rel="noopener" title="BetterPy on JetBrains Marketplace" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18H6v-4h6m9 0v-2l-1-5H4l-1 5v2h1v6h10v-6h4v6h2v-6m0-10H4v2h16z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["navigation.tabs","navigation.sections","navigation.expand","navigation.top","navigation.instant","navigation.path","content.code.copy","content.code.annotate","search.suggest","search.highlight"],"search":"../../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":{"provider":"mike"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.dbc0afdc.min.js"></script>
+      
+    
+  </body>
+</html>
