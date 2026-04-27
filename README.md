@@ -45,6 +45,7 @@
 
 #### IDE Customizations
 - **Enhanced Go to Implementation presentation** ([PY-82520](https://youtrack.jetbrains.com/issue/PY-82520)) - Prepends class name to method name in Go to Implementation popup when names are identical
+- **Message console filter** - Filters and formats Python messages in the console
 - **Python navigation bar** ([PY-53757](https://youtrack.jetbrains.com/issue/PY-53757)) - Enables enhanced Python navigation bar with module path display
 - **Structural Search Profile (Python)** ([PY-15003](https://youtrack.jetbrains.com/issue/PY-15003)) - Adds a Python Structural Search profile integration for pattern matching and constraints
 <!-- BetterPy feature list end -->
@@ -68,11 +69,6 @@ I'm actively working on the next wave of BetterPy. Without spoiling the surprise
 ### Configuration
 
 Every feature can be individually toggled in **Settings → Tools → BetterPy**.
-
-### Contributing
-
-I welcome contributions from the community! 
-If you have any ideas, bug reports, or feature requests, please open an issue or submit a pull request on the [GitHub repository](https://github.com/chbndrhnns/pycharm-plugin-betterpy/issues).
 
 ### Pricing
 
