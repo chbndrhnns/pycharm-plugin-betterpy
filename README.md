@@ -8,6 +8,23 @@
 <!-- Plugin description -->
 **BetterPy** supercharges your Python development in PyCharm and IntelliJ-based IDEs — so you can spend less time on boilerplate and more time building.
 
+BetterPy was created out of a personal need to improve my daily workflow.
+I had been using PyCharm for more than 8 years and found myself constantly repeating the same actions,
+which were time-consuming and frustrating.
+I wanted to streamline my workflow and make development more efficient.
+First, I went to the issue tracker to report what I found. Later, I found that my priorities did not always align with
+the PyCharm product manager's roadmap.
+I decided to take matters into my own hands and started working on BetterPy to address the issues I encountered.
+
+My main goals are to:
+
+- **Automate repeated actions** that otherwise take too much clicking around.
+- **Fix annoying behavior** and smooth out workflow friction.
+- **Extend PyCharm** based on personal and practical development needs.
+
+The areas of PyCharm I am adressing with the plugin are naturally aligned with the scope of my development activites,
+which are API backend development, domain-driven design and automated testing.
+
 📖 **Documentation:** [chbndrhnns.github.io/pycharm-plugin-betterpy](https://chbndrhnns.github.io/pycharm-plugin-betterpy/)
 
 [![Install from JetBrains Marketplace](https://img.shields.io/badge/Install%20from-JetBrains%20Marketplace-000000?style=for-the-badge&logo=jetbrains&logoColor=white)](https://plugins.jetbrains.com/plugin/29896)
@@ -79,10 +96,6 @@ The details are yet to be determined and also shaped by feedback I am able to co
 
 ### Personal Motivation
 
-I created BetterPy out of a personal need to improve my daily workflow. My main goals are to:
-- **Automate repeated actions** that otherwise take too much clicking around.
-- **Fix annoying behavior** and smooth out workflow friction.
-- **Extend PyCharm** based on personal and practical development needs.
 <!-- Plugin description end -->
 
 ---
