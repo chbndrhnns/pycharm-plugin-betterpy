@@ -1,0 +1,85 @@
+/* Per-feature metadata row (rendered under each feature heading) */
+.md-typeset .feature-meta {
+  font-size: 0.72rem;
+  line-height: 1.4;
+  color: var(--md-default-fg-color--light);
+  margin: -0.25em 0 0.9em;
+  padding: 0.25em 0.5em;
+  border-left: 2px solid var(--md-default-fg-color--lightest);
+  background: var(--md-code-bg-color, rgba(0, 0, 0, 0.03));
+  border-radius: 0 0.2em 0.2em 0;
+  letter-spacing: 0.01em;
+}
+.md-typeset .feature-meta__label {
+  text-transform: uppercase;
+  font-size: 0.85em;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--md-default-fg-color--light);
+  opacity: 0.75;
+  margin-right: 0.25em;
+  cursor: help;
+}
+.md-typeset .feature-meta__item {
+  white-space: nowrap;
+}
+.md-typeset .feature-meta__sep {
+  opacity: 0.5;
+  margin: 0 0.15em;
+}
+.md-typeset .feature-meta__issue {
+  text-decoration: none;
+  border-bottom: 1px dotted currentColor;
+}
+.md-typeset .feature-meta__issue + .feature-meta__issue {
+  margin-left: 0.25em;
+}
+
+/* Maturity badges */
+.md-typeset .badge-stable {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 0.1em 0.5em;
+  border-radius: 0.25em;
+  font-size: 0.75em;
+  font-weight: 700;
+  vertical-align: middle;
+}
+
+.md-typeset .badge-incubating {
+  background-color: #ff9800;
+  color: #fff;
+  padding: 0.1em 0.5em;
+  border-radius: 0.25em;
+  font-size: 0.75em;
+  font-weight: 700;
+  vertical-align: middle;
+}
+
+.md-typeset .badge-deprecated {
+  background-color: #f44336;
+  color: #fff;
+  padding: 0.1em 0.5em;
+  border-radius: 0.25em;
+  font-size: 0.75em;
+  font-weight: 700;
+  vertical-align: middle;
+}
+
+/* Feature cards on landing page */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.feature-grid .card {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.feature-grid .card h3 {
+  margin-top: 0;
+}
