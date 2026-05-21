@@ -58,7 +58,7 @@ which are API backend development, domain-driven design and automated testing.
 - **Parameter object refactoring** ([PY-59270](https://youtrack.jetbrains.com/issue/PY-59270)) - Enables introduce/inline parameter object refactoring actions
 
 #### Completion & References
-- **NewType/TypeVar/ParamSpec reference & rename** ([PY-82966](https://youtrack.jetbrains.com/issue/PY-82966)) - Adds references for NewType/TypeVar/ParamSpec name literals and keeps the name string in sync on rename
+- **NewType/TypeVar/ParamSpec reference & rename** ([PY-82966](https://youtrack.jetbrains.com/issue/PY-82966), [PY-53658](https://youtrack.jetbrains.com/issue/PY-53658)) - Adds references for NewType/TypeVar/ParamSpec name literals, keeps the name string in sync on rename, and repairs manual NewType drift
 
 #### Filters & Suppressors
 - **Usage filtering** ([PY-56092](https://youtrack.jetbrains.com/issue/PY-56092)) - Adds Find Usages filters for type annotations and test-source references
