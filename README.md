@@ -50,6 +50,7 @@ which are API backend development, domain-driven design and automated testing.
 - **Constant should be Final inspection** - Reports module-level constants that should be annotated with Final
 - **Missing |None annotation inspection** ([PY-88504](https://youtrack.jetbrains.com/issue/PY-88504)) - Reports parameters with a None default value whose annotation is missing | None
 - **Overridden method missing type annotations inspection** - Reports overrides missing type annotations present in parent methods
+- **Shadowing stdlib module inspection** ([PY-23615](https://youtrack.jetbrains.com/issue/PY-23615), [PY-43957](https://youtrack.jetbrains.com/issue/PY-43957)) - Reports project modules that shadow Python standard library modules
 
 #### Actions
 - **Generate class actions** - Adds Generate menu actions for dataclass, frozen dataclass, and pydantic model
