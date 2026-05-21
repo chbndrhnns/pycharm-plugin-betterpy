@@ -749,6 +749,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#toggle-enum-member-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Toggle enum member value
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1198,6 +1209,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#toggle-enum-member-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Toggle enum member value
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1272,7 +1294,7 @@
                   
 
 <h1 id="refactoring-code-transformations">Refactoring &amp; Code Transformations<a class="headerlink" href="#refactoring-code-transformations" title="Permanent link">&para;</a></h1>
-<p>BetterPy provides 7 refactoring intentions and actions — from populating function arguments to extracting protocols and converting between code patterns.</p>
+<p>BetterPy provides 8 refactoring intentions and actions — from populating function arguments to extracting protocols and converting between code patterns.</p>
 <hr />
 <h2 id="arguments">Arguments<a class="headerlink" href="#arguments" title="Permanent link">&para;</a></h2>
 <h3 id="make-parameter-optional">Make parameter optional<a class="headerlink" href="#make-parameter-optional" title="Permanent link">&para;</a></h3>
@@ -1713,6 +1735,73 @@ becomes:
 <li>Use <code>try</code> / <code>except KeyError</code> when the fallback path needs to be visually explicit or is about to grow into more than a single expression.</li>
 </ul>
 <p>Because BetterPy supports moving in both directions, you can start with the clearest form for the current situation and change it later without rewriting the statement by hand.</p>
+<h3 id="toggle-enum-member-value">Toggle enum member value<a class="headerlink" href="#toggle-enum-member-value" title="Permanent link">&para;</a></h3>
+<div class="feature-meta"><span class="feature-meta__item" title="Plugin version in which this feature was introduced."><span class="feature-meta__label">Since</span> NEXT</span><span class="feature-meta__sep"> · </span><span class="feature-meta__item"><span class="feature-meta__label">Maturity</span> <span class="badge badge-stable" title="Stable: ready for production use.">Stable</span></span></div>
+
+<p>Toggle an enum member reference between the enum member object and its explicit <code>.value</code> form. This is useful when a call site or assertion needs to switch between comparing enum members and comparing their serialized values.</p>
+<h4 id="how-to-invoke_4">How to invoke<a class="headerlink" href="#how-to-invoke_4" title="Permanent link">&para;</a></h4>
+<p>Place the caret on an enum member reference or on the <code>value</code> part of an enum member value access, then use <span class="keys"><kbd class="key-alt">Alt</kbd><span>+</span><kbd class="key-enter">Enter</kbd></span> -&gt; <em>"BetterPy: Toggle enum member / value"</em>.</p>
+<h4 id="example_3">Example<a class="headerlink" href="#example_3" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">enum</span><span class="w"> </span><span class="kn">import</span> <span class="n">Enum</span>
+<a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a>
+<a id="__codelineno-34-3" name="__codelineno-34-3" href="#__codelineno-34-3"></a>
+<a id="__codelineno-34-4" name="__codelineno-34-4" href="#__codelineno-34-4"></a><span class="k">class</span><span class="w"> </span><span class="nc">Color</span><span class="p">(</span><span class="n">Enum</span><span class="p">):</span>
+<a id="__codelineno-34-5" name="__codelineno-34-5" href="#__codelineno-34-5"></a>    <span class="n">RED</span> <span class="o">=</span> <span class="s2">&quot;red&quot;</span>
+<a id="__codelineno-34-6" name="__codelineno-34-6" href="#__codelineno-34-6"></a>
+<a id="__codelineno-34-7" name="__codelineno-34-7" href="#__codelineno-34-7"></a>
+<a id="__codelineno-34-8" name="__codelineno-34-8" href="#__codelineno-34-8"></a><span class="n">payload</span> <span class="o">=</span> <span class="n">Color</span><span class="o">.</span><span class="n">RED</span>
+</code></pre></div>
+<p>becomes:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a><span class="n">payload</span> <span class="o">=</span> <span class="n">Color</span><span class="o">.</span><span class="n">RED</span><span class="o">.</span><span class="n">value</span>
+</code></pre></div>
+<p>Running the intention on <code>Color.RED.value</code> changes it back to <code>Color.RED</code>.</p>
+<h4 id="what-it-supports_9">What it supports<a class="headerlink" href="#what-it-supports_9" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Members of <code>Enum</code>, <code>IntEnum</code>, <code>StrEnum</code>, <code>Flag</code>, and <code>IntFlag</code> classes.</li>
+<li>Qualified enum member references such as <code>Color.RED</code>.</li>
+<li>Existing <code>.value</code> accesses on enum members.</li>
+<li>Enum references used inside expressions, assignments, and comparisons.</li>
+</ul>
+<h4 id="what-it-deliberately-avoids_9">What it deliberately avoids<a class="headerlink" href="#what-it-deliberately-avoids_9" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Bare names such as <code>RED</code> where the enum class is not part of the reference.</li>
+<li>Attributes on non-enum classes.</li>
+<li>Longer attribute chains such as <code>Color.RED.name</code> or <code>Color.RED.custom</code>.</li>
+<li>Files outside your own project sources.</li>
+</ul>
+<h4 id="notes_5">Notes<a class="headerlink" href="#notes_5" title="Permanent link">&para;</a></h4>
+<ul>
+<li>The intention changes call-site references only. It does not rewrite enum member declarations.</li>
+<li>The feature is gated by the <em>Toggle enum member value</em> setting under <strong>Settings | BetterPy | Refactoring &amp; code transformations | Type Editing</strong>.</li>
+</ul>
+<p>Toggles the explicit value of an enum member on or off.</p>
+<p><strong>How to invoke</strong>: <span class="keys"><kbd class="key-alt">Alt</kbd><span>+</span><kbd class="key-enter">Enter</kbd></span> → <em>"BetterPy: Toggle enum member / value"</em></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:2"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">Before</label><label for="__tabbed_6_2">After</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">enum</span><span class="w"> </span><span class="kn">import</span> <span class="n">Enum</span>
+<a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a>
+<a id="__codelineno-36-3" name="__codelineno-36-3" href="#__codelineno-36-3"></a>
+<a id="__codelineno-36-4" name="__codelineno-36-4" href="#__codelineno-36-4"></a><span class="k">class</span><span class="w"> </span><span class="nc">Color</span><span class="p">(</span><span class="n">Enum</span><span class="p">):</span>
+<a id="__codelineno-36-5" name="__codelineno-36-5" href="#__codelineno-36-5"></a>    <span class="n">RED</span> <span class="o">=</span> <span class="s2">&quot;red&quot;</span>
+<a id="__codelineno-36-6" name="__codelineno-36-6" href="#__codelineno-36-6"></a>
+<a id="__codelineno-36-7" name="__codelineno-36-7" href="#__codelineno-36-7"></a>
+<a id="__codelineno-36-8" name="__codelineno-36-8" href="#__codelineno-36-8"></a><span class="n">payload</span> <span class="o">=</span> <span class="n">Color</span><span class="o">.</span><span class="n">RED</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">enum</span><span class="w"> </span><span class="kn">import</span> <span class="n">Enum</span>
+<a id="__codelineno-37-2" name="__codelineno-37-2" href="#__codelineno-37-2"></a>
+<a id="__codelineno-37-3" name="__codelineno-37-3" href="#__codelineno-37-3"></a>
+<a id="__codelineno-37-4" name="__codelineno-37-4" href="#__codelineno-37-4"></a><span class="k">class</span><span class="w"> </span><span class="nc">Color</span><span class="p">(</span><span class="n">Enum</span><span class="p">):</span>
+<a id="__codelineno-37-5" name="__codelineno-37-5" href="#__codelineno-37-5"></a>    <span class="n">RED</span> <span class="o">=</span> <span class="s2">&quot;red&quot;</span>
+<a id="__codelineno-37-6" name="__codelineno-37-6" href="#__codelineno-37-6"></a>
+<a id="__codelineno-37-7" name="__codelineno-37-7" href="#__codelineno-37-7"></a>
+<a id="__codelineno-37-8" name="__codelineno-37-8" href="#__codelineno-37-8"></a><span class="n">payload</span> <span class="o">=</span> <span class="n">Color</span><span class="o">.</span><span class="n">RED</span><span class="o">.</span><span class="n">value</span>
+</code></pre></div>
+</div>
+</div>
+</div>
 <hr />
 
 
