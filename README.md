@@ -45,10 +45,11 @@ which are API backend development, domain-driven design and automated testing.
 - **Copy method annotations from parent** - Copies type annotations from a parent method to its overrides
 - **Dict access conversion** ([PY-54845](https://youtrack.jetbrains.com/issue/PY-54845)) - Converts between dict bracket access and .get() method calls
 - **Strip signature type annotations** - Removes type annotations from a function signature
+- **Toggle enum member value** - Toggles the explicit value of an enum member on or off
 
 #### Inspections
 - **Constant should be Final inspection** - Reports module-level constants that should be annotated with Final
-- **Missing |None annotation inspection** ([PY-88504](https://youtrack.jetbrains.com/issue/PY-88504)) - Reports parameters with a None default value whose annotation is missing | None
+- **Missing |None annotation inspection** ([PY-88504](https://youtrack.jetbrains.com/issue/PY-88504)) - Adds a quickfix for PyCharm's missing | None annotation inspection
 - **Overridden method missing type annotations inspection** - Reports overrides missing type annotations present in parent methods
 - **Shadowing stdlib module inspection** ([PY-23615](https://youtrack.jetbrains.com/issue/PY-23615), [PY-43957](https://youtrack.jetbrains.com/issue/PY-43957)) - Reports project modules that shadow Python standard library modules
 
