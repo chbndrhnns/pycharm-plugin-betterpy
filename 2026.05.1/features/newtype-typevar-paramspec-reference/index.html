@@ -933,8 +933,9 @@
 <p>Python typing helpers often repeat a symbol name inside a string literal. BetterPy connects those string literals to the Python symbol so navigation and rename stay consistent.</p>
 <h2 id="how-to-invoke">How to invoke<a class="headerlink" href="#how-to-invoke" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Press <span class="keys"><kbd class="key-command">Cmd</kbd><span>+</span><kbd class="key-b">B</kbd></span> on the name string in <code>NewType</code>, <code>TypeVar</code>, or <code>ParamSpec</code> calls to jump to the matching assigned symbol, for example from <code>"UserId"</code> to <code>UserId</code>.</li>
-<li>Use <span class="keys"><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-f6">F6</kbd></span> on the Python symbol to rename it. BetterPy keeps the matching string literal in sync.</li>
+<li>Use <span class="bp-shortcut" data-bp-shortcut="go-to-declaration-mouse">⌘+Click / Ctrl+Click</span> on the name string in <code>NewType</code>, <code>TypeVar</code>, or <code>ParamSpec</code> calls to jump to the matching assigned symbol, for example from <code>"UserId"</code> to <code>UserId</code>.</li>
+<li>Use <span class="bp-shortcut" data-bp-shortcut="rename">⇧F6 / Shift+F6</span> on the Python symbol to rename it. BetterPy keeps the matching string literal in sync.</li>
+<li>For <code>NewType</code>, if the string was edited manually and no longer matches the assigned symbol, use the quick-fix on the highlighted string to update it.</li>
 </ul>
 <h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">NewType</label><label for="__tabbed_1_2">TypeVar</label><label for="__tabbed_1_3">ParamSpec</label></div>
@@ -962,11 +963,18 @@
 <p>Renaming <code>UserId</code> to <code>AccountId</code> updates both the target name and the string literal:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">AccountId</span> <span class="o">=</span> <span class="n">NewType</span><span class="p">(</span><span class="s2">&quot;AccountId&quot;</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span>
 </code></pre></div>
+<p>If a <code>NewType</code> literal drifted manually, BetterPy highlights the mismatch and offers to update the string:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">AccountId</span> <span class="o">=</span> <span class="n">NewType</span><span class="p">(</span><span class="s2">&quot;UserId&quot;</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span>
+</code></pre></div>
+<p>The quick-fix rewrites it to:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">AccountId</span> <span class="o">=</span> <span class="n">NewType</span><span class="p">(</span><span class="s2">&quot;AccountId&quot;</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span>
+</code></pre></div>
 <h2 id="what-it-supports">What it supports<a class="headerlink" href="#what-it-supports" title="Permanent link">&para;</a></h2>
 <ul>
 <li><code>typing.NewType</code>, <code>typing.TypeVar</code>, and <code>typing.ParamSpec</code> style declarations.</li>
 <li>String-literal references from the helper call back to the assigned Python symbol.</li>
 <li>Rename synchronization for the declaration and the literal.</li>
+<li>A quick-fix for manual <code>NewType</code> string drift when the literal no longer matches the assigned symbol. PyCharm's built-in quick-fix handles the same drift for <code>TypeVar</code> and <code>ParamSpec</code>.</li>
 <li>Navigation and reference search in regular project files.</li>
 </ul>
 <h2 id="what-it-deliberately-avoids">What it deliberately avoids<a class="headerlink" href="#what-it-deliberately-avoids" title="Permanent link">&para;</a></h2>
@@ -1066,6 +1074,8 @@
     
     
       <script src="../../assets/javascripts/bundle.6e5f0216.min.js"></script>
+      
+        <script src="../../javascripts/shortcuts.js"></script>
       
     
   </body>

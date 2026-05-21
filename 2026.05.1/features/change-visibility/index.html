@@ -932,7 +932,7 @@
 <h1 id="change-visibility">Change visibility<a class="headerlink" href="#change-visibility" title="Permanent link">&para;</a></h1>
 <p>Toggle a Python symbol between public and private naming without manually renaming the declaration and every call site. BetterPy reuses the IntelliJ rename refactoring, so all references in the project are updated together with the declaration.</p>
 <h2 id="how-to-invoke">How to invoke<a class="headerlink" href="#how-to-invoke" title="Permanent link">&para;</a></h2>
-<p>Place the caret on the name of a function, class, or top-level/class-level variable, then <span class="keys"><kbd class="key-alt">Alt</kbd><span>+</span><kbd class="key-enter">Enter</kbd></span> → <em>"Change visibility: make private"</em> or <em>"Change visibility: make public"</em>.
+<p>Place the caret on the name of a function, class, or top-level/class-level variable, then <span class="bp-shortcut" data-bp-shortcut="show-context-actions">⌥⏎ / Alt+Enter</span> → <em>"Change visibility: make private"</em> or <em>"Change visibility: make public"</em>.
 The intention text adapts to the current name:
 - A name without a leading underscore offers <em>"make private"</em> and renames <code>name</code> → <code>_name</code>.
 - A name starting with <code>_</code> offers <em>"make public"</em> and strips leading underscores (<code>_name</code> → <code>name</code>, <code>__name</code> → <code>name</code>).</p>
@@ -1074,6 +1074,8 @@ becomes:
     
     
       <script src="../../assets/javascripts/bundle.6e5f0216.min.js"></script>
+      
+        <script src="../../javascripts/shortcuts.js"></script>
       
     
   </body>

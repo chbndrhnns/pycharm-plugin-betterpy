@@ -1045,7 +1045,7 @@
 <p>This feature bundles three related intentions that help you switch between the most common dictionary lookup styles depending on whether you want terse code, explicit fallback handling, or exception-driven control flow.</p>
 <p>All three intentions only activate for expressions BetterPy can verify as mappings. That keeps the feature from appearing on unrelated subscription syntax such as lists, tuples, or arbitrary objects that just happen to define a <code>get()</code> method.</p>
 <h2 id="convert-bracket-access-to-get">Convert bracket access to <code>.get()</code><a class="headerlink" href="#convert-bracket-access-to-get" title="Permanent link">&para;</a></h2>
-<p><strong>How to invoke</strong>: <span class="keys"><kbd class="key-alt">Alt</kbd><span>+</span><kbd class="key-enter">Enter</kbd></span> on <code>mapping[key]</code> → <em>"BetterPy: Replace 'dict[key]' with 'dict.get(key)'"</em></p>
+<p><strong>How to invoke</strong>: <span class="bp-shortcut" data-bp-shortcut="show-context-actions">⌥⏎ / Alt+Enter</span> on <code>mapping[key]</code> → <em>"BetterPy: Replace 'dict[key]' with 'dict.get(key)'"</em></p>
 <p>Use this when a missing key should quietly yield <code>None</code> instead of raising <code>KeyError</code>.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">timeout</span> <span class="o">=</span> <span class="n">config</span><span class="p">[</span><span class="s2">&quot;timeout&quot;</span><span class="p">]</span>
 </code></pre></div>
@@ -1069,7 +1069,7 @@
 </ul>
 <p>Those cases are skipped because <code>.get()</code> changes the meaning: it reads a value, but it cannot stand in for write/delete syntax.</p>
 <h2 id="convert-get-to-bracket-access">Convert <code>.get()</code> to bracket access<a class="headerlink" href="#convert-get-to-bracket-access" title="Permanent link">&para;</a></h2>
-<p><strong>How to invoke</strong>: <span class="keys"><kbd class="key-alt">Alt</kbd><span>+</span><kbd class="key-enter">Enter</kbd></span> on <code>mapping.get(key)</code> → <em>"BetterPy: Replace 'dict.get(key)' with 'dict[key]'"</em></p>
+<p><strong>How to invoke</strong>: <span class="bp-shortcut" data-bp-shortcut="show-context-actions">⌥⏎ / Alt+Enter</span> on <code>mapping.get(key)</code> → <em>"BetterPy: Replace 'dict.get(key)' with 'dict[key]'"</em></p>
 <p>Use this when a key is expected to exist and surfacing <code>KeyError</code> is preferable to silently returning <code>None</code>.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">username</span> <span class="o">=</span> <span class="n">payload</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;username&quot;</span><span class="p">)</span>
 </code></pre></div>
@@ -1091,7 +1091,7 @@
 </ul>
 <p>This restriction matters because <code>mapping.get(key, default)</code> is not equivalent to <code>mapping[key]</code>; replacing it would drop the fallback value.</p>
 <h2 id="convert-get-default-to-try-except-keyerror">Convert <code>.get(..., default)</code> to <code>try</code> / <code>except KeyError</code><a class="headerlink" href="#convert-get-default-to-try-except-keyerror" title="Permanent link">&para;</a></h2>
-<p><strong>How to invoke</strong>: <span class="keys"><kbd class="key-alt">Alt</kbd><span>+</span><kbd class="key-enter">Enter</kbd></span> on <code>mapping.get(key, default)</code> used as a full assignment or return value → <em>"BetterPy: Replace 'dict.get(key, default)' with try/except KeyError"</em></p>
+<p><strong>How to invoke</strong>: <span class="bp-shortcut" data-bp-shortcut="show-context-actions">⌥⏎ / Alt+Enter</span> on <code>mapping.get(key, default)</code> used as a full assignment or return value → <em>"BetterPy: Replace 'dict.get(key, default)' with try/except KeyError"</em></p>
 <p>Use this when you want explicit exception-based control flow while keeping the same fallback result.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">result</span> <span class="o">=</span> <span class="n">payload</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;name&quot;</span><span class="p">,</span> <span class="s2">&quot;unknown&quot;</span><span class="p">)</span>
 </code></pre></div>
@@ -1126,7 +1126,7 @@
 </ul>
 <p>The generated <code>try</code> block repeats the lookup once and the fallback once, so BetterPy only offers the intention when that duplication is predictable and safe.</p>
 <h2 id="convert-try-except-keyerror-to-get">Convert <code>try</code> / <code>except KeyError</code> to <code>.get()</code><a class="headerlink" href="#convert-try-except-keyerror-to-get" title="Permanent link">&para;</a></h2>
-<p><strong>How to invoke</strong>: <span class="keys"><kbd class="key-alt">Alt</kbd><span>+</span><kbd class="key-enter">Enter</kbd></span> inside a qualifying <code>try</code> block → <em>"BetterPy: Replace try-except with dict.get"</em></p>
+<p><strong>How to invoke</strong>: <span class="bp-shortcut" data-bp-shortcut="show-context-actions">⌥⏎ / Alt+Enter</span> inside a qualifying <code>try</code> block → <em>"BetterPy: Replace try-except with dict.get"</em></p>
 <p>Use this when explicit exception handling is unnecessary and a compact lookup reads better.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">try</span><span class="p">:</span>
 <a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>    <span class="n">result</span> <span class="o">=</span> <span class="n">payload</span><span class="p">[</span><span class="s2">&quot;name&quot;</span><span class="p">]</span>
@@ -1255,6 +1255,8 @@
     
     
       <script src="../../assets/javascripts/bundle.6e5f0216.min.js"></script>
+      
+        <script src="../../javascripts/shortcuts.js"></script>
       
     
   </body>

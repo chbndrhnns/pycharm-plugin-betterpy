@@ -1099,7 +1099,7 @@
 </ul>
 <h4 id="how-it-behaves">How it behaves<a class="headerlink" href="#how-it-behaves" title="Permanent link">&para;</a></h4>
 <ul>
-<li>The action is available from <code>Code | Generate</code> in Python files.</li>
+<li>The action is available from <code>Code | Generate</code> (<span class="bp-shortcut" data-bp-shortcut="generate">⌘N / Alt+Insert</span>) in Python files.</li>
 <li>When the caret is inside a class body, the generated class is inserted into that class with matching indentation.</li>
 <li>When the file is missing imports such as <code>dataclass</code>, <code>BaseModel</code>, or <code>ConfigDict</code>, BetterPy adds them without duplicating existing imports.</li>
 <li>After insertion, BetterPy selects the generated class name and starts inline rename.</li>
@@ -1145,7 +1145,7 @@
 
 <p>Show attribute docstrings directly in Quick Documentation when a class attribute is followed by a string literal. This brings Python's attribute-docstring convention into the standard documentation popup instead of leaving it hidden in the class body.</p>
 <h4 id="how-to-invoke">How to invoke<a class="headerlink" href="#how-to-invoke" title="Permanent link">&para;</a></h4>
-<p>Place the caret on a class attribute and open Quick Documentation with <span class="keys"><kbd class="key-f1">F1</kbd></span> or the usual editor documentation action.</p>
+<p>Place the caret on a class attribute and open Quick Documentation with <span class="bp-shortcut" data-bp-shortcut="quick-documentation">F1 / Ctrl+Q</span> or the usual editor documentation action.</p>
 <p>If the next statement after the attribute is a string literal, BetterPy returns that text as the attribute's quick documentation.</p>
 <h4 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Config</span><span class="p">:</span>
@@ -1175,7 +1175,7 @@
 <li>BetterPy also reuses the same attribute-docstring lookup from the enhanced dataclass quick info feature, so both views stay consistent.</li>
 </ul>
 <p>Shows the string literal below a class attribute (attribute docstring) in Quick Documentation.</p>
-<p><strong>How to invoke</strong>: <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-q">Q</kbd></span> on a class attribute that has a docstring below it.</p>
+<p><strong>How to invoke</strong>: <span class="bp-shortcut" data-bp-shortcut="quick-documentation">F1 / Ctrl+Q</span> on a class attribute that has a docstring below it.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Example</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1270,6 +1270,8 @@
     
     
       <script src="../../assets/javascripts/bundle.6e5f0216.min.js"></script>
+      
+        <script src="../../javascripts/shortcuts.js"></script>
       
     
   </body>

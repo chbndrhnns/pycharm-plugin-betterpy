@@ -1302,7 +1302,7 @@
 
 <p>Convert a required function parameter into an optional parameter without manually editing the signature. BetterPy adds a default value at the declaration site and leaves the rest of the signature intact.</p>
 <h4 id="how-to-invoke">How to invoke<a class="headerlink" href="#how-to-invoke" title="Permanent link">&para;</a></h4>
-<p>Place the caret on a required parameter and use <span class="keys"><kbd class="key-alt">Alt</kbd><span>+</span><kbd class="key-enter">Enter</kbd></span> -&gt; <em>"BetterPy: Make optional"</em>.</p>
+<p>Place the caret on a required parameter and use <span class="bp-shortcut" data-bp-shortcut="show-context-actions">⌥⏎ / Alt+Enter</span> -&gt; <em>"BetterPy: Make optional"</em>.</p>
 <h4 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">greet</span><span class="p">(</span><span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">title</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">title</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span>
@@ -1331,7 +1331,7 @@
 <li>The feature is gated by the <em>Make parameter optional</em> setting under <strong>Settings | BetterPy | Refactoring &amp; code transformations | Arguments</strong>.</li>
 </ul>
 <p>Converts a required parameter to an optional one by adding a default value.</p>
-<p><strong>How to invoke</strong>: <span class="keys"><kbd class="key-alt">Alt</kbd><span>+</span><kbd class="key-enter">Enter</kbd></span> → <em>"BetterPy: Make optional"</em></p>
+<p><strong>How to invoke</strong>: <span class="bp-shortcut" data-bp-shortcut="show-context-actions">⌥⏎ / Alt+Enter</span> → <em>"BetterPy: Make optional"</em></p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Before</label><label for="__tabbed_1_2">After</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1351,7 +1351,7 @@
 
 <p>Convert an optional function parameter back into a required parameter. BetterPy removes the default value from the signature so callers must provide an argument explicitly.</p>
 <h4 id="how-to-invoke_1">How to invoke<a class="headerlink" href="#how-to-invoke_1" title="Permanent link">&para;</a></h4>
-<p>Place the caret on an optional parameter and use <span class="keys"><kbd class="key-alt">Alt</kbd><span>+</span><kbd class="key-enter">Enter</kbd></span> -&gt; <em>"BetterPy: Make mandatory"</em>.</p>
+<p>Place the caret on an optional parameter and use <span class="bp-shortcut" data-bp-shortcut="show-context-actions">⌥⏎ / Alt+Enter</span> -&gt; <em>"BetterPy: Make mandatory"</em>.</p>
 <h4 id="example_1">Example<a class="headerlink" href="#example_1" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">greet</span><span class="p">(</span><span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">title</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">):</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">title</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span>
@@ -1380,7 +1380,7 @@
 <li>The feature is gated by the <em>Make parameter mandatory</em> setting under <strong>Settings | BetterPy | Refactoring &amp; code transformations | Arguments</strong>.</li>
 </ul>
 <p>Converts an optional parameter to a required one by removing the default value.</p>
-<p><strong>How to invoke</strong>: <span class="keys"><kbd class="key-alt">Alt</kbd><span>+</span><kbd class="key-enter">Enter</kbd></span> → <em>"BetterPy: Make mandatory"</em></p>
+<p><strong>How to invoke</strong>: <span class="bp-shortcut" data-bp-shortcut="show-context-actions">⌥⏎ / Alt+Enter</span> → <em>"BetterPy: Make mandatory"</em></p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Before</label><label for="__tabbed_2_2">After</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1531,7 +1531,7 @@
 
 <p>Toggle a Python symbol between public and private naming without manually renaming the declaration and every call site. BetterPy reuses the IntelliJ rename refactoring, so all references in the project are updated together with the declaration.</p>
 <h4 id="how-to-invoke_3">How to invoke<a class="headerlink" href="#how-to-invoke_3" title="Permanent link">&para;</a></h4>
-<p>Place the caret on the name of a function, class, or top-level/class-level variable, then <span class="keys"><kbd class="key-alt">Alt</kbd><span>+</span><kbd class="key-enter">Enter</kbd></span> → <em>"Change visibility: make private"</em> or <em>"Change visibility: make public"</em>.
+<p>Place the caret on the name of a function, class, or top-level/class-level variable, then <span class="bp-shortcut" data-bp-shortcut="show-context-actions">⌥⏎ / Alt+Enter</span> → <em>"Change visibility: make private"</em> or <em>"Change visibility: make public"</em>.
 The intention text adapts to the current name:
 - A name without a leading underscore offers <em>"make private"</em> and renames <code>name</code> → <code>_name</code>.
 - A name starting with <code>_</code> offers <em>"make public"</em> and strips leading underscores (<code>_name</code> → <code>name</code>, <code>__name</code> → <code>name</code>).</p>
@@ -1610,7 +1610,7 @@ becomes:
 <p>This feature bundles three related intentions that help you switch between the most common dictionary lookup styles depending on whether you want terse code, explicit fallback handling, or exception-driven control flow.</p>
 <p>All three intentions only activate for expressions BetterPy can verify as mappings. That keeps the feature from appearing on unrelated subscription syntax such as lists, tuples, or arbitrary objects that just happen to define a <code>get()</code> method.</p>
 <h4 id="convert-bracket-access-to-get">Convert bracket access to <code>.get()</code><a class="headerlink" href="#convert-bracket-access-to-get" title="Permanent link">&para;</a></h4>
-<p><strong>How to invoke</strong>: <span class="keys"><kbd class="key-alt">Alt</kbd><span>+</span><kbd class="key-enter">Enter</kbd></span> on <code>mapping[key]</code> → <em>"BetterPy: Replace 'dict[key]' with 'dict.get(key)'"</em></p>
+<p><strong>How to invoke</strong>: <span class="bp-shortcut" data-bp-shortcut="show-context-actions">⌥⏎ / Alt+Enter</span> on <code>mapping[key]</code> → <em>"BetterPy: Replace 'dict[key]' with 'dict.get(key)'"</em></p>
 <p>Use this when a missing key should quietly yield <code>None</code> instead of raising <code>KeyError</code>.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="n">timeout</span> <span class="o">=</span> <span class="n">config</span><span class="p">[</span><span class="s2">&quot;timeout&quot;</span><span class="p">]</span>
 </code></pre></div>
@@ -1634,7 +1634,7 @@ becomes:
 </ul>
 <p>Those cases are skipped because <code>.get()</code> changes the meaning: it reads a value, but it cannot stand in for write/delete syntax.</p>
 <h4 id="convert-get-to-bracket-access">Convert <code>.get()</code> to bracket access<a class="headerlink" href="#convert-get-to-bracket-access" title="Permanent link">&para;</a></h4>
-<p><strong>How to invoke</strong>: <span class="keys"><kbd class="key-alt">Alt</kbd><span>+</span><kbd class="key-enter">Enter</kbd></span> on <code>mapping.get(key)</code> → <em>"BetterPy: Replace 'dict.get(key)' with 'dict[key]'"</em></p>
+<p><strong>How to invoke</strong>: <span class="bp-shortcut" data-bp-shortcut="show-context-actions">⌥⏎ / Alt+Enter</span> on <code>mapping.get(key)</code> → <em>"BetterPy: Replace 'dict.get(key)' with 'dict[key]'"</em></p>
 <p>Use this when a key is expected to exist and surfacing <code>KeyError</code> is preferable to silently returning <code>None</code>.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="n">username</span> <span class="o">=</span> <span class="n">payload</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;username&quot;</span><span class="p">)</span>
 </code></pre></div>
@@ -1656,7 +1656,7 @@ becomes:
 </ul>
 <p>This restriction matters because <code>mapping.get(key, default)</code> is not equivalent to <code>mapping[key]</code>; replacing it would drop the fallback value.</p>
 <h4 id="convert-get-default-to-try-except-keyerror">Convert <code>.get(..., default)</code> to <code>try</code> / <code>except KeyError</code><a class="headerlink" href="#convert-get-default-to-try-except-keyerror" title="Permanent link">&para;</a></h4>
-<p><strong>How to invoke</strong>: <span class="keys"><kbd class="key-alt">Alt</kbd><span>+</span><kbd class="key-enter">Enter</kbd></span> on <code>mapping.get(key, default)</code> used as a full assignment or return value → <em>"BetterPy: Replace 'dict.get(key, default)' with try/except KeyError"</em></p>
+<p><strong>How to invoke</strong>: <span class="bp-shortcut" data-bp-shortcut="show-context-actions">⌥⏎ / Alt+Enter</span> on <code>mapping.get(key, default)</code> used as a full assignment or return value → <em>"BetterPy: Replace 'dict.get(key, default)' with try/except KeyError"</em></p>
 <p>Use this when you want explicit exception-based control flow while keeping the same fallback result.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="n">result</span> <span class="o">=</span> <span class="n">payload</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;name&quot;</span><span class="p">,</span> <span class="s2">&quot;unknown&quot;</span><span class="p">)</span>
 </code></pre></div>
@@ -1691,7 +1691,7 @@ becomes:
 </ul>
 <p>The generated <code>try</code> block repeats the lookup once and the fallback once, so BetterPy only offers the intention when that duplication is predictable and safe.</p>
 <h4 id="convert-try-except-keyerror-to-get">Convert <code>try</code> / <code>except KeyError</code> to <code>.get()</code><a class="headerlink" href="#convert-try-except-keyerror-to-get" title="Permanent link">&para;</a></h4>
-<p><strong>How to invoke</strong>: <span class="keys"><kbd class="key-alt">Alt</kbd><span>+</span><kbd class="key-enter">Enter</kbd></span> inside a qualifying <code>try</code> block → <em>"BetterPy: Replace try-except with dict.get"</em></p>
+<p><strong>How to invoke</strong>: <span class="bp-shortcut" data-bp-shortcut="show-context-actions">⌥⏎ / Alt+Enter</span> inside a qualifying <code>try</code> block → <em>"BetterPy: Replace try-except with dict.get"</em></p>
 <p>Use this when explicit exception handling is unnecessary and a compact lookup reads better.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="k">try</span><span class="p">:</span>
 <a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a>    <span class="n">result</span> <span class="o">=</span> <span class="n">payload</span><span class="p">[</span><span class="s2">&quot;name&quot;</span><span class="p">]</span>
@@ -1740,7 +1740,7 @@ becomes:
 
 <p>Toggle an enum member reference between the enum member object and its explicit <code>.value</code> form. This is useful when a call site or assertion needs to switch between comparing enum members and comparing their serialized values.</p>
 <h4 id="how-to-invoke_4">How to invoke<a class="headerlink" href="#how-to-invoke_4" title="Permanent link">&para;</a></h4>
-<p>Place the caret on an enum member reference or on the <code>value</code> part of an enum member value access, then use <span class="keys"><kbd class="key-alt">Alt</kbd><span>+</span><kbd class="key-enter">Enter</kbd></span> -&gt; <em>"BetterPy: Toggle enum member / value"</em>.</p>
+<p>Place the caret on an enum member reference or on the <code>value</code> part of an enum member value access, then use <span class="bp-shortcut" data-bp-shortcut="show-context-actions">⌥⏎ / Alt+Enter</span> -&gt; <em>"BetterPy: Toggle enum member / value"</em>.</p>
 <h4 id="example_3">Example<a class="headerlink" href="#example_3" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">enum</span><span class="w"> </span><span class="kn">import</span> <span class="n">Enum</span>
 <a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a>
@@ -1775,7 +1775,7 @@ becomes:
 <li>The feature is gated by the <em>Toggle enum member value</em> setting under <strong>Settings | BetterPy | Refactoring &amp; code transformations | Type Editing</strong>.</li>
 </ul>
 <p>Toggles the explicit value of an enum member on or off.</p>
-<p><strong>How to invoke</strong>: <span class="keys"><kbd class="key-alt">Alt</kbd><span>+</span><kbd class="key-enter">Enter</kbd></span> → <em>"BetterPy: Toggle enum member / value"</em></p>
+<p><strong>How to invoke</strong>: <span class="bp-shortcut" data-bp-shortcut="show-context-actions">⌥⏎ / Alt+Enter</span> → <em>"BetterPy: Toggle enum member / value"</em></p>
 <div class="tabbed-set tabbed-alternate" data-tabs="6:2"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">Before</label><label for="__tabbed_6_2">After</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1885,6 +1885,8 @@ becomes:
     
     
       <script src="../../assets/javascripts/bundle.6e5f0216.min.js"></script>
+      
+        <script src="../../javascripts/shortcuts.js"></script>
       
     
   </body>

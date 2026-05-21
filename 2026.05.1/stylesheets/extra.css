@@ -35,6 +35,11 @@
   margin-left: 0.25em;
 }
 
+/* OS-specific keyboard shortcuts */
+.md-typeset .bp-shortcut {
+  white-space: nowrap;
+}
+
 /* Maturity badges */
 .md-typeset .badge-stable {
   background-color: #4caf50;

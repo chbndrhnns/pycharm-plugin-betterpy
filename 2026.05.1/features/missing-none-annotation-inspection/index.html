@@ -932,7 +932,7 @@
 <h1 id="missing-none-annotation-inspection">Missing |None annotation inspection<a class="headerlink" href="#missing-none-annotation-inspection" title="Permanent link">&para;</a></h1>
 <p>PyCharm 2026.1 and newer also reports parameters whose default value is <code>None</code> but whose type annotation does not admit <code>None</code>. BetterPy keeps its own inspection for the same code shape so the <em>"BetterPy: Add | None to annotation"</em> quick-fix is available as an inspection quick-fix in the highlighted-code actions.</p>
 <h2 id="how-to-invoke">How to invoke<a class="headerlink" href="#how-to-invoke" title="Permanent link">&para;</a></h2>
-<p>Place the caret on the highlighted <code>None</code> default or initializer, then use <span class="keys"><kbd class="key-alt">Alt</kbd><span>+</span><kbd class="key-enter">Enter</kbd></span> -&gt; <em>"BetterPy: Add | None to annotation"</em>.</p>
+<p>Place the caret on the highlighted <code>None</code> default or initializer, then use <span class="bp-shortcut" data-bp-shortcut="show-context-actions">⌥⏎ / Alt+Enter</span> -&gt; <em>"BetterPy: Add | None to annotation"</em>.</p>
 <h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">fetch_user</span><span class="p">(</span><span class="n">user_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">timeout</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="o">...</span>
@@ -1051,6 +1051,8 @@
     
     
       <script src="../../assets/javascripts/bundle.6e5f0216.min.js"></script>
+      
+        <script src="../../javascripts/shortcuts.js"></script>
       
     
   </body>

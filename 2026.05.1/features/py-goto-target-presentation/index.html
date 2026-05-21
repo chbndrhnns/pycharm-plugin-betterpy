@@ -931,7 +931,7 @@
 
 <h1 id="enhanced-go-to-implementation-presentation">Enhanced Go to Implementation presentation<a class="headerlink" href="#enhanced-go-to-implementation-presentation" title="Permanent link">&para;</a></h1>
 <p>Prepends the owning class name to the method name in the <strong>Go to Implementation</strong> popup whenever two or more candidates share the same short name, so overrides can be told apart at a glance.</p>
-<p>In a typical Python codebase, multiple classes implement a method with the same name — for example, several services implementing <code>process</code>, or a hierarchy of handlers all overriding <code>handle</code>. When you invoke <strong>Navigate → Go to Implementation</strong> (⌥⌘B / Ctrl+Alt+B) on such a method, PyCharm shows the <strong>Choose implementation</strong> popup with one row per candidate.</p>
+<p>In a typical Python codebase, multiple classes implement a method with the same name — for example, several services implementing <code>process</code>, or a hierarchy of handlers all overriding <code>handle</code>. When you invoke <strong>Navigate → Go to Implementation</strong> (<span class="bp-shortcut" data-bp-shortcut="go-to-implementation">⌥⌘B / Ctrl+Alt+B</span>) on such a method, PyCharm shows the <strong>Choose implementation</strong> popup with one row per candidate.</p>
 <p>Out of the box, every row renders only the <strong>method</strong> name plus the file it lives in:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>process  →  module_a.py
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>process  →  module_b.py
@@ -1065,6 +1065,8 @@
     
     
       <script src="../../assets/javascripts/bundle.6e5f0216.min.js"></script>
+      
+        <script src="../../javascripts/shortcuts.js"></script>
       
     
   </body>
