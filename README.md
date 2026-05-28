@@ -47,6 +47,9 @@ which are API backend development, domain-driven design and automated testing.
 - **Strip signature type annotations** - Removes type annotations from a function signature
 - **Toggle enum member value** - Toggles the explicit value of an enum member on or off
 
+#### Pytest
+- **Pytest fixture documentation** ([PY-66245](https://youtrack.jetbrains.com/issue/PY-66245)) - Enhances Quick Documentation and member type inference for pytest fixtures across files
+
 #### Inspections
 - **Constant should be Final inspection** - Reports module-level constants that should be annotated with Final
 - **Missing |None annotation inspection** ([PY-88504](https://youtrack.jetbrains.com/issue/PY-88504)) - Adds a quickfix for PyCharm's missing | None annotation inspection
