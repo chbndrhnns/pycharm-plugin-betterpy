@@ -28,5 +28,8 @@ If applicable, add screenshots to help explain your problem.
  - IDEA/PyCharm [e.g. 2026.1 EAP 5]
 - Python: [e.g. 3.11]
 
+**Diagnostic data**
+Please provide any diagnostic information, error messages, or logs that may help us troubleshoot this issue:
+
 **Additional context**
 Add any other context about the problem here.
