@@ -74,6 +74,14 @@ body:
     validations:
       required: true
   
+  - type: input
+    id: betterpy_version
+    attributes:
+      label: BetterPy Plugin Version
+      placeholder: "e.g. 1.0.0"
+    validations:
+      required: true
+  
   - type: textarea
     id: diagnostic_data
     attributes:
