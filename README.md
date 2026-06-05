@@ -49,6 +49,7 @@ which are API backend development, domain-driven design and automated testing.
 
 #### Pytest
 - [**Pytest fixture documentation**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/pytest-fixture-documentation/) ([PY-66245](https://youtrack.jetbrains.com/issue/PY-66245)) - Enhances Quick Documentation and member type inference for pytest fixtures across files
+- [**Pytest parametrized case run gutter icon**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/pytest-parametrized-case-run-gutter-icon/) ([PY-88558](https://youtrack.jetbrains.com/issue/PY-88558)) - Shows run gutter icons for individual pytest parametrized cases when each case is on its own line
 - [**Use actual test outcome**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/use-actual-test-outcome/) - Replaces assertion expected values with the actual value from the last failed test run
 
 #### Inspections
@@ -59,8 +60,10 @@ which are API backend development, domain-driven design and automated testing.
 - [**Shadowing stdlib module inspection**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/shadowing-stdlib-module-inspection/) ([PY-23615](https://youtrack.jetbrains.com/issue/PY-23615), [PY-43957](https://youtrack.jetbrains.com/issue/PY-43957)) - Reports project modules that shadow Python standard library modules
 
 #### Actions
+- [**Copy with imports**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/copy-with-imports/) ([PY-62801](https://youtrack.jetbrains.com/issue/PY-62801)) - Copies selected Python code together with the import statements referenced by that selection
 - [**Generate class actions**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/generate-class-actions/) - Adds Generate menu actions for dataclass, frozen dataclass, and pydantic model
 - [**Parameter object refactoring**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/parameter-object-refactoring/) ([PY-59270](https://youtrack.jetbrains.com/issue/PY-59270)) - Enables introduce/inline parameter object refactoring actions
+- [**Top-level extract function**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/top-level-extract-function/) ([PY-40840](https://youtrack.jetbrains.com/issue/PY-40840), [PY-44636](https://youtrack.jetbrains.com/issue/PY-44636), [PY-73852](https://youtrack.jetbrains.com/issue/PY-73852)) - Extracts top-level Python statements into a function with parameters and explicit return values instead of globals
 
 #### Completion & References
 - [**NewType/TypeVar/ParamSpec reference & rename**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/newtype-typevar-paramspec-reference/) ([PY-82966](https://youtrack.jetbrains.com/issue/PY-82966), [PY-53658](https://youtrack.jetbrains.com/issue/PY-53658)) - Adds references for NewType/TypeVar/ParamSpec name literals, keeps the name string in sync on rename, and repairs manual NewType drift
@@ -68,12 +71,15 @@ which are API backend development, domain-driven design and automated testing.
 #### Navigation
 - **Class implementations code vision** ([PY-56627](https://youtrack.jetbrains.com/issue/PY-56627)) - Shows an inline code vision hint above each Python class with the number of implementations (subclasses) and lets you navigate to them
 - **Module assignment usages code vision** - Shows an inline code vision hint above each module-level assignment with the number of project-scope usages and lets you navigate to them
+- [**Property usages code vision**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/property-usages-code-vision/) - Shows an inline code vision hint above each Python property with the number of project-scope usages and lets you navigate to them
 
 #### Filters & Suppressors
+- [**Suppress missing docstrings on overloads**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/missing-docstring-overload-suppressor/) ([PY-56267](https://youtrack.jetbrains.com/issue/PY-56267)) - Suppresses PyCharm's missing docstring inspection for typing overload signatures.
 - [**Usage filtering**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/usage-filtering/) ([PY-56092](https://youtrack.jetbrains.com/issue/PY-56092)) - Adds Find Usages filters for type annotations and test-source references
 
 #### Documentation
 - [**Attribute Docstring in Quick Documentation**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/attribute-docstring/) ([PY-63878](https://youtrack.jetbrains.com/issue/PY-63878)) - Shows the string literal below a class attribute (attribute docstring) in Quick Documentation. Fixes PY-63878.
+- [**Docstring Example Rendering**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/docstring-example-rendering/) ([PY-47744](https://youtrack.jetbrains.com/issue/PY-47744)) - Renders doctests and fenced Python examples in Quick Documentation docstrings.
 
 #### IDE Customizations
 - [**Enhanced Go to Implementation presentation**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/py-goto-target-presentation/) ([PY-82520](https://youtrack.jetbrains.com/issue/PY-82520)) - Prepends class name to method name in Go to Implementation popup when names are identical
