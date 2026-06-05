@@ -45,7 +45,7 @@ which are API backend development, domain-driven design and automated testing.
 - [**Copy method annotations from parent**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/copy-method-annotations-from-parent/) - Copies type annotations from a parent method to its overrides
 - [**Dict access conversion**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/dict-access/) ([PY-54845](https://youtrack.jetbrains.com/issue/PY-54845)) - Converts between dict bracket access and .get() method calls
 - [**Strip signature type annotations**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/strip-signature-type-annotations/) - Removes type annotations from a function signature
-- [**Toggle enum member value**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/toggle-enum-member-value/) - Toggles the explicit value of an enum member on or off
+- [**Toggle enum member value**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/toggle-enum-member-value/) - Toggles enum member references with their literal values
 
 #### Pytest
 - [**Pytest fixture documentation**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/pytest-fixture-documentation/) ([PY-66245](https://youtrack.jetbrains.com/issue/PY-66245)) - Enhances Quick Documentation and member type inference for pytest fixtures across files
