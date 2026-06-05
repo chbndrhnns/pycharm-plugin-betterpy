@@ -49,13 +49,14 @@ which are API backend development, domain-driven design and automated testing.
 
 #### Pytest
 - [**Pytest fixture documentation**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/pytest-fixture-documentation/) ([PY-66245](https://youtrack.jetbrains.com/issue/PY-66245)) - Enhances Quick Documentation and member type inference for pytest fixtures across files
-- [**Pytest parametrized case run gutter icon**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/pytest-parametrized-case-run-gutter-icon/) ([PY-88558](https://youtrack.jetbrains.com/issue/PY-88558)) - Shows run gutter icons for individual pytest parametrized cases when each case is on its own line
+- [**Pytest parametrized case run gutter icon**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/pytest-parametrized-case-run-gutter-icon/) ([PY-88558](https://youtrack.jetbrains.com/issue/PY-88558), [PY-46650](https://youtrack.jetbrains.com/issue/PY-46650)) - Shows run gutter icons for individual pytest parametrized cases when each case is on its own line
 - [**Use actual test outcome**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/use-actual-test-outcome/) - Replaces assertion expected values with the actual value from the last failed test run
 
 #### Inspections
 - [**Constant should be Final inspection**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/constant-final-inspection/) - Reports module-level constants that should be annotated with Final
 - [**Missing |None annotation inspection**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/missing-none-annotation-inspection/) ([PY-88504](https://youtrack.jetbrains.com/issue/PY-88504)) - Adds a quickfix for PyCharm's missing | None annotation inspection
 - [**Overridden method missing type annotations inspection**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/overridden-method-missing-type-annotations-inspection/) - Reports overrides missing type annotations present in parent methods
+- [**Private module import inspection**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/private-module-import-inspection/) - Reports private-module imports that should use public package exports
 - [**Pytest failed line inspection**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/pytest-failed-line-inspection/) ([PY-32337](https://youtrack.jetbrains.com/issue/PY-32337), [PY-61067](https://youtrack.jetbrains.com/issue/PY-61067)) - Marks the line where a pytest test failed
 - [**Shadowing stdlib module inspection**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/shadowing-stdlib-module-inspection/) ([PY-23615](https://youtrack.jetbrains.com/issue/PY-23615), [PY-43957](https://youtrack.jetbrains.com/issue/PY-43957)) - Reports project modules that shadow Python standard library modules
 
@@ -68,10 +69,14 @@ which are API backend development, domain-driven design and automated testing.
 #### Completion & References
 - [**NewType/TypeVar/ParamSpec reference & rename**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/newtype-typevar-paramspec-reference/) ([PY-82966](https://youtrack.jetbrains.com/issue/PY-82966), [PY-53658](https://youtrack.jetbrains.com/issue/PY-53658)) - Adds references for NewType/TypeVar/ParamSpec name literals, keeps the name string in sync on rename, and repairs manual NewType drift
 
+#### Import & Structure
+- [**Export symbol to target**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/export-symbol-to-target/) - Exports a symbol to a specified target module's \_\_all\_\_
+
 #### Navigation
 - **Class implementations code vision** ([PY-56627](https://youtrack.jetbrains.com/issue/PY-56627)) - Shows an inline code vision hint above each Python class with the number of implementations (subclasses) and lets you navigate to them
 - **Module assignment usages code vision** - Shows an inline code vision hint above each module-level assignment with the number of project-scope usages and lets you navigate to them
 - [**Property usages code vision**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/property-usages-code-vision/) - Shows an inline code vision hint above each Python property with the number of project-scope usages and lets you navigate to them
+- [**Return path highlighting**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/return-path-highlighting/) - Highlights explicit return statements when the caret is on a function return annotation
 
 #### Filters & Suppressors
 - [**Suppress missing docstrings on overloads**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/missing-docstring-overload-suppressor/) ([PY-56267](https://youtrack.jetbrains.com/issue/PY-56267)) - Suppresses PyCharm's missing docstring inspection for typing overload signatures.
