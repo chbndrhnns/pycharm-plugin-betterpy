@@ -83,7 +83,7 @@ which are API backend development, domain-driven design and automated testing.
 - [**Usage filtering**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/usage-filtering/) ([PY-56092](https://youtrack.jetbrains.com/issue/PY-56092)) - Adds Find Usages filters for type annotations and test-source references
 
 #### Documentation
-- [**Attribute Docstring in Quick Documentation**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/attribute-docstring/) ([PY-63878](https://youtrack.jetbrains.com/issue/PY-63878)) - Shows the string literal below a class attribute (attribute docstring) in Quick Documentation. Fixes PY-63878.
+- [**Attribute Docstring in Quick Documentation**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/attribute-docstring/) ([PY-63878](https://youtrack.jetbrains.com/issue/PY-63878), [PY-60571](https://youtrack.jetbrains.com/issue/PY-60571)) - Shows the string literal below a class attribute (attribute docstring) in Quick Documentation. Fixes PY-63878.
 - [**Docstring Example Rendering**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/docstring-example-rendering/) ([PY-47744](https://youtrack.jetbrains.com/issue/PY-47744)) - Renders doctests and fenced Python examples in Quick Documentation docstrings.
 
 #### IDE Customizations
