@@ -83,7 +83,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#2026070-2026-07-14" class="md-skip">
+        <a href="#2026070-2026-07-15" class="md-skip">
           Skip to content
         </a>
       
@@ -940,15 +940,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#2026070-2026-07-14" class="md-nav__link">
+  <a href="#2026070-2026-07-15" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        2026.07.0 - 2026-07-14
+        2026.07.0 - 2026-07-15
       </span>
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="2026.07.0 - 2026-07-14">
+    <nav class="md-nav" aria-label="2026.07.0 - 2026-07-15">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1490,15 +1490,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#2026070-2026-07-14" class="md-nav__link">
+  <a href="#2026070-2026-07-15" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        2026.07.0 - 2026-07-14
+        2026.07.0 - 2026-07-15
       </span>
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="2026.07.0 - 2026-07-14">
+    <nav class="md-nav" aria-label="2026.07.0 - 2026-07-15">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2022,7 +2022,7 @@
 <p>All notable changes to BetterPy are documented here. This project uses <strong>CalVer</strong> (Calendar Versioning) with the format <code>YYYY.MM.PATCH[-channel.build]</code>.</p>
 <p>For the full changelog, see <a href="https://github.com/chbndrhnns/pycharm-plugin-betterpy/blob/main/CHANGELOG.md">CHANGELOG.md on GitHub</a>.</p>
 <hr />
-<h2 id="2026070-2026-07-14"><a href="https://github.com/chbndrhnns/pycharm-plugin-betterpy/compare/2026.06.1...2026.07.0">2026.07.0</a> - 2026-07-14<a class="headerlink" href="#2026070-2026-07-14" title="Permanent link">&para;</a></h2>
+<h2 id="2026070-2026-07-15"><a href="https://github.com/chbndrhnns/pycharm-plugin-betterpy/compare/2026.06.1...2026.07.0">2026.07.0</a> - 2026-07-15<a class="headerlink" href="#2026070-2026-07-15" title="Permanent link">&para;</a></h2>
 <h3 id="features">🚀 Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h3>
 <ul>
 <li><strong>Pytest fixture intelligence</strong> now extends PyCharm's built-in pytest support with BetterPy's own fixture index and
@@ -2047,12 +2047,15 @@
   and a debug-logging run variant for the selected pytest node.</li>
 <li><strong>Pytest test-writing helpers</strong> add Generate-menu actions for new tests, fixtures, and pytest hooks, plus editor
   intentions for toggling <code>@pytest.mark.skip</code> and wrapping statements with <code>pytest.raises(...)</code>.</li>
+<li><strong>Inherited attribute documentation</strong> shows an ancestor attribute's docstring when an overriding class attribute has
+  no local documentation, preserving useful Quick Documentation across class hierarchies.</li>
 </ul>
 <h3 id="bug-fixes">🐛 Bug Fixes<a class="headerlink" href="#bug-fixes" title="Permanent link">&para;</a></h3>
 <ul>
 <li><strong>Pytest fixture documentation</strong>, already available in stable, shows consumer-scoped fixture variants and follows
   static fixture pass-throughs in Quick Documentation, renders correctly for class-based fixture containers, and stays
   compatible with newer PyCharm platform versions.</li>
+<li><strong>Pytest fixture editor integration</strong> suppresses feature nudges while focus is outside the editor.</li>
 <li><strong>Class implementations code vision</strong> includes specced mocks in class inlays, ignores inferred protocol method
   return types, mirrors native protocol library implementation behavior, and keeps code-vision navigation constrained
   to the intended editor split.</li>
@@ -2074,7 +2077,8 @@
 <li><strong>Docstring Example Rendering</strong> renders reStructuredText docstring examples and preserves field lists when
   rendering fenced code.</li>
 <li><strong>Copy method annotations from parent</strong> avoids duplicate actions, prefers existing qualified imports, normalizes
-  import insertion order, and guards against stale PSI when reading the copy plan.</li>
+  import insertion order, guards against stale PSI when reading the copy plan, and recognizes stub and implementation
+  modules as the same module identity.</li>
 <li><strong>Copy with imports</strong> avoids resolving shadowed names when copying imports.</li>
 <li><strong>Generate class actions</strong> keeps generated names selected and normalizes generated import order.</li>
 <li><strong>Export symbol to target</strong> avoids PSI reads outside read access, applies workspace-aware source roots, and uses
