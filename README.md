@@ -53,6 +53,7 @@ which are API backend development, domain-driven design and automated testing.
 - [**Fixture Injection Intentions**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/pytest-fixture-injection-intentions/) - Intentions for converting between fixture parameters and @pytest.mark.usefixtures
 - [**Jump to pytest node in test tree**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/jump-to-pytest-node-in-test-tree/) - Navigates to the corresponding node in the test tree view
 - **Mock assertion methods** - Resolves unittest.mock assertion methods without enabling broader mock type inference
+- **Mock type provider** - Provides type information for unittest.mock objects
 - [**New pytest members**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/new-pytest-members/) - Adds Generate menu actions for new pytest tests and fixtures
 - [**Parametrize pytest test**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/parametrize-pytest-test/) ([PY-73660](https://youtrack.jetbrains.com/issue/PY-73660)) - Converts a test function to use @pytest.mark.parametrize
 - [**Pytest fixture documentation**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/pytest-fixture-documentation/) ([PY-66245](https://youtrack.jetbrains.com/issue/PY-66245)) - Enhances Quick Documentation and member type inference for pytest fixtures across files
@@ -69,6 +70,7 @@ which are API backend development, domain-driven design and automated testing.
 - [**Constant should be Final inspection**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/constant-final-inspection/) - Reports module-level constants that should be annotated with Final
 - **Fixture annotation mismatch inspection** - Reports test or fixture parameters whose explicit type annotation is incompatible with the value type provided by the resolved fixture
 - [**Missing |None annotation inspection**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/missing-none-annotation-inspection/) ([PY-88504](https://youtrack.jetbrains.com/issue/PY-88504)) - Adds a quickfix for PyCharm's missing | None annotation inspection
+- **Mock unresolved reference inspection** - Reports unresolved references in mock usage
 - [**Overridden method missing type annotations inspection**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/overridden-method-missing-type-annotations-inspection/) - Reports overrides missing type annotations present in parent methods
 - [**Private module import inspection**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/private-module-import-inspection/) - Reports private-module imports that should use public package exports
 - [**Pytest failed line inspection**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/pytest-failed-line-inspection/) ([PY-32337](https://youtrack.jetbrains.com/issue/PY-32337), [PY-61067](https://youtrack.jetbrains.com/issue/PY-61067)) - Marks the line where a pytest test failed
@@ -92,6 +94,8 @@ which are API backend development, domain-driven design and automated testing.
 - [**Top-level extract function**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/top-level-extract-function/) ([PY-40840](https://youtrack.jetbrains.com/issue/PY-40840), [PY-44636](https://youtrack.jetbrains.com/issue/PY-44636), [PY-73852](https://youtrack.jetbrains.com/issue/PY-73852)) - Extracts top-level Python statements into a function with parameters and explicit return values instead of globals
 
 #### Completion & References
+- **Mock patch object attribute completion** - Completes attributes for mock.patch.object targets
+- **Mock patch reference** - Provides reference resolution for mock.patch target strings
 - [**NewType/TypeVar/ParamSpec reference & rename**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/newtype-typevar-paramspec-reference/) ([PY-82966](https://youtrack.jetbrains.com/issue/PY-82966), [PY-53658](https://youtrack.jetbrains.com/issue/PY-53658)) - Adds references for NewType/TypeVar/ParamSpec name literals, keeps the name string in sync on rename, and repairs manual NewType drift
 - [**Pytest identifier in Search Everywhere**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/pytest-identifier-search-everywhere/) - Includes pytest identifiers in Search Everywhere results
 
