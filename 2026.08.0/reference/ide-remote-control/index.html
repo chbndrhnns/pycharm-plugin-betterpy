@@ -1,0 +1,2914 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Supercharge your Python development in PyCharm">
+      
+      
+      
+        <link rel="canonical" href="https://chbndrhnns.github.io/pycharm-plugin-betterpy/2026.08.0/reference/ide-remote-control/">
+      
+      
+        <link rel="prev" href="../inspections/">
+      
+      
+        <link rel="next" href="../../changelog/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/logo.svg">
+      <meta name="generator" content="zensical-0.0.50">
+    
+    
+      
+        <title>Ide remote control - BetterPy – PyCharm Plugin</title>
+      
+    
+    
+      
+        
+      
+      <link rel="stylesheet" href="../../assets/stylesheets/modern/main.62c9b9cc.min.css">
+      
+        
+          
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/modern/palette.dfe2e883.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,500,500i,700,700i%7CJetBrains+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer" aria-label="Navigation"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#quick-start" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="BetterPy – PyCharm Plugin" class="md-header__button md-logo" aria-label="BetterPy – PyCharm Plugin" data-md-component="logo">
+      
+  <img src="../../assets/logo.svg" alt="BetterPy – PyCharm Plugin">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer" aria-label="Navigation">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            BetterPy – PyCharm Plugin
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Ide remote control
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search" aria-label="Search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog" aria-label="Search">
+  <button type="button" class="md-search__button">
+    Search
+  </button>
+</div>
+      
+    
+    <a class="bp-header-install" href="https://plugins.jetbrains.com/plugin/29896-betterpy" target="_blank" rel="noopener">
+      <span class="bp-header-install__label">Install BetterPy</span>
+      <span class="bp-header-install__short">Install</span>
+    </a>
+    <div class="md-header__source">
+      
+    </div>
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+      
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../getting-started/installation/" class="md-tabs__link">
+          
+  
+  Getting Started
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+      
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../features/" class="md-tabs__link">
+          
+  
+  Features
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+      
+    
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../settings/" class="md-tabs__link">
+          
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../changelog/" class="md-tabs__link">
+        
+  
+  Changelog
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="BetterPy – PyCharm Plugin" class="md-nav__button md-logo" aria-label="BetterPy – PyCharm Plugin" data-md-component="logo">
+      
+  <img src="../../assets/logo.svg" alt="BetterPy – PyCharm Plugin">
+
+    </a>
+    BetterPy – PyCharm Plugin
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Home
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Getting Started
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+  Getting Started
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Installation
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Features
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+  Features
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Overview
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/typing-type-hints/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Typing & Type Hints
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/refactoring/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Refactoring & Code Transformations
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/pytest/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Testing (Pytest)
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/imports/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Imports & Module Boundaries
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/navigation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Navigation & Discovery
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/code-quality/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Code Quality & Safety
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/productivity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Productivity Actions
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/ide-customization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  IDE Customization
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Reference
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+  Reference
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Settings
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../inspections/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Inspections
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  IDE Remote Control
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="././" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  IDE Remote Control
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quick-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Quick start
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mcp-versus-rest-and-cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        MCP versus REST and CLI
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installed-pycharm-eap-runbook" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Installed PyCharm EAP runbook
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installed PyCharm EAP runbook">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-deploy-the-dev-plugin-into-the-installed-ide" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        1. Deploy the dev plugin into the installed IDE
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-configure-token-and-port" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2. Configure token and port
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-launch-and-point-the-client-at-the-ide" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        3. Launch and point the client at the IDE
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-open-a-project-and-handle-trustmodal-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        4. Open a project and handle trust/modal state
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-wait-for-a-usable-ide" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        5. Wait for a usable IDE
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-collect-diagnostics-and-feature-logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        6. Collect diagnostics and feature logs
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#web-framework-discovery-diagnostics" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Web framework discovery diagnostics
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scenario-streaming" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Scenario streaming
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Scenario streaming">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#event-schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Event schema
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cli-stream-follow" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        CLI stream follow
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pytest-marker-live-smoke-recipe" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Pytest marker live smoke recipe
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pytest marker live smoke recipe">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-create-a-small-uv-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        1. Create a small uv project
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-open-trust-and-wait-for-readiness" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2. Open, trust, and wait for readiness
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-check-strict-marker-diagnostics" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        3. Check strict-marker diagnostics
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-trigger-marker-completion-with-feature-logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        4. Trigger marker completion with feature logs
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#future-streaming-direction" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Future streaming direction
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#semantic-tool-window-trees-and-console-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Semantic tool-window trees and console output
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Troubleshooting
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#local-client" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Local client
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-lifecycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Project lifecycle
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Endpoints
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#response-semantics" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Response semantics
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wait-execution-and-pagination" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Wait execution and pagination
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recording-crop-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Recording crop workflow
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#feature-logging" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Feature Logging
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Changelog
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  
+                    
+                    
+                    
+                    
+                      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+                      <div class="md-sidebar-button__wrapper">
+                        <label class="md-sidebar-button" for="__toc"></label>
+                      </div>
+                    
+                  
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quick-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Quick start
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mcp-versus-rest-and-cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        MCP versus REST and CLI
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installed-pycharm-eap-runbook" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Installed PyCharm EAP runbook
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installed PyCharm EAP runbook">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-deploy-the-dev-plugin-into-the-installed-ide" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        1. Deploy the dev plugin into the installed IDE
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-configure-token-and-port" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2. Configure token and port
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-launch-and-point-the-client-at-the-ide" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        3. Launch and point the client at the IDE
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-open-a-project-and-handle-trustmodal-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        4. Open a project and handle trust/modal state
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-wait-for-a-usable-ide" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        5. Wait for a usable IDE
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-collect-diagnostics-and-feature-logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        6. Collect diagnostics and feature logs
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#web-framework-discovery-diagnostics" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Web framework discovery diagnostics
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scenario-streaming" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Scenario streaming
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Scenario streaming">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#event-schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Event schema
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cli-stream-follow" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        CLI stream follow
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pytest-marker-live-smoke-recipe" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Pytest marker live smoke recipe
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pytest marker live smoke recipe">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-create-a-small-uv-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        1. Create a small uv project
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-open-trust-and-wait-for-readiness" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2. Open, trust, and wait for readiness
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-check-strict-marker-diagnostics" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        3. Check strict-marker diagnostics
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-trigger-marker-completion-with-feature-logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        4. Trigger marker completion with feature logs
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#future-streaming-direction" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Future streaming direction
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#semantic-tool-window-trees-and-console-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Semantic tool-window trees and console output
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Troubleshooting
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#local-client" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Local client
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-lifecycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Project lifecycle
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Endpoints
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#response-semantics" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Response semantics
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wait-execution-and-pagination" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Wait execution and pagination
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recording-crop-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Recording crop workflow
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#feature-logging" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Feature Logging
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+    
+    
+    
+      <li class="md-path__item">
+        <a href="../settings/" class="md-path__link">
+          
+  
+  <span class="md-ellipsis">
+    Reference
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+<h1 id="developer-remote-control-api">Developer remote-control API<a class="headerlink" href="#developer-remote-control-api" title="Permanent link">&para;</a></h1>
+<p>BetterPy exposes a small HTTP remote-control API for automated debugging in dev builds.</p>
+<p>The endpoint is intentionally narrow:</p>
+<ul>
+<li>Available only when the active release channel is <code>dev</code>.</li>
+<li>Accepts loopback requests only.</li>
+<li>Requires a configured token for every endpoint except <code>GET /ping</code> and the
+  bootstrap-only <code>GET /status</code>. <code>status</code> discloses no token value and is limited
+  to connection metadata needed to identify the intended local IDE instance.
+  When both the settings-panel session token and <code>betterpy.remoteControl.token</code>
+  are present, either token is accepted.</li>
+<li>Uses the <code>X-BetterPy-Remote-Token</code> header, or a <code>token</code> query parameter.</li>
+</ul>
+<p>Base URL:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>http://127.0.0.1:&lt;IDE built-in server port&gt;/api/betterpy-remote
+</code></pre></div>
+<p>The IDE built-in server commonly starts at <code>63342</code>, but that port is not an
+instance identity. BetterPy writes a non-secret connection profile named
+<code>betterpy-remote-control.json</code> in the selected IDE configuration directory
+after a project opens. It contains the effective base URL, endpoint path,
+instance ID, release channel, and whether a token is configured.</p>
+<p>Prefer the lifecycle harness when starting an IDE for automation:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>python3<span class="w"> </span>scripts/ide_remote_harness.py<span class="w"> </span>start<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span>--ide-version<span class="w"> </span><span class="m">2026</span>.1<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span>--project<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$PWD</span><span class="s2">/examples/feature_showcase&quot;</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="nb">source</span><span class="w"> </span>build/ide-remote-harness/connection.env
+</code></pre></div>
+<p>It builds current sources, chooses a free port, generates authentication,
+launches a downloaded platform in the Gradle sandbox, and verifies IDE/plugin
+runtime identity, including the hash calculated from the loaded plugin JAR.
+<code>status</code> re-runs diagnostics for the managed session and <code>stop</code> terminates its
+launcher. Session and environment files under
+<code>build/ide-remote-harness/</code> are mode <code>0600</code>.</p>
+<p>Use <code>--ide-build</code> or <code>--ide-path</code> when an installed EAP/nightly is required.
+These fallback modes deploy into that app's normal configuration. For an IDE
+that is already running, prefer the profile to guessed ports:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>python3<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>find-profile
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>python3<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span>--connection-file<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$HOME</span><span class="s2">/Library/Application Support/JetBrains/PyCharm2026.2/betterpy-remote-control.json&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span>doctor
+</code></pre></div>
+<p>The <strong>Copy Connection Environment</strong> BetterPy action copies an equivalent
+shell-safe setup, including the current session token. The profile never
+contains a token.</p>
+<p><code>find-profile</code> scans standard JetBrains configuration roots, selects the profile
+with the latest <code>startedAt</code>, and reports <code>ambiguous: true</code> plus every candidate
+when multiple IDE profiles exist. Always confirm its selected <code>instanceId</code> with
+<code>wait-ready --expected-instance-id</code>.</p>
+<h2 id="quick-start">Quick start<a class="headerlink" href="#quick-start" title="Permanent link">&para;</a></h2>
+<p>From the repository root, use the harness for a reproducible session:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>python3<span class="w"> </span>scripts/ide_remote_harness.py<span class="w"> </span>start<span class="w"> </span>--ide-version<span class="w"> </span><span class="m">2026</span>.1<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span>--project<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$PWD</span><span class="s2">/examples/feature_showcase&quot;</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="nb">source</span><span class="w"> </span>build/ide-remote-harness/connection.env
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>python3<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>action<span class="w"> </span>CodeCompletion<span class="w"> </span>--wait
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>python3<span class="w"> </span>scripts/ide_remote_harness.py<span class="w"> </span>status
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>python3<span class="w"> </span>scripts/ide_remote_harness.py<span class="w"> </span>stop
+</code></pre></div>
+<p><code>doctor</code> first uses tokenless <code>/status</code> or <code>/ping</code> to distinguish a connection
+failure from a reachable endpoint rejected by its channel, feature, loopback,
+or token gate. It reports endpoint reachability, token state, channel, feature
+flag state, project availability, modal blocking, and smart-mode/indexing
+readiness.</p>
+<h2 id="mcp-versus-rest-and-cli">MCP versus REST and CLI<a class="headerlink" href="#mcp-versus-rest-and-cli" title="Permanent link">&para;</a></h2>
+<p>MCP-connected agents can use the focused <code>ide_remote_*</code> toolset without a REST
+port, connection profile, or token:</p>
+<ul>
+<li><code>ide_remote_status</code></li>
+<li><code>ide_remote_open</code></li>
+<li><code>ide_remote_action</code></li>
+<li><code>ide_remote_diagnostics</code></li>
+<li><code>ide_remote_modal</code> and <code>ide_remote_modal_action</code></li>
+<li><code>ide_remote_wait_ready</code></li>
+</ul>
+<p>The tools still require the dev channel, enabled <code>ide-remote-control</code> feature,
+and an open MCP project. They call the same controller contracts and report
+stable codes through MCP failures. Waits are interruptible when the MCP request
+is canceled.</p>
+<p>Use MCP for the common status/open/action/diagnostics/modal/readiness workflow.
+Use REST/CLI for the full-fidelity surface: schema discovery, project pinning,
+recording, layout and geometry, tool-window trees, pagination loops, feature
+logging, and streamed multi-step scenarios.</p>
+<h2 id="installed-pycharm-eap-runbook">Installed PyCharm EAP runbook<a class="headerlink" href="#installed-pycharm-eap-runbook" title="Permanent link">&para;</a></h2>
+<p>Use this runbook when validating a dev BetterPy build inside an installed
+PyCharm EAP such as <code>2026.2 EAP</code>.</p>
+<h3 id="1-deploy-the-dev-plugin-into-the-installed-ide">1. Deploy the dev plugin into the installed IDE<a class="headerlink" href="#1-deploy-the-dev-plugin-into-the-installed-ide" title="Permanent link">&para;</a></h3>
+<p>Run the repository deploy script and select the installed PyCharm EAP from the
+interactive list:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nv">JAVA_HOME</span><span class="o">=</span>/Users/jo/Library/Java/JavaVirtualMachines/jbr-21.0.10/Contents/Home<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span>./scripts/deploy.sh
+</code></pre></div>
+<p>The script builds the plugin and installs it into the settings directory used by
+the selected app. Close the target IDE before deploying so the plugin is loaded
+cleanly on the next launch.</p>
+<p>For unattended deployment, set <code>BETTERPY_DEPLOY_NONINTERACTIVE=true</code>,
+<code>BETTERPY_REQUIRED_PYCHARM_BUILD</code>, <code>BETTERPY_REMOTE_CONTROL_ENABLED=true</code>,
+<code>BETTERPY_REMOTE_TOKEN</code>, and <code>BETTERPY_IDE_SERVER_PORT</code>. The script persists
+the token in both <code>idea.properties</code> and custom <code>pycharm.vmoptions</code>, because a
+pre-existing VM option overrides the properties file. It never places the token
+in the launched IDE's process arguments.</p>
+<h3 id="2-configure-token-and-port">2. Configure token and port<a class="headerlink" href="#2-configure-token-and-port" title="Permanent link">&para;</a></h3>
+<p>Generate a session token from the BetterPy settings panel, or add the
+remote-control token and, when needed, the built-in server port to the target IDE
+<code>idea.properties</code>. For PyCharm <code>2026.2</code>, the file is typically:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>~/Library/Application Support/JetBrains/PyCharm2026.2/idea.properties
+</code></pre></div>
+<p>Example properties:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="na">betterpy.remoteControl.token</span><span class="o">=</span><span class="s">dev-secret</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="na">rpc.port</span><span class="o">=</span><span class="s">63343</span>
+</code></pre></div>
+<p>Restart the IDE after changing these properties. A generated session token is
+shown and copied first in settings, but the JVM-property token remains valid
+until the property is removed and the IDE is restarted. A configured token is
+required for every endpoint except <code>GET /ping</code>.</p>
+<h3 id="3-launch-and-point-the-client-at-the-ide">3. Launch and point the client at the IDE<a class="headerlink" href="#3-launch-and-point-the-client-at-the-ide" title="Permanent link">&para;</a></h3>
+<p>Open the installed app and export matching client values:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>open<span class="w"> </span>-a<span class="w"> </span><span class="s2">&quot;PyCharm 2026.2 EAP&quot;</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="nb">export</span><span class="w"> </span><span class="nv">BETTERPY_REMOTE_TOKEN</span><span class="o">=</span>dev-secret
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="nb">export</span><span class="w"> </span><span class="nv">BETTERPY_REMOTE_BASE</span><span class="o">=</span>http://127.0.0.1:63343/api/betterpy-remote
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>python3<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>doctor<span class="w"> </span>--try-ports<span class="w"> </span><span class="m">63342</span>,63343
+</code></pre></div>
+<p>The expected <code>doctor</code> result has <code>ready=true</code>, <code>channel=dev</code>, and
+<code>featureEnabled=true</code>. If <code>ping</code> succeeds but protected endpoints fail, check
+that <code>BETTERPY_REMOTE_TOKEN</code> matches either the session token shown in settings
+or the <code>betterpy.remoteControl.token</code> property. Restart the IDE after property
+changes.</p>
+<h3 id="4-open-a-project-and-handle-trustmodal-state">4. Open a project and handle trust/modal state<a class="headerlink" href="#4-open-a-project-and-handle-trustmodal-state" title="Permanent link">&para;</a></h3>
+<p>Open the project with the IDE UI or launcher. Then inspect modal state through
+the remote-control API rather than using OS-level automation:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>python3<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>modal
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>python3<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>wait-modal<span class="w"> </span>--closed<span class="w"> </span>--timeout-ms<span class="w"> </span><span class="m">30000</span>
+</code></pre></div>
+<p>If a trust dialog or another modal is open, inspect its component tree and click
+the intended button by stable text/name/accessibility metadata:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>python3<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>modal
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>python3<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>modal-action<span class="w"> </span>click<span class="w"> </span>--text<span class="w"> </span><span class="s2">&quot;Trust Project&quot;</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>python3<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>wait-modal<span class="w"> </span>--closed<span class="w"> </span>--timeout-ms<span class="w"> </span><span class="m">30000</span>
+</code></pre></div>
+<p>Use exact modal output from your IDE when choosing <code>--text</code>, <code>--name</code>, or
+<code>--accessible-name</code>; do not click unrelated dialogs blindly.</p>
+<h3 id="5-wait-for-a-usable-ide">5. Wait for a usable IDE<a class="headerlink" href="#5-wait-for-a-usable-ide" title="Permanent link">&para;</a></h3>
+<p>After opening and trusting the project, wait for the usual readiness gates with
+one command:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>python3<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>wait-ready<span class="w"> </span>--timeout-ms<span class="w"> </span><span class="m">60000</span><span class="w"> </span>--poll-ms<span class="w"> </span><span class="m">250</span>
+</code></pre></div>
+<p><code>wait-ready</code> retries transient bootstrap connection failures until its deadline.
+For automation that must avoid controlling a different running IDE, read
+<code>instanceId</code> from <code>/status</code> and require it explicitly:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>python3<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>wait-ready<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="w">  </span>--expected-instance-id<span class="w"> </span><span class="s2">&quot;&lt;instance-id&gt;&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="w">  </span>--timeout-ms<span class="w"> </span><span class="m">60000</span><span class="w"> </span>--poll-ms<span class="w"> </span><span class="m">250</span>
+</code></pre></div>
+<p>If layout stability is not relevant for a headless check, skip that gate:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>python3<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>wait-ready<span class="w"> </span>--skip-layout-stable
+</code></pre></div>
+<h3 id="6-collect-diagnostics-and-feature-logs">6. Collect diagnostics and feature logs<a class="headerlink" href="#6-collect-diagnostics-and-feature-logs" title="Permanent link">&para;</a></h3>
+<p>Open the file under test, wait for smart mode, collect diagnostics, and trigger
+an action with feature-scoped logging in one action command:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>python3<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>open<span class="w"> </span>tests/test_markers.py<span class="w"> </span>--line<span class="w"> </span><span class="m">12</span><span class="w"> </span>--column<span class="w"> </span><span class="m">16</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>python3<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>wait-smart-mode<span class="w"> </span>--timeout-ms<span class="w"> </span><span class="m">60000</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>python3<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>diagnostics<span class="w"> </span>--path<span class="w"> </span>tests/test_markers.py
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>python3<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>action<span class="w"> </span>CodeCompletion<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="w">  </span>--wait<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="w">  </span>--log-feature-id<span class="w"> </span>pytest-mark-completion<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="w">  </span>--log-level<span class="w"> </span>trace<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="w">  </span>--label<span class="w"> </span>marker-completion-smoke
+</code></pre></div>
+<p>The action result includes the command status and any captured <code>logFiles</code>, so a
+second manual <code>wait-command</code> call is not needed.</p>
+<h3 id="web-framework-discovery-diagnostics">Web framework discovery diagnostics<a class="headerlink" href="#web-framework-discovery-diagnostics" title="Permanent link">&para;</a></h3>
+<p><code>web-discovery-diagnostics</code> accepts no path, framework, or reset options. It
+performs one direct all-framework scanner pass for the open project; it is not a
+cache-hit latency measurement and does not read editor highlighting diagnostics.
+After <code>doctor</code> supplies the live base URL and <code>wait-ready</code> has completed, invoke
+it with the configured token:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="nv">BETTERPY_REMOTE_TOKEN</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$DISCOVERY_TOKEN</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>python3<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>--base<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$DISCOVERY_BASE_URL</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="w">  </span>web-discovery-diagnostics
+</code></pre></div>
+<p>The successful payload is flattened beneath <code>ok: true</code> and contains:</p>
+<ul>
+<li><code>elapsedNanos</code>: elapsed time for the one direct scanner invocation.</li>
+<li><code>applications</code> and <code>endpoints</code>: aggregate totals from that invocation.</li>
+<li><code>frameworks</code>: one declaration-ordered row for every supported framework,
+  including zero-result frameworks; each row has <code>framework</code>, <code>applications</code>,
+  and <code>endpoints</code>.</li>
+<li><code>counters</code>: aggregate scanner measurements only. <code>discoveryRequests</code> counts
+  scanner requests; <code>indexedCandidateLookups</code> and <code>indexedCandidateFiles</code>
+  describe index-based candidate selection; <code>fullPythonScanFallbacks</code> records
+  fallback selection; <code>fullPythonMarkerScanFilesExamined</code>,
+  <code>routeObjectCandidateFiles</code>, and <code>discoveryFiles</code> describe candidate breadth.</li>
+<li><code>counters.phaseTimings</code>: a declaration-ordered list containing every phase,
+  including skipped phases with zero timings. Each item has <code>phase</code>, <code>calls</code>,
+  <code>totalNanos</code>, and <code>maxNanos</code>. The phases are <code>DISCOVERY_FILES</code>,
+  <code>FULL_PYTHON_MARKER_SCAN</code>, <code>PSI_EXTRACTION_AND_TYPE_INFERENCE</code>,
+  <code>ENDPOINT_AND_INCLUDE_COLLECTION</code>, <code>INCLUDE_EXPANSION</code>,
+  <code>RESULT_NORMALIZATION</code>, and <code>CONNEXION_OPENAPI_SCAN</code>.</li>
+</ul>
+<p>The endpoint returns the normal error envelope, <code>{ "ok": false, "error": "..."
+}</code>, before scanning when either prerequisite fails. The exact errors are:</p>
+<ul>
+<li><code>API route navigation is disabled</code></li>
+<li><code>Project is indexing; wait for smart mode before running web discovery diagnostics</code></li>
+</ul>
+<h2 id="scenario-streaming">Scenario streaming<a class="headerlink" href="#scenario-streaming" title="Permanent link">&para;</a></h2>
+<p><code>POST /scenario/run/stream</code> executes the same <code>RemoteScenarioRunRequest</code> accepted
+by <code>POST /scenario/run</code>, but returns progressive newline-delimited JSON. The
+response content type is <code>application/x-ndjson</code>; each line is one
+<code>RemoteStreamEvent</code> object and clients should process lines as they arrive.</p>
+<p>The existing buffered scenario endpoint remains unchanged. Use streaming when a
+live IDE smoke test needs progress feedback, a terminal aggregate result, and
+feature log file references without manual <code>action</code> → <code>wait</code> → <code>state</code> chaining.</p>
+<h3 id="event-schema">Event schema<a class="headerlink" href="#event-schema" title="Permanent link">&para;</a></h3>
+<p>Every event has this envelope:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="p">{</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;scenario.step.finished&quot;</span><span class="p">,</span>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="w">  </span><span class="nt">&quot;sequence&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="w">  </span><span class="nt">&quot;timestampMillis&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1761693720000</span><span class="p">,</span>
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="w">  </span><span class="nt">&quot;scenarioId&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="w">  </span><span class="nt">&quot;stepIndex&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a><span class="w">  </span><span class="nt">&quot;commandId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cmd-123&quot;</span><span class="p">,</span>
+<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a><span class="w">  </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;marker completion&quot;</span><span class="p">,</span>
+<a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a><span class="w">  </span><span class="nt">&quot;correlationId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;smoke-1&quot;</span><span class="p">,</span>
+<a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a><span class="w">  </span><span class="nt">&quot;payload&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{}</span>
+<a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a><span class="p">}</span>
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Event type</th>
+<th>When it appears</th>
+<th>Payload</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>scenario.started</code></td>
+<td>Before the first step is dispatched.</td>
+<td>Empty in the first implementation wave.</td>
+</tr>
+<tr>
+<td><code>scenario.step.started</code></td>
+<td>Immediately before a step handler runs.</td>
+<td>Empty; use <code>stepIndex</code>, <code>label</code>, and <code>correlationId</code> from the envelope.</td>
+</tr>
+<tr>
+<td><code>scenario.step.finished</code></td>
+<td>After a step returns a successful <code>RemoteScenarioStepResult</code>.</td>
+<td>The step result object.</td>
+</tr>
+<tr>
+<td><code>scenario.step.failed</code></td>
+<td>After a step returns a failed result, including assertion or wait mismatches.</td>
+<td>The failed step result object.</td>
+</tr>
+<tr>
+<td><code>logging.files</code></td>
+<td>After an action step returns feature-scoped log files.</td>
+<td>A list of <code>RemoteFeatureLogFile</code> objects.</td>
+</tr>
+<tr>
+<td><code>scenario.finished</code></td>
+<td>After normal completion or <code>stopOnError</code> termination.</td>
+<td>The final <code>RemoteScenarioRunResponse</code>.</td>
+</tr>
+<tr>
+<td><code>error</code></td>
+<td>For parse/access/execution failures handled after the stream route begins.</td>
+<td><code>RemoteStreamError</code> with a <code>message</code> and stable <code>code</code>.</td>
+</tr>
+</tbody>
+</table>
+<p>Feature log content is intentionally not streamed in this wave. Action steps can
+still request logs with <code>logFeatureIds</code> and <code>logLevel</code>; streamed <code>logging.files</code>
+events expose durable log-file references with <code>featureId</code>, <code>category</code>,
+<code>scopeId</code>, <code>path</code>, and <code>loggerNames</code>. Feature ids resolve to logging categories
+from feature metadata, and the logging service attaches both plain category
+logger names and <code>#category</code> logger names.</p>
+<h3 id="cli-stream-follow">CLI stream follow<a class="headerlink" href="#cli-stream-follow" title="Permanent link">&para;</a></h3>
+<p>Use <code>scenario-run --stream</code> to print compact <code>NDJSON</code> and exit non-zero when an
+<code>error</code> event appears or the final <code>scenario.finished</code> payload has
+<code>passed=false</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>python3<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>scenario-run<span class="w"> </span>--stream<span class="w"> </span>--body<span class="w"> </span><span class="s1">&#39;{</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="s1">  &quot;label&quot;: &quot;marker completion stream&quot;,</span>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="s1">  &quot;correlationId&quot;: &quot;pytest-marker-stream-smoke&quot;,</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="s1">  &quot;steps&quot;: [</span>
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="s1">    {</span>
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="s1">      &quot;type&quot;: &quot;open&quot;,</span>
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a><span class="s1">      &quot;label&quot;: &quot;open test file&quot;,</span>
+<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a><span class="s1">      &quot;open&quot;: {&quot;path&quot;: &quot;build/live-ide-pytest-marker-project/tests/test_markers.py&quot;}</span>
+<a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a><span class="s1">    },</span>
+<a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a><span class="s1">    {</span>
+<a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a><span class="s1">      &quot;type&quot;: &quot;action&quot;,</span>
+<a id="__codelineno-16-12" name="__codelineno-16-12" href="#__codelineno-16-12"></a><span class="s1">      &quot;label&quot;: &quot;complete marker&quot;,</span>
+<a id="__codelineno-16-13" name="__codelineno-16-13" href="#__codelineno-16-13"></a><span class="s1">      &quot;action&quot;: {</span>
+<a id="__codelineno-16-14" name="__codelineno-16-14" href="#__codelineno-16-14"></a><span class="s1">        &quot;actionId&quot;: &quot;CodeCompletion&quot;,</span>
+<a id="__codelineno-16-15" name="__codelineno-16-15" href="#__codelineno-16-15"></a><span class="s1">        &quot;logFeatureIds&quot;: [&quot;pytest-mark-completion&quot;],</span>
+<a id="__codelineno-16-16" name="__codelineno-16-16" href="#__codelineno-16-16"></a><span class="s1">        &quot;logLevel&quot;: &quot;trace&quot;</span>
+<a id="__codelineno-16-17" name="__codelineno-16-17" href="#__codelineno-16-17"></a><span class="s1">      }</span>
+<a id="__codelineno-16-18" name="__codelineno-16-18" href="#__codelineno-16-18"></a><span class="s1">    }</span>
+<a id="__codelineno-16-19" name="__codelineno-16-19" href="#__codelineno-16-19"></a><span class="s1">  ]</span>
+<a id="__codelineno-16-20" name="__codelineno-16-20" href="#__codelineno-16-20"></a><span class="s1">}&#39;</span>
+</code></pre></div>
+<p>Add <code>--pretty</code> for indented event objects while following a stream manually.
+The default remains one compact JSON object per line for machine consumers.</p>
+<p>Use a generic <code>route</code> step when a registered operation has no named scenario
+step. Existing named steps and aliases remain supported:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="p">{</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="w">  </span><span class="nt">&quot;steps&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="w">      </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;route&quot;</span><span class="p">,</span>
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a><span class="w">      </span><span class="nt">&quot;route&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">&quot;method&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;GET&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;path&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/projects&quot;</span><span class="p">}</span>
+<a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a><span class="w">  </span><span class="p">]</span>
+<a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a><span class="p">}</span>
+</code></pre></div>
+<p>The optional <code>route.body</code> object is serialized as the request JSON. Failed
+registered operations preserve their stable code as <code>errorCode</code> on the scenario
+step result.</p>
+<p>Example output:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>{&quot;sequence&quot;:1,&quot;timestampMillis&quot;:1761693720000,&quot;type&quot;:&quot;scenario.started&quot;}
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>{&quot;label&quot;:&quot;open test file&quot;,&quot;sequence&quot;:2,&quot;stepIndex&quot;:0,&quot;timestampMillis&quot;:1761693720001,&quot;type&quot;:&quot;scenario.step.started&quot;}
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>{&quot;label&quot;:&quot;open test file&quot;,&quot;payload&quot;:{&quot;index&quot;:0,&quot;ok&quot;:true,&quot;type&quot;:&quot;open&quot;},&quot;sequence&quot;:3,&quot;stepIndex&quot;:0,&quot;timestampMillis&quot;:1761693720002,&quot;type&quot;:&quot;scenario.step.finished&quot;}
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>{&quot;commandId&quot;:&quot;cmd-123&quot;,&quot;label&quot;:&quot;complete marker&quot;,&quot;payload&quot;:[{&quot;featureId&quot;:&quot;pytest-mark-completion&quot;,&quot;category&quot;:&quot;com.github.chbndrhnns.betterpy.features.pytestMarkCompletion.PytestMarkCompletionContributor&quot;,&quot;scopeId&quot;:&quot;scope-1&quot;,&quot;path&quot;:&quot;/Users/jo/Library/Logs/JetBrains/PyCharm2026.2/betterpy-remote/...log&quot;,&quot;loggerNames&quot;:[&quot;com.github.chbndrhnns.betterpy.features.pytestMarkCompletion.PytestMarkCompletionContributor&quot;,&quot;#com.github.chbndrhnns.betterpy.features.pytestMarkCompletion.PytestMarkCompletionContributor&quot;]}],&quot;sequence&quot;:6,&quot;stepIndex&quot;:1,&quot;timestampMillis&quot;:1761693720005,&quot;type&quot;:&quot;logging.files&quot;}
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>{&quot;payload&quot;:{&quot;passed&quot;:true,&quot;steps&quot;:[]},&quot;sequence&quot;:7,&quot;timestampMillis&quot;:1761693720006,&quot;type&quot;:&quot;scenario.finished&quot;}
+</code></pre></div>
+<p><code>curl</code> can follow the stream too:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>curl<span class="w"> </span>-N<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;X-BetterPy-Remote-Token: </span><span class="nv">$BETTERPY_REMOTE_TOKEN</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Accept: application/x-ndjson&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a><span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;steps&quot;:[]}&#39;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a><span class="w">  </span><span class="s2">&quot;</span><span class="nv">$BETTERPY_REMOTE_BASE</span><span class="s2">/scenario/run/stream&quot;</span>
+</code></pre></div>
+<h2 id="pytest-marker-live-smoke-recipe">Pytest marker live smoke recipe<a class="headerlink" href="#pytest-marker-live-smoke-recipe" title="Permanent link">&para;</a></h2>
+<p>This recipe validates the pytest marker completion and strict-marker diagnostics
+workflow against a real IDE project. It is designed for a disposable uv-based
+project outside <code>spec/</code>.</p>
+<h3 id="1-create-a-small-uv-project">1. Create a small uv project<a class="headerlink" href="#1-create-a-small-uv-project" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>build/live-ide-pytest-marker-project/tests
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="nb">cd</span><span class="w"> </span>build/live-ide-pytest-marker-project
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>uv<span class="w"> </span>init<span class="w"> </span>--bare
+<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a>cat<span class="w"> </span>&gt;<span class="w"> </span>pyproject.toml<span class="w"> </span><span class="s">&lt;&lt;&#39;EOF&#39;</span>
+<a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a><span class="s">[project]</span>
+<a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a><span class="s">name = &quot;betterpy-live-pytest-marker-smoke&quot;</span>
+<a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a><span class="s">version = &quot;0.1.0&quot;</span>
+<a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a><span class="s">requires-python = &quot;&gt;=3.11&quot;</span>
+<a id="__codelineno-20-9" name="__codelineno-20-9" href="#__codelineno-20-9"></a>
+<a id="__codelineno-20-10" name="__codelineno-20-10" href="#__codelineno-20-10"></a><span class="s">[tool.pytest.ini_options]</span>
+<a id="__codelineno-20-11" name="__codelineno-20-11" href="#__codelineno-20-11"></a><span class="s">strict_markers = true</span>
+<a id="__codelineno-20-12" name="__codelineno-20-12" href="#__codelineno-20-12"></a><span class="s">markers = [</span>
+<a id="__codelineno-20-13" name="__codelineno-20-13" href="#__codelineno-20-13"></a><span class="s">  &quot;slow: marks slow tests&quot;,</span>
+<a id="__codelineno-20-14" name="__codelineno-20-14" href="#__codelineno-20-14"></a><span class="s">  &quot;smoke: marks smoke tests&quot;,</span>
+<a id="__codelineno-20-15" name="__codelineno-20-15" href="#__codelineno-20-15"></a><span class="s">]</span>
+<a id="__codelineno-20-16" name="__codelineno-20-16" href="#__codelineno-20-16"></a><span class="s">EOF</span>
+<a id="__codelineno-20-17" name="__codelineno-20-17" href="#__codelineno-20-17"></a>uv<span class="w"> </span>add<span class="w"> </span>--dev<span class="w"> </span>pytest
+<a id="__codelineno-20-18" name="__codelineno-20-18" href="#__codelineno-20-18"></a>cat<span class="w"> </span>&gt;<span class="w"> </span>tests/test_markers.py<span class="w"> </span><span class="s">&lt;&lt;&#39;EOF&#39;</span>
+<a id="__codelineno-20-19" name="__codelineno-20-19" href="#__codelineno-20-19"></a><span class="s">import pytest</span>
+<a id="__codelineno-20-20" name="__codelineno-20-20" href="#__codelineno-20-20"></a>
+<a id="__codelineno-20-21" name="__codelineno-20-21" href="#__codelineno-20-21"></a>
+<a id="__codelineno-20-22" name="__codelineno-20-22" href="#__codelineno-20-22"></a><span class="s">@pytest.mark.slow</span>
+<a id="__codelineno-20-23" name="__codelineno-20-23" href="#__codelineno-20-23"></a><span class="s">def test_registered_marker():</span>
+<a id="__codelineno-20-24" name="__codelineno-20-24" href="#__codelineno-20-24"></a><span class="s">    assert True</span>
+<a id="__codelineno-20-25" name="__codelineno-20-25" href="#__codelineno-20-25"></a>
+<a id="__codelineno-20-26" name="__codelineno-20-26" href="#__codelineno-20-26"></a>
+<a id="__codelineno-20-27" name="__codelineno-20-27" href="#__codelineno-20-27"></a><span class="s">@pytest.mark.unknown_live_marker</span>
+<a id="__codelineno-20-28" name="__codelineno-20-28" href="#__codelineno-20-28"></a><span class="s">def test_unknown_marker():</span>
+<a id="__codelineno-20-29" name="__codelineno-20-29" href="#__codelineno-20-29"></a><span class="s">    assert True</span>
+<a id="__codelineno-20-30" name="__codelineno-20-30" href="#__codelineno-20-30"></a><span class="s">EOF</span>
+<a id="__codelineno-20-31" name="__codelineno-20-31" href="#__codelineno-20-31"></a><span class="nb">cd</span><span class="w"> </span>../../..
+</code></pre></div>
+<h3 id="2-open-trust-and-wait-for-readiness">2. Open, trust, and wait for readiness<a class="headerlink" href="#2-open-trust-and-wait-for-readiness" title="Permanent link">&para;</a></h3>
+<p>Open the project in the installed EAP, then handle the trust dialog only through
+remote-control modal endpoints:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>open<span class="w"> </span>-a<span class="w"> </span><span class="s2">&quot;PyCharm 2026.2 EAP&quot;</span><span class="w"> </span>--args<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$PWD</span><span class="s2">/build/live-ide-pytest-marker-project&quot;</span>
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>python3<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>doctor<span class="w"> </span>--try-ports<span class="w"> </span><span class="m">63342</span>,63343
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>python3<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>modal
+<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>python3<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>modal-action<span class="w"> </span>click<span class="w"> </span>--text<span class="w"> </span><span class="s2">&quot;Trust Project&quot;</span>
+<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>python3<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>wait-modal<span class="w"> </span>--closed<span class="w"> </span>--timeout-ms<span class="w"> </span><span class="m">30000</span>
+<a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a>python3<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>wait-ready<span class="w"> </span>--timeout-ms<span class="w"> </span><span class="m">60000</span><span class="w"> </span>--poll-ms<span class="w"> </span><span class="m">250</span>
+</code></pre></div>
+<p>If no trust dialog is open, <code>modal-action</code> is not needed; <code>wait-ready</code> should be
+the next command.</p>
+<h3 id="3-check-strict-marker-diagnostics">3. Check strict-marker diagnostics<a class="headerlink" href="#3-check-strict-marker-diagnostics" title="Permanent link">&para;</a></h3>
+<p>Open the file and collect diagnostics after smart mode:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>python3<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>open<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a><span class="w">  </span>build/live-ide-pytest-marker-project/tests/test_markers.py<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a><span class="w">  </span>--line<span class="w"> </span><span class="m">9</span><span class="w"> </span>--column<span class="w"> </span><span class="m">14</span>
+<a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a>python3<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>wait-smart-mode<span class="w"> </span>--timeout-ms<span class="w"> </span><span class="m">60000</span>
+<a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a>python3<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>diagnostics<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a><span class="w">  </span>--path<span class="w"> </span>build/live-ide-pytest-marker-project/tests/test_markers.py
+</code></pre></div>
+<p>Expected result: diagnostics include a <code>PytestStrictMarkersInspection</code> warning
+for <code>unknown_live_marker</code>, while registered markers such as <code>slow</code> and <code>smoke</code>
+do not produce BetterPy strict-marker warnings.</p>
+<h3 id="4-trigger-marker-completion-with-feature-logs">4. Trigger marker completion with feature logs<a class="headerlink" href="#4-trigger-marker-completion-with-feature-logs" title="Permanent link">&para;</a></h3>
+<p>Add a completion target such as <code>@pytest.mark.smo</code> in a disposable test file,
+place the caret after <code>smo</code>, and run completion with feature-scoped logging:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>python3<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>action<span class="w"> </span>CodeCompletion<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="w">  </span>--wait<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a><span class="w">  </span>--wait-status<span class="w"> </span>finished<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a><span class="w">  </span>--wait-timeout-ms<span class="w"> </span><span class="m">10000</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a><span class="w">  </span>--log-feature-id<span class="w"> </span>pytest-mark-completion<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a><span class="w">  </span>--log-level<span class="w"> </span>trace<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a><span class="w">  </span>--label<span class="w"> </span>pytest-marker-live-smoke
+</code></pre></div>
+<p>Expected result: the command finishes, the marker completes to <code>smoke</code>, and the
+JSON output includes <code>logFiles</code> for the <code>pytest-mark-completion</code> feature. Inspect
+those files if completion candidates are unexpected.</p>
+<p>To follow the same flow as a structured stream, run a scenario that requests the
+same feature logs from the action step:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>python3<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>scenario-run<span class="w"> </span>--stream<span class="w"> </span>--body<span class="w"> </span><span class="s1">&#39;{</span>
+<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a><span class="s1">  &quot;label&quot;: &quot;pytest marker live smoke&quot;,</span>
+<a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a><span class="s1">  &quot;steps&quot;: [</span>
+<a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a><span class="s1">    {</span>
+<a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a><span class="s1">      &quot;type&quot;: &quot;open&quot;,</span>
+<a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a><span class="s1">      &quot;label&quot;: &quot;open marker file&quot;,</span>
+<a id="__codelineno-24-7" name="__codelineno-24-7" href="#__codelineno-24-7"></a><span class="s1">      &quot;open&quot;: {</span>
+<a id="__codelineno-24-8" name="__codelineno-24-8" href="#__codelineno-24-8"></a><span class="s1">        &quot;path&quot;: &quot;build/live-ide-pytest-marker-project/tests/test_markers.py&quot;,</span>
+<a id="__codelineno-24-9" name="__codelineno-24-9" href="#__codelineno-24-9"></a><span class="s1">        &quot;position&quot;: {&quot;line&quot;: 9, &quot;column&quot;: 14}</span>
+<a id="__codelineno-24-10" name="__codelineno-24-10" href="#__codelineno-24-10"></a><span class="s1">      }</span>
+<a id="__codelineno-24-11" name="__codelineno-24-11" href="#__codelineno-24-11"></a><span class="s1">    },</span>
+<a id="__codelineno-24-12" name="__codelineno-24-12" href="#__codelineno-24-12"></a><span class="s1">    {</span>
+<a id="__codelineno-24-13" name="__codelineno-24-13" href="#__codelineno-24-13"></a><span class="s1">      &quot;type&quot;: &quot;action&quot;,</span>
+<a id="__codelineno-24-14" name="__codelineno-24-14" href="#__codelineno-24-14"></a><span class="s1">      &quot;label&quot;: &quot;marker completion&quot;,</span>
+<a id="__codelineno-24-15" name="__codelineno-24-15" href="#__codelineno-24-15"></a><span class="s1">      &quot;action&quot;: {</span>
+<a id="__codelineno-24-16" name="__codelineno-24-16" href="#__codelineno-24-16"></a><span class="s1">        &quot;actionId&quot;: &quot;CodeCompletion&quot;,</span>
+<a id="__codelineno-24-17" name="__codelineno-24-17" href="#__codelineno-24-17"></a><span class="s1">        &quot;logFeatureIds&quot;: [&quot;pytest-mark-completion&quot;],</span>
+<a id="__codelineno-24-18" name="__codelineno-24-18" href="#__codelineno-24-18"></a><span class="s1">        &quot;logLevel&quot;: &quot;trace&quot;</span>
+<a id="__codelineno-24-19" name="__codelineno-24-19" href="#__codelineno-24-19"></a><span class="s1">      }</span>
+<a id="__codelineno-24-20" name="__codelineno-24-20" href="#__codelineno-24-20"></a><span class="s1">    }</span>
+<a id="__codelineno-24-21" name="__codelineno-24-21" href="#__codelineno-24-21"></a><span class="s1">  ]</span>
+<a id="__codelineno-24-22" name="__codelineno-24-22" href="#__codelineno-24-22"></a><span class="s1">}&#39;</span>
+</code></pre></div>
+<p>Expected result: the stream ends with <code>scenario.finished</code> and includes a
+<code>logging.files</code> event for <code>pytest-mark-completion</code>. Inspect the referenced paths
+to review <code>PytestMarkCompletionContributor</code> diagnostics; raw log records are not
+embedded in the stream.</p>
+<h2 id="future-streaming-direction">Future streaming direction<a class="headerlink" href="#future-streaming-direction" title="Permanent link">&para;</a></h2>
+<p>The first streaming wave keeps log delivery to durable file references. If that
+is not enough, a later additive slice can stream selected log records inline or
+add a dedicated log-tail endpoint keyed by <code>scopeId</code> or <code>commandId</code>.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>flowchart LR
+<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>  Scenario[Scenario stream] --&gt; Refs[Log file refs]
+<a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a>  Refs --&gt; Files[Scoped log files]
+<a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a>  CLI[CLI] --&gt; Files
+<a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a>  Future[Future log tail] --&gt; CLI
+</code></pre></div>
+<p>Keep future log streaming opt-in and scoped to requested <code>logFeatureIds</code> so live
+validation remains bounded and does not expose unrelated IDE logs.</p>
+<h2 id="semantic-tool-window-trees-and-console-output">Semantic tool-window trees and console output<a class="headerlink" href="#semantic-tool-window-trees-and-console-output" title="Permanent link">&para;</a></h2>
+<p>Use the selected content of a named tool window as a semantic automation target:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>python3<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>tree-state<span class="w"> </span>Project<span class="w"> </span>--max-nodes<span class="w"> </span><span class="m">1000</span>
+<a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a>python3<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>tree-select<span class="w"> </span>Project<span class="w"> </span>Project<span class="w"> </span>src<span class="w"> </span>main.py<span class="w"> </span>--tree-id<span class="w"> </span>tree-0
+<a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a>python3<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>console-output<span class="w"> </span>Run<span class="w"> </span>--max-chars<span class="w"> </span><span class="m">100000</span>
+</code></pre></div>
+<p><code>tree-state</code> returns visible <code>JTree</code> components in deterministic component order.
+Each materialized node includes its full ancestor-to-node <code>semanticPath</code>, label,
+selection, expansion, visibility, leaf status, and child count. Collapsed tree
+models may not have loaded remote or lazy descendants; only children currently
+materialized by the Swing model are returned. <code>--max-nodes</code> accepts <code>1..10000</code>.
+When more nodes exist, the response sets <code>truncated: true</code>.</p>
+<p><code>tree-select</code> requires the exact full semantic path. It expands materialized
+ancestors, selects and reveals one match, focuses the tree, and returns refreshed
+tree state. Missing and duplicate paths fail without changing the current
+selection. When several trees are visible, use the returned <code>tree-&lt;index&gt;</code> value
+with <code>--tree-id</code>, or use <code>--component-name</code>; missing or duplicate selectors fail
+instead of choosing the first component.</p>
+<p><code>console-output</code> reads one visible Swing text component or IntelliJ editor-backed
+component, normalizes line endings to <code>\n</code>, and reports <code>totalChars</code> plus
+<code>truncated</code>. <code>--max-chars</code> accepts <code>1..1000000</code>. When several readable sources
+are visible, select one with its returned <code>source-&lt;index&gt;</code> via <code>--source-id</code> or
+with <code>--component-name</code>. Hidden sources are ignored; absent, missing-selector,
+and ambiguous-selector cases return explicit errors.</p>
+<h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Symptom</th>
+<th>Likely cause</th>
+<th>Next step</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Connection refused</td>
+<td>IDE is not running, the built-in server is on another port, or <code>BETTERPY_REMOTE_BASE</code> points to the wrong IDE.</td>
+<td>Run <code>doctor --try-ports 63342,63343</code>, or pass the target IDE's <code>--connection-file</code>; start the IDE or set <code>rpc.port</code>.</td>
+</tr>
+<tr>
+<td><code>401</code> or token error</td>
+<td>Client token is missing or does not match any configured settings/JVM token.</td>
+<td>Export <code>BETTERPY_REMOTE_TOKEN</code>, use <strong>Copy Connection Environment</strong>, or update <code>idea.properties</code> and restart the IDE.</td>
+</tr>
+<tr>
+<td><code>ping</code>/<code>status</code> works but <code>state</code> fails</td>
+<td>Bootstrap endpoints are intentionally tokenless; protected endpoints require a token.</td>
+<td>Provide the token for all other commands.</td>
+</tr>
+<tr>
+<td><code>channel</code> is not <code>dev</code></td>
+<td>The target IDE loaded a non-dev plugin build.</td>
+<td>Deploy a dev-channel build into the installed IDE.</td>
+</tr>
+<tr>
+<td><code>featureEnabled=false</code></td>
+<td>The remote-control feature is disabled or filtered out.</td>
+<td>Verify the dev feature set and plugin deployment.</td>
+</tr>
+<tr>
+<td>Commands stay queued</td>
+<td>A modal is open, the IDE is indexing, or the command was not followed to completion.</td>
+<td>Run <code>doctor</code>, handle modal state, then use <code>action --wait</code> or <code>wait-command</code>.</td>
+</tr>
+<tr>
+<td>Modal blocked</td>
+<td>Trust or another IDE dialog is waiting for a user decision.</td>
+<td>Inspect with <code>modal</code>, act with <code>modal-action</code>, then <code>wait-modal --closed</code>.</td>
+</tr>
+<tr>
+<td>Dumb mode/indexing</td>
+<td>Project indexes are not ready.</td>
+<td>Run <code>wait-ready --timeout-ms 60000</code> or <code>wait-smart-mode --timeout-ms 60000</code>.</td>
+</tr>
+<tr>
+<td>Diagnostics are empty</td>
+<td>File is not open/highlighted yet, the inspection is disabled, or project trust/indexing is incomplete.</td>
+<td>Open the file, wait for readiness, then call <code>diagnostics</code> again.</td>
+</tr>
+<tr>
+<td><code>409</code> with <code>UNSAVED_DOCUMENT</code></td>
+<td>A remote <code>file/write</code> would overwrite unsaved open-editor changes.</td>
+<td>Save or discard the local editor changes, then retry; BetterPy does not silently replace them.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="local-client">Local client<a class="headerlink" href="#local-client" title="Permanent link">&para;</a></h2>
+<p>Use the helper script from the repository root:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">BETTERPY_REMOTE_TOKEN</span><span class="o">=</span>dev-secret
+<a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>python<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>ping
+<a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a>python<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>schema
+<a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a>python<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>project-list
+<a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a>python<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>project-close<span class="w"> </span>--path<span class="w"> </span>/absolute/path/to/existing-project
+<a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a>python<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>project-open<span class="w"> </span>--path<span class="w"> </span>/absolute/path/to/existing-project
+<a id="__codelineno-27-7" name="__codelineno-27-7" href="#__codelineno-27-7"></a>python<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>wait-ready<span class="w"> </span>--timeout-ms<span class="w"> </span><span class="m">60000</span>
+<a id="__codelineno-27-8" name="__codelineno-27-8" href="#__codelineno-27-8"></a>python<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>open<span class="w"> </span>src/main.py<span class="w"> </span>--offset<span class="w"> </span><span class="m">42</span>
+<a id="__codelineno-27-9" name="__codelineno-27-9" href="#__codelineno-27-9"></a>python<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>action<span class="w"> </span>EditorCopy
+<a id="__codelineno-27-10" name="__codelineno-27-10" href="#__codelineno-27-10"></a>python<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>action<span class="w"> </span>EditorCopy<span class="w"> </span>--wait
+<a id="__codelineno-27-11" name="__codelineno-27-11" href="#__codelineno-27-11"></a>python<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>action<span class="w"> </span>EditorCopy<span class="w"> </span>--log-feature-id<span class="w"> </span>parameter-object-refactoring
+<a id="__codelineno-27-12" name="__codelineno-27-12" href="#__codelineno-27-12"></a>python<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>action<span class="w"> </span>ShowSettings<span class="w"> </span>--wait<span class="w"> </span>--dismiss-ui-after
+<a id="__codelineno-27-13" name="__codelineno-27-13" href="#__codelineno-27-13"></a>python<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>ui-dismiss
+<a id="__codelineno-27-14" name="__codelineno-27-14" href="#__codelineno-27-14"></a>python<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>gutters<span class="w"> </span>--path<span class="w"> </span>src/main.py<span class="w"> </span>--line<span class="w"> </span><span class="m">12</span>
+<a id="__codelineno-27-15" name="__codelineno-27-15" href="#__codelineno-27-15"></a>python<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>gutter-action<span class="w"> </span>--path<span class="w"> </span>src/main.py<span class="w"> </span>--line<span class="w"> </span><span class="m">12</span><span class="w"> </span>--gutter-index<span class="w"> </span><span class="m">0</span>
+<a id="__codelineno-27-16" name="__codelineno-27-16" href="#__codelineno-27-16"></a>python<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>gutter-action<span class="w"> </span>--path<span class="w"> </span>src/main.py<span class="w"> </span>--line<span class="w"> </span><span class="m">12</span><span class="w"> </span>--action<span class="w"> </span>popup<span class="w"> </span>--popup-action-text<span class="w"> </span><span class="s2">&quot;Jump to Endpoint Window&quot;</span>
+<a id="__codelineno-27-17" name="__codelineno-27-17" href="#__codelineno-27-17"></a>python<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>inlays<span class="w"> </span>--path<span class="w"> </span>src/main.py<span class="w"> </span>--line<span class="w"> </span><span class="m">12</span>
+<a id="__codelineno-27-18" name="__codelineno-27-18" href="#__codelineno-27-18"></a>python<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>inlay-action<span class="w"> </span>--path<span class="w"> </span>src/main.py<span class="w"> </span>--provider-id<span class="w"> </span>betterpy.class.implementations<span class="w"> </span>--action-id<span class="w"> </span>activate
+<a id="__codelineno-27-19" name="__codelineno-27-19" href="#__codelineno-27-19"></a>python<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>logging<span class="w"> </span>parameter-object-refactoring<span class="w"> </span>--scope-id<span class="w"> </span>repro-1
+<a id="__codelineno-27-20" name="__codelineno-27-20" href="#__codelineno-27-20"></a>python<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>logging<span class="w"> </span>parameter-object-refactoring<span class="w"> </span>--scope-id<span class="w"> </span>repro-1<span class="w"> </span>--disable
+<a id="__codelineno-27-21" name="__codelineno-27-21" href="#__codelineno-27-21"></a>python<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>diagnostics<span class="w"> </span>--path<span class="w"> </span>src/main.py<span class="w"> </span>--line<span class="w"> </span><span class="m">12</span><span class="w"> </span>--column<span class="w"> </span><span class="m">5</span><span class="w"> </span>--caret-only
+<a id="__codelineno-27-22" name="__codelineno-27-22" href="#__codelineno-27-22"></a>python<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>web-discovery-diagnostics
+<a id="__codelineno-27-23" name="__codelineno-27-23" href="#__codelineno-27-23"></a>python<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>window-bounds<span class="w"> </span>--width<span class="w"> </span><span class="m">1280</span><span class="w"> </span>--height<span class="w"> </span><span class="m">720</span>
+<a id="__codelineno-27-24" name="__codelineno-27-24" href="#__codelineno-27-24"></a>python<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>window-maximize
+<a id="__codelineno-27-25" name="__codelineno-27-25" href="#__codelineno-27-25"></a>python<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>geometry<span class="w"> </span>--scope<span class="w"> </span>all
+<a id="__codelineno-27-26" name="__codelineno-27-26" href="#__codelineno-27-26"></a>python<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>geometry-windows
+<a id="__codelineno-27-27" name="__codelineno-27-27" href="#__codelineno-27-27"></a>python<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>geometry-windows<span class="w"> </span>--include-balloons
+<a id="__codelineno-27-28" name="__codelineno-27-28" href="#__codelineno-27-28"></a>python<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>occupied-start<span class="w"> </span>--scope<span class="w"> </span>all<span class="w"> </span>--session-id<span class="w"> </span>demo<span class="w"> </span>--auto-sample-actions<span class="w"> </span>--sample-interval-ms<span class="w"> </span><span class="m">250</span>
+<a id="__codelineno-27-29" name="__codelineno-27-29" href="#__codelineno-27-29"></a>python<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>occupied-sample<span class="w"> </span>demo
+<a id="__codelineno-27-30" name="__codelineno-27-30" href="#__codelineno-27-30"></a>python<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>occupied-stop<span class="w"> </span>demo<span class="w"> </span>--margin<span class="w"> </span><span class="m">16</span><span class="w"> </span>--ffmpeg-crop<span class="w"> </span>--even-dimensions
+<a id="__codelineno-27-31" name="__codelineno-27-31" href="#__codelineno-27-31"></a>python<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>layout-preset<span class="w"> </span>--width<span class="w"> </span><span class="m">1280</span><span class="w"> </span>--height<span class="w"> </span><span class="m">720</span><span class="w"> </span>--hide-tool-windows<span class="w"> </span>--focus-editor
+<a id="__codelineno-27-32" name="__codelineno-27-32" href="#__codelineno-27-32"></a>python<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>screenshot-crop<span class="w"> </span>--scope<span class="w"> </span>all<span class="w"> </span>--margin<span class="w"> </span><span class="m">16</span><span class="w"> </span>--ffmpeg-crop
+<a id="__codelineno-27-33" name="__codelineno-27-33" href="#__codelineno-27-33"></a>python<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>feature-disable<span class="w"> </span>contextual-feature-tips
+<a id="__codelineno-27-34" name="__codelineno-27-34" href="#__codelineno-27-34"></a>python<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>tool-windows
+<a id="__codelineno-27-35" name="__codelineno-27-35" href="#__codelineno-27-35"></a>python<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>tool-window-show<span class="w"> </span><span class="s2">&quot;Pytest Explorer&quot;</span>
+<a id="__codelineno-27-36" name="__codelineno-27-36" href="#__codelineno-27-36"></a>python<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>tool-window-move<span class="w"> </span><span class="s2">&quot;Pytest Explorer&quot;</span><span class="w"> </span>--anchor<span class="w"> </span>right
+<a id="__codelineno-27-37" name="__codelineno-27-37" href="#__codelineno-27-37"></a>python<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>tool-window-resize<span class="w"> </span><span class="s2">&quot;Pytest Explorer&quot;</span><span class="w"> </span>--width<span class="w"> </span><span class="m">420</span>
+<a id="__codelineno-27-38" name="__codelineno-27-38" href="#__codelineno-27-38"></a>python<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>tool-window-toolbar-action<span class="w"> </span>Run<span class="w"> </span>--text<span class="w"> </span><span class="s2">&quot;Show Passed&quot;</span><span class="w"> </span>--no-robot
+<a id="__codelineno-27-39" name="__codelineno-27-39" href="#__codelineno-27-39"></a>python<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>tree-state<span class="w"> </span>Project<span class="w"> </span>--max-nodes<span class="w"> </span><span class="m">1000</span>
+<a id="__codelineno-27-40" name="__codelineno-27-40" href="#__codelineno-27-40"></a>python<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>tree-select<span class="w"> </span>Project<span class="w"> </span>Project<span class="w"> </span>src<span class="w"> </span>main.py<span class="w"> </span>--tree-id<span class="w"> </span>tree-0
+<a id="__codelineno-27-41" name="__codelineno-27-41" href="#__codelineno-27-41"></a>python<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>console-output<span class="w"> </span>Run<span class="w"> </span>--max-chars<span class="w"> </span><span class="m">100000</span>
+<a id="__codelineno-27-42" name="__codelineno-27-42" href="#__codelineno-27-42"></a>python<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>wait-command<span class="w"> </span>&lt;command-id&gt;<span class="w"> </span>--status<span class="w"> </span>finished
+<a id="__codelineno-27-43" name="__codelineno-27-43" href="#__codelineno-27-43"></a>python<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>wait-ready<span class="w"> </span>--timeout-ms<span class="w"> </span><span class="m">60000</span>
+<a id="__codelineno-27-44" name="__codelineno-27-44" href="#__codelineno-27-44"></a>python<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>wait-ready<span class="w"> </span>--expected-instance-id<span class="w"> </span>&lt;instance-id&gt;<span class="w"> </span>--timeout-ms<span class="w"> </span><span class="m">60000</span>
+<a id="__codelineno-27-45" name="__codelineno-27-45" href="#__codelineno-27-45"></a>python<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>scenario-run<span class="w"> </span>--stream<span class="w"> </span>--body<span class="w"> </span><span class="s1">&#39;{&quot;steps&quot;:[]}&#39;</span>
+<a id="__codelineno-27-46" name="__codelineno-27-46" href="#__codelineno-27-46"></a>python<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>doctor<span class="w"> </span>--try-ports<span class="w"> </span><span class="m">63342</span>,63343
+<a id="__codelineno-27-47" name="__codelineno-27-47" href="#__codelineno-27-47"></a>python<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>modal
+<a id="__codelineno-27-48" name="__codelineno-27-48" href="#__codelineno-27-48"></a>python<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>modal-action<span class="w"> </span>setText<span class="w"> </span>--name<span class="w"> </span>nameField<span class="w"> </span>--value<span class="w"> </span>newName
+<a id="__codelineno-27-49" name="__codelineno-27-49" href="#__codelineno-27-49"></a>python<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>wait-modal<span class="w"> </span>--open<span class="w"> </span>--title-contains<span class="w"> </span>Rename
+</code></pre></div>
+<p>Override the base URL with <code>BETTERPY_REMOTE_BASE</code>, <code>--base</code>, or <code>--connection-file</code>.</p>
+<p>Use <code>action --dismiss-ui-after</code> when validating an action's command/API result
+without interacting with UI that it opens. The executor observes blocking
+dialogs, dismisses them through their Escape/cancel semantics, waits for the
+action to finish, then performs a final cleanup pass. The option is off by
+default because popup and modal validation needs the opened UI to remain
+available. <code>ui-dismiss</code> exposes the same idempotent cleanup directly and reports
+popup/dialog counts plus a <code>clean</code> postcondition.</p>
+<h2 id="project-lifecycle">Project lifecycle<a class="headerlink" href="#project-lifecycle" title="Permanent link">&para;</a></h2>
+<p>Use <code>project-close</code> to close and dispose one currently open project. Select it
+with exactly one of <code>--name</code> or <code>--path</code>; names must be unambiguous, while paths
+must exactly match the base path returned by <code>project-list</code>. Native IntelliJ
+save prompts and close vetoes are preserved. If the closed project was pinned,
+the pin is cleared automatically.</p>
+<p>Use <code>project-open --path &lt;absolute-path&gt;</code> to load an existing IntelliJ project
+from disk. The path must be an absolute existing directory, and the request is
+rejected if that project is already open. Opening does not pin the project.</p>
+<p>Both commands return only after IntelliJ reports the close or open operation as
+completed. Opening completion does not mean indexing is finished; follow it
+with <code>wait-ready</code> or <code>wait-smart-mode</code> before project-model or PSI operations:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="nv">project</span><span class="o">=</span>/absolute/path/to/existing-project
+<a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>python3<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>project-close<span class="w"> </span>--path<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$project</span><span class="s2">&quot;</span>
+<a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a>python3<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>project-list
+<a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a>python3<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>project-open<span class="w"> </span>--path<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$project</span><span class="s2">&quot;</span>
+<a id="__codelineno-28-5" name="__codelineno-28-5" href="#__codelineno-28-5"></a>python3<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>wait-ready<span class="w"> </span>--timeout-ms<span class="w"> </span><span class="m">60000</span><span class="w"> </span>--poll-ms<span class="w"> </span><span class="m">250</span>
+</code></pre></div>
+<p>The lifecycle routes are protected but do not require a currently resolved
+project. Consequently, closing the last project leaves the same IDE instance
+reachable on the Welcome screen, and <code>project-open</code> can recover it using the
+same connection environment and token. Lifecycle routes are intentionally not
+available inside <code>scenario-run</code>, because closing its owning project would
+invalidate scenario state.</p>
+<h2 id="endpoints">Endpoints<a class="headerlink" href="#endpoints" title="Permanent link">&para;</a></h2>
+<!-- registered-route-signature: 47fede8e -->
+
+<p>The live <code>/schema</code> response is the exhaustive route/model reference. The table
+below summarizes route intent; the signature above is verified against all 98
+ordered registered method/path pairs so registry and reference changes cannot
+drift independently.</p>
+<p>Call <code>GET /schema</code> for the runtime endpoint list.</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Path</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GET</td>
+<td><code>/ping</code></td>
+<td>Check endpoint reachability and dev-token configuration.</td>
+</tr>
+<tr>
+<td>GET</td>
+<td><code>/status</code></td>
+<td>Return non-secret, loopback-only bootstrap metadata for the local IDE instance.</td>
+</tr>
+<tr>
+<td>GET</td>
+<td><code>/schema</code></td>
+<td>Return the supported route list.</td>
+</tr>
+<tr>
+<td>GET</td>
+<td><code>/projects</code></td>
+<td>List open projects, the resolved project, and any current pin.</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/projects/active</code></td>
+<td>Pin an open project selected by <code>name</code> or <code>path</code>.</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/projects/unpin</code></td>
+<td>Remove the current project pin.</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/projects/close</code></td>
+<td>Close and dispose an open project selected by exactly one of <code>name</code> or exact base <code>path</code>.</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/projects/open</code></td>
+<td>Load an existing IntelliJ project from an absolute directory path.</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/open</code></td>
+<td>Open a file and optionally position the caret or selection.</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/file/write</code></td>
+<td>Write a project file; refuses to overwrite unsaved open-editor changes.</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/action</code></td>
+<td>Trigger an IDE action by action id.</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/ui/dismiss</code></td>
+<td>Dismiss popup menus, popup windows, and dialogs; wait for a clean UI postcondition.</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/popups/close</code></td>
+<td>Close popup menus and popup windows without closing dialogs.</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/scenario/run</code></td>
+<td>Execute a multi-step scenario and return one aggregate JSON result.</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/scenario/run/stream</code></td>
+<td>Execute a scenario and stream <code>RemoteStreamEvent</code> objects as <code>application/x-ndjson</code>.</td>
+</tr>
+<tr>
+<td>GET</td>
+<td><code>/commands/{commandId}</code></td>
+<td>Read command status.</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/wait/command</code></td>
+<td>Poll a command until the requested or terminal status.</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/logging</code></td>
+<td>Enable or disable feature-scoped debug logging and return log file paths.</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/usages</code></td>
+<td>Find usages at an explicit file position or the current caret.</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/diagnostics</code></td>
+<td>Return open-editor highlighting diagnostics and active inspection results for a file or caret.</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/diagnostics/web-discovery</code></td>
+<td>Run one direct all-framework web-discovery scan and return aggregate timings and cardinalities.</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/gutters</code></td>
+<td>Return materialized gutter icons for a line.</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/gutter/action</code></td>
+<td>Activate a gutter click action or popup context-menu item.</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/inlays</code></td>
+<td>Return semantic inline inlay and code-vision entries for a file, line, or selected editor.</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/inlay/action</code></td>
+<td>Activate a semantic inlay or code-vision action without relying on raw screen coordinates.</td>
+</tr>
+<tr>
+<td>GET</td>
+<td><code>/state</code></td>
+<td>Return current editor state, last usages, last command, and modal state.</td>
+</tr>
+<tr>
+<td>GET</td>
+<td><code>/geometry</code></td>
+<td>Return current editor and IDE frame screen bounds.</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/geometry</code></td>
+<td>Return current bounds for <code>editor</code>, <code>ide</code>, or <code>all</code> scope.</td>
+</tr>
+<tr>
+<td>GET</td>
+<td><code>/geometry/windows</code></td>
+<td>Return visible IDE-owned windows; balloon notifications are excluded by default.</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/geometry/windows</code></td>
+<td>Return visible windows with configurable <code>includeBalloons</code>.</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/geometry/occupied/start</code></td>
+<td>Start an occupied-space session and record the initial bounds.</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/geometry/occupied/sample</code></td>
+<td>Add the current bounds to an occupied-space session.</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/geometry/occupied/stop</code></td>
+<td>Stop a session and return the maximum occupied bounds, with optional margin.</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/geometry/occupied/reset</code></td>
+<td>Clear one or all occupied-space sessions.</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/geometry/screenshot-crop</code></td>
+<td>Prototype pixel-based crop detection inside current geometry bounds.</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/recording/start</code></td>
+<td>Start a recording geometry session.</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/recording/sample</code></td>
+<td>Sample geometry for an active recording session.</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/recording/stop</code></td>
+<td>Stop a recording session and return its crop result.</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/recording/reset</code></td>
+<td>Clear one or all recording sessions.</td>
+</tr>
+<tr>
+<td>GET</td>
+<td><code>/window</code></td>
+<td>Return IDE window bounds and frame state.</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/window/bounds</code></td>
+<td>Set IDE window position and/or size.</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/window/maximize</code></td>
+<td>Maximize the IDE window.</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/window/restore</code></td>
+<td>Restore the IDE window to normal frame state.</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/layout/preset</code></td>
+<td>Apply a deterministic recording layout preset for window and tool-window state.</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/features/{featureId}/enabled</code></td>
+<td>Enable or disable a BetterPy feature id; use <code>contextual-feature-tips</code> for contextual feature nudges.</td>
+</tr>
+<tr>
+<td>GET</td>
+<td><code>/tool-windows</code></td>
+<td>List tool windows and their layout state.</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/tool-windows/{id}/show</code></td>
+<td>Show a tool window by id.</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/tool-windows/{id}/hide</code></td>
+<td>Hide a tool window by id.</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/tool-windows/{id}/activate</code></td>
+<td>Activate a tool window by id.</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/tool-windows/{id}/move</code></td>
+<td>Move a tool window to <code>left</code>, <code>right</code>, <code>top</code>, or <code>bottom</code>.</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/tool-windows/{id}/resize</code></td>
+<td>Best-effort resize of a tool window using public component sizing APIs.</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/tool-windows/{id}/toolbar-action</code></td>
+<td>Click one visible toolbar component selected by text, tooltip, accessibility/action name, or index.</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/tool-windows/{id}/trees</code></td>
+<td>Return bounded semantic state for visible materialized trees in the selected content.</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/tool-windows/{id}/trees/select</code></td>
+<td>Select and reveal one exact semantic node path and return refreshed tree state.</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/tool-windows/{id}/console</code></td>
+<td>Return bounded normalized text from one visible Swing or editor-backed source.</td>
+</tr>
+<tr>
+<td>GET</td>
+<td><code>/modal</code></td>
+<td>Return the current modal dialog component tree.</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/modal/action</code></td>
+<td>Click, set text, toggle, select, press a key, or close a modal.</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/wait/modal</code></td>
+<td>Poll until modal state matches title/open/class filters.</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/wait/smart-mode</code></td>
+<td>Poll until the project leaves dumb mode.</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/wait/layout-stable</code></td>
+<td>Poll until the requested IDE layout remains stable.</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/wait-ready</code></td>
+<td>Run the modal, smart-mode, layout, and state readiness sequence.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="response-semantics">Response semantics<a class="headerlink" href="#response-semantics" title="Permanent link">&para;</a></h2>
+<p>Buffered JSON endpoints return an additive error envelope with <code>ok: false</code>, the
+existing human-readable <code>error</code> message, and a stable machine-readable <code>code</code>.
+Streaming failures expose the same code in <code>RemoteStreamError</code>. Clients should
+branch on <code>code</code>, not message text. Older servers may omit <code>code</code>; the CLI keeps
+the legacy generic failure exit for those responses.</p>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>400 Bad Request</code></td>
+<td>Invalid arguments or request payload.</td>
+</tr>
+<tr>
+<td><code>401 Unauthorized</code></td>
+<td>Missing or invalid remote-control token.</td>
+</tr>
+<tr>
+<td><code>403 Forbidden</code></td>
+<td>Channel, feature-enabled, or loopback gate rejected the request.</td>
+</tr>
+<tr>
+<td><code>404 Not Found</code></td>
+<td>Unsupported remote-control endpoint.</td>
+</tr>
+<tr>
+<td><code>409 Conflict</code></td>
+<td>Current IDE state prevents the operation, such as an unsaved-document conflict, duplicate project open, close veto, or platform lifecycle failure.</td>
+</tr>
+<tr>
+<td><code>504 Gateway Timeout</code></td>
+<td>A bounded remote-control operation timed out.</td>
+</tr>
+<tr>
+<td><code>500 Internal Server Error</code></td>
+<td>An unexpected server failure occurred.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Category</th>
+<th>CLI exit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>CONNECTION_ERROR</code></td>
+<td>The CLI could not connect to the IDE. This code is client-generated.</td>
+<td><code>10</code></td>
+</tr>
+<tr>
+<td><code>CHANNEL_NOT_DEV</code>, <code>FEATURE_DISABLED</code>, <code>LOOPBACK_REQUIRED</code>, <code>TOKEN_NOT_CONFIGURED</code>, <code>TOKEN_MISSING</code>, <code>TOKEN_INVALID</code></td>
+<td>Availability or authentication gate rejected the request.</td>
+<td><code>11</code></td>
+</tr>
+<tr>
+<td><code>TIMEOUT</code></td>
+<td>Client transport or bounded server operation timed out.</td>
+<td><code>12</code></td>
+</tr>
+<tr>
+<td><code>UNSUPPORTED_ROUTE</code>, <code>VALIDATION_ERROR</code></td>
+<td>The route or request is invalid.</td>
+<td><code>13</code></td>
+</tr>
+<tr>
+<td><code>CONFLICT</code>, <code>UNSAVED_DOCUMENT</code></td>
+<td>Current IDE state conflicts with the operation.</td>
+<td><code>14</code></td>
+</tr>
+<tr>
+<td><code>INTERNAL_ERROR</code></td>
+<td>The server failed unexpectedly.</td>
+<td><code>15</code></td>
+</tr>
+</tbody>
+</table>
+<p>Successful commands exit <code>0</code>. Unknown codes and error responses from older
+servers exit <code>2</code> for backward compatibility.</p>
+<h2 id="wait-execution-and-pagination">Wait execution and pagination<a class="headerlink" href="#wait-execution-and-pagination" title="Permanent link">&para;</a></h2>
+<p>Buffered <code>wait/*</code>, <code>action</code>, <code>scenario/run</code>, and project lifecycle requests execute on a bounded
+background pool rather than an IDE built-in-server worker. Responses are
+marshaled back to the request channel, and closing the channel cancels the
+polling task. Existing timeout and JSON semantics are unchanged; <code>ping</code>,
+<code>status</code>, and other short requests remain responsive while waits are pending.</p>
+<p><code>POST /tool-windows/{id}/trees</code>, <code>POST /usages</code>, and <code>POST /diagnostics</code> accept
+optional <code>limit</code> and opaque <code>cursor</code> fields. A limited response includes
+<code>nextCursor</code> while more ordered results remain and keeps the existing
+<code>truncated</code> signal. Follow pages until <code>nextCursor</code> is absent:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>python3<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>usages<span class="w"> </span>--path<span class="w"> </span>src/example.py<span class="w"> </span>--limit<span class="w"> </span><span class="m">100</span>
+<a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a>python3<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>usages<span class="w"> </span>--path<span class="w"> </span>src/example.py<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a><span class="w">  </span>--limit<span class="w"> </span><span class="m">100</span><span class="w"> </span>--cursor<span class="w"> </span><span class="s1">&#39;&lt;nextCursor&gt;&#39;</span>
+</code></pre></div>
+<p>Cursors bind to the request’s stable filters and cannot be reused with another
+path, position, tree selector, or inspection filter. Malformed, mismatched, and
+out-of-range cursors return <code>VALIDATION_ERROR</code>. Omitting both pagination fields
+preserves the legacy bounded response behavior.</p>
+<h2 id="recording-crop-workflow">Recording crop workflow<a class="headerlink" href="#recording-crop-workflow" title="Permanent link">&para;</a></h2>
+<p>Use typed project commands before a longer workflow when several projects are
+open:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>python3<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>project-list
+<a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a>python3<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>project-pin<span class="w"> </span>--path<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$PWD</span><span class="s2">/examples/betterpy_showcase&quot;</span>
+<a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a><span class="c1"># run the workflow</span>
+<a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a>python3<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>project-unpin
+</code></pre></div>
+<p>The typed <code>recording-start</code>, <code>recording-sample</code>, <code>recording-stop</code>, and
+<code>recording-reset</code> commands map directly to the <code>/recording/*</code> routes. The
+recording lab remains the preferred orchestrator for repeatable video capture.</p>
+<p>Coordinates returned by geometry endpoints are physical screen coordinates,
+intended for post-processing screen recordings. For a full-IDE crop:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a>python<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>window-bounds<span class="w"> </span>--width<span class="w"> </span><span class="m">1280</span><span class="w"> </span>--height<span class="w"> </span><span class="m">720</span>
+<a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a>python<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>occupied-start<span class="w"> </span>--scope<span class="w"> </span>all<span class="w"> </span>--session-id<span class="w"> </span>demo<span class="w"> </span>--auto-sample-actions<span class="w"> </span>--sample-interval-ms<span class="w"> </span><span class="m">250</span>
+<a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a><span class="c1"># run the scripted interaction here</span>
+<a id="__codelineno-31-4" name="__codelineno-31-4" href="#__codelineno-31-4"></a>python<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>occupied-stop<span class="w"> </span>demo<span class="w"> </span>--margin<span class="w"> </span><span class="m">16</span><span class="w"> </span>--ffmpeg-crop<span class="w"> </span>--even-dimensions
+</code></pre></div>
+<p>Use <code>--scope editor</code> when the final crop should include only the selected editor
+content area, <code>--scope ide</code> for the IDE frame, and <code>--scope all</code> for the union
+of visible IDE-owned windows such as popups, dialogs, and floating windows.
+Balloon notifications are excluded by default because they often appear in the
+bottom-right corner and inflate recording size; pass <code>--include-balloons</code> when
+they are part of the scenario.</p>
+<p>The returned <code>bounds</code> is the union of all sampled bounds in the session;
+<code>margin</code> expands that final rectangle after sampling. <code>--auto-sample-actions</code>
+samples after remote-control operations such as open, actions, gutter actions,
+inlay actions, modal actions, tool-window changes, and layout presets. <code>--sample-interval-ms</code>
+adds timer-based sampling while the session is active, which helps catch
+short-lived popups.</p>
+<p>For deterministic recording setup, <code>layout-preset</code> can set window bounds,
+hide tool windows, focus the editor, and configure individual tool windows:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>python<span class="w"> </span>scripts/ide_remote_control.py<span class="w"> </span>layout-preset<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a><span class="w">  </span>--width<span class="w"> </span><span class="m">1280</span><span class="w"> </span>--height<span class="w"> </span><span class="m">720</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-32-3" name="__codelineno-32-3" href="#__codelineno-32-3"></a><span class="w">  </span>--hide-tool-windows<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-32-4" name="__codelineno-32-4" href="#__codelineno-32-4"></a><span class="w">  </span>--focus-editor<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-32-5" name="__codelineno-32-5" href="#__codelineno-32-5"></a><span class="w">  </span>--tool-window<span class="w"> </span><span class="s1">&#39;{&quot;id&quot;:&quot;Pytest Explorer&quot;,&quot;visible&quot;:true,&quot;anchor&quot;:&quot;right&quot;,&quot;width&quot;:420}&#39;</span>
+</code></pre></div>
+<p><code>screenshot-crop</code> is an opt-in prototype that screenshots the selected geometry
+bounds and computes a non-background crop using the top-left pixel as the
+background reference.</p>
+<p>Modal actions can target controls by <code>path</code>, <code>name</code>, <code>accessibleName</code>, exact <code>text</code>,
+<code>textContains</code>, <code>type</code>, and <code>className</code>. Prefer <code>name</code> or <code>accessibleName</code> when
+available because positional paths change when dialog layouts change.</p>
+<h2 id="feature-logging">Feature Logging<a class="headerlink" href="#feature-logging" title="Permanent link">&para;</a></h2>
+<p><code>POST /logging</code> accepts:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a><span class="p">{</span>
+<a id="__codelineno-33-2" name="__codelineno-33-2" href="#__codelineno-33-2"></a><span class="w">  </span><span class="nt">&quot;featureIds&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;parameter-object-refactoring&quot;</span><span class="p">],</span>
+<a id="__codelineno-33-3" name="__codelineno-33-3" href="#__codelineno-33-3"></a><span class="w">  </span><span class="nt">&quot;enabled&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-33-4" name="__codelineno-33-4" href="#__codelineno-33-4"></a><span class="w">  </span><span class="nt">&quot;level&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;trace&quot;</span><span class="p">,</span>
+<a id="__codelineno-33-5" name="__codelineno-33-5" href="#__codelineno-33-5"></a><span class="w">  </span><span class="nt">&quot;scopeId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;repro-1&quot;</span>
+<a id="__codelineno-33-6" name="__codelineno-33-6" href="#__codelineno-33-6"></a><span class="p">}</span>
+</code></pre></div>
+<p><code>level</code> can be <code>debug</code>, <code>trace</code>, or <code>all</code>. <code>scopeId</code> is optional; when omitted,
+the IDE generates one. This is runtime-only logging capture: feature ids are
+resolved through feature metadata, and the returned feature/file <code>category</code>
+values come from each feature's <code>loggingCategories</code>. The response includes
+<code>logFiles</code> with exact paths under the IDE log directory.</p>
+<p><code>POST /action</code> also accepts <code>logFeatureIds</code> and <code>logLevel</code>. In that mode, logging
+is scoped to the command id, enabled while the action runs, disabled afterwards,
+and the same <code>logFiles</code> are returned in both the action response and command
+snapshot.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-circle-arrow-up" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 12-4-4-4 4M12 16V8"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://zensical.org/" target="_blank" rel="noopener">
+      Zensical
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/chbndrhnns/pycharm-plugin-betterpy" target="_blank" rel="noopener" title="BetterPy on GitHub" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://plugins.jetbrains.com/plugin/29896" target="_blank" rel="noopener" title="BetterPy on JetBrains Marketplace" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18H6v-4h6m9 0v-2l-1-5H4l-1 5v2h1v6h10v-6h4v6h2v-6m0-10H4v2h16z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["navigation.tabs","navigation.sections","navigation.expand","navigation.top","navigation.instant","navigation.path","content.code.copy","content.code.annotate","search.suggest","search.highlight"],"search":"../../assets/javascripts/workers/search.b6b7e04f.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":{"provider":"mike"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7f30b55.min.js"></script>
+      
+        <script src="../../javascripts/shortcuts.js"></script>
+      
+        <script src="../../javascripts/header-title.js"></script>
+      
+        <script src="../../javascripts/lightbox.js"></script>
+      
+    
+  </body>
+</html>
