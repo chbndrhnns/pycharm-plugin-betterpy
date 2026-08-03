@@ -92,7 +92,6 @@ which are API backend development, domain-driven design and automated testing.
 - [**Generate class actions**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/generate-class-actions/) - Adds Generate menu actions for test classes, dataclasses, frozen dataclasses, and pydantic models
 - [**Parameter object refactoring**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/parameter-object-refactoring/) ([PY-59270](https://youtrack.jetbrains.com/issue/PY-59270)) - Enables introduce/inline parameter object refactoring actions
 - [**Top-level extract function**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/top-level-extract-function/) ([PY-40840](https://youtrack.jetbrains.com/issue/PY-40840), [PY-44636](https://youtrack.jetbrains.com/issue/PY-44636), [PY-73852](https://youtrack.jetbrains.com/issue/PY-73852)) - Extracts top-level Python statements into a function with parameters and explicit return values instead of globals
-- [**UV script runner & debugger**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/uv-script-runner/) - Runs and debugs uv project script entry points from pyproject.toml
 
 #### Completion & References
 - **Mock patch object attribute completion** - Completes attributes for mock.patch.object targets
