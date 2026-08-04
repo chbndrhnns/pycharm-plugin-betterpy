@@ -2392,50 +2392,17 @@
 <h3 id="private-module-import-inspection">Private module import inspection<a class="headerlink" href="#private-module-import-inspection" title="Permanent link">&para;</a></h3>
 <div class="feature-meta"><span class="feature-meta__item" title="Plugin version in which this feature was introduced."><span class="feature-meta__label">Since</span> 2026.06.0</span><span class="feature-meta__sep"> · </span><span class="feature-meta__item"><span class="feature-meta__label">Maturity</span> <span class="badge badge-stable" title="Stable: ready for production use.">Stable</span></span></div>
 
-<p>This inspection reports imports from private implementation modules when the imported symbol is already available from the public package API.</p>
-<h4 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h4>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">package._internal</span><span class="w"> </span><span class="kn">import</span> <span class="n">User</span>
-</code></pre></div>
-<p>If <code>package.__all__</code> exports <code>User</code>, BetterPy suggests importing from <code>package</code> instead:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">package</span><span class="w"> </span><span class="kn">import</span> <span class="n">User</span>
-</code></pre></div>
-<p>When the symbol is not exported yet, the inspection can also make the symbol public by updating the package <code>__all__</code>, adding the re-export import, and rewriting matching private imports outside that package.</p>
-<h4 id="notes">Notes<a class="headerlink" href="#notes" title="Permanent link">&para;</a></h4>
 <ul>
-<li>The inspection helps keep callers on public package APIs.</li>
-<li>Imports inside the exporting package are left alone, so implementation modules can still use private package internals.</li>
-<li>It is gated by the <em>Private module import inspection</em> setting under <strong>Settings | BetterPy | Code Quality &amp; Safety | Import Inspections</strong>.</li>
+<li><strong>Private module import inspection</strong> no longer suggests exporting symbols from third-party dependencies, only
+  flagging private-module imports that belong to your own project's code.</li>
 </ul>
 <h3 id="pytest-parametrized-case-run-gutter-icon">Pytest parametrized case run gutter icon<a class="headerlink" href="#pytest-parametrized-case-run-gutter-icon" title="Permanent link">&para;</a></h3>
 <div class="feature-meta"><span class="feature-meta__item" title="Plugin version in which this feature was introduced."><span class="feature-meta__label">Since</span> 2026.06.0</span><span class="feature-meta__sep"> · </span><span class="feature-meta__item"><span class="feature-meta__label">Maturity</span> <span class="badge badge-incubating" title="Incubating: under active development, may change.">Incubating</span></span><span class="feature-meta__sep"> · </span><span class="feature-meta__item feature-meta__item--issues" title="Related YouTrack issues for this feature."><span class="feature-meta__label">Issues</span> <span class="feature-meta__issues"><a href="https://youtrack.jetbrains.com/issue/PY-88558" class="feature-meta__issue" target="_blank" rel="noopener">[PY-88558](https://youtrack.jetbrains.com/issue/PY-88558)</a><a href="https://youtrack.jetbrains.com/issue/PY-46650" class="feature-meta__issue" target="_blank" rel="noopener">[PY-46650](https://youtrack.jetbrains.com/issue/PY-46650)</a></span></span></div>
 
-<p>This feature adds run gutter icons for individual <code>pytest.mark.parametrize</code> cases.</p>
-<h4 id="how-to-use-it">How to use it<a class="headerlink" href="#how-to-use-it" title="Permanent link">&para;</a></h4>
-<p>Put each parametrized case on its own line, then use the gutter run icon beside the case to run only that pytest node.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Parametrized Test</label><label for="__tabbed_1_2">Run Target</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pytest</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nd">@pytest</span><span class="o">.</span><span class="n">mark</span><span class="o">.</span><span class="n">parametrize</span><span class="p">(</span><span class="s2">&quot;value&quot;</span><span class="p">,</span> <span class="p">[</span>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    <span class="s2">&quot;admin&quot;</span><span class="p">,</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    <span class="s2">&quot;guest&quot;</span><span class="p">,</span>
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="p">])</span>
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="k">def</span><span class="w"> </span><span class="nf">test_role</span><span class="p">(</span><span class="n">value</span><span class="p">):</span>
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>    <span class="k">assert</span> <span class="n">value</span>
-</code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>test_roles.py::test_role[guest]
-</code></pre></div>
-</div>
-</div>
-</div>
-<h4 id="notes_1">Notes<a class="headerlink" href="#notes_1" title="Permanent link">&para;</a></h4>
 <ul>
-<li>The line marker appears only when BetterPy can infer the exact pytest case ID.</li>
-<li>Explicit ids from <code>ids=[...]</code> and <code>pytest.param(..., id="...")</code> are supported.</li>
-<li>The feature is gated by the <em>Pytest parametrized case run gutter icon</em> setting under <strong>Settings | BetterPy | Testing (Pytest) | Parametrize</strong>.</li>
+<li><strong>Pytest parametrized case run gutter icon</strong> anchors per-case run configurations to the test file's own content
+  root and module, so attached projects keep their own working directory and interpreter instead of inheriting one
+  from an unrelated module.</li>
 </ul>
 <h2 id="2026080-2026-08-02"><a href="https://github.com/chbndrhnns/pycharm-plugin-betterpy/compare/2026.07.1...2026.08.0">2026.08.0</a> - 2026-08-02<a class="headerlink" href="#2026080-2026-08-02" title="Permanent link">&para;</a></h2>
 <p>This release ships BetterPy's mock-patching and mock-typing tooling in stable builds, previously available only in
@@ -2496,70 +2463,24 @@ for large repositories.</p>
 <h3 id="jump-to-pytest-node-in-test-tree">Jump to pytest node in test tree<a class="headerlink" href="#jump-to-pytest-node-in-test-tree" title="Permanent link">&para;</a></h3>
 <div class="feature-meta"><span class="feature-meta__item" title="Plugin version in which this feature was introduced."><span class="feature-meta__label">Since</span> 2026.07.0</span><span class="feature-meta__sep"> · </span><span class="feature-meta__item"><span class="feature-meta__label">Maturity</span> <span class="badge badge-incubating" title="Incubating: under active development, may change.">Incubating</span></span></div>
 
-<p>Jump to pytest node in test tree selects the matching node in the active pytest test tree for the test at the editor caret.</p>
-<h4 id="how-to-use-it_1">How to use it<a class="headerlink" href="#how-to-use-it_1" title="Permanent link">&para;</a></h4>
-<p>Place the caret inside a pytest test function or class, then run <strong>BetterPy: Jump to Test Tree Node</strong> from the editor context menu or intention list.</p>
-<h4 id="when-it-helps">When it helps<a class="headerlink" href="#when-it-helps" title="Permanent link">&para;</a></h4>
-<p>Use this feature after a pytest run when the editor is focused but you want to inspect the matching result node, failure state, or surrounding suite in the test tree.</p>
-<h4 id="notes_2">Notes<a class="headerlink" href="#notes_2" title="Permanent link">&para;</a></h4>
 <ul>
-<li>The action is available only when there is an active non-empty test tree.</li>
-<li>The feature is gated by the <em>Jump to pytest node in test tree</em> setting under <strong>Settings | BetterPy | Testing (Pytest) | Test Tree &amp; Navigation</strong>.</li>
+<li><strong>Pytest test-tree navigation</strong> keeps editor actions and gutter markers synchronized with runner tree updates while
+  avoiding background access to live test proxies and repeated full-tree scans.</li>
 </ul>
 <h3 id="toggle-pytest-skip-from-test-tree">Toggle pytest skip from test tree<a class="headerlink" href="#toggle-pytest-skip-from-test-tree" title="Permanent link">&para;</a></h3>
 <div class="feature-meta"><span class="feature-meta__item" title="Plugin version in which this feature was introduced."><span class="feature-meta__label">Since</span> 2026.07.0</span><span class="feature-meta__sep"> · </span><span class="feature-meta__item"><span class="feature-meta__label">Maturity</span> <span class="badge badge-incubating" title="Incubating: under active development, may change.">Incubating</span></span></div>
 
-<p>Toggle pytest skip from test tree adds or removes <code>@pytest.mark.skip</code> for selected pytest nodes.</p>
-<h4 id="how-to-use-it_2">How to use it<a class="headerlink" href="#how-to-use-it_2" title="Permanent link">&para;</a></h4>
-<p>Select a pytest function, class, module, or pytest explorer entry, then run <strong>BetterPy: Toggle Pytest Skip</strong> from the context menu.</p>
-<h4 id="when-it-helps_1">When it helps<a class="headerlink" href="#when-it-helps_1" title="Permanent link">&para;</a></h4>
-<p>Use this action when triaging failures from the test results view and you want to skip or unskip the affected test without navigating manually through the project tree.</p>
-<h4 id="notes_3">Notes<a class="headerlink" href="#notes_3" title="Permanent link">&para;</a></h4>
 <ul>
-<li>Function selections toggle the marker on that function.</li>
-<li>Class and module selections toggle the marker at the matching scope.</li>
-<li>The feature is gated by the <em>Toggle pytest skip from test tree</em> setting under <strong>Settings | BetterPy | Testing (Pytest) | Test Tree &amp; Navigation</strong>.</li>
+<li><strong>Toggle pytest skip from test tree</strong> resolves function, class, and module targets through a shared, deduplicated
+  dispatch path so repeated selections toggle each target exactly once instead of drifting out of sync.</li>
 </ul>
 <h3 id="copy-method-annotations-from-parent">Copy method annotations from parent<a class="headerlink" href="#copy-method-annotations-from-parent" title="Permanent link">&para;</a></h3>
 <div class="feature-meta"><span class="feature-meta__item" title="Plugin version in which this feature was introduced."><span class="feature-meta__label">Since</span> 2026.04.05</span><span class="feature-meta__sep"> · </span><span class="feature-meta__item"><span class="feature-meta__label">Maturity</span> <span class="badge badge-incubating" title="Incubating: under active development, may change.">Incubating</span></span></div>
 
-<p>Copy missing type annotations from a parent method into an overriding method. This is useful when subclass methods intentionally keep the same signature but were written without annotations.</p>
-<h4 id="how-to-invoke">How to invoke<a class="headerlink" href="#how-to-invoke" title="Permanent link">&para;</a></h4>
-<p>Place the caret on an overriding method and use <span class="bp-shortcut" data-bp-shortcut="show-context-actions">⌥⏎ / Alt+Enter</span> -&gt; <em>"Copy type annotations from parent"</em>.</p>
-<h4 id="example_1">Example<a class="headerlink" href="#example_1" title="Permanent link">&para;</a></h4>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Handler</span><span class="p">:</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">handle</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event</span><span class="p">:</span> <span class="n">Event</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Result</span><span class="p">:</span>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>        <span class="o">...</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
-<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="k">class</span><span class="w"> </span><span class="nc">AuditHandler</span><span class="p">(</span><span class="n">Handler</span><span class="p">):</span>
-<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">handle</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event</span><span class="p">):</span>
-<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>        <span class="o">...</span>
-</code></pre></div>
-<p>becomes:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">AuditHandler</span><span class="p">(</span><span class="n">Handler</span><span class="p">):</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">handle</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event</span><span class="p">:</span> <span class="n">Event</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Result</span><span class="p">:</span>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>        <span class="o">...</span>
-</code></pre></div>
-<h4 id="what-it-supports">What it supports<a class="headerlink" href="#what-it-supports" title="Permanent link">&para;</a></h4>
 <ul>
-<li>Copying missing parameter annotations.</li>
-<li>Copying missing return annotations.</li>
-<li>Keeping existing child annotations when they are already present.</li>
-<li>Adding imports required by copied annotation names.</li>
-<li>Rewriting common alias imports so the resulting annotation resolves in the child file.</li>
-</ul>
-<h4 id="what-it-deliberately-avoids">What it deliberately avoids<a class="headerlink" href="#what-it-deliberately-avoids" title="Permanent link">&para;</a></h4>
-<ul>
-<li>Methods with no typed parent method.</li>
-<li>Signature shapes that do not line up with the parent method.</li>
-<li>Blindly overwriting annotations already present on the child.</li>
-<li>Applying a fix when import or name conflicts need explicit review.</li>
-</ul>
-<h4 id="notes_4">Notes<a class="headerlink" href="#notes_4" title="Permanent link">&para;</a></h4>
-<ul>
-<li>The intention can be used directly, and the overridden-method inspection can offer it as a quick-fix.</li>
-<li>The feature is gated by the <em>Copy method annotations from parent</em> setting under <strong>Settings | BetterPy | Typing &amp; Type Hints | Type Editing</strong>.</li>
+<li><strong>Copy method annotations from parent</strong> safely transfers imports for quoted (string) type annotations into
+  <code>TYPE_CHECKING</code> blocks, excluding value and metadata strings, aliasing conflicting bindings, and avoiding
+  duplicate imports.</li>
 </ul>
 <h2 id="2026071-2026-07-17"><a href="https://github.com/chbndrhnns/pycharm-plugin-betterpy/compare/2026.07.0...2026.07.1">2026.07.1</a> - 2026-07-17<a class="headerlink" href="#2026071-2026-07-17" title="Permanent link">&para;</a></h2>
 <h3 id="bug-fixes">🐛 Bug Fixes<a class="headerlink" href="#bug-fixes" title="Permanent link">&para;</a></h3>
