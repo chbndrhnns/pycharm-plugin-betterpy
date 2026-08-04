@@ -1,0 +1,2591 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Supercharge your Python development in PyCharm">
+      
+      
+      
+        <link rel="canonical" href="https://chbndrhnns.github.io/pycharm-plugin-betterpy/2026.08.1/features/pytest/">
+      
+      
+        <link rel="prev" href="../refactoring/">
+      
+      
+        <link rel="next" href="../imports/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/logo.svg">
+      <meta name="generator" content="zensical-0.0.50">
+    
+    
+      
+        <title>Pytest - BetterPy – PyCharm Plugin</title>
+      
+    
+    
+      
+        
+      
+      <link rel="stylesheet" href="../../assets/stylesheets/modern/main.62c9b9cc.min.css">
+      
+        
+          
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/modern/palette.dfe2e883.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,500,500i,700,700i%7CJetBrains+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer" aria-label="Navigation"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#fixtures" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="BetterPy – PyCharm Plugin" class="md-header__button md-logo" aria-label="BetterPy – PyCharm Plugin" data-md-component="logo">
+      
+  <img src="../../assets/logo.svg" alt="BetterPy – PyCharm Plugin">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer" aria-label="Navigation">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            BetterPy – PyCharm Plugin
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Pytest
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search" aria-label="Search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog" aria-label="Search">
+  <button type="button" class="md-search__button">
+    Search
+  </button>
+</div>
+      
+    
+    <a class="bp-header-install" href="https://plugins.jetbrains.com/plugin/29896-betterpy" target="_blank" rel="noopener">
+      <span class="bp-header-install__label">Install BetterPy</span>
+      <span class="bp-header-install__short">Install</span>
+    </a>
+    <div class="md-header__source">
+      
+    </div>
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+      
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../getting-started/installation/" class="md-tabs__link">
+          
+  
+  Getting Started
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+      
+    
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  Features
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+      
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../reference/settings/" class="md-tabs__link">
+          
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../changelog/" class="md-tabs__link">
+        
+  
+  Changelog
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="BetterPy – PyCharm Plugin" class="md-nav__button md-logo" aria-label="BetterPy – PyCharm Plugin" data-md-component="logo">
+      
+  <img src="../../assets/logo.svg" alt="BetterPy – PyCharm Plugin">
+
+    </a>
+    BetterPy – PyCharm Plugin
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Home
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Getting Started
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+  Getting Started
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Installation
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Features
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+  Features
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Overview
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../typing-type-hints/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Typing & Type Hints
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../refactoring/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Refactoring & Code Transformations
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Testing (Pytest)
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="././" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Testing (Pytest)
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#fixtures" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Fixtures
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fixtures">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixture-editor-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Fixture Editor Integration
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixture-injection-intentions" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Fixture Injection Intentions
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytest-fixture-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Pytest fixture documentation
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#new-pytest-members" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        New pytest members
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytest-hooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Pytest hooks
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fixture-inspections" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Fixture Inspections
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fixture Inspections">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pytest-fixture-scope-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Pytest fixture scope inspection
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unused-pytest-fixture-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Unused pytest fixture inspection
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytest-fixture-direct-import-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Pytest fixture direct import inspection
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixture-annotation-mismatch-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Fixture annotation mismatch inspection
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytest-fixture-override-contract-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Pytest fixture override contract inspection
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytest-redundant-fixture-import-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Pytest redundant fixture import inspection
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#requestparam-without-params-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        request.param without params inspection
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unknown-dynamic-pytest-fixture-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Unknown dynamic pytest fixture inspection
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytest-fixture-uninjected-reference-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Pytest fixture uninjected reference inspection
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytestmarkusefixtures-on-fixture-is-a-no-op-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        @pytest.mark.usefixtures on fixture is a no-op inspection
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytest_plugins-in-non-root-conftest-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        pytest_plugins in non-root conftest inspection
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parametrize" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Parametrize
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Parametrize">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parametrize-pytest-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Parametrize pytest test
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytest-parametrized-case-run-gutter-icon" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Pytest parametrized case run gutter icon
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#convert-pytestparam" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Convert pytest.param
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assertions-test-editing" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Assertions &amp; Test Editing
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Assertions &amp; Test Editing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#use-actual-test-outcome" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Use actual test outcome
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#toggle-pytest-skip" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Toggle pytest skip
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#surround-with-pytestraises" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Surround with pytest.raises()
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytest-failed-line-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Pytest failed line inspection
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test-tree-navigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Test Tree &amp; Navigation
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Test Tree &amp; Navigation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#copy-pytest-node-ids" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Copy pytest node IDs
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copy-pytest-node-id-from-editor" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Copy pytest node ID from editor
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jump-to-pytest-node-in-test-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Jump to pytest node in test tree
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#toggle-pytest-skip-from-test-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Toggle pytest skip from test tree
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-pytest-with-debug-logging" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Run pytest with debug logging
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytest-identifier-in-search-everywhere" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Pytest identifier in Search Everywhere
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mocking" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Mocking
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mocking">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mock-patch-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Mock patch reference
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mock-patch-object-attribute-completion" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Mock patch object attribute completion
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mock-type-provider" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Mock type provider
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mock-unresolved-reference-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Mock unresolved reference inspection
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../imports/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Imports & Module Boundaries
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../navigation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Navigation & Discovery
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../code-quality/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Code Quality & Safety
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../productivity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Productivity Actions
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ide-customization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  IDE Customization
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Reference
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+  Reference
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Settings
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/inspections/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Inspections
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/ide-remote-control/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  IDE Remote Control
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Changelog
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  
+                    
+                    
+                    
+                    
+                      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+                      <div class="md-sidebar-button__wrapper">
+                        <label class="md-sidebar-button" for="__toc"></label>
+                      </div>
+                    
+                  
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#fixtures" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Fixtures
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fixtures">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixture-editor-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Fixture Editor Integration
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixture-injection-intentions" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Fixture Injection Intentions
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytest-fixture-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Pytest fixture documentation
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#new-pytest-members" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        New pytest members
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytest-hooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Pytest hooks
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fixture-inspections" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Fixture Inspections
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fixture Inspections">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pytest-fixture-scope-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Pytest fixture scope inspection
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unused-pytest-fixture-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Unused pytest fixture inspection
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytest-fixture-direct-import-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Pytest fixture direct import inspection
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixture-annotation-mismatch-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Fixture annotation mismatch inspection
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytest-fixture-override-contract-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Pytest fixture override contract inspection
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytest-redundant-fixture-import-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Pytest redundant fixture import inspection
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#requestparam-without-params-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        request.param without params inspection
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unknown-dynamic-pytest-fixture-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Unknown dynamic pytest fixture inspection
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytest-fixture-uninjected-reference-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Pytest fixture uninjected reference inspection
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytestmarkusefixtures-on-fixture-is-a-no-op-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        @pytest.mark.usefixtures on fixture is a no-op inspection
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytest_plugins-in-non-root-conftest-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        pytest_plugins in non-root conftest inspection
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parametrize" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Parametrize
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Parametrize">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parametrize-pytest-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Parametrize pytest test
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytest-parametrized-case-run-gutter-icon" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Pytest parametrized case run gutter icon
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#convert-pytestparam" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Convert pytest.param
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assertions-test-editing" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Assertions &amp; Test Editing
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Assertions &amp; Test Editing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#use-actual-test-outcome" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Use actual test outcome
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#toggle-pytest-skip" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Toggle pytest skip
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#surround-with-pytestraises" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Surround with pytest.raises()
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytest-failed-line-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Pytest failed line inspection
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test-tree-navigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Test Tree &amp; Navigation
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Test Tree &amp; Navigation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#copy-pytest-node-ids" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Copy pytest node IDs
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copy-pytest-node-id-from-editor" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Copy pytest node ID from editor
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jump-to-pytest-node-in-test-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Jump to pytest node in test tree
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#toggle-pytest-skip-from-test-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Toggle pytest skip from test tree
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-pytest-with-debug-logging" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Run pytest with debug logging
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytest-identifier-in-search-everywhere" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Pytest identifier in Search Everywhere
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mocking" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Mocking
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mocking">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mock-patch-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Mock patch reference
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mock-patch-object-attribute-completion" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Mock patch object attribute completion
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mock-type-provider" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Mock type provider
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mock-unresolved-reference-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Mock unresolved reference inspection
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+    
+    
+    
+      <li class="md-path__item">
+        <a href="../" class="md-path__link">
+          
+  
+  <span class="md-ellipsis">
+    Features
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+<h1 id="testing-pytest">Testing (Pytest)<a class="headerlink" href="#testing-pytest" title="Permanent link">&para;</a></h1>
+<p>BetterPy's largest feature group — <strong>34 features</strong> that supercharge your pytest workflow with fixture management, fixture inspections, parametrize helpers, mocking support, assertions, and test tree navigation.</p>
+<hr />
+<h2 id="fixtures">Fixtures<a class="headerlink" href="#fixtures" title="Permanent link">&para;</a></h2>
+<p>BetterPy provides first-class, deep integration for pytest fixtures, refactorings, inspections, and documentation directly inside the IDE.</p>
+<p>Start with <a href="../pytest-fixture-engine/">fixture-aware pytest support</a> for a release-oriented overview of everything the shared fixture engine adds over plain PyCharm: pytest-style resolution, plugin fixtures, dynamic fixture strings, fixture typing, rename, Find Usages, and fixture-specific inspections.</p>
+<h3 id="fixture-editor-integration">Fixture Editor Integration<a class="headerlink" href="#fixture-editor-integration" title="Permanent link">&para;</a></h3>
+<div class="feature-meta"><span class="feature-meta__item" title="Plugin version in which this feature was introduced."><span class="feature-meta__label">Since</span> 2026.07.0</span><span class="feature-meta__sep"> · </span><span class="feature-meta__item"><span class="feature-meta__label">Maturity</span> <span class="badge badge-incubating" title="Incubating: under active development, may change.">Incubating</span></span><span class="feature-meta__sep"> · </span><span class="feature-meta__item feature-meta__item--issues" title="Related YouTrack issues for this feature."><span class="feature-meta__label">Issues</span> <span class="feature-meta__issues"><a href="https://youtrack.jetbrains.com/issue/PY-87756" class="feature-meta__issue" target="_blank" rel="noopener">PY-87756</a><a href="https://youtrack.jetbrains.com/issue/PY-81495" class="feature-meta__issue" target="_blank" rel="noopener">PY-81495</a><a href="https://youtrack.jetbrains.com/issue/PY-60973" class="feature-meta__issue" target="_blank" rel="noopener">PY-60973</a><a href="https://youtrack.jetbrains.com/issue/PY-57812" class="feature-meta__issue" target="_blank" rel="noopener">PY-57812</a><a href="https://youtrack.jetbrains.com/issue/PY-63269" class="feature-meta__issue" target="_blank" rel="noopener">PY-63269</a><a href="https://youtrack.jetbrains.com/issue/PY-61634" class="feature-meta__issue" target="_blank" rel="noopener">PY-61634</a><a href="https://youtrack.jetbrains.com/issue/PY-89790" class="feature-meta__issue" target="_blank" rel="noopener">PY-89790</a><a href="https://youtrack.jetbrains.com/issue/PY-49850" class="feature-meta__issue" target="_blank" rel="noopener">PY-49850</a><a href="https://youtrack.jetbrains.com/issue/PY-59721" class="feature-meta__issue" target="_blank" rel="noopener">PY-59721</a><a href="https://youtrack.jetbrains.com/issue/PY-53176" class="feature-meta__issue" target="_blank" rel="noopener">PY-53176</a><a href="https://youtrack.jetbrains.com/issue/PY-61040" class="feature-meta__issue" target="_blank" rel="noopener">PY-61040</a><a href="https://youtrack.jetbrains.com/issue/PY-88555" class="feature-meta__issue" target="_blank" rel="noopener">PY-88555</a><a href="https://youtrack.jetbrains.com/issue/PY-60421" class="feature-meta__issue" target="_blank" rel="noopener">PY-60421</a></span></span></div>
+
+<p>Enables deep integration of pytest fixtures into the IDE editor, making fixture names behave like normal Python symbols. BetterPy resolves fixture definitions with pytest-style precedence, then uses that model for navigation, completion, definition searches, hierarchy actions, renaming, and usages.</p>
+<p>For the broader release overview of the shared fixture model, plugin support, dynamic fixture strings, typing, and inspections, see <a href="../pytest-fixture-engine/">fixture-aware pytest support</a>.</p>
+<h4 id="navigation">Navigation<a class="headerlink" href="#navigation" title="Permanent link">&para;</a></h4>
+<p>Fixture parameters resolve to the fixture definition that pytest would choose for that location.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># tests/conftest.py</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nd">@pytest</span><span class="o">.</span><span class="n">fixture</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="k">def</span><span class="w"> </span><span class="nf">user</span><span class="p">():</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="k">return</span> <span class="n">User</span><span class="p">(</span><span class="s2">&quot;default&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="c1"># tests/api/conftest.py</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="nd">@pytest</span><span class="o">.</span><span class="n">fixture</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="k">def</span><span class="w"> </span><span class="nf">user</span><span class="p">():</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="k">return</span> <span class="n">User</span><span class="p">(</span><span class="s2">&quot;api&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="c1"># tests/api/test_users.py</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="k">def</span><span class="w"> </span><span class="nf">test_profile</span><span class="p">(</span><span class="n">user</span><span class="p">):</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>    <span class="k">assert</span> <span class="n">user</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;api&quot;</span>
+</code></pre></div>
+<p>In <code>test_profile</code>, <strong>Go to Declaration</strong> (<span class="bp-shortcut" data-bp-shortcut="go-to-declaration">⌘B / Ctrl+B</span>) on <code>user</code> navigates to <code>tests/api/conftest.py</code>.</p>
+<h4 id="completion">Completion<a class="headerlink" href="#completion" title="Permanent link">&para;</a></h4>
+<p>Fixture-name completion is available in test and fixture parameter lists. Suggestions include visible fixtures from the current file, imports, ancestor <code>conftest.py</code> files, and discovered plugin fixtures.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nd">@pytest</span><span class="o">.</span><span class="n">fixture</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">client</span><span class="p">(</span><span class="n">app</span><span class="p">):</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="k">return</span> <span class="n">app</span><span class="o">.</span><span class="n">test_client</span><span class="p">()</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="k">def</span><span class="w"> </span><span class="nf">test_health</span><span class="p">(</span><span class="n">cli</span><span class="o">&lt;</span><span class="n">caret</span><span class="o">&gt;</span><span class="p">):</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    <span class="o">...</span>
+</code></pre></div>
+<p>Completion can suggest <code>client</code> and inserts it as a normal parameter. BetterPy skips names that are already controlled by <code>@pytest.mark.parametrize</code>, and it keeps <code>self</code> and <code>cls</code> out of fixture suggestions.</p>
+<h4 id="rename-and-usages">Rename And Usages<a class="headerlink" href="#rename-and-usages" title="Permanent link">&para;</a></h4>
+<p>Renaming a fixture updates fixture parameters and known fixture references rather than only the Python function declaration. Find Usages (<span class="bp-shortcut" data-bp-shortcut="find-usages">⌥F7 / Alt+F7</span>) also treats fixture injections as usages, so a fixture can be audited before changing or deleting it.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nd">@pytest</span><span class="o">.</span><span class="n">fixture</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">api_client</span><span class="p">():</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    <span class="k">return</span> <span class="n">Client</span><span class="p">()</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="k">def</span><span class="w"> </span><span class="nf">test_status</span><span class="p">(</span><span class="n">api_client</span><span class="p">):</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    <span class="k">assert</span> <span class="n">api_client</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/status&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">ok</span>
+</code></pre></div>
+<p>Renaming <code>api_client</code> updates both the fixture definition and the injected parameter.</p>
+<h4 id="override-hierarchy-support">Override Hierarchy Support<a class="headerlink" href="#override-hierarchy-support" title="Permanent link">&para;</a></h4>
+<p>Fixture definitions participate in IDE hierarchy workflows:</p>
+<ul>
+<li><strong>Go to Super</strong> from an overriding fixture opens the fixture it shadows in a broader scope.</li>
+<li>Gutter markers on overridden fixtures list narrower-scope fixtures that override them.</li>
+<li><strong>Go to Type Declaration</strong> from a fixture parameter opens the fixture function that supplies the value.</li>
+<li><strong>Implement/Override Methods</strong> can offer fixture overrides when editing test classes that inherit fixture methods.</li>
+</ul>
+<h3 id="fixture-injection-intentions">Fixture Injection Intentions<a class="headerlink" href="#fixture-injection-intentions" title="Permanent link">&para;</a></h3>
+<div class="feature-meta"><span class="feature-meta__item" title="Plugin version in which this feature was introduced."><span class="feature-meta__label">Since</span> 2026.07.0</span><span class="feature-meta__sep"> · </span><span class="feature-meta__item"><span class="feature-meta__label">Maturity</span> <span class="badge badge-incubating" title="Incubating: under active development, may change.">Incubating</span></span></div>
+
+<p>Provides intentions to easily convert between explicit fixture parameters and <code>@pytest.mark.usefixtures</code> decorators.</p>
+<h4 id="convert-between-parameter-and-decorator-injection">Convert Between Parameter And Decorator Injection<a class="headerlink" href="#convert-between-parameter-and-decorator-injection" title="Permanent link">&para;</a></h4>
+<p>Two intentions help switch between explicit fixture parameters and <code>@pytest.mark.usefixtures</code>.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Parameter to decorator</label><label for="__tabbed_1_2">Decorator to parameter</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">test_migrates_database</span><span class="p">(</span><span class="n">db</span><span class="p">):</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    <span class="k">assert</span> <span class="n">run_migration</span><span class="p">()</span>
+</code></pre></div>
+becomes:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nd">@pytest</span><span class="o">.</span><span class="n">mark</span><span class="o">.</span><span class="n">usefixtures</span><span class="p">(</span><span class="s2">&quot;db&quot;</span><span class="p">)</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">test_migrates_database</span><span class="p">():</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>    <span class="k">assert</span> <span class="n">run_migration</span><span class="p">()</span>
+</code></pre></div></p>
+</div>
+<div class="tabbed-block">
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nd">@pytest</span><span class="o">.</span><span class="n">mark</span><span class="o">.</span><span class="n">usefixtures</span><span class="p">(</span><span class="s2">&quot;db&quot;</span><span class="p">)</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">test_migrates_database</span><span class="p">():</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>    <span class="k">assert</span> <span class="n">run_migration</span><span class="p">()</span>
+</code></pre></div>
+becomes:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">test_migrates_database</span><span class="p">(</span><span class="n">db</span><span class="p">):</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>    <span class="k">assert</span> <span class="n">run_migration</span><span class="p">()</span>
+</code></pre></div></p>
+</div>
+</div>
+</div>
+<p>Use the decorator form when a fixture is needed only for setup or teardown side effects. Use the parameter form when the test reads the fixture value.</p>
+<h3 id="pytest-fixture-documentation">Pytest fixture documentation<a class="headerlink" href="#pytest-fixture-documentation" title="Permanent link">&para;</a></h3>
+<div class="feature-meta"><span class="feature-meta__item" title="Plugin version in which this feature was introduced."><span class="feature-meta__label">Since</span> 2026.05.2</span><span class="feature-meta__sep"> · </span><span class="feature-meta__item"><span class="feature-meta__label">Maturity</span> <span class="badge badge-stable" title="Stable: ready for production use.">Stable</span></span><span class="feature-meta__sep"> · </span><span class="feature-meta__item feature-meta__item--issues" title="Related YouTrack issues for this feature."><span class="feature-meta__label">Issues</span> <span class="feature-meta__issues"><a href="https://youtrack.jetbrains.com/issue/PY-66245" class="feature-meta__issue" target="_blank" rel="noopener">PY-66245</a></span></span></div>
+
+<p>Enhances Quick Documentation and member type inference for pytest fixtures across files.</p>
+<p>Quick Documentation on a fixture or fixture parameter shows the resolved fixture type, dataclass/Pydantic/TypedDict fields, attribute docstrings, and literal values returned or yielded by simple fixtures. List, tuple, set, and dict literals are rendered across multiple lines so nested fixture data is easier to scan.</p>
+<p>Supported fixture cases:</p>
+<ul>
+<li>Primitive return types such as <code>str</code>, <code>bool</code>, <code>list</code>, <code>dict</code>, <code>set</code>, <code>int</code>, and <code>float</code>.</li>
+<li>Generator-style fixtures annotated as <code>Generator[T, ...]</code>, <code>Iterator[T]</code>, <code>Iterable[T]</code>, and their async variants; BetterPy documents and infers the yielded value type <code>T</code>.</li>
+<li>Dataclasses, Pydantic models, and TypedDicts, including inherited fields, default values, and attribute docstrings.</li>
+<li>Fixtures defined in <code>conftest.py</code>, including fixtures whose returned class is declared inside the fixture body.</li>
+<li>The built-in <code>request</code> fixture, which is typed as <code>_pytest.fixtures.SubRequest</code> when available.</li>
+</ul>
+<p>Parametrized test arguments are ignored because they shadow fixtures with the same name.</p>
+<p><strong>How to invoke</strong>: <span class="bp-shortcut" data-bp-shortcut="quick-documentation">F1 / Ctrl+Q</span> on a fixture parameter.</p>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pytest</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="nd">@pytest</span><span class="o">.</span><span class="n">fixture</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="k">def</span><span class="w"> </span><span class="nf">api_config</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>        <span class="s2">&quot;base_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://api.example.test&quot;</span><span class="p">,</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>        <span class="s2">&quot;headers&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;Accept&quot;</span><span class="p">:</span> <span class="s2">&quot;application/json&quot;</span><span class="p">},</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>        <span class="s2">&quot;timeouts&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>    <span class="p">}</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="k">def</span><span class="w"> </span><span class="nf">test_client</span><span class="p">(</span><span class="n">api_config</span><span class="p">):</span>
+<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a>    <span class="o">...</span>
+</code></pre></div>
+<p>Quick Documentation shows the fixture type and the returned dictionary value as a multiline block, including nested dictionaries and lists.</p>
+<h3 id="new-pytest-members">New pytest members<a class="headerlink" href="#new-pytest-members" title="Permanent link">&para;</a></h3>
+<div class="feature-meta"><span class="feature-meta__item" title="Plugin version in which this feature was introduced."><span class="feature-meta__label">Since</span> 2026.07.0</span><span class="feature-meta__sep"> · </span><span class="feature-meta__item"><span class="feature-meta__label">Maturity</span> <span class="badge badge-incubating" title="Incubating: under active development, may change.">Incubating</span></span></div>
+
+<p>New pytest members adds Generate menu actions for creating pytest tests and fixtures in the current scope.</p>
+<h4 id="how-to-use-it">How to use it<a class="headerlink" href="#how-to-use-it" title="Permanent link">&para;</a></h4>
+<p>Open a module or class matching the configured pytest collection naming, then run <strong>Generate | pytest test</strong> or <strong>Generate | pytest fixture</strong>.</p>
+<h4 id="when-it-helps">When it helps<a class="headerlink" href="#when-it-helps" title="Permanent link">&para;</a></h4>
+<p>Use these actions when adding tests or fixtures near the caret without manually typing boilerplate or decorators.</p>
+<h4 id="notes">Notes<a class="headerlink" href="#notes" title="Permanent link">&para;</a></h4>
+<ul>
+<li>New test names and fixture names are generated uniquely for the current file or class.</li>
+<li>Fixture generation imports <code>pytest</code> when needed.</li>
+<li>Test and fixture generation are hidden when neither the current module nor the containing class matches the configured pytest collection naming.</li>
+<li>Test generation is hidden in <code>conftest.py</code>, while fixture generation remains available there.</li>
+<li>The feature is gated by the <em>New pytest members</em> setting under <strong>Settings | BetterPy | Testing (Pytest) | Fixtures</strong>.</li>
+</ul>
+<h3 id="pytest-hooks">Pytest hooks<a class="headerlink" href="#pytest-hooks" title="Permanent link">&para;</a></h3>
+<div class="feature-meta"><span class="feature-meta__item" title="Plugin version in which this feature was introduced."><span class="feature-meta__label">Since</span> 2026.07.0</span><span class="feature-meta__sep"> · </span><span class="feature-meta__item"><span class="feature-meta__label">Maturity</span> <span class="badge badge-incubating" title="Incubating: under active development, may change.">Incubating</span></span></div>
+
+<p>Adds a <strong>Generate</strong> menu action for pytest hook stubs in <code>conftest.py</code> and go-to-declaration for hook functions.</p>
+<p><strong>How to invoke</strong>: <span class="bp-shortcut" data-bp-shortcut="generate">⌘N / Alt+Insert</span> in <code>conftest.py</code> → <em>"BetterPy: Pytest Hook"</em></p>
+<hr />
+<h2 id="fixture-inspections">Fixture Inspections<a class="headerlink" href="#fixture-inspections" title="Permanent link">&para;</a></h2>
+<h3 id="pytest-fixture-scope-inspection">Pytest fixture scope inspection<a class="headerlink" href="#pytest-fixture-scope-inspection" title="Permanent link">&para;</a></h3>
+<div class="feature-meta"><span class="feature-meta__item" title="Plugin version in which this feature was introduced."><span class="feature-meta__label">Since</span> 2026.07.0</span><span class="feature-meta__sep"> · </span><span class="feature-meta__item"><span class="feature-meta__label">Maturity</span> <span class="badge badge-incubating" title="Incubating: under active development, may change.">Incubating</span></span></div>
+
+<p>Pytest fixture scope inspection reports fixtures whose scope is narrower than a fixture they depend on.</p>
+<h4 id="how-to-use-it_1">How to use it<a class="headerlink" href="#how-to-use-it_1" title="Permanent link">&para;</a></h4>
+<p>Open a pytest fixture that depends on another fixture with a broader scope. BetterPy highlights incompatible scope declarations.</p>
+<h4 id="when-it-helps_1">When it helps<a class="headerlink" href="#when-it-helps_1" title="Permanent link">&para;</a></h4>
+<p>Use this inspection to catch scope mismatches before pytest fails collection or runtime fixture setup.</p>
+<h4 id="notes_1">Notes<a class="headerlink" href="#notes_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>BetterPy can offer a quick fix for compatible scope adjustments.</li>
+<li>The feature is gated by the <em>Pytest fixture scope inspection</em> setting under <strong>Settings | BetterPy | Testing (Pytest) | Fixture Inspections</strong>.</li>
+</ul>
+<h3 id="unused-pytest-fixture-inspection">Unused pytest fixture inspection<a class="headerlink" href="#unused-pytest-fixture-inspection" title="Permanent link">&para;</a></h3>
+<div class="feature-meta"><span class="feature-meta__item" title="Plugin version in which this feature was introduced."><span class="feature-meta__label">Since</span> 2026.07.0</span><span class="feature-meta__sep"> · </span><span class="feature-meta__item"><span class="feature-meta__label">Maturity</span> <span class="badge badge-incubating" title="Incubating: under active development, may change.">Incubating</span></span></div>
+
+<p>Unused pytest fixture inspection reports fixture functions that are not used by tests or other fixtures.</p>
+<h4 id="how-to-use-it_2">How to use it<a class="headerlink" href="#how-to-use-it_2" title="Permanent link">&para;</a></h4>
+<p>Open a file containing pytest fixtures. BetterPy highlights fixtures that have no detected references.</p>
+<h4 id="when-it-helps_2">When it helps<a class="headerlink" href="#when-it-helps_2" title="Permanent link">&para;</a></h4>
+<p>Use this inspection to remove dead fixture code and keep test support modules easier to navigate.</p>
+<h4 id="notes_2">Notes<a class="headerlink" href="#notes_2" title="Permanent link">&para;</a></h4>
+<ul>
+<li>BetterPy offers safe-delete for unused fixtures.</li>
+<li>The feature is gated by the <em>Unused pytest fixture inspection</em> setting under <strong>Settings | BetterPy | Testing (Pytest) | Fixture Inspections</strong>.</li>
+</ul>
+<h3 id="pytest-fixture-direct-import-inspection">Pytest fixture direct import inspection<a class="headerlink" href="#pytest-fixture-direct-import-inspection" title="Permanent link">&para;</a></h3>
+<div class="feature-meta"><span class="feature-meta__item" title="Plugin version in which this feature was introduced."><span class="feature-meta__label">Since</span> 2026.07.0</span><span class="feature-meta__sep"> · </span><span class="feature-meta__item"><span class="feature-meta__label">Maturity</span> <span class="badge badge-incubating" title="Incubating: under active development, may change.">Incubating</span></span></div>
+
+<p>Pytest fixture direct import inspection reports fixture functions imported directly into <code>conftest.py</code>.</p>
+<h4 id="how-to-use-it_3">How to use it<a class="headerlink" href="#how-to-use-it_3" title="Permanent link">&para;</a></h4>
+<p>Open a <code>conftest.py</code> file that imports fixture functions directly. BetterPy highlights imports that should be replaced with explicit plugin scoping.</p>
+<h4 id="when-it-helps_3">When it helps<a class="headerlink" href="#when-it-helps_3" title="Permanent link">&para;</a></h4>
+<p>Use this inspection to keep fixture sharing explicit and avoid surprising fixture availability across test packages.</p>
+<h4 id="notes_3">Notes<a class="headerlink" href="#notes_3" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Prefer <code>pytest_plugins</code> when exposing fixtures from another module.</li>
+<li>The feature is gated by the <em>Pytest fixture direct import inspection</em> setting under <strong>Settings | BetterPy | Testing (Pytest) | Fixture Inspections</strong>.</li>
+</ul>
+<h3 id="fixture-annotation-mismatch-inspection">Fixture annotation mismatch inspection<a class="headerlink" href="#fixture-annotation-mismatch-inspection" title="Permanent link">&para;</a></h3>
+<div class="feature-meta"><span class="feature-meta__item" title="Plugin version in which this feature was introduced."><span class="feature-meta__label">Since</span> 2026.07.0</span><span class="feature-meta__sep"> · </span><span class="feature-meta__item"><span class="feature-meta__label">Maturity</span> <span class="badge badge-incubating" title="Incubating: under active development, may change.">Incubating</span></span></div>
+
+<p>Reports test or fixture parameters whose explicit type annotation does not match the value type provided by the resolved fixture.</p>
+<h3 id="pytest-fixture-override-contract-inspection">Pytest fixture override contract inspection<a class="headerlink" href="#pytest-fixture-override-contract-inspection" title="Permanent link">&para;</a></h3>
+<div class="feature-meta"><span class="feature-meta__item" title="Plugin version in which this feature was introduced."><span class="feature-meta__label">Since</span> 2026.07.0</span><span class="feature-meta__sep"> · </span><span class="feature-meta__item"><span class="feature-meta__label">Maturity</span> <span class="badge badge-incubating" title="Incubating: under active development, may change.">Incubating</span></span></div>
+
+<p>Reports pytest fixture overrides whose produced value type is incompatible with the parent fixture they shadow.</p>
+<h3 id="pytest-redundant-fixture-import-inspection">Pytest redundant fixture import inspection<a class="headerlink" href="#pytest-redundant-fixture-import-inspection" title="Permanent link">&para;</a></h3>
+<div class="feature-meta"><span class="feature-meta__item" title="Plugin version in which this feature was introduced."><span class="feature-meta__label">Since</span> 2026.07.0</span><span class="feature-meta__sep"> · </span><span class="feature-meta__item"><span class="feature-meta__label">Maturity</span> <span class="badge badge-incubating" title="Incubating: under active development, may change.">Incubating</span></span></div>
+
+<p>Reports explicitly imported pytest fixtures that are already auto-discoverable via conftest or plugins.</p>
+<h4 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h4>
+<h5 id="redundant-import-warning">Redundant Import (Warning)<a class="headerlink" href="#redundant-import-warning" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1"># conftest.py</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pytest</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="nd">@pytest</span><span class="o">.</span><span class="n">fixture</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="k">def</span><span class="w"> </span><span class="nf">my_fixture</span><span class="p">():</span>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>    <span class="k">return</span> <span class="mi">42</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="c1"># Warning: Fixture &#39;my_fixture&#39; is already provided by pytest (conftest/plugins); the explicit import is redundant.</span>
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="kn">from</span><span class="w"> </span><span class="nn">conftest</span><span class="w"> </span><span class="kn">import</span> <span class="n">my_fixture</span>
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="k">def</span><span class="w"> </span><span class="nf">test_example</span><span class="p">(</span><span class="n">my_fixture</span><span class="p">):</span>
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>    <span class="k">assert</span> <span class="n">my_fixture</span> <span class="o">==</span> <span class="mi">42</span>
+</code></pre></div>
+<h5 id="after-quick-fix-remove-redundant-fixture-import">After Quick-Fix (Remove redundant fixture import)<a class="headerlink" href="#after-quick-fix-remove-redundant-fixture-import" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1"># test_something.py</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="k">def</span><span class="w"> </span><span class="nf">test_example</span><span class="p">(</span><span class="n">my_fixture</span><span class="p">):</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>    <span class="k">assert</span> <span class="n">my_fixture</span> <span class="o">==</span> <span class="mi">42</span>
+</code></pre></div>
+<h3 id="requestparam-without-params-inspection">request.param without params inspection<a class="headerlink" href="#requestparam-without-params-inspection" title="Permanent link">&para;</a></h3>
+<div class="feature-meta"><span class="feature-meta__item" title="Plugin version in which this feature was introduced."><span class="feature-meta__label">Since</span> 2026.07.0</span><span class="feature-meta__sep"> · </span><span class="feature-meta__item"><span class="feature-meta__label">Maturity</span> <span class="badge badge-incubating" title="Incubating: under active development, may change.">Incubating</span></span></div>
+
+<p>Reports fixtures that read <code>request.param</code> without declaring <code>params=</code> and without being targeted by indirect parametrization.</p>
+<h3 id="unknown-dynamic-pytest-fixture-inspection">Unknown dynamic pytest fixture inspection<a class="headerlink" href="#unknown-dynamic-pytest-fixture-inspection" title="Permanent link">&para;</a></h3>
+<div class="feature-meta"><span class="feature-meta__item" title="Plugin version in which this feature was introduced."><span class="feature-meta__label">Since</span> 2026.07.0</span><span class="feature-meta__sep"> · </span><span class="feature-meta__item"><span class="feature-meta__label">Maturity</span> <span class="badge badge-incubating" title="Incubating: under active development, may change.">Incubating</span></span></div>
+
+<p>Reports unresolved string-based fixture requests in <code>usefixtures</code>, <code>getfixturevalue</code>, and indirect parametrization.</p>
+<h3 id="pytest-fixture-uninjected-reference-inspection">Pytest fixture uninjected reference inspection<a class="headerlink" href="#pytest-fixture-uninjected-reference-inspection" title="Permanent link">&para;</a></h3>
+<div class="feature-meta"><span class="feature-meta__item" title="Plugin version in which this feature was introduced."><span class="feature-meta__label">Since</span> 2026.07.0</span><span class="feature-meta__sep"> · </span><span class="feature-meta__item"><span class="feature-meta__label">Maturity</span> <span class="badge badge-incubating" title="Incubating: under active development, may change.">Incubating</span></span><span class="feature-meta__sep"> · </span><span class="feature-meta__item feature-meta__item--issues" title="Related YouTrack issues for this feature."><span class="feature-meta__label">Issues</span> <span class="feature-meta__issues"><a href="https://youtrack.jetbrains.com/issue/PY-71966" class="feature-meta__issue" target="_blank" rel="noopener">PY-71966</a><a href="https://youtrack.jetbrains.com/issue/PY-89003" class="feature-meta__issue" target="_blank" rel="noopener">PY-89003</a></span></span></div>
+
+<p>Pytest fixture uninjected reference inspection reports fixture names referenced in a test or fixture without being declared as parameters.</p>
+<h4 id="how-to-use-it_4">How to use it<a class="headerlink" href="#how-to-use-it_4" title="Permanent link">&para;</a></h4>
+<p>Open a pytest function that uses a fixture name directly without injecting it.</p>
+<h4 id="when-it-helps_4">When it helps<a class="headerlink" href="#when-it-helps_4" title="Permanent link">&para;</a></h4>
+<p>Use this inspection to catch accidental global-looking fixture references that pytest will not inject automatically.</p>
+<h4 id="notes_4">Notes<a class="headerlink" href="#notes_4" title="Permanent link">&para;</a></h4>
+<ul>
+<li>BetterPy focuses on fixture functions and pytest test contexts.</li>
+<li>The feature is gated by the <em>Pytest fixture uninjected reference inspection</em> setting under <strong>Settings | BetterPy | Testing (Pytest) | Fixture Inspections</strong>.</li>
+</ul>
+<h3 id="pytestmarkusefixtures-on-fixture-is-a-no-op-inspection">@pytest.mark.usefixtures on fixture is a no-op inspection<a class="headerlink" href="#pytestmarkusefixtures-on-fixture-is-a-no-op-inspection" title="Permanent link">&para;</a></h3>
+<div class="feature-meta"><span class="feature-meta__item" title="Plugin version in which this feature was introduced."><span class="feature-meta__label">Since</span> 2026.07.0</span><span class="feature-meta__sep"> · </span><span class="feature-meta__item"><span class="feature-meta__label">Maturity</span> <span class="badge badge-incubating" title="Incubating: under active development, may change.">Incubating</span></span></div>
+
+<p>@pytest.mark.usefixtures on fixture is a no-op inspection reports <code>usefixtures</code> decorators applied to fixture functions.</p>
+<h4 id="how-to-use-it_5">How to use it<a class="headerlink" href="#how-to-use-it_5" title="Permanent link">&para;</a></h4>
+<p>Open a fixture function decorated with <code>@pytest.mark.usefixtures(...)</code>. BetterPy highlights the decorator because pytest only applies it to tests.</p>
+<h4 id="when-it-helps_5">When it helps<a class="headerlink" href="#when-it-helps_5" title="Permanent link">&para;</a></h4>
+<p>Use this inspection to find fixture setup assumptions that are silently ignored by pytest.</p>
+<h4 id="notes_5">Notes<a class="headerlink" href="#notes_5" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Move the dependency into the fixture parameter list instead.</li>
+<li>The feature is gated by the <em>@pytest.mark.usefixtures on fixture is a no-op inspection</em> setting under <strong>Settings | BetterPy | Testing (Pytest) | Fixture Inspections</strong>.</li>
+</ul>
+<h3 id="pytest_plugins-in-non-root-conftest-inspection">pytest_plugins in non-root conftest inspection<a class="headerlink" href="#pytest_plugins-in-non-root-conftest-inspection" title="Permanent link">&para;</a></h3>
+<div class="feature-meta"><span class="feature-meta__item" title="Plugin version in which this feature was introduced."><span class="feature-meta__label">Since</span> 2026.07.0</span><span class="feature-meta__sep"> · </span><span class="feature-meta__item"><span class="feature-meta__label">Maturity</span> <span class="badge badge-incubating" title="Incubating: under active development, may change.">Incubating</span></span></div>
+
+<p>pytest_plugins in non-root conftest inspection reports <code>pytest_plugins</code> assignments in non-root <code>conftest.py</code> files.</p>
+<h4 id="how-to-use-it_6">How to use it<a class="headerlink" href="#how-to-use-it_6" title="Permanent link">&para;</a></h4>
+<p>Open a nested <code>conftest.py</code> file containing a <code>pytest_plugins</code> assignment. BetterPy highlights assignments that pytest will ignore.</p>
+<h4 id="when-it-helps_6">When it helps<a class="headerlink" href="#when-it-helps_6" title="Permanent link">&para;</a></h4>
+<p>Use this inspection to move plugin declarations to the root conftest where pytest will honor them.</p>
+<h4 id="notes_6">Notes<a class="headerlink" href="#notes_6" title="Permanent link">&para;</a></h4>
+<ul>
+<li>BetterPy uses pytest configuration discovery to distinguish root and nested conftest files.</li>
+<li>The feature is gated by the <em>pytest_plugins in non-root conftest inspection</em> setting under <strong>Settings | BetterPy | Testing (Pytest) | Fixture Inspections</strong>.</li>
+</ul>
+<hr />
+<h2 id="parametrize">Parametrize<a class="headerlink" href="#parametrize" title="Permanent link">&para;</a></h2>
+<h3 id="parametrize-pytest-test">Parametrize pytest test<a class="headerlink" href="#parametrize-pytest-test" title="Permanent link">&para;</a></h3>
+<div class="feature-meta"><span class="feature-meta__item" title="Plugin version in which this feature was introduced."><span class="feature-meta__label">Since</span> 2026.07.0</span><span class="feature-meta__sep"> · </span><span class="feature-meta__item"><span class="feature-meta__label">Maturity</span> <span class="badge badge-incubating" title="Incubating: under active development, may change.">Incubating</span></span><span class="feature-meta__sep"> · </span><span class="feature-meta__item feature-meta__item--issues" title="Related YouTrack issues for this feature."><span class="feature-meta__label">Issues</span> <span class="feature-meta__issues"><a href="https://youtrack.jetbrains.com/issue/PY-73660" class="feature-meta__issue" target="_blank" rel="noopener">PY-73660</a></span></span></div>
+
+<p>Parametrize pytest test adds, removes, and maintains <code>pytest.mark.parametrize</code> parameters for pytest tests.</p>
+<h4 id="how-to-use-it_7">How to use it<a class="headerlink" href="#how-to-use-it_7" title="Permanent link">&para;</a></h4>
+<p>Place the caret in a pytest test or parametrize decorator, then run the available BetterPy parametrize intention.</p>
+<h4 id="when-it-helps_7">When it helps<a class="headerlink" href="#when-it-helps_7" title="Permanent link">&para;</a></h4>
+<p>Use these intentions when turning a single test into a parametrized test, adding another parameter to an existing decorator, removing an unused parameter, or renaming parametrized arguments safely.</p>
+<h4 id="notes_7">Notes<a class="headerlink" href="#notes_7" title="Permanent link">&para;</a></h4>
+<ul>
+<li>The feature includes rename validation for parametrized argument names.</li>
+<li>BetterPy keeps function parameters and decorator argnames synchronized.</li>
+<li>The feature is gated by the <em>Parametrize pytest test</em> setting under <strong>Settings | BetterPy | Testing (Pytest) | Parametrize</strong>.</li>
+</ul>
+<h3 id="pytest-parametrized-case-run-gutter-icon">Pytest parametrized case run gutter icon<a class="headerlink" href="#pytest-parametrized-case-run-gutter-icon" title="Permanent link">&para;</a></h3>
+<div class="feature-meta"><span class="feature-meta__item" title="Plugin version in which this feature was introduced."><span class="feature-meta__label">Since</span> 2026.06.0</span><span class="feature-meta__sep"> · </span><span class="feature-meta__item"><span class="feature-meta__label">Maturity</span> <span class="badge badge-incubating" title="Incubating: under active development, may change.">Incubating</span></span><span class="feature-meta__sep"> · </span><span class="feature-meta__item feature-meta__item--issues" title="Related YouTrack issues for this feature."><span class="feature-meta__label">Issues</span> <span class="feature-meta__issues"><a href="https://youtrack.jetbrains.com/issue/PY-88558" class="feature-meta__issue" target="_blank" rel="noopener">PY-88558</a><a href="https://youtrack.jetbrains.com/issue/PY-46650" class="feature-meta__issue" target="_blank" rel="noopener">PY-46650</a></span></span></div>
+
+<p>This feature adds run gutter icons for individual <code>pytest.mark.parametrize</code> cases.</p>
+<h4 id="how-to-use-it_8">How to use it<a class="headerlink" href="#how-to-use-it_8" title="Permanent link">&para;</a></h4>
+<p>Put each parametrized case on its own line, then use the gutter run icon beside the case to run only that pytest node.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Parametrized Test</label><label for="__tabbed_2_2">Run Target</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pytest</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="nd">@pytest</span><span class="o">.</span><span class="n">mark</span><span class="o">.</span><span class="n">parametrize</span><span class="p">(</span><span class="s2">&quot;value&quot;</span><span class="p">,</span> <span class="p">[</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>    <span class="s2">&quot;admin&quot;</span><span class="p">,</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>    <span class="s2">&quot;guest&quot;</span><span class="p">,</span>
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="p">])</span>
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="k">def</span><span class="w"> </span><span class="nf">test_role</span><span class="p">(</span><span class="n">value</span><span class="p">):</span>
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>    <span class="k">assert</span> <span class="n">value</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>test_roles.py::test_role[guest]
+</code></pre></div>
+</div>
+</div>
+</div>
+<h4 id="notes_8">Notes<a class="headerlink" href="#notes_8" title="Permanent link">&para;</a></h4>
+<ul>
+<li>The line marker appears only when BetterPy can infer the exact pytest case ID.</li>
+<li>Explicit ids from <code>ids=[...]</code> and <code>pytest.param(..., id="...")</code> are supported.</li>
+<li>The feature is gated by the <em>Pytest parametrized case run gutter icon</em> setting under <strong>Settings | BetterPy | Testing (Pytest) | Parametrize</strong>.</li>
+</ul>
+<h3 id="convert-pytestparam">Convert pytest.param<a class="headerlink" href="#convert-pytestparam" title="Permanent link">&para;</a></h3>
+<div class="feature-meta"><span class="feature-meta__item" title="Plugin version in which this feature was introduced."><span class="feature-meta__label">Since</span> 2026.07.0</span><span class="feature-meta__sep"> · </span><span class="feature-meta__item"><span class="feature-meta__label">Maturity</span> <span class="badge badge-incubating" title="Incubating: under active development, may change.">Incubating</span></span></div>
+
+<p>Convert pytest.param converts parametrized values between plain values and explicit <code>pytest.param(...)</code> calls.</p>
+<h4 id="how-to-use-it_9">How to use it<a class="headerlink" href="#how-to-use-it_9" title="Permanent link">&para;</a></h4>
+<p>Place the caret inside a <code>pytest.mark.parametrize</code> values list, then run <strong>BetterPy: Convert argument to pytest.param()</strong> or the reverse conversion intention.</p>
+<h4 id="when-it-helps_8">When it helps<a class="headerlink" href="#when-it-helps_8" title="Permanent link">&para;</a></h4>
+<p>Use this intention when adding or removing per-case metadata such as ids and marks while keeping the parameter value structure correct.</p>
+<h4 id="notes_9">Notes<a class="headerlink" href="#notes_9" title="Permanent link">&para;</a></h4>
+<ul>
+<li>BetterPy imports <code>pytest</code> when converting plain values to <code>pytest.param(...)</code>.</li>
+<li>Values with marks or ids are not converted back to plain values.</li>
+<li>The feature is gated by the <em>Convert pytest.param</em> setting under <strong>Settings | BetterPy | Testing (Pytest) | Parametrize</strong>.</li>
+</ul>
+<hr />
+<h2 id="assertions-test-editing">Assertions &amp; Test Editing<a class="headerlink" href="#assertions-test-editing" title="Permanent link">&para;</a></h2>
+<h3 id="use-actual-test-outcome">Use actual test outcome<a class="headerlink" href="#use-actual-test-outcome" title="Permanent link">&para;</a></h3>
+<div class="feature-meta"><span class="feature-meta__item" title="Plugin version in which this feature was introduced."><span class="feature-meta__label">Since</span> 2026.06.0</span><span class="feature-meta__sep"> · </span><span class="feature-meta__item"><span class="feature-meta__label">Maturity</span> <span class="badge badge-incubating" title="Incubating: under active development, may change.">Incubating</span></span></div>
+
+<p>Replaces assertion expected values with the actual value from the last failed test run.</p>
+<p><strong>How to invoke</strong>: <span class="bp-shortcut" data-bp-shortcut="show-context-actions">⌥⏎ / Alt+Enter</span> on a failed assertion → <em>"BetterPy: Use actual test outcome"</em></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Before</label><label for="__tabbed_3_2">After</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">test_total</span><span class="p">():</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>    <span class="k">assert</span> <span class="n">calculate_total</span><span class="p">([</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">])</span> <span class="o">==</span> <span class="mi">25</span>  <span class="c1"># Failed: got 30</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">test_total</span><span class="p">():</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>    <span class="k">assert</span> <span class="n">calculate_total</span><span class="p">([</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">])</span> <span class="o">==</span> <span class="mi">30</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<h3 id="toggle-pytest-skip">Toggle pytest skip<a class="headerlink" href="#toggle-pytest-skip" title="Permanent link">&para;</a></h3>
+<div class="feature-meta"><span class="feature-meta__item" title="Plugin version in which this feature was introduced."><span class="feature-meta__label">Since</span> 2026.07.0</span><span class="feature-meta__sep"> · </span><span class="feature-meta__item"><span class="feature-meta__label">Maturity</span> <span class="badge badge-incubating" title="Incubating: under active development, may change.">Incubating</span></span></div>
+
+<p>Toggle pytest skip adds or removes pytest skip markers for tests, test classes, modules, and parameter values.</p>
+<h4 id="how-to-use-it_10">How to use it<a class="headerlink" href="#how-to-use-it_10" title="Permanent link">&para;</a></h4>
+<p>Place the caret on a supported pytest target, then run <strong>BetterPy: Toggle pytest skip</strong> from the intention menu.</p>
+<h4 id="when-it-helps_9">When it helps<a class="headerlink" href="#when-it-helps_9" title="Permanent link">&para;</a></h4>
+<p>Use this intention when triaging tests and you need to skip or unskip the current target without editing decorators manually.</p>
+<h4 id="notes_10">Notes<a class="headerlink" href="#notes_10" title="Permanent link">&para;</a></h4>
+<ul>
+<li>The intention supports functions, classes, module-level <code>pytestmark</code>, <code>pytest.param(...)</code>, and simple parameter values in parametrized tests.</li>
+<li>The feature is gated by the <em>Toggle pytest skip</em> setting under <strong>Settings | BetterPy | Testing (Pytest) | Assertions &amp; Test Editing</strong>.</li>
+</ul>
+<h3 id="surround-with-pytestraises">Surround with pytest.raises()<a class="headerlink" href="#surround-with-pytestraises" title="Permanent link">&para;</a></h3>
+<div class="feature-meta"><span class="feature-meta__item" title="Plugin version in which this feature was introduced."><span class="feature-meta__label">Since</span> 2026.07.0</span><span class="feature-meta__sep"> · </span><span class="feature-meta__item"><span class="feature-meta__label">Maturity</span> <span class="badge badge-incubating" title="Incubating: under active development, may change.">Incubating</span></span></div>
+
+<p>Surround with pytest.raises() wraps selected test statements in a <code>with pytest.raises(Exception):</code> block.</p>
+<h4 id="how-to-use-it_11">How to use it<a class="headerlink" href="#how-to-use-it_11" title="Permanent link">&para;</a></h4>
+<p>Select one or more statements in a pytest test, then use the Python surround action and choose <strong>pytest.raises()</strong>.</p>
+<h4 id="when-it-helps_10">When it helps<a class="headerlink" href="#when-it-helps_10" title="Permanent link">&para;</a></h4>
+<p>Use this surrounder when converting a failing statement into an explicit exception assertion while keeping indentation and imports handled for you.</p>
+<h4 id="notes_11">Notes<a class="headerlink" href="#notes_11" title="Permanent link">&para;</a></h4>
+<ul>
+<li>BetterPy adds a <code>pytest</code> import when needed.</li>
+<li>The surrounder is available only in pytest test functions and avoids wrapping code already inside <code>pytest.raises</code>.</li>
+<li>The feature is gated by the <em>Surround with pytest.raises()</em> setting under <strong>Settings | BetterPy | Testing (Pytest) | Assertions &amp; Test Editing</strong>.</li>
+</ul>
+<h3 id="pytest-failed-line-inspection">Pytest failed line inspection<a class="headerlink" href="#pytest-failed-line-inspection" title="Permanent link">&para;</a></h3>
+<div class="feature-meta"><span class="feature-meta__item" title="Plugin version in which this feature was introduced."><span class="feature-meta__label">Since</span> 2026.06.0</span><span class="feature-meta__sep"> · </span><span class="feature-meta__item"><span class="feature-meta__label">Maturity</span> <span class="badge badge-incubating" title="Incubating: under active development, may change.">Incubating</span></span><span class="feature-meta__sep"> · </span><span class="feature-meta__item feature-meta__item--issues" title="Related YouTrack issues for this feature."><span class="feature-meta__label">Issues</span> <span class="feature-meta__issues"><a href="https://youtrack.jetbrains.com/issue/PY-32337" class="feature-meta__issue" target="_blank" rel="noopener">PY-32337</a><a href="https://youtrack.jetbrains.com/issue/PY-61067" class="feature-meta__issue" target="_blank" rel="noopener">PY-61067</a></span></span></div>
+
+<p>Marks the line where a pytest test failed, providing visual feedback directly in the editor.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Test</label><label for="__tabbed_4_2">After Failed Run</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">test_total</span><span class="p">():</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>    <span class="n">total</span> <span class="o">=</span> <span class="n">calculate_total</span><span class="p">([</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">])</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>    <span class="k">assert</span> <span class="n">total</span> <span class="o">==</span> <span class="mi">25</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">test_total</span><span class="p">():</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>    <span class="n">total</span> <span class="o">=</span> <span class="n">calculate_total</span><span class="p">([</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">])</span>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>    <span class="k">assert</span> <span class="n">total</span> <span class="o">==</span> <span class="mi">25</span>  <span class="c1"># highlighted when pytest reports this line as failed</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<h4 id="notes_12">Notes<a class="headerlink" href="#notes_12" title="Permanent link">&para;</a></h4>
+<ul>
+<li>The highlight is based on the last pytest failure location remembered by BetterPy.</li>
+<li>The feature works together with <em>Use actual test outcome</em> when an assertion diff is available.</li>
+<li>The feature is gated by the <em>Pytest failed line inspection</em> setting under <strong>Settings | BetterPy | Testing (Pytest) | Assertions &amp; Test Editing</strong>.</li>
+</ul>
+<hr />
+<h2 id="test-tree-navigation">Test Tree &amp; Navigation<a class="headerlink" href="#test-tree-navigation" title="Permanent link">&para;</a></h2>
+<h3 id="copy-pytest-node-ids">Copy pytest node IDs<a class="headerlink" href="#copy-pytest-node-ids" title="Permanent link">&para;</a></h3>
+<div class="feature-meta"><span class="feature-meta__item" title="Plugin version in which this feature was introduced."><span class="feature-meta__label">Since</span> 2026.07.0</span><span class="feature-meta__sep"> · </span><span class="feature-meta__item"><span class="feature-meta__label">Maturity</span> <span class="badge badge-incubating" title="Incubating: under active development, may change.">Incubating</span></span></div>
+
+<p>Copy pytest node IDs copies pytest node identifiers for selected tests to the clipboard.</p>
+<h4 id="how-to-use-it_12">How to use it<a class="headerlink" href="#how-to-use-it_12" title="Permanent link">&para;</a></h4>
+<p>Select one or more tests in the pytest test tree or pytest explorer, then run <strong>Copy Special | BetterPy: Copy Pytest Node IDs</strong>.</p>
+<h4 id="when-it-helps_11">When it helps<a class="headerlink" href="#when-it-helps_11" title="Permanent link">&para;</a></h4>
+<p>Use this action when rerunning a specific test selection from a terminal, sharing an exact pytest target, or preparing command-line invocations.</p>
+<h4 id="notes_13">Notes<a class="headerlink" href="#notes_13" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Multiple selected node IDs are copied one per line.</li>
+<li>The feature is gated by the <em>Copy pytest node IDs</em> setting under <strong>Settings | BetterPy | Testing (Pytest) | Test Tree &amp; Navigation</strong>.</li>
+</ul>
+<h3 id="copy-pytest-node-id-from-editor">Copy pytest node ID from editor<a class="headerlink" href="#copy-pytest-node-id-from-editor" title="Permanent link">&para;</a></h3>
+<div class="feature-meta"><span class="feature-meta__item" title="Plugin version in which this feature was introduced."><span class="feature-meta__label">Since</span> 2026.07.0</span><span class="feature-meta__sep"> · </span><span class="feature-meta__item"><span class="feature-meta__label">Maturity</span> <span class="badge badge-incubating" title="Incubating: under active development, may change.">Incubating</span></span></div>
+
+<p>Copy pytest node ID from editor copies the pytest node ID for the test at the caret.</p>
+<h4 id="how-to-use-it_13">How to use it<a class="headerlink" href="#how-to-use-it_13" title="Permanent link">&para;</a></h4>
+<p>Place the caret inside a pytest test function, then run <strong>BetterPy: Copy Pytest Node ID</strong> from Copy Special.</p>
+<h4 id="when-it-helps_12">When it helps<a class="headerlink" href="#when-it-helps_12" title="Permanent link">&para;</a></h4>
+<p>Use this action when you want to rerun the current test from a terminal or share an exact pytest target without opening the test tree.</p>
+<h4 id="notes_14">Notes<a class="headerlink" href="#notes_14" title="Permanent link">&para;</a></h4>
+<ul>
+<li>The action is available only inside pytest test functions.</li>
+<li>The feature is gated by the <em>Copy pytest node ID from editor</em> setting under <strong>Settings | BetterPy | Testing (Pytest) | Test Tree &amp; Navigation</strong>.</li>
+</ul>
+<h3 id="jump-to-pytest-node-in-test-tree">Jump to pytest node in test tree<a class="headerlink" href="#jump-to-pytest-node-in-test-tree" title="Permanent link">&para;</a></h3>
+<div class="feature-meta"><span class="feature-meta__item" title="Plugin version in which this feature was introduced."><span class="feature-meta__label">Since</span> 2026.07.0</span><span class="feature-meta__sep"> · </span><span class="feature-meta__item"><span class="feature-meta__label">Maturity</span> <span class="badge badge-incubating" title="Incubating: under active development, may change.">Incubating</span></span></div>
+
+<p>Jump to pytest node in test tree selects the matching node in the active pytest test tree for the test at the editor caret.</p>
+<h4 id="how-to-use-it_14">How to use it<a class="headerlink" href="#how-to-use-it_14" title="Permanent link">&para;</a></h4>
+<p>Place the caret inside a pytest test function or class, then run <strong>BetterPy: Jump to Test Tree Node</strong> from the editor context menu or intention list.</p>
+<h4 id="when-it-helps_13">When it helps<a class="headerlink" href="#when-it-helps_13" title="Permanent link">&para;</a></h4>
+<p>Use this feature after a pytest run when the editor is focused but you want to inspect the matching result node, failure state, or surrounding suite in the test tree.</p>
+<h4 id="notes_15">Notes<a class="headerlink" href="#notes_15" title="Permanent link">&para;</a></h4>
+<ul>
+<li>The action is available only when there is an active non-empty test tree.</li>
+<li>The feature is gated by the <em>Jump to pytest node in test tree</em> setting under <strong>Settings | BetterPy | Testing (Pytest) | Test Tree &amp; Navigation</strong>.</li>
+</ul>
+<h3 id="toggle-pytest-skip-from-test-tree">Toggle pytest skip from test tree<a class="headerlink" href="#toggle-pytest-skip-from-test-tree" title="Permanent link">&para;</a></h3>
+<div class="feature-meta"><span class="feature-meta__item" title="Plugin version in which this feature was introduced."><span class="feature-meta__label">Since</span> 2026.07.0</span><span class="feature-meta__sep"> · </span><span class="feature-meta__item"><span class="feature-meta__label">Maturity</span> <span class="badge badge-incubating" title="Incubating: under active development, may change.">Incubating</span></span></div>
+
+<p>Toggle pytest skip from test tree adds or removes <code>@pytest.mark.skip</code> for selected pytest nodes.</p>
+<h4 id="how-to-use-it_15">How to use it<a class="headerlink" href="#how-to-use-it_15" title="Permanent link">&para;</a></h4>
+<p>Select a pytest function, class, module, or pytest explorer entry, then run <strong>BetterPy: Toggle Pytest Skip</strong> from the context menu.</p>
+<h4 id="when-it-helps_14">When it helps<a class="headerlink" href="#when-it-helps_14" title="Permanent link">&para;</a></h4>
+<p>Use this action when triaging failures from the test results view and you want to skip or unskip the affected test without navigating manually through the project tree.</p>
+<h4 id="notes_16">Notes<a class="headerlink" href="#notes_16" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Function selections toggle the marker on that function.</li>
+<li>Class and module selections toggle the marker at the matching scope.</li>
+<li>The feature is gated by the <em>Toggle pytest skip from test tree</em> setting under <strong>Settings | BetterPy | Testing (Pytest) | Test Tree &amp; Navigation</strong>.</li>
+</ul>
+<h3 id="run-pytest-with-debug-logging">Run pytest with debug logging<a class="headerlink" href="#run-pytest-with-debug-logging" title="Permanent link">&para;</a></h3>
+<div class="feature-meta"><span class="feature-meta__item" title="Plugin version in which this feature was introduced."><span class="feature-meta__label">Since</span> 2026.07.0</span><span class="feature-meta__sep"> · </span><span class="feature-meta__item"><span class="feature-meta__label">Maturity</span> <span class="badge badge-incubating" title="Incubating: under active development, may change.">Incubating</span></span></div>
+
+<p>Run pytest with debug logging duplicates the selected pytest run configuration, adds DEBUG CLI logging, and runs the selected pytest node.</p>
+<h4 id="how-to-use-it_16">How to use it<a class="headerlink" href="#how-to-use-it_16" title="Permanent link">&para;</a></h4>
+<p>Select a pytest node in the test tree, then run <strong>BetterPy: Run Pytest with DEBUG logging</strong> from the test tree context menu.</p>
+<h4 id="when-it-helps_15">When it helps<a class="headerlink" href="#when-it-helps_15" title="Permanent link">&para;</a></h4>
+<p>Use this action when a failing test needs extra pytest log output but you do not want to permanently change the original run configuration.</p>
+<h4 id="notes_17">Notes<a class="headerlink" href="#notes_17" title="Permanent link">&para;</a></h4>
+<ul>
+<li>The duplicated configuration is temporary.</li>
+<li>The duplicated configuration is narrowed to the selected test tree node (the pytest node id is targeted directly), so only that node runs.</li>
+<li>BetterPy appends <code>--log-cli-level=DEBUG</code> when it is not already present.</li>
+<li>The feature is gated by the <em>Run pytest with debug logging</em> setting under <strong>Settings | BetterPy | Testing (Pytest) | Test Tree &amp; Navigation</strong>.</li>
+</ul>
+<h3 id="pytest-identifier-in-search-everywhere">Pytest identifier in Search Everywhere<a class="headerlink" href="#pytest-identifier-in-search-everywhere" title="Permanent link">&para;</a></h3>
+<div class="feature-meta"><span class="feature-meta__item" title="Plugin version in which this feature was introduced."><span class="feature-meta__label">Since</span> 2026.07.0</span><span class="feature-meta__sep"> · </span><span class="feature-meta__item"><span class="feature-meta__label">Maturity</span> <span class="badge badge-incubating" title="Incubating: under active development, may change.">Incubating</span></span></div>
+
+<p>This Search Everywhere contributor finds pytest node identifiers directly from the IDE search popup.</p>
+<h4 id="how-to-use-it_17">How to use it<a class="headerlink" href="#how-to-use-it_17" title="Permanent link">&para;</a></h4>
+<p>Open Search Everywhere and type a pytest node id or identifier fragment.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>tests/test_api.py::TestUser::test_create
+</code></pre></div>
+<h4 id="notes_18">Notes<a class="headerlink" href="#notes_18" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Results navigate to the matching Python PSI element.</li>
+<li>The feature is gated by the <em>Pytest identifier Search Everywhere</em> setting.</li>
+</ul>
+<hr />
+<h2 id="mocking">Mocking<a class="headerlink" href="#mocking" title="Permanent link">&para;</a></h2>
+<h3 id="mock-patch-reference">Mock patch reference<a class="headerlink" href="#mock-patch-reference" title="Permanent link">&para;</a></h3>
+<div class="feature-meta"><span class="feature-meta__item" title="Plugin version in which this feature was introduced."><span class="feature-meta__label">Since</span> 2026.08.0</span><span class="feature-meta__sep"> · </span><span class="feature-meta__item"><span class="feature-meta__label">Maturity</span> <span class="badge badge-stable" title="Stable: ready for production use.">Stable</span></span></div>
+
+<p>Provides reference resolution for <code>mock.patch</code> target strings, enabling <span class="bp-shortcut" data-bp-shortcut="go-to-declaration-mouse">⌘+Click / Ctrl+Click</span> navigation to the patched symbol.</p>
+<h3 id="mock-patch-object-attribute-completion">Mock patch object attribute completion<a class="headerlink" href="#mock-patch-object-attribute-completion" title="Permanent link">&para;</a></h3>
+<div class="feature-meta"><span class="feature-meta__item" title="Plugin version in which this feature was introduced."><span class="feature-meta__label">Since</span> 2026.08.0</span><span class="feature-meta__sep"> · </span><span class="feature-meta__item"><span class="feature-meta__label">Maturity</span> <span class="badge badge-stable" title="Stable: ready for production use.">Stable</span></span></div>
+
+<p>Completes attributes for <code>mock.patch.object</code> targets.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">Before</label><label for="__tabbed_5_2">After</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="k">with</span> <span class="n">mock</span><span class="o">.</span><span class="n">patch</span><span class="o">.</span><span class="n">object</span><span class="p">(</span><span class="n">UserService</span><span class="p">,</span> <span class="s2">&quot;|&quot;</span><span class="p">):</span>  <span class="c1"># Caret here</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>    <span class="k">pass</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="k">with</span> <span class="n">mock</span><span class="o">.</span><span class="n">patch</span><span class="o">.</span><span class="n">object</span><span class="p">(</span><span class="n">UserService</span><span class="p">,</span> <span class="s2">&quot;get_user&quot;</span><span class="p">):</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>    <span class="k">pass</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<h3 id="mock-type-provider">Mock type provider<a class="headerlink" href="#mock-type-provider" title="Permanent link">&para;</a></h3>
+<div class="feature-meta"><span class="feature-meta__item" title="Plugin version in which this feature was introduced."><span class="feature-meta__label">Since</span> 2026.08.0</span><span class="feature-meta__sep"> · </span><span class="feature-meta__item"><span class="feature-meta__label">Maturity</span> <span class="badge badge-stable" title="Stable: ready for production use.">Stable</span></span></div>
+
+<p>Provides type information for <code>unittest.mock</code> objects, improving code completion and type checking for mocked values.</p>
+<h3 id="mock-unresolved-reference-inspection">Mock unresolved reference inspection<a class="headerlink" href="#mock-unresolved-reference-inspection" title="Permanent link">&para;</a></h3>
+<div class="feature-meta"><span class="feature-meta__item" title="Plugin version in which this feature was introduced."><span class="feature-meta__label">Since</span> 2026.08.0</span><span class="feature-meta__sep"> · </span><span class="feature-meta__item"><span class="feature-meta__label">Maturity</span> <span class="badge badge-stable" title="Stable: ready for production use.">Stable</span></span></div>
+
+<p>Reports unresolved references in mock usage</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-circle-arrow-up" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 12-4-4-4 4M12 16V8"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://zensical.org/" target="_blank" rel="noopener">
+      Zensical
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/chbndrhnns/pycharm-plugin-betterpy" target="_blank" rel="noopener" title="BetterPy on GitHub" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://plugins.jetbrains.com/plugin/29896" target="_blank" rel="noopener" title="BetterPy on JetBrains Marketplace" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18H6v-4h6m9 0v-2l-1-5H4l-1 5v2h1v6h10v-6h4v6h2v-6m0-10H4v2h16z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["navigation.tabs","navigation.sections","navigation.expand","navigation.top","navigation.instant","navigation.path","content.code.copy","content.code.annotate","search.suggest","search.highlight"],"search":"../../assets/javascripts/workers/search.b6b7e04f.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":{"provider":"mike"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7f30b55.min.js"></script>
+      
+        <script src="../../javascripts/shortcuts.js"></script>
+      
+        <script src="../../javascripts/header-title.js"></script>
+      
+        <script src="../../javascripts/lightbox.js"></script>
+      
+    
+  </body>
+</html>
