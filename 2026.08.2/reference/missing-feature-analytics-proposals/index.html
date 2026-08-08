@@ -1,0 +1,1513 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Supercharge your Python development in PyCharm">
+      
+      
+      
+        <link rel="canonical" href="https://chbndrhnns.github.io/pycharm-plugin-betterpy/2026.08.2/reference/missing-feature-analytics-proposals/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/logo.svg">
+      <meta name="generator" content="zensical-0.0.50">
+    
+    
+      
+        <title>Missing feature analytics proposals - BetterPy – PyCharm Plugin</title>
+      
+    
+    
+      
+        
+      
+      <link rel="stylesheet" href="../../assets/stylesheets/modern/main.62c9b9cc.min.css">
+      
+        
+          
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/modern/palette.dfe2e883.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,500,500i,700,700i%7CJetBrains+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer" aria-label="Navigation"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#event-shape" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="BetterPy – PyCharm Plugin" class="md-header__button md-logo" aria-label="BetterPy – PyCharm Plugin" data-md-component="logo">
+      
+  <img src="../../assets/logo.svg" alt="BetterPy – PyCharm Plugin">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer" aria-label="Navigation">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            BetterPy – PyCharm Plugin
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Missing feature analytics proposals
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search" aria-label="Search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog" aria-label="Search">
+  <button type="button" class="md-search__button">
+    Search
+  </button>
+</div>
+      
+    
+    <a class="bp-header-install" href="https://plugins.jetbrains.com/plugin/29896-betterpy" target="_blank" rel="noopener">
+      <span class="bp-header-install__label">Install BetterPy</span>
+      <span class="bp-header-install__short">Install</span>
+    </a>
+    <div class="md-header__source">
+      
+    </div>
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+      
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../getting-started/installation/" class="md-tabs__link">
+          
+  
+  Getting Started
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+      
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../features/" class="md-tabs__link">
+          
+  
+  Features
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+      
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../settings/" class="md-tabs__link">
+          
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../changelog/" class="md-tabs__link">
+        
+  
+  Changelog
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="BetterPy – PyCharm Plugin" class="md-nav__button md-logo" aria-label="BetterPy – PyCharm Plugin" data-md-component="logo">
+      
+  <img src="../../assets/logo.svg" alt="BetterPy – PyCharm Plugin">
+
+    </a>
+    BetterPy – PyCharm Plugin
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Home
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Getting Started
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+  Getting Started
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Installation
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Features
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+  Features
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Overview
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/typing-type-hints/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Typing & Type Hints
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/refactoring/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Refactoring & Code Transformations
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/pytest/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Testing (Pytest)
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/imports/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Imports & Module Boundaries
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/navigation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Navigation & Discovery
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/code-quality/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Code Quality & Safety
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/productivity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Productivity Actions
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/ide-customization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  IDE Customization
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Reference
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+  Reference
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Settings
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../inspections/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Inspections
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ide-remote-control/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  IDE Remote Control
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Changelog
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  
+                    
+                    
+                    
+                    
+                      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+                      <div class="md-sidebar-button__wrapper">
+                        <label class="md-sidebar-button" for="__toc"></label>
+                      </div>
+                    
+                  
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#event-shape" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Event Shape
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+<h1 id="missing-feature-analytics-proposals">Missing Feature Analytics Proposals<a class="headerlink" href="#missing-feature-analytics-proposals" title="Permanent link">&para;</a></h1>
+<p>This document lists non-internal feature declarations that currently have no feature-level analytics event path. The
+gap was identified by comparing <code>src/main/resources/META-INF/features/*.xml</code> feature IDs with
+<code>FeatureAnalytics.FeatureId</code>. Proposed properties intentionally avoid symbol names, file paths, node IDs, import paths,
+or other user-authored strings; use counts, booleans, bounded enum values, and sanitized lengths.</p>
+<h2 id="event-shape">Event Shape<a class="headerlink" href="#event-shape" title="Permanent link">&para;</a></h2>
+<p>All proposed events should use the existing <code>feature_used</code> envelope through <code>FeatureAnalytics.record(...)</code> or
+<code>FeatureAnalytics.recordOncePerSession(...)</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Useful event(s)</th>
+<th>Suggested attributes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>abstract-method-not-implemented-inspection</code></td>
+<td><code>problem_registered</code>, <code>quick_fix_applied</code></td>
+<td><code>missing_method_count</code>, <code>class_kind</code>, <code>has_abstract_base</code>, <code>fix_kind</code></td>
+</tr>
+<tr>
+<td><code>add-self-parameter</code></td>
+<td><code>applied</code></td>
+<td><code>method_kind</code>, <code>parameter_count</code>, <code>has_existing_parameters</code></td>
+</tr>
+<tr>
+<td><code>async-mock-parameter-completion</code></td>
+<td><code>completion_shown</code>, <code>completed</code></td>
+<td><code>suggestion_count</code>, <code>source</code>, <code>has_spec</code>, <code>parameter_kind</code></td>
+</tr>
+<tr>
+<td><code>attribute-implementations-search</code></td>
+<td><code>search_invoked</code>, <code>result_selected</code></td>
+<td><code>source_kind</code>, <code>result_count</code>, <code>has_subclasses</code></td>
+</tr>
+<tr>
+<td><code>capture-unused-parameters</code></td>
+<td><code>applied</code></td>
+<td><code>captured_parameter_count</code>, <code>function_kind</code>, <code>existing_capture_statement</code></td>
+</tr>
+<tr>
+<td><code>convert-fn-to-lambda</code></td>
+<td><code>applied</code></td>
+<td><code>parameter_count</code>, <code>has_return_annotation</code>, <code>lambda_assigned_to</code></td>
+</tr>
+<tr>
+<td><code>convert-parametrize-argnames</code></td>
+<td><code>applied</code></td>
+<td><code>direction</code>, <code>argname_count</code>, <code>has_existing_tuple</code></td>
+</tr>
+<tr>
+<td><code>convert-pytest-param</code></td>
+<td><code>applied</code></td>
+<td><code>direction</code>, <code>value_count</code>, <code>has_marks</code>, <code>has_id</code></td>
+</tr>
+<tr>
+<td><code>convert-static-to-instance-method-call-site-rewrite</code></td>
+<td><code>call_sites_rewritten</code>, <code>override_converted</code></td>
+<td><code>call_site_count</code>, <code>override_count</code>, <code>todo_inserted_count</code></td>
+</tr>
+<tr>
+<td><code>copy-build-number</code></td>
+<td><code>copied</code></td>
+<td><code>source</code>, <code>ide_product_code_present</code></td>
+</tr>
+<tr>
+<td><code>copy-fqns</code></td>
+<td><code>copied</code></td>
+<td><code>symbol_count</code>, <code>symbol_kind</code>, <code>format</code>, <code>total_character_count</code></td>
+</tr>
+<tr>
+<td><code>copy-pytest-node-id-from-editor</code></td>
+<td><code>copied</code></td>
+<td><code>target_kind</code>, <code>has_class</code>, <code>is_parametrized</code>, <code>node_id_length</code></td>
+</tr>
+<tr>
+<td><code>copy-pytest-node-ids</code></td>
+<td><code>copied</code></td>
+<td><code>node_count</code>, <code>source</code>, <code>includes_parametrized</code>, <code>total_character_count</code></td>
+</tr>
+<tr>
+<td><code>copy-stacktrace</code></td>
+<td><code>copied</code></td>
+<td><code>frame_count</code>, <code>has_cause</code>, <code>source</code>, <code>total_character_count</code></td>
+</tr>
+<tr>
+<td><code>create-local-variable</code></td>
+<td><code>applied</code></td>
+<td><code>expression_kind</code>, <code>expression_length</code>, <code>inserted_before_usage</code></td>
+</tr>
+<tr>
+<td><code>dataclass-missing-inspection</code></td>
+<td><code>problem_registered</code>, <code>quick_fix_applied</code></td>
+<td><code>problem_kind</code>, <code>class_kind</code>, <code>field_count</code>, <code>fix_kind</code></td>
+</tr>
+<tr>
+<td><code>enhanced-python-structure-view</code></td>
+<td><code>view_built</code></td>
+<td><code>filter_count</code>, <code>element_count</code>, <code>test_file</code></td>
+</tr>
+<tr>
+<td><code>expected-type-completion</code></td>
+<td><code>completion_shown</code>, <code>completed</code></td>
+<td><code>expected_type_kind</code>, <code>suggestion_count</code>, <code>source</code>, <code>insert_kind</code></td>
+</tr>
+<tr>
+<td><code>filter-warnings-reference</code></td>
+<td><code>reference_resolved</code>, <code>completion_shown</code></td>
+<td><code>category_source</code>, <code>resolution_success</code>, <code>suggestion_count</code></td>
+</tr>
+<tr>
+<td><code>function-to-protocol</code></td>
+<td><code>applied</code></td>
+<td><code>parameter_count</code>, <code>has_return_type</code>, <code>protocol_name_length</code></td>
+</tr>
+<tr>
+<td><code>implement-abstract-method-in-child-classes</code></td>
+<td><code>applied</code></td>
+<td><code>child_class_count</code>, <code>method_count</code>, <code>inserted_pass_body</code></td>
+</tr>
+<tr>
+<td><code>import-alias-rename</code></td>
+<td><code>rename_invoked</code>, <code>rename_applied</code></td>
+<td><code>alias_kind</code>, <code>usage_count</code>, <code>retargets_module</code></td>
+</tr>
+<tr>
+<td><code>include-stdlib-in-union-wrapping</code></td>
+<td><code>candidate_included</code></td>
+<td><code>wrapper_kind</code>, <code>candidate_count</code>, <code>stdlib_candidate_count</code></td>
+</tr>
+<tr>
+<td><code>init-classmethod-usages</code></td>
+<td><code>usage_registered</code></td>
+<td><code>classmethod_count</code>, <code>usage_count</code>, <code>return_annotation_present</code></td>
+</tr>
+<tr>
+<td><code>jump-to-pytest-node-in-test-tree</code></td>
+<td><code>navigation_triggered</code></td>
+<td><code>source</code>, <code>target_kind</code>, <code>node_found</code>, <code>is_parametrized</code></td>
+</tr>
+<tr>
+<td><code>make-member-abstract-in-abstract-class</code></td>
+<td><code>applied</code></td>
+<td><code>member_kind</code>, <code>class_has_abstract_base</code>, <code>decorator_inserted</code></td>
+</tr>
+<tr>
+<td><code>missing-in-dunder-all-inspection</code></td>
+<td><code>problem_registered</code>, <code>quick_fix_applied</code></td>
+<td><code>symbol_kind</code>, <code>all_exists</code>, <code>symbol_count</code>, <code>fix_kind</code></td>
+</tr>
+<tr>
+<td><code>mock-patch-object-attribute-completion</code></td>
+<td><code>completion_shown</code>, <code>completed</code></td>
+<td><code>target_kind</code>, <code>suggestion_count</code>, <code>attribute_source</code></td>
+</tr>
+<tr>
+<td><code>mock-patch-object-attribute-inspection</code></td>
+<td><code>problem_registered</code>, <code>quick_fix_applied</code></td>
+<td><code>target_kind</code>, <code>candidate_count</code>, <code>fix_kind</code></td>
+</tr>
+<tr>
+<td><code>mock-patch-reference</code></td>
+<td><code>reference_resolved</code>, <code>navigation_triggered</code></td>
+<td><code>target_kind</code>, <code>resolution_success</code>, <code>segment_count</code></td>
+</tr>
+<tr>
+<td><code>mock-return-assignment-inspection</code></td>
+<td><code>problem_registered</code>, <code>quick_fix_applied</code></td>
+<td><code>assignment_kind</code>, <code>mock_kind</code>, <code>fix_kind</code></td>
+</tr>
+<tr>
+<td><code>mock-spec-implementations-search</code></td>
+<td><code>search_invoked</code>, <code>result_selected</code></td>
+<td><code>mock_kind</code>, <code>result_count</code>, <code>spec_kind</code></td>
+</tr>
+<tr>
+<td><code>mock-type-provider</code></td>
+<td><code>type_provided</code></td>
+<td><code>mock_kind</code>, <code>has_spec</code>, <code>async_mock</code>, <code>source</code></td>
+</tr>
+<tr>
+<td><code>mock-unresolved-reference-inspection</code></td>
+<td><code>problem_registered</code>, <code>quick_fix_applied</code></td>
+<td><code>mock_kind</code>, <code>candidate_count</code>, <code>fix_kind</code></td>
+</tr>
+<tr>
+<td><code>move-to-inner-scope</code></td>
+<td><code>refactoring_invoked</code>, <code>refactoring_applied</code></td>
+<td><code>declaration_kind</code>, <code>target_class_kind</code>, <code>call_site_rewrite_count</code></td>
+</tr>
+<tr>
+<td><code>move-to-outer-scope</code></td>
+<td><code>refactoring_invoked</code>, <code>refactoring_applied</code></td>
+<td><code>declaration_kind</code>, <code>source_scope</code>, <code>call_site_rewrite_count</code></td>
+</tr>
+<tr>
+<td><code>new-pytest-members</code></td>
+<td><code>member_created</code></td>
+<td><code>member_kind</code>, <code>target_kind</code>, <code>inside_class</code>, <code>with_fixture_params</code></td>
+</tr>
+<tr>
+<td><code>package-run-configuration</code></td>
+<td><code>configuration_created</code>, <code>configuration_run</code></td>
+<td><code>source</code>, <code>package_has_main</code>, <code>module_option_used</code></td>
+</tr>
+<tr>
+<td><code>prefer-own-types-in-union-wrapping</code></td>
+<td><code>candidate_prioritized</code></td>
+<td><code>wrapper_kind</code>, <code>project_candidate_count</code>, <code>stdlib_candidate_count</code></td>
+</tr>
+<tr>
+<td><code>protocol-implementations-search</code></td>
+<td><code>search_invoked</code>, <code>result_selected</code></td>
+<td><code>callable_kind</code>, <code>method_count</code>, <code>result_count</code></td>
+</tr>
+<tr>
+<td><code>pull-up-pytest-fixture</code></td>
+<td><code>refactoring_invoked</code>, <code>refactoring_applied</code>, <code>refactoring_blocked</code></td>
+<td><code>source_scope</code>, <code>target_scope</code>, <code>dependency_count</code>, <code>reason</code></td>
+</tr>
+<tr>
+<td><code>push-down-pytest-fixture</code></td>
+<td><code>refactoring_invoked</code>, <code>refactoring_applied</code>, <code>refactoring_blocked</code></td>
+<td><code>source_scope</code>, <code>target_scope</code>, <code>target_count</code>, <code>reason</code></td>
+</tr>
+<tr>
+<td><code>pytest-explorer</code></td>
+<td><code>collection_started</code>, <code>collection_finished</code>, <code>node_selected</code>, <code>history_item_selected</code></td>
+<td><code>trigger</code>, <code>test_count</code>, <code>fixture_count</code>, <code>duration_ms_bucket</code>, <code>target_kind</code></td>
+</tr>
+<tr>
+<td><code>pytest-explorer-gutter-icons</code></td>
+<td><code>gutter_icon_rendered</code>, <code>gutter_icon_clicked</code></td>
+<td><code>target_kind</code>, <code>node_found</code>, <code>source</code></td>
+</tr>
+<tr>
+<td><code>pytest-fixture-direct-import-inspection</code></td>
+<td><code>problem_registered</code>, <code>quick_fix_applied</code></td>
+<td><code>import_count</code>, <code>conftest_level</code>, <code>fix_kind</code></td>
+</tr>
+<tr>
+<td><code>pytest-fixture-documentation</code></td>
+<td><code>documentation_generated</code>, <code>type_inferred</code></td>
+<td><code>fixture_scope</code>, <code>has_docstring</code>, <code>source</code></td>
+</tr>
+<tr>
+<td><code>pytest-fixture-redundant-parameter-inspection</code></td>
+<td><code>problem_registered</code>, <code>quick_fix_applied</code></td>
+<td><code>source</code>, <code>parameter_count</code>, <code>fix_kind</code></td>
+</tr>
+<tr>
+<td><code>pytest-fixture-scope-inspection</code></td>
+<td><code>problem_registered</code>, <code>quick_fix_applied</code></td>
+<td><code>current_scope</code>, <code>parent_scope</code>, <code>dependency_count</code>, <code>fix_kind</code></td>
+</tr>
+<tr>
+<td><code>pytest-fixture-to-usefixtures-inspection</code></td>
+<td><code>problem_registered</code>, <code>quick_fix_applied</code></td>
+<td><code>fixture_count</code>, <code>has_existing_decorator</code>, <code>fix_kind</code></td>
+</tr>
+<tr>
+<td><code>pytest-fixture-uninjected-reference-inspection</code></td>
+<td><code>problem_registered</code>, <code>quick_fix_applied</code></td>
+<td><code>reference_count</code>, <code>fixture_scope</code>, <code>fix_kind</code></td>
+</tr>
+<tr>
+<td><code>pytest-fixture-unused-inspection</code></td>
+<td><code>problem_registered</code>, <code>quick_fix_applied</code></td>
+<td><code>fixture_scope</code>, <code>usage_count</code>, <code>fix_kind</code></td>
+</tr>
+<tr>
+<td><code>pytest-hooks</code></td>
+<td><code>hook_generated</code>, <code>hook_navigation_triggered</code></td>
+<td><code>hook_kind</code>, <code>has_existing_hook</code>, <code>resolution_success</code></td>
+</tr>
+<tr>
+<td><code>pytest-identifier-search-everywhere</code></td>
+<td><code>search_invoked</code>, <code>result_selected</code></td>
+<td><code>target_kind</code>, <code>result_count</code>, <code>query_length_bucket</code></td>
+</tr>
+<tr>
+<td><code>pytest-mark-completion</code></td>
+<td><code>completion_shown</code>, <code>completed</code></td>
+<td><code>marker_source</code>, <code>suggestion_count</code>, <code>has_args</code></td>
+</tr>
+<tr>
+<td><code>pytest-parametrize-count-mismatch-inspection</code></td>
+<td><code>problem_registered</code>, <code>quick_fix_applied</code></td>
+<td><code>argname_count</code>, <code>value_count</code>, <code>fix_kind</code></td>
+</tr>
+<tr>
+<td><code>pytest-parametrize-ids-count-inspection</code></td>
+<td><code>problem_registered</code>, <code>quick_fix_applied</code></td>
+<td><code>parameter_set_count</code>, <code>id_count</code>, <code>fix_kind</code></td>
+</tr>
+<tr>
+<td><code>pytest-parametrize-unused-argname-inspection</code></td>
+<td><code>problem_registered</code>, <code>quick_fix_applied</code></td>
+<td><code>unused_argname_count</code>, <code>argname_count</code>, <code>fix_kind</code></td>
+</tr>
+<tr>
+<td><code>pytest-plugins-in-non-root-conftest-inspection</code></td>
+<td><code>problem_registered</code>, <code>quick_fix_applied</code></td>
+<td><code>conftest_depth</code>, <code>plugin_count</code>, <code>fix_kind</code></td>
+</tr>
+<tr>
+<td><code>pytest-search-everywhere</code></td>
+<td><code>search_invoked</code>, <code>result_selected</code></td>
+<td><code>tab_kind</code>, <code>result_count</code>, <code>query_length_bucket</code></td>
+</tr>
+<tr>
+<td><code>pytest-usefixtures-on-fixture-noop-inspection</code></td>
+<td><code>problem_registered</code>, <code>quick_fix_applied</code></td>
+<td><code>fixture_count</code>, <code>decorator_count</code>, <code>fix_kind</code></td>
+</tr>
+<tr>
+<td><code>python-package-run-line-marker</code></td>
+<td><code>gutter_icon_rendered</code>, <code>gutter_icon_clicked</code></td>
+<td><code>package_kind</code>, <code>has_main</code>, <code>source_root_kind</code></td>
+</tr>
+<tr>
+<td><code>quickfix-inspector</code></td>
+<td><code>panel_refreshed</code>, <code>view_mode_changed</code>, <code>quick_fix_selected</code></td>
+<td><code>problem_count</code>, <code>quick_fix_count</code>, <code>view_mode</code>, <code>source</code></td>
+</tr>
+<tr>
+<td><code>regexp-variable-injection</code></td>
+<td><code>injection_applied</code></td>
+<td><code>host_kind</code>, <code>name_match_kind</code>, <code>literal_kind</code></td>
+</tr>
+<tr>
+<td><code>relative-import-preference</code></td>
+<td><code>import_suggested</code>, <code>import_applied</code></td>
+<td><code>import_kind</code>, <code>relative_level</code>, <code>source_root_kind</code></td>
+</tr>
+<tr>
+<td><code>rename-to-self-filter</code></td>
+<td><code>suggestion_filtered</code></td>
+<td><code>context_kind</code>, <code>candidate_count</code></td>
+</tr>
+<tr>
+<td><code>restore-source-root-prefix</code></td>
+<td><code>import_restored</code></td>
+<td><code>source_root_kind</code>, <code>segment_count</code>, <code>import_kind</code></td>
+</tr>
+<tr>
+<td><code>return-completion</code></td>
+<td><code>completion_shown</code>, <code>completed</code></td>
+<td><code>return_type_kind</code>, <code>suggestion_count</code>, <code>insert_kind</code></td>
+</tr>
+<tr>
+<td><code>run-with-debug-logging</code></td>
+<td><code>configuration_created</code>, <code>configuration_run</code></td>
+<td><code>source</code>, <code>target_kind</code>, <code>option_count</code></td>
+</tr>
+<tr>
+<td><code>sdk-cleaner</code></td>
+<td><code>panel_opened</code>, <code>scan_completed</code>, <code>sdk_removed</code>, <code>filter_changed</code></td>
+<td><code>sdk_count</code>, <code>broken_sdk_count</code>, <code>removed_count</code>, <code>filter_kind</code></td>
+</tr>
+<tr>
+<td><code>strict-source-root-import-inspection</code></td>
+<td><code>problem_registered</code>, <code>quick_fix_applied</code></td>
+<td><code>source_root_kind</code>, <code>import_kind</code>, <code>fix_kind</code></td>
+</tr>
+<tr>
+<td><code>structure-view-overload-hiding</code></td>
+<td><code>filter_applied</code>, <code>filter_toggled</code></td>
+<td><code>overload_count</code>, <code>implementation_present</code>, <code>enabled</code></td>
+</tr>
+<tr>
+<td><code>structure-view-private-members-filter</code></td>
+<td><code>filter_applied</code>, <code>filter_toggled</code></td>
+<td><code>private_member_count</code>, <code>element_kind</code>, <code>enabled</code></td>
+</tr>
+<tr>
+<td><code>structure-view-pytest-kind-icons</code></td>
+<td><code>icons_applied</code>, <code>filter_toggled</code></td>
+<td><code>test_count</code>, <code>fixture_count</code>, <code>filter_kind</code>, <code>enabled</code></td>
+</tr>
+<tr>
+<td><code>suppress-signature-change-intention</code></td>
+<td><code>suggestion_suppressed</code></td>
+<td><code>context_kind</code>, <code>callable_kind</code></td>
+</tr>
+<tr>
+<td><code>toggle-pytest-skip</code></td>
+<td><code>applied</code></td>
+<td><code>direction</code>, <code>target_kind</code>, <code>has_existing_reason</code></td>
+</tr>
+<tr>
+<td><code>toggle-pytest-skip-from-test-tree</code></td>
+<td><code>applied</code></td>
+<td><code>direction</code>, <code>target_kind</code>, <code>selected_node_count</code></td>
+</tr>
+<tr>
+<td><code>toggle-type-alias</code></td>
+<td><code>applied</code></td>
+<td><code>direction</code>, <code>has_type_params</code>, <code>annotation_complexity_bucket</code></td>
+</tr>
+<tr>
+<td><code>type-annotation-string-wrap</code></td>
+<td><code>problem_registered</code>, <code>quick_fix_applied</code></td>
+<td><code>annotation_kind</code>, <code>target_kind</code>, <code>fix_kind</code></td>
+</tr>
+<tr>
+<td><code>unexport-symbol</code></td>
+<td><code>quick_fix_applied</code></td>
+<td><code>symbol_kind</code>, <code>removed_import</code>, <code>all_entries_count</code></td>
+</tr>
+<tr>
+<td><code>unnecessary-async</code></td>
+<td><code>applied</code></td>
+<td><code>function_kind</code>, <code>await_count</code>, <code>call_site_count</code></td>
+</tr>
+<tr>
+<td><code>unwrap-items-to-expected-type</code></td>
+<td><code>applied</code></td>
+<td><code>container_kind</code>, <code>item_count</code>, <code>wrapper_kind</code></td>
+</tr>
+<tr>
+<td><code>unwrap-to-expected-type</code></td>
+<td><code>applied</code></td>
+<td><code>expression_kind</code>, <code>wrapper_kind</code>, <code>expected_type_kind</code></td>
+</tr>
+<tr>
+<td><code>wrap-exceptions-with-parentheses</code></td>
+<td><code>applied</code></td>
+<td><code>exception_count</code>, <code>clause_kind</code>, <code>already_parenthesized</code></td>
+</tr>
+<tr>
+<td><code>wrap-items-with-expected-type</code></td>
+<td><code>applied</code></td>
+<td><code>container_kind</code>, <code>item_count</code>, <code>wrapper_kind</code></td>
+</tr>
+<tr>
+<td><code>wrap-test-in-class</code></td>
+<td><code>applied</code></td>
+<td><code>method_count</code>, <code>has_fixtures</code>, <code>class_name_length</code></td>
+</tr>
+<tr>
+<td><code>wrap-with-expected-type</code></td>
+<td><code>applied</code></td>
+<td><code>expression_kind</code>, <code>wrapper_kind</code>, <code>expected_type_kind</code></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-circle-arrow-up" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 12-4-4-4 4M12 16V8"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://zensical.org/" target="_blank" rel="noopener">
+      Zensical
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/chbndrhnns/pycharm-plugin-betterpy" target="_blank" rel="noopener" title="BetterPy on GitHub" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://plugins.jetbrains.com/plugin/29896" target="_blank" rel="noopener" title="BetterPy on JetBrains Marketplace" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18H6v-4h6m9 0v-2l-1-5H4l-1 5v2h1v6h10v-6h4v6h2v-6m0-10H4v2h16z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["navigation.tabs","navigation.sections","navigation.expand","navigation.top","navigation.instant","navigation.path","content.code.copy","content.code.annotate","search.suggest","search.highlight"],"search":"../../assets/javascripts/workers/search.b6b7e04f.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":{"provider":"mike"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7f30b55.min.js"></script>
+      
+        <script src="../../javascripts/shortcuts.js"></script>
+      
+        <script src="../../javascripts/header-title.js"></script>
+      
+        <script src="../../javascripts/lightbox.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,2789 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Supercharge your Python development in PyCharm">
+      
+      
+      
+        <link rel="canonical" href="https://chbndrhnns.github.io/pycharm-plugin-betterpy/2026.08.2/changelog/">
+      
+      
+        <link rel="prev" href="../reference/ide-remote-control/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/logo.svg">
+      <meta name="generator" content="zensical-0.0.50">
+    
+    
+      
+        <title>Changelog - BetterPy – PyCharm Plugin</title>
+      
+    
+    
+      
+        
+      
+      <link rel="stylesheet" href="../assets/stylesheets/modern/main.62c9b9cc.min.css">
+      
+        
+          
+        
+        <link rel="stylesheet" href="../assets/stylesheets/modern/palette.dfe2e883.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,500,500i,700,700i%7CJetBrains+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer" aria-label="Navigation"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#2026082-2026-08-08" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="./.." title="BetterPy – PyCharm Plugin" class="md-header__button md-logo" aria-label="BetterPy – PyCharm Plugin" data-md-component="logo">
+      
+  <img src="../assets/logo.svg" alt="BetterPy – PyCharm Plugin">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer" aria-label="Navigation">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            BetterPy – PyCharm Plugin
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Changelog
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search" aria-label="Search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog" aria-label="Search">
+  <button type="button" class="md-search__button">
+    Search
+  </button>
+</div>
+      
+    
+    <a class="bp-header-install" href="https://plugins.jetbrains.com/plugin/29896-betterpy" target="_blank" rel="noopener">
+      <span class="bp-header-install__label">Install BetterPy</span>
+      <span class="bp-header-install__short">Install</span>
+    </a>
+    <div class="md-header__source">
+      
+    </div>
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="./.." class="md-tabs__link">
+        
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+      
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../getting-started/installation/" class="md-tabs__link">
+          
+  
+  Getting Started
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+      
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../features/" class="md-tabs__link">
+          
+  
+  Features
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+      
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../reference/settings/" class="md-tabs__link">
+          
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="././" class="md-tabs__link">
+        
+  
+  Changelog
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="./.." title="BetterPy – PyCharm Plugin" class="md-nav__button md-logo" aria-label="BetterPy – PyCharm Plugin" data-md-component="logo">
+      
+  <img src="../assets/logo.svg" alt="BetterPy – PyCharm Plugin">
+
+    </a>
+    BetterPy – PyCharm Plugin
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="./.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Home
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Getting Started
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+  Getting Started
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Installation
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Features
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+  Features
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Overview
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/typing-type-hints/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Typing & Type Hints
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/refactoring/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Refactoring & Code Transformations
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/pytest/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Testing (Pytest)
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/imports/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Imports & Module Boundaries
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/navigation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Navigation & Discovery
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/code-quality/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Code Quality & Safety
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/productivity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Productivity Actions
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/ide-customization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  IDE Customization
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Reference
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+  Reference
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Settings
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/inspections/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Inspections
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/ide-remote-control/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  IDE Remote Control
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Changelog
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="././" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Changelog
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#2026082-2026-08-08" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        [2026.08.2] - 2026-08-08
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[2026.08.2] - 2026-08-08">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🚀 Features
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🐛 Bug Fixes
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2026081-2026-08-04" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2026.08.1 - 2026-08-04
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2026.08.1 - 2026-08-04">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🐛 Bug Fixes
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2026080-2026-08-02" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2026.08.0 - 2026-08-02
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2026.08.0 - 2026-08-02">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🚀 Features
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🐛 Bug Fixes
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2026071-2026-07-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2026.07.1 - 2026-07-17
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2026.07.1 - 2026-07-17">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🐛 Bug Fixes
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2026070-2026-07-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2026.07.0 - 2026-07-15
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2026.07.0 - 2026-07-15">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🚀 Features
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🐛 Bug Fixes
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        ⚡ Performance
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2026061-2026-06-05" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2026.06.1 - 2026-06-05
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2026.06.1 - 2026-06-05">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🚀 Features
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🐛 Bug Fixes
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2026060-2026-06-05" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2026.06.0 - 2026-06-05
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2026.06.0 - 2026-06-05">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🚀 Features
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🐛 Bug Fixes
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2026052-2026-05-31" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2026.05.2 - 2026-05-31
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2026.05.2 - 2026-05-31">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🚀 Features
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🐛 Bug Fixes
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2026051-2026-05-21" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2026.05.1 - 2026-05-21
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2026.05.1 - 2026-05-21">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🚀 Features
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🐛 Bug Fixes
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2026050-2026-05-19" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2026.05.0 - 2026-05-19
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2026.05.0 - 2026-05-19">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🚀 Features
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🐛 Bug Fixes
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20260414-2026-04-27" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2026.04.14 - 2026-04-27
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2026.04.14 - 2026-04-27">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🚀 Features
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        📚 Documentation
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20260413-2026-04-27" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2026.04.13 - 2026-04-27
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2026.04.13 - 2026-04-27">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🚀 Features
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🐛 Bug Fixes
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#refactor" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🚜 Refactor
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20260412-2026-04-25" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2026.04.12 - 2026-04-25
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2026.04.12 - 2026-04-25">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🚀 Features
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🧪 Testing
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#miscellaneous-tasks" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        ⚙️ Miscellaneous Tasks
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20260411-2026-04-24" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2026.04.11 - 2026-04-24
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2026.04.11 - 2026-04-24">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🚀 Features
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testing_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🧪 Testing
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20260410-2026-04-21" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2026.04.10 - 2026-04-21
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2026.04.10 - 2026-04-21">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🚀 Features
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🐛 Bug Fixes
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        💼 Other
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#refactor_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🚜 Refactor
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testing_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🧪 Testing
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#miscellaneous-tasks_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        ⚙️ Miscellaneous Tasks
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  
+                    
+                    
+                    
+                    
+                      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+                      <div class="md-sidebar-button__wrapper">
+                        <label class="md-sidebar-button" for="__toc"></label>
+                      </div>
+                    
+                  
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#2026082-2026-08-08" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        [2026.08.2] - 2026-08-08
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[2026.08.2] - 2026-08-08">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🚀 Features
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🐛 Bug Fixes
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2026081-2026-08-04" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2026.08.1 - 2026-08-04
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2026.08.1 - 2026-08-04">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🐛 Bug Fixes
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2026080-2026-08-02" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2026.08.0 - 2026-08-02
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2026.08.0 - 2026-08-02">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🚀 Features
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🐛 Bug Fixes
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2026071-2026-07-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2026.07.1 - 2026-07-17
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2026.07.1 - 2026-07-17">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🐛 Bug Fixes
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2026070-2026-07-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2026.07.0 - 2026-07-15
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2026.07.0 - 2026-07-15">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🚀 Features
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🐛 Bug Fixes
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        ⚡ Performance
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2026061-2026-06-05" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2026.06.1 - 2026-06-05
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2026.06.1 - 2026-06-05">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🚀 Features
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🐛 Bug Fixes
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2026060-2026-06-05" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2026.06.0 - 2026-06-05
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2026.06.0 - 2026-06-05">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🚀 Features
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🐛 Bug Fixes
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2026052-2026-05-31" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2026.05.2 - 2026-05-31
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2026.05.2 - 2026-05-31">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🚀 Features
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🐛 Bug Fixes
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2026051-2026-05-21" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2026.05.1 - 2026-05-21
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2026.05.1 - 2026-05-21">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🚀 Features
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🐛 Bug Fixes
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2026050-2026-05-19" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2026.05.0 - 2026-05-19
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2026.05.0 - 2026-05-19">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🚀 Features
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🐛 Bug Fixes
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20260414-2026-04-27" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2026.04.14 - 2026-04-27
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2026.04.14 - 2026-04-27">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🚀 Features
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        📚 Documentation
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20260413-2026-04-27" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2026.04.13 - 2026-04-27
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2026.04.13 - 2026-04-27">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🚀 Features
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🐛 Bug Fixes
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#refactor" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🚜 Refactor
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20260412-2026-04-25" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2026.04.12 - 2026-04-25
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2026.04.12 - 2026-04-25">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🚀 Features
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🧪 Testing
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#miscellaneous-tasks" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        ⚙️ Miscellaneous Tasks
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20260411-2026-04-24" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2026.04.11 - 2026-04-24
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2026.04.11 - 2026-04-24">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🚀 Features
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testing_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🧪 Testing
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20260410-2026-04-21" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2026.04.10 - 2026-04-21
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2026.04.10 - 2026-04-21">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🚀 Features
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🐛 Bug Fixes
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        💼 Other
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#refactor_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🚜 Refactor
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testing_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🧪 Testing
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#miscellaneous-tasks_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        ⚙️ Miscellaneous Tasks
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+<h1 id="changelog">Changelog<a class="headerlink" href="#changelog" title="Permanent link">&para;</a></h1>
+<p>All notable changes to BetterPy are documented here. This project uses <strong>CalVer</strong> (Calendar Versioning) with the format <code>YYYY.MM.PATCH[-channel.build]</code>.</p>
+<p>For the full changelog, see <a href="https://github.com/chbndrhnns/pycharm-plugin-betterpy/blob/main/CHANGELOG.md">CHANGELOG.md on GitHub</a>.</p>
+<hr />
+<h2 id="2026082-2026-08-08">[2026.08.2] - 2026-08-08<a class="headerlink" href="#2026082-2026-08-08" title="Permanent link">&para;</a></h2>
+<p>BetterPy now brings fixture creation, navigation, completion, and diagnostics closer
+to pytest's actual scope and availability rules.</p>
+<h3 id="features">🚀 Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Create pytest fixtures from parameters</strong> is now available and creates unknown fixtures in the nearest applicable
+  scope, so local test and fixture parameters no longer default to unnecessarily broad fixture placement.</li>
+<li><strong>Parametrize pytest test</strong> completes fixture-backed parameter names inside <code>@pytest.mark.parametrize</code>, restricted
+  to fixtures that are useful and available at the test's location.</li>
+</ul>
+<h3 id="bug-fixes">🐛 Bug Fixes<a class="headerlink" href="#bug-fixes" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Pytest fixture engine</strong> now shows fixture return types in completion, navigates to the closest available fixture,
+  distinguishes unavailable and recursively defined fixtures, recognizes more built-in fixtures, and avoids duplicate
+  unresolved-fixture diagnostics and indirect-navigation targets.</li>
+<li><strong>Pytest fixture engine</strong> now preserves the IDE's bundled fixture resolution and navigation when BetterPy is
+  disabled, while clearing BetterPy-provided fixture types, documentation, and dynamic-fixture diagnostics when
+  their corresponding features are muted.</li>
+<li><strong>Fixture Editor Integration</strong> groups overridden fixtures by module, opens the implementation chooser on typed
+  parameters in ordinary functions and on injected fixtures with declared return types and identifies the inferred type
+  in the chooser title.</li>
+<li><strong>Pytest hook generation</strong> preserves required imports in generated hooks and adds quick search to the hook chooser.</li>
+<li><strong>Pytest fixture documentation</strong> no longer appears after the feature is disabled.</li>
+<li><strong>Pytest fixture scope inspection</strong> validates dynamically requested fixtures against the requesting fixture's scope.</li>
+</ul>
+<h2 id="2026081-2026-08-04"><a href="https://github.com/chbndrhnns/pycharm-plugin-betterpy/compare/2026.08.0...2026.08.1">2026.08.1</a> - 2026-08-04<a class="headerlink" href="#2026081-2026-08-04" title="Permanent link">&para;</a></h2>
+<h3 id="bug-fixes_1">🐛 Bug Fixes<a class="headerlink" href="#bug-fixes_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Pytest fixture engine</strong> follows local decorator aliases so fixtures registered through conditional
+  <code>pytest.fixture</code>/<code>pytest.yield_fixture</code> assignments, such as <code>requests-mock</code>'s <code>pytest11</code> entry point, are
+  recognized correctly.</li>
+<li><strong>Private module import inspection</strong> no longer suggests exporting symbols from third-party dependencies, only
+  flagging private-module imports that belong to your own project's code.</li>
+<li><strong>Pytest parametrized case run gutter icon</strong> anchors per-case run configurations to the test file's own content
+  root and module, so attached projects keep their own working directory and interpreter instead of inheriting one
+  from an unrelated module.</li>
+</ul>
+<h2 id="2026080-2026-08-02"><a href="https://github.com/chbndrhnns/pycharm-plugin-betterpy/compare/2026.07.1...2026.08.0">2026.08.0</a> - 2026-08-02<a class="headerlink" href="#2026080-2026-08-02" title="Permanent link">&para;</a></h2>
+<p>This release ships BetterPy's mock-patching and mock-typing tooling in stable builds, previously available only in
+dev builds: <strong>mock type inference</strong> for <code>Mock</code>/<code>MagicMock</code>/<code>AsyncMock</code> with <code>spec</code>/<code>spec_set</code> support, <code>mock.patch</code>
+target navigation and <code>mock.patch.object</code> attribute completion/navigation, and an inspection for unresolved
+attributes on specced mocks. The pytest fixture engine also got a significant navigation/inspection performance pass
+for large repositories.</p>
+<h3 id="features_1">🚀 Features<a class="headerlink" href="#features_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Mock assertion methods</strong> are now available, resolving <code>unittest.mock</code> assertion methods
+  (<code>assert_called_once_with</code>, <code>assert_any_call</code>, and similar) without enabling the broader dev-only mock type
+  provider, and correctly resolve pytest-mock's <code>Mock</code>, <code>MagicMock</code>, and <code>AsyncMock</code> aliases to their <code>unittest.mock</code>
+  classes for consistent <code>spec</code>/<code>spec_set</code> typing.</li>
+<li><strong>Mock type inference</strong> infers the type of <code>Mock</code>, <code>MagicMock</code>, and <code>AsyncMock</code> construction and of
+  <code>patch</code>/<code>patch.object</code> return values, propagating <code>spec</code>/<code>spec_set</code> classes (including lists of protocols) through
+  mock attribute and method access, <code>return_value</code>, and helper functions that return a mock, so calls on properly
+  specced mocks resolve like calls on the real target.</li>
+<li><strong>Mock patch reference</strong> resolves and navigates the dotted target string passed to <code>mock.patch(...)</code>, including
+  static segments of f-string targets, and lets Go to Declaration jump from a <code>mock.patch.object(target, "attribute")</code>
+  attribute string to the real attribute on the target class.</li>
+<li><strong>Mock patch object attribute completion</strong> completes the attribute name in
+  <code>mock.patch.object(target, "attribute")</code> calls based on the target's inferred type.</li>
+<li><strong>Mock unresolved reference inspection</strong> flags attribute reads and writes on specced <code>Mock</code>/<code>MagicMock</code>/<code>AsyncMock</code>
+  instances that don't resolve against the <code>spec</code>/<code>spec_set</code> class, catching typos that would otherwise be silently
+  accepted by <code>Mock</code>'s auto-attribute behavior.</li>
+<li><strong>Pytest hook generation</strong> reads annotations and availability notes from the installed <code>hookspec.py</code>, exposes
+  hooks in registered plugin and test modules where pytest supports them, renders hook documentation and Code Vision
+  hook implementations through F1, and extends hook navigation and override discovery to every registry-valid
+  pytest location, including test and plugin modules.</li>
+</ul>
+<h3 id="bug-fixes_2">🐛 Bug Fixes<a class="headerlink" href="#bug-fixes_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Pytest fixture engine</strong> speeds up fixture navigation and inspections in large repositories by caching
+  inspection-facing resolve methods, routing reference resolution through the platform resolve cache, resolving
+  re-exported fixtures from <code>conftest.py</code> correctly, and capping oversized fixture-not-found diagnostics behind an
+  on-demand chooser instead of one long error description.</li>
+<li><strong>Pytest test-tree navigation</strong> keeps editor actions and gutter markers synchronized with runner tree updates while
+  avoiding background access to live test proxies and repeated full-tree scans.</li>
+<li><strong>Toggle pytest skip from test tree</strong> resolves function, class, and module targets through a shared, deduplicated
+  dispatch path so repeated selections toggle each target exactly once instead of drifting out of sync.</li>
+<li><strong>Copy method annotations from parent</strong> safely transfers imports for quoted (string) type annotations into
+  <code>TYPE_CHECKING</code> blocks, excluding value and metadata strings, aliasing conflicting bindings, and avoiding
+  duplicate imports.</li>
+</ul>
+<h2 id="2026071-2026-07-17"><a href="https://github.com/chbndrhnns/pycharm-plugin-betterpy/compare/2026.07.0...2026.07.1">2026.07.1</a> - 2026-07-17<a class="headerlink" href="#2026071-2026-07-17" title="Permanent link">&para;</a></h2>
+<h3 id="bug-fixes_3">🐛 Bug Fixes<a class="headerlink" href="#bug-fixes_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Pytest fixture documentation</strong> falls back to rendering the fixture's own docstring when its return type can't be
+  enriched with field/value info, instead of showing no documentation at all.</li>
+<li><strong>Pytest fixture engine</strong> resolves fixture overrides shadowed by installed pytest plugins, discovers pytest
+  plugins declared in nested source roots so <code>pytest_plugins</code> references resolve correctly across overlapping
+  source roots, and avoids scanning uncommitted fixture PSI to prevent stale stub mismatches during editor searches.</li>
+<li><strong>Pytest fixture editor integration</strong> resolves fixture override imports for types imported under <code>TYPE_CHECKING</code>
+  or other conditional blocks and for classes declared locally in a pytest plugin module, generates fixture
+  overrides as pass-throughs that preserve the parent fixture's behavior and avoid recursion, and avoids nested
+  blocking reads when resolving fixture override hierarchies during indexing.</li>
+<li><strong>Class implementations code vision</strong> avoids duplicate and stale results when resolving import aliases.</li>
+<li><strong>Docstring Example Rendering</strong> renders the underlying class docstring for class aliases assigned from a class
+  reference or class instantiation.</li>
+</ul>
+<h2 id="2026070-2026-07-15"><a href="https://github.com/chbndrhnns/pycharm-plugin-betterpy/compare/2026.06.1...2026.07.0">2026.07.0</a> - 2026-07-15<a class="headerlink" href="#2026070-2026-07-15" title="Permanent link">&para;</a></h2>
+<h3 id="features_2">🚀 Features<a class="headerlink" href="#features_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Pytest fixture intelligence</strong> now extends PyCharm's built-in pytest support with BetterPy's own fixture index and
+  resolver. This improves fixture understanding across <code>conftest.py</code>, plugin modules, autouse fixtures, fixture
+  overrides, string-based fixture references, and dynamic fixture providers such as <code>register_fixture</code>.</li>
+<li><strong>Pytest fixture inspections and navigation</strong> are now powered by that resolver. BetterPy can highlight unused
+  fixtures, direct fixture imports, fixture-scope narrowing, uninjected fixture references, no-op
+  <code>@pytest.mark.usefixtures</code> decorators, redundant fixture imports, and <code>pytest_plugins</code> declarations in non-root
+  <code>conftest.py</code> files, while also making pytest identifiers available in Search Everywhere and fixture Find Usages.</li>
+<li><strong>Pytest fixture hierarchy support</strong> makes fixtures behave more like ordinary overridden Python members. You can jump
+  from an overriding fixture to the broader-scope fixture it shadows, and gutter markers show which narrower-scope
+  fixtures override the current fixture.</li>
+<li><strong>Pytest fixture editor integration</strong> makes fixture names act more like normal Python symbols: fixture parameters can
+  resolve to the fixture definition pytest would choose, fixture-name completion uses the visible fixture set for the
+  current file, and Go to Implementation can list narrower-scope fixture overrides.</li>
+<li><strong>Pytest fixture Quick Documentation and type inference</strong> build on the same fixture model to cover cases tracked by
+  the linked PyCharm issues, including richer fixture value types, unresolved or uninjected fixture references, and
+  basic checks that a test or fixture parameter annotation matches the resolved fixture return type.</li>
+<li><strong>Pytest parametrization helpers</strong> add intentions for creating and maintaining <code>@pytest.mark.parametrize</code> decorators,
+  converting values to and from <code>pytest.param(...)</code>, and running individual parametrized cases from the editor gutter.</li>
+<li><strong>Pytest test-tree actions</strong> add copyable node IDs, editor-to-test-tree navigation, skip toggling from the test tree,
+  and a debug-logging run variant for the selected pytest node.</li>
+<li><strong>Pytest test-writing helpers</strong> add Generate-menu actions for new tests, fixtures, and pytest hooks, plus editor
+  intentions for toggling <code>@pytest.mark.skip</code> and wrapping statements with <code>pytest.raises(...)</code>.</li>
+<li><strong>Inherited attribute documentation</strong> shows an ancestor attribute's docstring when an overriding class attribute has
+  no local documentation, preserving useful Quick Documentation across class hierarchies.</li>
+</ul>
+<h3 id="bug-fixes_4">🐛 Bug Fixes<a class="headerlink" href="#bug-fixes_4" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Pytest fixture documentation</strong>, already available in stable, shows consumer-scoped fixture variants and follows
+  static fixture pass-throughs in Quick Documentation, renders correctly for class-based fixture containers, and stays
+  compatible with newer PyCharm platform versions.</li>
+<li><strong>Pytest fixture editor integration</strong> suppresses feature nudges while focus is outside the editor.</li>
+<li><strong>Class implementations code vision</strong> includes specced mocks in class inlays, ignores inferred protocol method
+  return types, mirrors native protocol library implementation behavior, and keeps code-vision navigation constrained
+  to the intended editor split.</li>
+<li><strong>Go to target presentation</strong> mirrors native protocol library implementation behavior for library protocols.</li>
+<li><strong>Test/Production editor tabs</strong> preserves the active split and placement when moving files right, avoids duplicate
+  splits, keeps navigation history intact, guards editor tab pin checks, creates a split when needed for navigation
+  routing, guards action event file lookups with read access, honors pytest's configured collection naming, and
+  applies workspace-aware source roots consistently.</li>
+<li><strong>Property usages code vision</strong> stabilizes usage-count recording and keeps code-vision navigation constrained to the
+  intended editor split.</li>
+<li><strong>Module assignment usages code vision</strong> keeps code-vision navigation constrained to the intended editor split.</li>
+<li><strong>Constant should be Final inspection</strong> avoids unsafe <code>Final</code> annotations for literal regular-expression values,
+  reuses existing and re-exported imports instead of adding duplicates, preserves literal builtin types and quote
+  qualifiers, collapses homogeneous tuple types, normalizes generated import order, and supports newer PyCharm
+  collection type APIs.</li>
+<li><strong>Shadowing stdlib module inspection</strong> no longer rewrites existing references when renaming through the dialog, and
+  avoids subclassing a final platform file-action class.</li>
+<li><strong>Missing None annotation inspection</strong> avoids emitting a duplicate quick-fix action.</li>
+<li><strong>Docstring Example Rendering</strong> renders reStructuredText docstring examples and preserves field lists when
+  rendering fenced code.</li>
+<li><strong>Copy method annotations from parent</strong> avoids duplicate actions, prefers existing qualified imports, normalizes
+  import insertion order, guards against stale PSI when reading the copy plan, and recognizes stub and implementation
+  modules as the same module identity.</li>
+<li><strong>Copy with imports</strong> avoids resolving shadowed names when copying imports.</li>
+<li><strong>Generate class actions</strong> keeps generated names selected and normalizes generated import order.</li>
+<li><strong>Export symbol to target</strong> avoids PSI reads outside read access, applies workspace-aware source roots, and uses
+  pytest's configured naming when checking feature guards.</li>
+<li><strong>Introduce Parameter Object</strong> (refactoring and MCP tool) respects disabled feature gates and reuses existing Python
+  imports when generating parameter objects.</li>
+<li><strong>Make parameter mandatory</strong> preserves override propagation.</li>
+<li><strong>Make parameter optional</strong> preserves type-only optional declarations.</li>
+<li><strong>Change visibility</strong> avoids running usage previews on the EDT and uses pytest's configured naming when checking
+  feature guards.</li>
+<li><strong>Attribute docstring</strong> renders module-assignment docstring examples correctly.</li>
+<li><strong>Dict access</strong> avoids stale PSI after intention edits.</li>
+<li><strong>Top-level extract function</strong> prevents refactoring-action crashes and tolerates a missing Python extract handler.</li>
+<li><strong>Message console filter</strong> links constructor-style class representations in the console.</li>
+<li><strong>Python navigation bar</strong> renders dunder methods correctly in navbar breadcrumbs.</li>
+<li><strong>Use actual test outcome</strong> uses pytest's configured naming when checking feature guards.</li>
+<li><strong>Analytics</strong> follows the IDE usage-statistics setting by default and no longer sends an opt-out event.</li>
+</ul>
+<h3 id="performance">⚡ Performance<a class="headerlink" href="#performance" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Class implementations code vision</strong> reduces the work done by import-alias search.</li>
+</ul>
+<h2 id="2026061-2026-06-05"><a href="https://github.com/chbndrhnns/pycharm-plugin-betterpy/compare/2026.06.0...2026.06.1">2026.06.1</a> - 2026-06-05<a class="headerlink" href="#2026061-2026-06-05" title="Permanent link">&para;</a></h2>
+<h3 id="features_3">🚀 Features<a class="headerlink" href="#features_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://chbndrhnns.github.io/pycharm-plugin-betterpy/2026.06.1/features/return-path-highlighting/"><strong>Return path highlighting</strong></a> highlights every explicit <code>return</code>
+  statement in a Python function when the caret is on that function's return annotation.</li>
+</ul>
+<h3 id="bug-fixes_5">🐛 Bug Fixes<a class="headerlink" href="#bug-fixes_5" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Pytest parametrized case run gutter icon</strong> only registers pytest-specific run targets and fully opts out when the
+  feature is disabled, preserving PyCharm's built-in pytest gutter actions when other Python test configurations exist.</li>
+</ul>
+<h2 id="2026060-2026-06-05"><a href="https://github.com/chbndrhnns/pycharm-plugin-betterpy/compare/2026.05.2...2026.06.0">2026.06.0</a> - 2026-06-05<a class="headerlink" href="#2026060-2026-06-05" title="Permanent link">&para;</a></h2>
+<h3 id="features_4">🚀 Features<a class="headerlink" href="#features_4" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://chbndrhnns.github.io/pycharm-plugin-betterpy/2026.06.0/features/top-level-extract-function/"><strong>Top-level extract function</strong></a> (<a href="https://youtrack.jetbrains.com/issue/PY-40840">PY-40840</a>, <a href="https://youtrack.jetbrains.com/issue/PY-44636">PY-44636</a>, <a href="https://youtrack.jetbrains.com/issue/PY-73852">PY-73852</a>) extracts selected module-level
+  Python statements into a new function with explicit parameters and return values instead of relying on globals.</li>
+<li><a href="https://chbndrhnns.github.io/pycharm-plugin-betterpy/2026.06.0/features/copy-with-imports/"><strong>Copy with imports</strong></a> (<a href="https://youtrack.jetbrains.com/issue/PY-62801">PY-62801</a>) copies selected Python code together with the import
+  statements referenced inside that selection.</li>
+<li><a href="https://chbndrhnns.github.io/pycharm-plugin-betterpy/2026.06.0/features/docstring-example-rendering/"><strong>Docstring Example Rendering</strong></a> (<a href="https://youtrack.jetbrains.com/issue/PY-47744">PY-47744</a>) renders doctests and fenced Python
+  examples in Quick Documentation, including copy links for runnable doctest input.</li>
+<li><a href="https://chbndrhnns.github.io/pycharm-plugin-betterpy/2026.06.0/features/use-actual-test-outcome/"><strong>Use actual test outcome</strong></a> replaces expected assertion values with the actual value from the last failed pytest run.</li>
+<li><a href="https://chbndrhnns.github.io/pycharm-plugin-betterpy/2026.06.0/features/pytest-failed-line-inspection/"><strong>Pytest failed line inspection</strong></a> (<a href="https://youtrack.jetbrains.com/issue/PY-32337">PY-32337</a>, <a href="https://youtrack.jetbrains.com/issue/PY-61067">PY-61067</a>) highlights the line reported by the
+  most recent pytest failure directly in the editor.</li>
+<li><a href="https://chbndrhnns.github.io/pycharm-plugin-betterpy/2026.06.0/features/pytest-parametrized-case-run-gutter-icon/"><strong>Pytest parametrized case run gutter icon</strong></a> (<a href="https://youtrack.jetbrains.com/issue/PY-88558">PY-88558</a>) adds gutter run targets for individual
+  <code>pytest.mark.parametrize</code> cases when BetterPy can infer the exact pytest node id.</li>
+<li><a href="https://chbndrhnns.github.io/pycharm-plugin-betterpy/2026.06.0/features/property-usages-code-vision/"><strong>Property usages code vision</strong></a> shows inline usage counts above Python properties and opens the matching project usages.</li>
+<li><a href="https://chbndrhnns.github.io/pycharm-plugin-betterpy/2026.06.0/features/missing-docstring-overload-suppressor/"><strong>Suppress missing docstrings on overloads</strong></a> (<a href="https://youtrack.jetbrains.com/issue/PY-56267">PY-56267</a>) suppresses PyCharm's
+  missing-docstring inspection for <code>@overload</code> signatures while keeping the implementation subject to the normal rule.</li>
+<li><strong>BetterPy settings</strong> adds an all-features view and recent-feature controls so users can find, mute, and restore
+  feature settings more directly.</li>
+</ul>
+<h3 id="bug-fixes_6">🐛 Bug Fixes<a class="headerlink" href="#bug-fixes_6" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Toggle enum member value</strong> can toggle enum members back to literal values.</li>
+<li><strong>Test/Production editor tabs</strong> adds tab sorting support and keeps the toolbar/menu state consistent with the active
+  split mode.</li>
+<li><strong>Class implementations code vision</strong> uses structural protocol search and keeps protocol implementation labels more
+  precise.</li>
+<li><strong>Constant should be Final inspection</strong> preserves declared constant types and keeps generated imports separated
+  cleanly.</li>
+<li><strong>BetterPy settings</strong> hides empty groups while searching, expands correctly from the status bar, and restores feature
+  state after muting.</li>
+</ul>
+<h2 id="2026052-2026-05-31"><a href="https://github.com/chbndrhnns/pycharm-plugin-betterpy/compare/2026.05.1...2026.05.2">2026.05.2</a> - 2026-05-31<a class="headerlink" href="#2026052-2026-05-31" title="Permanent link">&para;</a></h2>
+<h3 id="features_5">🚀 Features<a class="headerlink" href="#features_5" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://chbndrhnns.github.io/pycharm-plugin-betterpy/2026.05.2/features/pytest/#pytest-fixture-documentation"><strong>Pytest fixture documentation</strong></a> (<a href="https://youtrack.jetbrains.com/issue/PY-66245">PY-66245</a>) with Quick Documentation and fixture-parameter type
+  inference for primitive, generator-style, async, dataclass, Pydantic, TypedDict, and <code>conftest.py</code> fixture cases.</li>
+<li><a href="https://chbndrhnns.github.io/pycharm-plugin-betterpy/2026.05.2/features/refactoring/#parameter-object-refactoring"><strong>Introduce Parameter Object</strong></a> (<a href="https://youtrack.jetbrains.com/issue/PY-59270">PY-59270</a>) now supports async functions, nested functions, and safe decorated targets, with warnings
+  for local decorators that may depend on the original signature.</li>
+<li><a href="https://chbndrhnns.github.io/pycharm-plugin-betterpy/2026.05.2/features/refactoring/#toggle-enum-member-value"><strong>Toggle enum member value</strong></a></li>
+<li><a href="https://chbndrhnns.github.io/pycharm-plugin-betterpy/2026.05.2/features/navigation/#class-implementations-code-vision"><strong>Class implementations code vision</strong></a> (<a href="https://youtrack.jetbrains.com/issue/PY-56627">PY-56627</a>) shows an inline code vision hint above each Python class displaying the number of implementations (subclasses) with uv-workspace-aware counting.</li>
+<li><a href="https://chbndrhnns.github.io/pycharm-plugin-betterpy/2026.05.2/features/navigation/#module-assignment-usages-code-vision"><strong>Module assignment usages code vision</strong></a> shows an inline code vision hint above each module-level assignment with the number of project-scope usages, allowing navigation via a non-blocking read action for single usages or delegating to the platform's Show Usages flow for multiple usages.</li>
+<li><a href="https://chbndrhnns.github.io/pycharm-plugin-betterpy/2026.05.2/features/ide-customization/#testproduction-editor-tabs"><strong>Test/Production editor tabs</strong></a> supports routing same-kind test/production navigation targets to the opposite editor split when enabled, complete with toolbar options and a toggle action.</li>
+<li>Add contextual feature nudges for intentions.</li>
+</ul>
+<h3 id="bug-fixes_7">🐛 Bug Fixes<a class="headerlink" href="#bug-fixes_7" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Pytest fixture documentation</strong> (<a href="https://youtrack.jetbrains.com/issue/PY-66245">PY-66245</a>) renders set literal values and unwraps async fixture return types as the injected
+  fixture value type.</li>
+<li><strong>Missing |None annotation inspection</strong> (<a href="https://youtrack.jetbrains.com/issue/PY-88504">PY-88504</a>) is re-enabled and contributes a BetterPy quick-fix intention while leaving
+  PyCharm's built-in diagnostic responsible on current IDE builds.</li>
+<li><strong>NewType/TypeVar/ParamSpec references</strong> (<a href="https://youtrack.jetbrains.com/issue/PY-82966">PY-82966</a>, <a href="https://youtrack.jetbrains.com/issue/PY-53658">PY-53658</a>) adds a BetterPy quick-fix for <code>NewType</code> declarations whose string name no
+  longer matches the assigned symbol.</li>
+<li><strong>Constant should be Final inspection</strong> keeps class-object constants as <code>Final[type[Cls]]</code> instead of treating them as
+  instances.</li>
+<li><strong>Shadowing stdlib module inspection</strong> (<a href="https://youtrack.jetbrains.com/issue/PY-23615">PY-23615</a>, <a href="https://youtrack.jetbrains.com/issue/PY-43957">PY-43957</a>) warns before creating stdlib-shadowing Python files and preserves existing
+  imports when renaming files that already shadow standard-library modules.</li>
+<li><strong>Generate class actions</strong> places generated classes above the caret and supports inserting them from inside function scopes.</li>
+</ul>
+<h2 id="2026051-2026-05-21"><a href="https://github.com/chbndrhnns/pycharm-plugin-betterpy/compare/2026.05.0...2026.05.1">2026.05.1</a> - 2026-05-21<a class="headerlink" href="#2026051-2026-05-21" title="Permanent link">&para;</a></h2>
+<h3 id="features_6">🚀 Features<a class="headerlink" href="#features_6" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Shadowing stdlib module inspection</strong> — report project files such as <code>random.py</code>, <code>logging.py</code>, or <code>json.py</code> that
+  shadow Python standard-library modules, offer a rename quick-fix, and warn before renaming a Python file to a
+  stdlib-shadowing name (<a href="https://youtrack.jetbrains.com/issue/PY-23615">PY-23615</a>, <a href="https://youtrack.jetbrains.com/issue/PY-43957">PY-43957</a>).</li>
+<li><strong>Change visibility intention</strong> — when toggling method visibility in an inheritance hierarchy, ask whether to rename
+  the whole hierarchy or only the selected method.</li>
+</ul>
+<h3 id="bug-fixes_8">🐛 Bug Fixes<a class="headerlink" href="#bug-fixes_8" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Copy method annotations from parent</strong> — preserve module-alias qualifiers and relative module imports, and copy
+  nested class annotations through the importable outer class so generated annotations remain valid.</li>
+<li><strong>Shadowing stdlib module inspection</strong> — register the feature logging category and keep the inspection and rename
+  confirmation processor under the stable feature package.</li>
+</ul>
+<h2 id="2026050-2026-05-19"><a href="https://github.com/chbndrhnns/pycharm-plugin-betterpy/compare/2026.04.14...2026.05.0">2026.05.0</a> - 2026-05-19<a class="headerlink" href="#2026050-2026-05-19" title="Permanent link">&para;</a></h2>
+<h3 id="features_7">🚀 Features<a class="headerlink" href="#features_7" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Attribute Docstring in Quick Documentation</strong> — show the string literal that follows a class attribute as its
+  documentation in Quick Documentation popups (<a href="https://youtrack.jetbrains.com/issue/PY-63878">PY-63878</a>).</li>
+<li><strong>Constant should be Final inspection</strong> — report module-level constants that should be annotated with <code>Final</code>, with
+  safe quick-fixes that handle aliased module types, <code>from __future__</code> imports, function-local assignments, wildcard
+  imports, and unknown types.</li>
+<li><strong>Test/Production editor tabs</strong> — keep test and production files in separate editor splits, with a toolbar toggle,
+  configurable split alignment, pytest-config-aware test-file detection, file-color-based tab tinting, and respect for
+  manual tab moves and pinning within a session.</li>
+<li><strong>Show test usages</strong> — new Find Usages toggle to hide references from test sources, shipped alongside the existing
+  <strong>Show type annotations</strong> toggle under a shared Usage filtering settings UI.</li>
+</ul>
+<h3 id="bug-fixes_9">🐛 Bug Fixes<a class="headerlink" href="#bug-fixes_9" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Structural search</strong>: register the Python structural-search profile correctly, and recognize parenthesized
+  expressions, assignments, calls, tuples, and other Python syntax equivalences during matching.</li>
+<li><strong>Message console filter</strong>: restore navigation from console output to Python classes and pytest identifiers, and stop
+  turning Pydantic error detail words into false console links.</li>
+<li><strong>Missing <code>None</code> annotation inspection</strong>: detect top-level <code>None</code> defaults and <code>Annotated[...]</code> annotations correctly,
+  including typing wildcard imports and literal <code>None</code> cases.</li>
+<li><strong>Python navigation bar</strong>: restore member filtering in the enhanced navigation bar, including overload-aware
+  behavior.</li>
+<li><strong>Go to Implementation presentation</strong>: preserve module and class context so same-named targets stay distinguishable
+  in the chooser.</li>
+<li><strong><code>dict[key]</code> access intention</strong>: avoid unsafe rewrites for assignment targets and unsafe receiver/key expressions,
+  and preserve the behavior of default expressions when converting between bracket access, <code>.get()</code>, and
+  <code>try</code>/<code>except KeyError</code>.</li>
+<li><strong>Generate dataclass / frozen dataclass / Pydantic model actions</strong>: handle insertion edge cases so generated classes
+  land in the expected location with consistent formatting.</li>
+<li><strong>Make Parameter Mandatory / Optional intentions</strong>: harden availability and rewriting around inherited parameters and
+  parameters that already carry defaults.</li>
+<li><strong>Parameter Object refactoring</strong>: tighten introduce/inline validation, including safer handling of Pydantic models
+  and unsupported inline targets.</li>
+<li><strong>Copy method annotations from parent</strong>: preserve copied annotation imports when the parent method uses import
+  aliases.</li>
+</ul>
+<h2 id="20260414-2026-04-27"><a href="https://github.com/chbndrhnns/pycharm-plugin-betterpy/compare/2026.04.13...2026.04.14">2026.04.14</a> - 2026-04-27<a class="headerlink" href="#20260414-2026-04-27" title="Permanent link">&para;</a></h2>
+<h3 id="features_8">🚀 Features<a class="headerlink" href="#features_8" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Add test/production editor tab mode</li>
+<li>Show BetterPy plugin version in the status bar widget tooltip</li>
+<li>Ship <code>message-console-filter</code> in stable</li>
+<li>Link settings features to versioned docs</li>
+</ul>
+<h3 id="documentation">📚 Documentation<a class="headerlink" href="#documentation" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Add persistent Marketplace and GitHub links to the docs site</li>
+<li>Point changelog links to the public GitHub repo</li>
+<li>Remove redundant README text</li>
+</ul>
+<h2 id="20260413-2026-04-27"><a href="https://github.com/chbndrhnns/pycharm-plugin-betterpy/compare/2026.04.12...2026.04.13">2026.04.13</a> - 2026-04-27<a class="headerlink" href="#20260413-2026-04-27" title="Permanent link">&para;</a></h2>
+<h3 id="features_9">🚀 Features<a class="headerlink" href="#features_9" title="Permanent link">&para;</a></h3>
+<ul>
+<li><em>(diagnostics)</em> Copy Diagnostic Data now includes operating system, Python interpreter version, and the list of
+  disabled features</li>
+<li>Ship <code>dict-access</code> in stable with dedicated docs</li>
+<li>Ship <code>generate-class-actions</code> in stable</li>
+<li>Ship <code>change-visibility</code> feature in stable</li>
+</ul>
+<h3 id="bug-fixes_10">🐛 Bug Fixes<a class="headerlink" href="#bug-fixes_10" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Use <code>implementation</code> for navigation and usage extensions in plugin.xml</li>
+</ul>
+<h3 id="refactor">🚜 Refactor<a class="headerlink" href="#refactor" title="Permanent link">&para;</a></h3>
+<ul>
+<li><em>(core)</em> Move always-on actions out of feature packages</li>
+<li>Move feature schema to <code>META-INF</code></li>
+</ul>
+<h2 id="20260412-2026-04-25"><a href="https://github.com/chbndrhnns/pycharm-plugin-betterpy/compare/2026.04.11...2026.04.12">2026.04.12</a> - 2026-04-25<a class="headerlink" href="#20260412-2026-04-25" title="Permanent link">&para;</a></h2>
+<h3 id="features_10">🚀 Features<a class="headerlink" href="#features_10" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Structural search</li>
+<li>Move py-goto-target-presentation to stable</li>
+</ul>
+<h3 id="testing">🧪 Testing<a class="headerlink" href="#testing" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Migrate from JUnit3 to JUnit 4</li>
+</ul>
+<h3 id="miscellaneous-tasks">⚙️ Miscellaneous Tasks<a class="headerlink" href="#miscellaneous-tasks" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Bump intelliJPlatform to 2.15.0</li>
+<li>Bump zensical to 0.0.36</li>
+</ul>
+<h2 id="20260411-2026-04-24"><a href="https://github.com/chbndrhnns/pycharm-plugin-betterpy/compare/2026.04.10...2026.04.11">2026.04.11</a> - 2026-04-24<a class="headerlink" href="#20260411-2026-04-24" title="Permanent link">&para;</a></h2>
+<h3 id="features_11">🚀 Features<a class="headerlink" href="#features_11" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Extend navigation bar to show file members</li>
+</ul>
+<h3 id="testing_1">🧪 Testing<a class="headerlink" href="#testing_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Migrate test suite from JUnit 3 to JUnit 4</li>
+</ul>
+<h2 id="20260410-2026-04-21"><a href="https://github.com/chbndrhnns/pycharm-plugin-betterpy/commits/2026.04.10">2026.04.10</a> - 2026-04-21<a class="headerlink" href="#20260410-2026-04-21" title="Permanent link">&para;</a></h2>
+<h3 id="features_12">🚀 Features<a class="headerlink" href="#features_12" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Move copy-method-annotations-from-parent to TYPING_TYPE_HINTS</li>
+<li>Mark more features as incubating</li>
+<li>Auto-stamp since field in feature metadata at build time</li>
+<li>Add metadata row to docs rendering</li>
+<li>Require 'since' for features in non-wildcard feature-sets</li>
+<li>Set since=2026.04.05 for stable features; move maturity tooltip to badge only</li>
+</ul>
+<h3 id="bug-fixes_11">🐛 Bug Fixes<a class="headerlink" href="#bug-fixes_11" title="Permanent link">&para;</a></h3>
+<ul>
+<li><em>(intentions)</em> Redirect MakeParameterMandatory to root base class in multi-level hierarchies</li>
+<li><em>(docs)</em> Collapse consecutive horizontal rules left by stripped sections</li>
+<li><em>(docs)</em> Load feature metadata from META-INF XML blocks</li>
+<li><em>(docs)</em> Pre-expand feature blocks via docs_ext before handing off to zensical</li>
+<li><em>(docs)</em> Drop empty group rows from Features Overview table</li>
+<li><em>(docs)</em> Escape <code>|</code> in feature displayName for reference tables</li>
+<li><em>(docs)</em> Remove "Default" column from reference tables</li>
+</ul>
+<h3 id="other">💼 Other<a class="headerlink" href="#other" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Recover lost docs/plugin.xml/feature-metadata chain (43b9f7d8..4f39217a)</li>
+</ul>
+<h3 id="refactor_1">🚜 Refactor<a class="headerlink" href="#refactor_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><em>(docs)</em> Unify on RELEASE_CHANNEL env and --channel CLI flag</li>
+<li>Build plugin.xml dynamically</li>
+<li>Include plugin registrations on build time</li>
+<li>Include *.actions.xml files</li>
+<li>Move feature file content to XML fragments</li>
+<li>Use test annotations to skip tests for features that are not configured</li>
+<li><em>(plugin-xml)</em> Inline *.actions.xml fragments into canonical feature files</li>
+<li>Split _bootstrap.xml registrations into owning feature XMLs</li>
+<li>Retire TypeEvalContexts.java</li>
+</ul>
+<h3 id="testing_2">🧪 Testing<a class="headerlink" href="#testing_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Validate metadata block</li>
+<li>Validate feature id matches filename</li>
+<li>Skip tests for excluded features in stable channel</li>
+</ul>
+<h3 id="miscellaneous-tasks_1">⚙️ Miscellaneous Tasks<a class="headerlink" href="#miscellaneous-tasks_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Add purge release script</li>
+<li><em>(docs)</em> Drop internal Pages deploy (plan does not support Pages on private repos)</li>
+<li>Upgrade to intellij-platform-plugin-template v2.5.0</li>
+<li>Disable jobs targeting dev branch</li>
+<li>Bump version to 2026.04.10</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-circle-arrow-up" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 12-4-4-4 4M12 16V8"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://zensical.org/" target="_blank" rel="noopener">
+      Zensical
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/chbndrhnns/pycharm-plugin-betterpy" target="_blank" rel="noopener" title="BetterPy on GitHub" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://plugins.jetbrains.com/plugin/29896" target="_blank" rel="noopener" title="BetterPy on JetBrains Marketplace" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18H6v-4h6m9 0v-2l-1-5H4l-1 5v2h1v6h10v-6h4v6h2v-6m0-10H4v2h16z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["navigation.tabs","navigation.sections","navigation.expand","navigation.top","navigation.instant","navigation.path","content.code.copy","content.code.annotate","search.suggest","search.highlight"],"search":"../assets/javascripts/workers/search.b6b7e04f.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":{"provider":"mike"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7f30b55.min.js"></script>
+      
+        <script src="../javascripts/shortcuts.js"></script>
+      
+        <script src="../javascripts/header-title.js"></script>
+      
+        <script src="../javascripts/lightbox.js"></script>
+      
+    
+  </body>
+</html>

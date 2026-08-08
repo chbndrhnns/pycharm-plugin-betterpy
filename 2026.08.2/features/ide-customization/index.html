@@ -1,0 +1,1569 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Supercharge your Python development in PyCharm">
+      
+      
+      
+        <link rel="canonical" href="https://chbndrhnns.github.io/pycharm-plugin-betterpy/2026.08.2/features/ide-customization/">
+      
+      
+        <link rel="prev" href="../productivity/">
+      
+      
+        <link rel="next" href="../../reference/settings/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/logo.svg">
+      <meta name="generator" content="zensical-0.0.50">
+    
+    
+      
+        <title>Ide customization - BetterPy – PyCharm Plugin</title>
+      
+    
+    
+      
+        
+      
+      <link rel="stylesheet" href="../../assets/stylesheets/modern/main.62c9b9cc.min.css">
+      
+        
+          
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/modern/palette.dfe2e883.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,500,500i,700,700i%7CJetBrains+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer" aria-label="Navigation"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#navigation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="BetterPy – PyCharm Plugin" class="md-header__button md-logo" aria-label="BetterPy – PyCharm Plugin" data-md-component="logo">
+      
+  <img src="../../assets/logo.svg" alt="BetterPy – PyCharm Plugin">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer" aria-label="Navigation">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            BetterPy – PyCharm Plugin
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Ide customization
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search" aria-label="Search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog" aria-label="Search">
+  <button type="button" class="md-search__button">
+    Search
+  </button>
+</div>
+      
+    
+    <a class="bp-header-install" href="https://plugins.jetbrains.com/plugin/29896-betterpy" target="_blank" rel="noopener">
+      <span class="bp-header-install__label">Install BetterPy</span>
+      <span class="bp-header-install__short">Install</span>
+    </a>
+    <div class="md-header__source">
+      
+    </div>
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+      
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../getting-started/installation/" class="md-tabs__link">
+          
+  
+  Getting Started
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+      
+    
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  Features
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+      
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../reference/settings/" class="md-tabs__link">
+          
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../changelog/" class="md-tabs__link">
+        
+  
+  Changelog
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="BetterPy – PyCharm Plugin" class="md-nav__button md-logo" aria-label="BetterPy – PyCharm Plugin" data-md-component="logo">
+      
+  <img src="../../assets/logo.svg" alt="BetterPy – PyCharm Plugin">
+
+    </a>
+    BetterPy – PyCharm Plugin
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Home
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Getting Started
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+  Getting Started
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Installation
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Features
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+  Features
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Overview
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../typing-type-hints/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Typing & Type Hints
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../refactoring/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Refactoring & Code Transformations
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pytest/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Testing (Pytest)
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../imports/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Imports & Module Boundaries
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../navigation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Navigation & Discovery
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../code-quality/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Code Quality & Safety
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../productivity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Productivity Actions
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  IDE Customization
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="././" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  IDE Customization
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#navigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Navigation
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Navigation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#python-navigation-bar" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Python navigation bar
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#presentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Presentation
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Presentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enhanced-go-to-implementation-presentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Enhanced Go to Implementation presentation
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testproduction-editor-tabs" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Test/Production editor tabs
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#filtering" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Filtering
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Filtering">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#message-console-filter" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Message console filter
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#structural-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Structural Search
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Structural Search">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#structural-search-profile-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Structural Search Profile (Python)
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Reference
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+  Reference
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Settings
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/inspections/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Inspections
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/ide-remote-control/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  IDE Remote Control
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Changelog
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  
+                    
+                    
+                    
+                    
+                      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+                      <div class="md-sidebar-button__wrapper">
+                        <label class="md-sidebar-button" for="__toc"></label>
+                      </div>
+                    
+                  
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#navigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Navigation
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Navigation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#python-navigation-bar" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Python navigation bar
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#presentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Presentation
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Presentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enhanced-go-to-implementation-presentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Enhanced Go to Implementation presentation
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testproduction-editor-tabs" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Test/Production editor tabs
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#filtering" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Filtering
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Filtering">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#message-console-filter" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Message console filter
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#structural-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Structural Search
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Structural Search">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#structural-search-profile-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Structural Search Profile (Python)
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+    
+    
+    
+      <li class="md-path__item">
+        <a href="../" class="md-path__link">
+          
+  
+  <span class="md-ellipsis">
+    Features
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+<h1 id="ide-customization">IDE Customization<a class="headerlink" href="#ide-customization" title="Permanent link">&para;</a></h1>
+<p>BetterPy tweaks a handful of PyCharm UI surfaces — the navigation bar, Structure View, Go-to popups, and the run console — without touching your source code.</p>
+<hr />
+<h2 id="navigation">Navigation<a class="headerlink" href="#navigation" title="Permanent link">&para;</a></h2>
+<h3 id="python-navigation-bar">Python navigation bar<a class="headerlink" href="#python-navigation-bar" title="Permanent link">&para;</a></h3>
+<div class="feature-meta"><span class="feature-meta__item" title="Plugin version in which this feature was introduced."><span class="feature-meta__label">Since</span> 2026.04.11</span><span class="feature-meta__sep"> · </span><span class="feature-meta__item"><span class="feature-meta__label">Maturity</span> <span class="badge badge-stable" title="Stable: ready for production use.">Stable</span></span><span class="feature-meta__sep"> · </span><span class="feature-meta__item feature-meta__item--issues" title="Related YouTrack issues for this feature."><span class="feature-meta__label">Issues</span> <span class="feature-meta__issues"><a href="https://youtrack.jetbrains.com/issue/PY-53757" class="feature-meta__issue" target="_blank" rel="noopener">PY-53757</a></span></span></div>
+
+<p>BetterPy enriches the Python navigation bar with module-path context, making it easier to understand where the current file sits inside a package.</p>
+<h4 id="how-to-use">How to use<a class="headerlink" href="#how-to-use" title="Permanent link">&para;</a></h4>
+<p>Open a Python file and show the IDE navigation bar. The enhanced model contributes Python-aware path elements for packages, modules, classes, and functions.</p>
+<h4 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h4>
+<p>For a file such as:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>shop/orders/service.py
+</code></pre></div>
+<p>with a caret inside:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">CheckoutService</span><span class="p">:</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">submit</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>        <span class="o">...</span>
+</code></pre></div>
+<p>the navigation bar can expose the project/package path and the Python structure around the caret, so jumping to nearby modules or enclosing declarations takes fewer clicks.</p>
+<h4 id="what-it-supports">What it supports<a class="headerlink" href="#what-it-supports" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Python package and module path display.</li>
+<li>Navigation bar entries for Python source structure.</li>
+<li>Standard navigation-bar selection and keyboard interaction.</li>
+<li>Projects with nested source roots and package directories.</li>
+</ul>
+<h4 id="what-it-deliberately-avoids">What it deliberately avoids<a class="headerlink" href="#what-it-deliberately-avoids" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Changing file contents or import paths.</li>
+<li>Replacing PyCharm's project view.</li>
+<li>Inventing entries for unresolved or non-Python files.</li>
+</ul>
+<h4 id="notes">Notes<a class="headerlink" href="#notes" title="Permanent link">&para;</a></h4>
+<ul>
+<li>The feature is passive once enabled; use the IDE navigation bar as usual.</li>
+<li>The feature is gated by the <em>Python navigation bar</em> setting under <strong>Settings | BetterPy | IDE Customization | Navigation</strong>.</li>
+</ul>
+<hr />
+<h2 id="presentation">Presentation<a class="headerlink" href="#presentation" title="Permanent link">&para;</a></h2>
+<h3 id="enhanced-go-to-implementation-presentation">Enhanced Go to Implementation presentation<a class="headerlink" href="#enhanced-go-to-implementation-presentation" title="Permanent link">&para;</a></h3>
+<div class="feature-meta"><span class="feature-meta__item" title="Plugin version in which this feature was introduced."><span class="feature-meta__label">Since</span> 2026.04.12</span><span class="feature-meta__sep"> · </span><span class="feature-meta__item"><span class="feature-meta__label">Maturity</span> <span class="badge badge-stable" title="Stable: ready for production use.">Stable</span></span><span class="feature-meta__sep"> · </span><span class="feature-meta__item feature-meta__item--issues" title="Related YouTrack issues for this feature."><span class="feature-meta__label">Issues</span> <span class="feature-meta__issues"><a href="https://youtrack.jetbrains.com/issue/PY-82520" class="feature-meta__issue" target="_blank" rel="noopener">PY-82520</a></span></span></div>
+
+<p>Prepends the owning class name to the method name in the <strong>Go to Implementation</strong> popup whenever two or more candidates share the same short name, so overrides can be told apart at a glance.</p>
+<p>In a typical Python codebase, multiple classes implement a method with the same name — for example, several services implementing <code>process</code>, or a hierarchy of handlers all overriding <code>handle</code>. When you invoke <strong>Navigate → Go to Implementation</strong> (<span class="bp-shortcut" data-bp-shortcut="go-to-implementation">⌥⌘B / Ctrl+Alt+B</span>) on such a method, PyCharm shows the <strong>Choose implementation</strong> popup with one row per candidate.</p>
+<p>Out of the box, every row renders only the <strong>method</strong> name plus the file it lives in:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>process  →  module_a.py
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>process  →  module_b.py
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>process  →  module_c.py
+</code></pre></div>
+<p>This creates a concrete pain point: <strong>Speed-search cannot narrow the list.</strong> The popup's type-to-filter search only matches against the method/class name only, not the FQN. Since every row shows the same method name, typing <code>ServiceA</code> or <code>UserHandler</code> filters out <em>all</em> rows instead of focusing on the override you want.</p>
+<p>BetterPy contributes a <code>gotoTargetPresentationProvider</code> for Python that rewrites the row presentation when — and only when — there is a disambiguation problem. For each candidate method whose short name collides with another candidate in the same popup, the presentation is changed to <code>ClassName.methodName</code>, while the file/location column is kept intact:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>ServiceA.process  →  module_a.py
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>ServiceB.process  →  module_b.py
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>ServiceC.process  →  module_c.py
+</code></pre></div>
+<p>With the class name inline you can now <strong>Use speed-search to narrow down</strong> — typing <code>ServiceB</code> filters the list down to the matching row, because the class name is part of the row's searchable text.</p>
+<p>Candidates whose short name is already unique in the popup are left untouched, so the presentation stays minimal and only adds information when it's actually useful.</p>
+<h4 id="how-to-invoke">How to invoke<a class="headerlink" href="#how-to-invoke" title="Permanent link">&para;</a></h4>
+<p>Use the standard IDE action <strong>Navigate | Go to Implementation</strong> on a Python method with multiple implementation candidates. BetterPy adjusts the popup rows automatically when candidate names would otherwise be ambiguous.</p>
+<h4 id="example_1">Example<a class="headerlink" href="#example_1" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">CsvExporter</span><span class="p">:</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">process</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>        <span class="o">...</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="k">class</span><span class="w"> </span><span class="nc">JsonExporter</span><span class="p">:</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">process</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>        <span class="o">...</span>
+</code></pre></div>
+<p>Invoking Go to Implementation on a shared <code>process</code> declaration can show rows such as:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>CsvExporter.process  -&gt;  exporters.py
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>JsonExporter.process -&gt;  exporters.py
+</code></pre></div>
+<p>Typing <code>JsonExporter</code> in the popup speed-search narrows the list to the JSON implementation.</p>
+<h4 id="what-it-supports_1">What it supports<a class="headerlink" href="#what-it-supports_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Python Go to Implementation popups with duplicate method names.</li>
+<li>Keeping the file and location columns unchanged.</li>
+<li>Leaving already unique candidates untouched.</li>
+<li>Standard IDE keyboard and speed-search interaction.</li>
+</ul>
+<h4 id="what-it-deliberately-avoids_1">What it deliberately avoids<a class="headerlink" href="#what-it-deliberately-avoids_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Changing source code, names, or navigation targets.</li>
+<li>Adding class names when they are not needed for disambiguation.</li>
+<li>Replacing the IDE's own implementation search.</li>
+</ul>
+<h4 id="notes_1">Notes<a class="headerlink" href="#notes_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>The feature is passive once enabled.</li>
+<li>The feature is gated by the <em>Enhanced Go to Implementation presentation</em> setting under <strong>Settings | BetterPy | IDE Customization | Presentation</strong>.</li>
+</ul>
+<h3 id="testproduction-editor-tabs">Test/Production editor tabs<a class="headerlink" href="#testproduction-editor-tabs" title="Permanent link">&para;</a></h3>
+<div class="feature-meta"><span class="feature-meta__item" title="Plugin version in which this feature was introduced."><span class="feature-meta__label">Since</span> 2026.04.14</span><span class="feature-meta__sep"> · </span><span class="feature-meta__item"><span class="feature-meta__label">Maturity</span> <span class="badge badge-incubating" title="Incubating: under active development, may change.">Incubating</span></span></div>
+
+<p>Keeps Python test files in the left editor split and Python production files in the right editor split while the mode is enabled. When navigating (e.g., Go to Declaration) from one test/production file to another same-kind file, the target file is opened in the opposite split to preserve your editing context.</p>
+<p><strong>How to invoke</strong>: Use the <strong>Test/Production Split</strong> icon in the title toolbar.</p>
+<hr />
+<h2 id="filtering">Filtering<a class="headerlink" href="#filtering" title="Permanent link">&para;</a></h2>
+<h3 id="message-console-filter">Message console filter<a class="headerlink" href="#message-console-filter" title="Permanent link">&para;</a></h3>
+<div class="feature-meta"><span class="feature-meta__item" title="Plugin version in which this feature was introduced."><span class="feature-meta__label">Since</span> 2026.04.14</span><span class="feature-meta__sep"> · </span><span class="feature-meta__item"><span class="feature-meta__label">Maturity</span> <span class="badge badge-stable" title="Stable: ready for production use.">Stable</span></span><span class="feature-meta__sep"> · </span><span class="feature-meta__item feature-meta__item--issues" title="Related YouTrack issues for this feature."><span class="feature-meta__label">Issues</span> <span class="feature-meta__issues"><a href="https://youtrack.jetbrains.com/issue/PY-55937" class="feature-meta__issue" target="_blank" rel="noopener">PY-55937</a></span></span></div>
+
+<p>BetterPy turns selected Python run-console and test-console output into clickable links, so console text can take you back to the related test, file, or class.</p>
+<p>The feature is passive: run tests or Python code normally, then click the highlighted part of a supported console line. If multiple Python classes match the same class name, BetterPy opens a chooser.</p>
+<h4 id="pytest-node-ids">Pytest node IDs<a class="headerlink" href="#pytest-node-ids" title="Permanent link">&para;</a></h4>
+<p>Pytest node IDs link to the matching test function, method, class, or parametrized test case.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>tests/test_orders.py::test_creates_order
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>tests/test_orders.py::TestCheckout::test_rejects_empty_cart
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>tests/test_orders.py::test_creates_order[premium-user]
+</code></pre></div>
+<p>The full node ID is linked. Parametrized IDs may contain nested brackets, quotes, or class reprs:</p>
+<h4 id="pytest-short-summaries">Pytest short summaries<a class="headerlink" href="#pytest-short-summaries" title="Permanent link">&para;</a></h4>
+<p>Pytest failure and error summaries link the file or node ID before the <code>-</code> separator.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>FAILED tests/test_orders.py::TestCheckout::test_rejects_empty_cart - AssertionError: ...
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>ERROR tests/test_orders.py::test_creates_order - RuntimeError: ...
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>FAILED tests/test_orders.py - AttributeError: module &#39;src.orders&#39; has no attribute &#39;Order&#39;
+</code></pre></div>
+<p>When a summary includes only a file path, BetterPy links the file. When it includes a full node ID, BetterPy links the test target.</p>
+<h4 id="python-class-reprs">Python class reprs<a class="headerlink" href="#python-class-reprs" title="Permanent link">&para;</a></h4>
+<p>Python class reprs link the class name inside <code>&lt;class ...&gt;</code> output.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>&lt;class &#39;src.adapters.outbound.http.HttpAdapter&#39;&gt;
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>&lt;class &quot;src.adapters.outbound.http.HttpAdapter&quot;&gt;
+</code></pre></div>
+<p>Only the class portion is highlighted, for example <code>HttpAdapter</code>. Nested classes are highlighted from the first class-like segment:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>&lt;class &#39;src.domain.OuterClass.InnerClass&#39;&gt;
+</code></pre></div>
+<h4 id="attributeerror-object-types">AttributeError object types<a class="headerlink" href="#attributeerror-object-types" title="Permanent link">&para;</a></h4>
+<p>AttributeError lines that include an object type link the reported class name.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>AttributeError: &#39;GetCephFileSystemsQuery&#39; object has no attribute &#39;name&#39;
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>E   AttributeError: &#39;CheckoutService&#39; object has no attribute &#39;submit&#39;
+</code></pre></div>
+<p>For these lines, BetterPy highlights the object type itself, such as <code>CheckoutService</code>.</p>
+<h4 id="object-reprs">Object reprs<a class="headerlink" href="#object-reprs" title="Permanent link">&para;</a></h4>
+<p>Object reprs link the represented object's class.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>self = &lt;src.adapters.outbound.http.HttpAdapter object at 0x10bbf0530&gt;
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>value = &lt;src.domain.orders.OrderCreated object at 0x10b7a7d90&gt;
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>client = &lt;redis.asyncio.client.Redis(&lt;redis.asyncio.connection.ConnectionPool(...)&gt;)&gt;
+</code></pre></div>
+<p>BetterPy highlights the class name, such as <code>HttpAdapter</code> or <code>OrderCreated</code>.
+For constructor-style reprs, each fully qualified class fragment is linked separately.</p>
+<h4 id="exception-class-lines">Exception class lines<a class="headerlink" href="#exception-class-lines" title="Permanent link">&para;</a></h4>
+<p>Pytest traceback exception lines link class-like dotted names after the <code>E</code> prefix.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>E           src.repositories.errors.RepositoryItemNotFound
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>E           src.domain.orders.OrderAlreadySubmitted
+</code></pre></div>
+<p>Names must look class-like, meaning at least one dotted segment starts with an uppercase letter. Plain variable-like names are ignored to avoid false positives.</p>
+<hr />
+<h2 id="structural-search">Structural Search<a class="headerlink" href="#structural-search" title="Permanent link">&para;</a></h2>
+<h3 id="structural-search-profile-python">Structural Search Profile (Python)<a class="headerlink" href="#structural-search-profile-python" title="Permanent link">&para;</a></h3>
+<div class="feature-meta"><span class="feature-meta__item" title="Plugin version in which this feature was introduced."><span class="feature-meta__label">Since</span> 2026.04.12</span><span class="feature-meta__sep"> · </span><span class="feature-meta__item"><span class="feature-meta__label">Maturity</span> <span class="badge badge-incubating" title="Incubating: under active development, may change.">Incubating</span></span><span class="feature-meta__sep"> · </span><span class="feature-meta__item feature-meta__item--issues" title="Related YouTrack issues for this feature."><span class="feature-meta__label">Issues</span> <span class="feature-meta__issues"><a href="https://youtrack.jetbrains.com/issue/PY-15003" class="feature-meta__issue" target="_blank" rel="noopener">PY-15003</a></span></span></div>
+
+<p>Enables the IntelliJ Structural Search dialog for Python files and adds a Python profile for pattern matching and constraints. Use it to find and replace code patterns across your project.</p>
+<p>This is an incubating integration. Making Structural Search genuinely useful for Python will likely require extensive testing on real projects and user feedback on templates, placeholders, constraints, and Python-specific syntax equivalences.</p>
+<p><strong>How to invoke</strong>: <strong>Edit</strong> → <strong>Find</strong> → <strong>Search Structurally…</strong></p>
+<p><strong>Try it yourself</strong>: paste the snippet below into a Python file, then open <strong>Search Structurally…</strong> and enter the pattern. The <code>$name$</code> tokens are SSR placeholders — each one matches any single expression or identifier.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Code to match</label><label for="__tabbed_1_2">SSR pattern</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="n">x</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="n">y</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="n">z</span><span class="o">.</span><span class="n">extend</span><span class="p">([</span><span class="mi">3</span><span class="p">])</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>$obj$.append($arg$)
+</code></pre></div>
+</div>
+</div>
+</div>
+<p>This pattern matches the two <code>.append(...)</code> calls but not the <code>.extend(...)</code> call. Open <strong>Edit variables…</strong> in the Structural Search dialog to add constraints — for example, restrict <code>$obj$</code> to a specific type, set a count range on a placeholder, or require a regex on its text.</p>
+<p><strong>Learn more</strong>: see the IntelliJ Platform docs for <a href="https://www.jetbrains.com/help/idea/structural-search-and-replace.html">Structural search and replace</a> and the <a href="https://www.jetbrains.com/help/idea/search-templates.html">Search templates, modifiers, and script constraints</a> reference for placeholder and modifier syntax.</p>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-circle-arrow-up" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 12-4-4-4 4M12 16V8"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://zensical.org/" target="_blank" rel="noopener">
+      Zensical
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/chbndrhnns/pycharm-plugin-betterpy" target="_blank" rel="noopener" title="BetterPy on GitHub" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://plugins.jetbrains.com/plugin/29896" target="_blank" rel="noopener" title="BetterPy on JetBrains Marketplace" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18H6v-4h6m9 0v-2l-1-5H4l-1 5v2h1v6h10v-6h4v6h2v-6m0-10H4v2h16z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["navigation.tabs","navigation.sections","navigation.expand","navigation.top","navigation.instant","navigation.path","content.code.copy","content.code.annotate","search.suggest","search.highlight"],"search":"../../assets/javascripts/workers/search.b6b7e04f.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":{"provider":"mike"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7f30b55.min.js"></script>
+      
+        <script src="../../javascripts/shortcuts.js"></script>
+      
+        <script src="../../javascripts/header-title.js"></script>
+      
+        <script src="../../javascripts/lightbox.js"></script>
+      
+    
+  </body>
+</html>
