@@ -71,6 +71,7 @@ which are API backend development, domain-driven design and automated testing.
 - [**@pytest.mark.usefixtures on fixture is a no-op inspection**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/pytest-usefixtures-on-fixture-noop-inspection/) ([PY-64332](https://youtrack.jetbrains.com/issue/PY-64332)) - Reports @pytest.mark.usefixtures decorators on fixture functions, where they have no effect — pytest only honours usefixtures on test functions
 - [**Constant should be Final inspection**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/constant-final-inspection/) - Reports module-level constants that should be annotated with Final
 - **Fixture annotation mismatch inspection** - Reports test or fixture parameters whose explicit type annotation is incompatible with the value type provided by the resolved fixture
+- **Missing pytest test directory** - Highlights configured pytest testpaths that do not exist and offers to create them
 - [**Missing |None annotation inspection**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/missing-none-annotation-inspection/) ([PY-88504](https://youtrack.jetbrains.com/issue/PY-88504)) - Adds a quickfix for PyCharm's missing | None annotation inspection
 - **Mock unresolved reference inspection** - Reports unresolved references in mock usage
 - [**Overridden method missing type annotations inspection**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/overridden-method-missing-type-annotations-inspection/) - Reports overrides missing type annotations present in parent methods
@@ -101,6 +102,7 @@ which are API backend development, domain-driven design and automated testing.
 - [**Generate class actions**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/generate-class-actions/) - Adds Generate menu actions for test classes, dataclasses, frozen dataclasses, and pydantic models
 - [**Parameter object refactoring**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/parameter-object-refactoring/) ([PY-59270](https://youtrack.jetbrains.com/issue/PY-59270)) - Enables introduce/inline parameter object refactoring actions
 - [**Top-level extract function**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/top-level-extract-function/) ([PY-40840](https://youtrack.jetbrains.com/issue/PY-40840), [PY-44636](https://youtrack.jetbrains.com/issue/PY-44636), [PY-73852](https://youtrack.jetbrains.com/issue/PY-73852)) - Extracts top-level Python statements into a function with parameters and explicit return values instead of globals
+- [**UV script runner & debugger**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/uv-script-runner/) - Runs and debugs uv project script entry points from pyproject.toml
 
 #### Completion & References
 - **Mock patch object attribute completion** - Completes attributes for mock.patch.object targets
