@@ -63,6 +63,18 @@
       linux: "Ctrl+Alt+B",
       fallback: "⌥⌘B / Ctrl+Alt+B",
     },
+    "file-structure-popup": {
+      mac: "⌘F12",
+      windows: "Ctrl+F12",
+      linux: "Ctrl+F12",
+      fallback: "⌘F12 / Ctrl+F12",
+    },
+    "inline": {
+      mac: "⌥⌘N",
+      windows: "Ctrl+Alt+N",
+      linux: "Ctrl+Alt+N",
+      fallback: "⌥⌘N / Ctrl+Alt+N",
+    },
   };
 
   function platformText() {
