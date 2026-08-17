@@ -1,0 +1,1817 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Supercharge your Python development in PyCharm">
+      
+      
+      
+        <link rel="canonical" href="https://chbndrhnns.github.io/pycharm-plugin-betterpy/2026.08.5/reference/settings/">
+      
+      
+        <link rel="prev" href="../../features/ide-customization/">
+      
+      
+        <link rel="next" href="../inspections/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/logo.svg">
+      <meta name="generator" content="zensical-0.0.55">
+    
+    
+      
+        <title>Settings - BetterPy – PyCharm Plugin</title>
+      
+    
+    
+      
+        
+      
+      <link rel="stylesheet" href="../../assets/stylesheets/modern/main.20815dad.min.css">
+      
+        
+          
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/modern/palette.dfe2e883.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,500,500i,700,700i%7CJetBrains+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer" aria-label="Navigation"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#typing-type-hints" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="BetterPy – PyCharm Plugin" class="md-header__button md-logo" aria-label="BetterPy – PyCharm Plugin" data-md-component="logo">
+      
+  <img src="../../assets/logo.svg" alt="BetterPy – PyCharm Plugin">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer" aria-label="Navigation">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            BetterPy – PyCharm Plugin
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Settings
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search" aria-label="Search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog" aria-label="Search">
+  <button type="button" class="md-search__button">
+    Search
+  </button>
+</div>
+      
+    
+    <a class="bp-header-install" href="https://plugins.jetbrains.com/plugin/29896-betterpy" target="_blank" rel="noopener">
+      <span class="bp-header-install__label">Install BetterPy</span>
+      <span class="bp-header-install__short">Install</span>
+    </a>
+    <div class="md-header__source">
+      
+    </div>
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+      
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../getting-started/installation/" class="md-tabs__link">
+          
+  
+  Getting Started
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+      
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../features/" class="md-tabs__link">
+          
+  
+  Features
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+      
+    
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="././" class="md-tabs__link">
+          
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../changelog/" class="md-tabs__link">
+        
+  
+  Changelog
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="BetterPy – PyCharm Plugin" class="md-nav__button md-logo" aria-label="BetterPy – PyCharm Plugin" data-md-component="logo">
+      
+  <img src="../../assets/logo.svg" alt="BetterPy – PyCharm Plugin">
+
+    </a>
+    BetterPy – PyCharm Plugin
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Home
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Getting Started
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+  Getting Started
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Installation
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Features
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+  Features
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Overview
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/typing-type-hints/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Typing & Type Hints
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/refactoring/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Refactoring & Code Transformations
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/pytest/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Testing (Pytest)
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/imports/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Imports & Module Boundaries
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/navigation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Navigation & Discovery
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/code-quality/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Code Quality & Safety
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/productivity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Productivity Actions
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/ide-customization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  IDE Customization
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Reference
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+  Reference
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Settings
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="././" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Settings
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#typing-type-hints" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Typing &amp; Type Hints
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#refactoring-code-transformations" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Refactoring &amp; Code Transformations
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-pytest" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Testing (Pytest)
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#imports-module-boundaries" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Imports &amp; Module Boundaries
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#navigation-discovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Navigation &amp; Discovery
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code-quality-safety" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Code Quality &amp; Safety
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#productivity-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Productivity Actions
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ide-customization" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        IDE Customization
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../inspections/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Inspections
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Changelog
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  
+                    
+                    
+                    
+                    
+                      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+                      <div class="md-sidebar-button__wrapper">
+                        <label class="md-sidebar-button" for="__toc"></label>
+                      </div>
+                    
+                  
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#typing-type-hints" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Typing &amp; Type Hints
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#refactoring-code-transformations" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Refactoring &amp; Code Transformations
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-pytest" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Testing (Pytest)
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#imports-module-boundaries" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Imports &amp; Module Boundaries
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#navigation-discovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Navigation &amp; Discovery
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code-quality-safety" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Code Quality &amp; Safety
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#productivity-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Productivity Actions
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ide-customization" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        IDE Customization
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+    
+    
+    
+      <li class="md-path__item">
+        <a href="././" class="md-path__link">
+          
+  
+  <span class="md-ellipsis">
+    Reference
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+<h1 id="settings-reference">Settings Reference<a class="headerlink" href="#settings-reference" title="Permanent link">&para;</a></h1>
+<p>All BetterPy features can be toggled in <strong>Settings → Tools → BetterPy</strong>. This page lists every feature organized by settings group.</p>
+<h2 id="typing-type-hints">Typing &amp; Type Hints<a class="headerlink" href="#typing-type-hints" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Maturity</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../../features/copy-method-annotations-from-parent/">Copy method annotations from parent</a></td>
+<td>Incubating</td>
+<td>Copies type annotations from a parent method to its overrides</td>
+</tr>
+<tr>
+<td><a href="../../features/missing-none-annotation-inspection/">Missing &#124;None annotation inspection</a></td>
+<td>Incubating</td>
+<td>Adds a quickfix for PyCharm's missing &#124; None annotation inspection</td>
+</tr>
+<tr>
+<td><a href="../../features/newtype-typevar-paramspec-reference/">NewType/TypeVar/ParamSpec reference &amp; rename</a></td>
+<td>Stable</td>
+<td>Adds references for NewType/TypeVar/ParamSpec name literals, keeps the name string in sync on rename, and repairs manual NewType drift</td>
+</tr>
+<tr>
+<td><a href="../../features/overridden-method-missing-type-annotations-inspection/">Overridden method missing type annotations inspection</a></td>
+<td>Incubating</td>
+<td>Reports overrides missing type annotations present in parent methods</td>
+</tr>
+<tr>
+<td><a href="../../features/strip-signature-type-annotations/">Strip signature type annotations</a></td>
+<td>Stable</td>
+<td>Removes type annotations from a function signature</td>
+</tr>
+</tbody>
+</table>
+<h2 id="refactoring-code-transformations">Refactoring &amp; Code Transformations<a class="headerlink" href="#refactoring-code-transformations" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Maturity</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../../features/change-visibility/">Change visibility</a></td>
+<td>Stable</td>
+<td>Toggles a Python symbol between public and private naming</td>
+</tr>
+<tr>
+<td><a href="../../features/dict-access/">Dict access conversion</a></td>
+<td>Incubating</td>
+<td>Converts between dict bracket access and .get() method calls</td>
+</tr>
+<tr>
+<td><a href="../../features/make-parameter-mandatory/">Make parameter mandatory</a></td>
+<td>Incubating</td>
+<td>Converts an optional parameter to a required one by removing the default value</td>
+</tr>
+<tr>
+<td><a href="../../features/make-parameter-optional/">Make parameter optional</a></td>
+<td>Incubating</td>
+<td>Converts a required parameter to an optional one with a default value</td>
+</tr>
+<tr>
+<td><a href="../../features/parameter-object-mcp-tool/">Parameter object MCP tool</a></td>
+<td>Stable</td>
+<td>Enables MCP (Model Context Protocol) tools for parameter object refactoring</td>
+</tr>
+<tr>
+<td><a href="../../features/parameter-object-refactoring/">Parameter object refactoring</a></td>
+<td>Incubating</td>
+<td>Enables introduce/inline parameter object refactoring actions</td>
+</tr>
+<tr>
+<td><a href="../../features/toggle-enum-member-value/">Toggle enum member value</a></td>
+<td>Stable</td>
+<td>Toggles enum member references with their literal values</td>
+</tr>
+<tr>
+<td><a href="../../features/top-level-extract-function/">Top-level extract function</a></td>
+<td>Incubating</td>
+<td>Extracts top-level Python statements into a function with parameters and explicit return values instead of globals</td>
+</tr>
+</tbody>
+</table>
+<h2 id="testing-pytest">Testing (Pytest)<a class="headerlink" href="#testing-pytest" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Maturity</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../../features/pytest-usefixtures-on-fixture-noop-inspection/">@pytest.mark.usefixtures on fixture is a no-op inspection</a></td>
+<td>Incubating</td>
+<td>Reports @pytest.mark.usefixtures decorators on fixture functions, where they have no effect — pytest only honours usefixtures on test functions</td>
+</tr>
+<tr>
+<td><a href="../../features/convert-pytest-param/">Convert pytest.param</a></td>
+<td>Incubating</td>
+<td>Converts between different pytest parameter formats</td>
+</tr>
+<tr>
+<td><a href="../../features/copy-pytest-node-id-from-editor/">Copy pytest node ID from editor</a></td>
+<td>Incubating</td>
+<td>Copies the pytest node ID for the test at the caret position</td>
+</tr>
+<tr>
+<td><a href="../../features/copy-pytest-node-ids/">Copy pytest node IDs</a></td>
+<td>Incubating</td>
+<td>Copies pytest node IDs for selected tests to the clipboard</td>
+</tr>
+<tr>
+<td><a href="../../features/create-pytest-fixtures-from-parameters/">Create pytest fixtures from parameters</a></td>
+<td>Incubating</td>
+<td>Offers a quick fix to generate pytest fixtures for unresolved fixture parameters</td>
+</tr>
+<tr>
+<td><a href="../../features/pytest-fixture-editor-integration/">Fixture Editor Integration</a></td>
+<td>Incubating</td>
+<td>Enables fixture navigation, completion, definition searches, find usages, rename, and override support in the editor</td>
+</tr>
+<tr>
+<td><a href="../../features/pytest-fixture-injection-intentions/">Fixture Injection Intentions</a></td>
+<td>Incubating</td>
+<td>Intentions for converting between fixture parameters and @pytest.mark.usefixtures</td>
+</tr>
+<tr>
+<td><a href="../../features/pytest/#fixture-annotation-mismatch-inspection">Fixture annotation mismatch inspection</a></td>
+<td>Incubating</td>
+<td>Reports test or fixture parameters whose explicit type annotation is incompatible with the value type provided by the resolved fixture</td>
+</tr>
+<tr>
+<td><a href="../../features/jump-to-pytest-node-in-test-tree/">Jump to pytest node in test tree</a></td>
+<td>Incubating</td>
+<td>Navigates to the corresponding node in the test tree view</td>
+</tr>
+<tr>
+<td><a href="../../features/pytest/">Missing pytest test directory</a></td>
+<td>Incubating</td>
+<td>Highlights configured pytest testpaths that do not exist and offers to create them</td>
+</tr>
+<tr>
+<td><a href="../../features/pytest/">Mock assertion methods</a></td>
+<td>Stable</td>
+<td>Resolves unittest.mock assertion methods without enabling broader mock type inference</td>
+</tr>
+<tr>
+<td><a href="../../features/pytest/#mock-patch-object-attribute-completion">Mock patch object attribute completion</a></td>
+<td>Stable</td>
+<td>Completes attributes for mock.patch.object targets</td>
+</tr>
+<tr>
+<td><a href="../../features/pytest/#mock-patch-reference">Mock patch reference</a></td>
+<td>Stable</td>
+<td>Provides reference resolution for mock.patch target strings</td>
+</tr>
+<tr>
+<td><a href="../../features/pytest/#mock-type-provider">Mock type provider</a></td>
+<td>Stable</td>
+<td>Provides type information for unittest.mock objects</td>
+</tr>
+<tr>
+<td><a href="../../features/pytest/#mock-unresolved-reference-inspection">Mock unresolved reference inspection</a></td>
+<td>Stable</td>
+<td>Reports unresolved references in mock usage</td>
+</tr>
+<tr>
+<td><a href="../../features/new-pytest-members/">New pytest members</a></td>
+<td>Incubating</td>
+<td>Adds Generate menu actions for new pytest tests and fixtures</td>
+</tr>
+<tr>
+<td><a href="../../features/parametrize-pytest-test/">Parametrize pytest test</a></td>
+<td>Incubating</td>
+<td>Adds, removes, completes, and maintains pytest.mark.parametrize parameters</td>
+</tr>
+<tr>
+<td><a href="../../features/pytest-failed-line-inspection/">Pytest failed line inspection</a></td>
+<td>Incubating</td>
+<td>Marks the line where a pytest test failed</td>
+</tr>
+<tr>
+<td><a href="../../features/pytest-fixture-direct-import-inspection/">Pytest fixture direct import inspection</a></td>
+<td>Incubating</td>
+<td>Reports pytest fixture functions imported directly into conftest.py — prefer pytest_plugins for explicit scoping</td>
+</tr>
+<tr>
+<td><a href="../../features/pytest-fixture-documentation/">Pytest fixture documentation</a></td>
+<td>Stable</td>
+<td>Enhances Quick Documentation and member type inference for pytest fixtures across files</td>
+</tr>
+<tr>
+<td><a href="../../features/pytest-fixture-engine/">Pytest fixture engine</a></td>
+<td>Incubating</td>
+<td>Enables shared pytest fixture resolution, references, type inference, and fixture-aware infrastructure</td>
+</tr>
+<tr>
+<td><a href="../../features/pytest/#pytest-fixture-override-contract-inspection">Pytest fixture override contract inspection</a></td>
+<td>Incubating</td>
+<td>Reports fixture overrides whose produced value type is incompatible with the parent fixture</td>
+</tr>
+<tr>
+<td><a href="../../features/pytest-fixture-redundant-parameter-inspection/">Pytest fixture redundant parameter inspection</a></td>
+<td>Incubating</td>
+<td>Reports fixture parameters that are already injected automatically via autouse, usefixtures on the enclosing class, or module-level pytestmark, and are not referenced in the function body.</td>
+</tr>
+<tr>
+<td><a href="../../features/pytest-fixture-scope-inspection/">Pytest fixture scope inspection</a></td>
+<td>Incubating</td>
+<td>Reports fixtures that narrow the scope compared to parent fixtures</td>
+</tr>
+<tr>
+<td><a href="../../features/pytest-fixture-to-usefixtures-inspection/">Pytest fixture to usefixtures inspection</a></td>
+<td>Incubating</td>
+<td>Reports unused fixture parameters in test functions and offers conversion to @pytest.mark.usefixtures()</td>
+</tr>
+<tr>
+<td><a href="../../features/pytest-fixture-uninjected-reference-inspection/">Pytest fixture uninjected reference inspection</a></td>
+<td>Incubating</td>
+<td>Reports fixture references inside tests/fixtures that are not declared as parameters</td>
+</tr>
+<tr>
+<td><a href="../../features/pytest-hooks/">Pytest hooks</a></td>
+<td>Incubating</td>
+<td>Generates pytest hook stubs where pytest discovers them and adds navigation and F1 documentation</td>
+</tr>
+<tr>
+<td><a href="../../features/pytest-identifier-search-everywhere/">Pytest identifier in Search Everywhere</a></td>
+<td>Incubating</td>
+<td>Includes pytest identifiers in Search Everywhere results</td>
+</tr>
+<tr>
+<td><a href="../../features/pytest-mark-completion/">Pytest mark completion</a></td>
+<td>Incubating</td>
+<td>Completes @pytest.mark.<name> decorators with built-in, config, and plugin markers</td>
+</tr>
+<tr>
+<td><a href="../../features/pytest-missing-assert-inspection/">Pytest missing assert inspection</a></td>
+<td>Incubating</td>
+<td>Reports pytest tests that have no Python assert statement or explicitly return a value, including asserts reached through project helper calls</td>
+</tr>
+<tr>
+<td><a href="../../features/pytest-parametrize-count-mismatch-inspection/">Pytest parametrize count mismatch inspection</a></td>
+<td>Incubating</td>
+<td>Reports when the number of values in a pytest.mark.parametrize value set does not match the number of parameter names</td>
+</tr>
+<tr>
+<td><a href="../../features/pytest-parametrize-ids-count-inspection/">Pytest parametrize ids count inspection</a></td>
+<td>Incubating</td>
+<td>Reports when the number of ids in a pytest.mark.parametrize call does not match the number of parameter sets</td>
+</tr>
+<tr>
+<td><a href="../../features/pytest-parametrize-unexpected-keyword-inspection/">Pytest parametrize unexpected keyword inspection</a></td>
+<td>Incubating</td>
+<td>Reports unsupported keyword arguments passed to pytest.mark.parametrize</td>
+</tr>
+<tr>
+<td><a href="../../features/pytest-parametrize-unused-argname-inspection/">Pytest parametrize unused argname inspection</a></td>
+<td>Incubating</td>
+<td>Reports pytest.parametrize argnames that are never used inside the test function body</td>
+</tr>
+<tr>
+<td><a href="../../features/pytest-parametrized-case-run-gutter-icon/">Pytest parametrized case run gutter icon</a></td>
+<td>Incubating</td>
+<td>Shows run gutter icons for individual pytest parametrized cases when each case is on its own line</td>
+</tr>
+<tr>
+<td><a href="../../features/pytest/#pytest-plugin-references">Pytest plugin references</a></td>
+<td>Incubating</td>
+<td>Provides navigation, rename, and unresolved-reference inspection support for pytest_plugins module strings</td>
+</tr>
+<tr>
+<td><a href="../../features/pytest-redundant-fixture-import-inspection/">Pytest redundant fixture import inspection</a></td>
+<td>Incubating</td>
+<td>Reports explicitly imported pytest fixtures that are already auto-discoverable via conftest or plugins.</td>
+</tr>
+<tr>
+<td><a href="../../features/run-with-debug-logging/">Run pytest with debug logging</a></td>
+<td>Incubating</td>
+<td>Duplicates the selected pytest run configuration with debug logging flags for the chosen test tree node</td>
+</tr>
+<tr>
+<td><a href="../../features/surround-with-pytest-raises/">Surround with pytest.raises()</a></td>
+<td>Incubating</td>
+<td>Wraps a statement with pytest.raises() in test contexts</td>
+</tr>
+<tr>
+<td><a href="../../features/toggle-pytest-skip/">Toggle pytest skip</a></td>
+<td>Incubating</td>
+<td>Adds or removes @pytest.mark.skip decorator from a test</td>
+</tr>
+<tr>
+<td><a href="../../features/toggle-pytest-skip-from-test-tree/">Toggle pytest skip from test tree</a></td>
+<td>Incubating</td>
+<td>Adds or removes @pytest.mark.skip from the test tree context menu</td>
+</tr>
+<tr>
+<td><a href="../../features/pytest/#unknown-dynamic-pytest-fixture-inspection">Unknown dynamic pytest fixture inspection</a></td>
+<td>Incubating</td>
+<td>Reports string-based fixture requests (usefixtures, getfixturevalue, indirect parametrize) that do not resolve to any visible fixture</td>
+</tr>
+<tr>
+<td><a href="../../features/pytest-fixture-unused-inspection/">Unused pytest fixture inspection</a></td>
+<td>Incubating</td>
+<td>Reports pytest fixture functions that are never used as a parameter in any test or other fixture in the project, and offers a safe-delete quick fix</td>
+</tr>
+<tr>
+<td><a href="../../features/use-actual-test-outcome/">Use actual test outcome</a></td>
+<td>Incubating</td>
+<td>Replaces assertion expected values with the actual value from the last failed test run</td>
+</tr>
+<tr>
+<td><a href="../../features/pytest-plugins-in-non-root-conftest-inspection/">pytest_plugins in non-root conftest inspection</a></td>
+<td>Incubating</td>
+<td>Reports pytest_plugins assignments that appear in a non-root conftest.py file, where they have no effect</td>
+</tr>
+<tr>
+<td><a href="../../features/pytest/#requestparam-without-params-inspection">request.param without params inspection</a></td>
+<td>Incubating</td>
+<td>Reports pytest fixtures that read request.param but declare no params= and are not the target of any indirect parametrization</td>
+</tr>
+</tbody>
+</table>
+<h2 id="imports-module-boundaries">Imports &amp; Module Boundaries<a class="headerlink" href="#imports-module-boundaries" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Maturity</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../../features/export-symbol-to-target/">Export symbol to target</a></td>
+<td>Stable</td>
+<td>Exports a symbol to a specified target module's <strong>all</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="navigation-discovery">Navigation &amp; Discovery<a class="headerlink" href="#navigation-discovery" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Maturity</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../../features/navigation/#class-implementations-code-vision">Class implementations code vision</a></td>
+<td>Incubating</td>
+<td>Shows an inline code vision hint above each Python class with the number of implementations (subclasses) and lets you navigate to them</td>
+</tr>
+<tr>
+<td><a href="../../features/navigation/#module-assignment-usages-code-vision">Module assignment usages code vision</a></td>
+<td>Incubating</td>
+<td>Shows an inline code vision hint above each module-level assignment with the number of project-scope usages and lets you navigate to them</td>
+</tr>
+<tr>
+<td><a href="../../features/property-usages-code-vision/">Property usages code vision</a></td>
+<td>Incubating</td>
+<td>Shows an inline code vision hint above each Python property with the number of project-scope usages and lets you navigate to them</td>
+</tr>
+<tr>
+<td><a href="../../features/return-path-highlighting/">Return path highlighting</a></td>
+<td>Incubating</td>
+<td>Highlights explicit return statements when the caret is on a function return annotation</td>
+</tr>
+</tbody>
+</table>
+<h2 id="code-quality-safety">Code Quality &amp; Safety<a class="headerlink" href="#code-quality-safety" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Maturity</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../../features/constant-final-inspection/">Constant should be Final inspection</a></td>
+<td>Stable</td>
+<td>Reports module-level constants that should be annotated with Final</td>
+</tr>
+<tr>
+<td><a href="../../features/private-module-import-inspection/">Private module import inspection</a></td>
+<td>Stable</td>
+<td>Reports private-module imports that should use public package exports</td>
+</tr>
+<tr>
+<td><a href="../../features/shadowing-stdlib-module-inspection/">Shadowing stdlib module inspection</a></td>
+<td>Stable</td>
+<td>Reports project modules that shadow Python standard library modules</td>
+</tr>
+<tr>
+<td><a href="../../features/missing-docstring-overload-suppressor/">Suppress missing docstrings on overloads</a></td>
+<td>Incubating</td>
+<td>Suppresses PyCharm's missing docstring inspection for typing overload signatures.</td>
+</tr>
+<tr>
+<td><a href="../../features/usage-filtering/">Usage filtering</a></td>
+<td>Stable</td>
+<td>Adds Find Usages filters for type annotations and test-source references</td>
+</tr>
+</tbody>
+</table>
+<h2 id="productivity-actions">Productivity Actions<a class="headerlink" href="#productivity-actions" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Maturity</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../../features/productivity/">Attribute Docstring in Quick Documentation</a></td>
+<td>Stable</td>
+<td>Retired attribute docstring rendering now provided natively by PyCharm.</td>
+</tr>
+<tr>
+<td><a href="../../features/copy-with-imports/">Copy with imports</a></td>
+<td>Incubating</td>
+<td>Copies selected Python code together with the import statements referenced by that selection</td>
+</tr>
+<tr>
+<td><a href="../../features/docstring-example-rendering/">Docstring Example Rendering</a></td>
+<td>Incubating</td>
+<td>Renders doctests and fenced Python examples in Quick Documentation docstrings.</td>
+</tr>
+<tr>
+<td><a href="../../features/generate-class-actions/">Generate class actions</a></td>
+<td>Stable</td>
+<td>Adds Generate menu actions for test classes, dataclasses, frozen dataclasses, and pydantic models</td>
+</tr>
+<tr>
+<td><a href="../../features/inherited-attribute-documentation/">Inherited Attribute Documentation</a></td>
+<td>Incubating</td>
+<td>Shows an ancestor attribute's docstring when an overriding class attribute has no local documentation.</td>
+</tr>
+<tr>
+<td><a href="../../features/uv-script-runner/">UV script runner &amp; debugger</a></td>
+<td>Stable</td>
+<td>Runs and debugs uv project script entry points from pyproject.toml</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ide-customization">IDE Customization<a class="headerlink" href="#ide-customization" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Maturity</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../../features/ide-customization/#enhance-structure-view">Enhance Structure View</a></td>
+<td>Stable</td>
+<td>Master switch for BetterPy structure-view filters, overload hiding, and pytest-specific icons.</td>
+</tr>
+<tr>
+<td><a href="../../features/py-goto-target-presentation/">Enhanced Go to Implementation presentation</a></td>
+<td>Stable</td>
+<td>Prepends class name to method name in Go to Implementation popup when names are identical</td>
+</tr>
+<tr>
+<td><a href="../../features/ide-customization/#filter-private-members">Filter private members</a></td>
+<td>Stable</td>
+<td>Adds a filter to hide private members in the structure view</td>
+</tr>
+<tr>
+<td><a href="../../features/ide-customization/#hide-overloads">Hide overloads</a></td>
+<td>Stable</td>
+<td>Hides typing overload signatures from the structure view while keeping the implementation visible.</td>
+</tr>
+<tr>
+<td><a href="../../features/ide-customization/#icons-for-pytest-tests-and-fixtures">Icons for pytest tests and fixtures</a></td>
+<td>Stable</td>
+<td>Renders tests, fixtures, and normal functions with distinct icons in the structure view. Filters to show/hide tests and fixtures are added when viewing a test file.</td>
+</tr>
+<tr>
+<td><a href="../../features/message-console-filter/">Message console filter</a></td>
+<td>Stable</td>
+<td>Filters and formats Python messages in the console</td>
+</tr>
+<tr>
+<td><a href="../../features/python-navigation-bar/">Python navigation bar</a></td>
+<td>Stable</td>
+<td>Enables enhanced Python navigation bar with module path display</td>
+</tr>
+<tr>
+<td><a href="../../features/ide-customization/#structural-search-profile-python">Structural Search Profile (Python)</a></td>
+<td>Incubating</td>
+<td>Adds a Python Structural Search profile integration for pattern matching and constraints</td>
+</tr>
+<tr>
+<td><a href="../../features/test-production-editor-tabs/">Test/Production editor tabs</a></td>
+<td>Incubating</td>
+<td>Keeps test and production files in separate editor splits with configurable alignment</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-circle-arrow-up" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 12-4-4-4 4M12 16V8"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://zensical.org/" target="_blank" rel="noopener">
+      Zensical
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/chbndrhnns/pycharm-plugin-betterpy" target="_blank" rel="noopener" title="BetterPy on GitHub" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5v52c0 15 12.5 23.5 27.5 17.5C441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5v-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://plugins.jetbrains.com/plugin/29896" target="_blank" rel="noopener" title="BetterPy on JetBrains Marketplace" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18H6v-4h6m9 0v-2l-1-5H4l-1 5v2h1v6h10v-6h4v6h2v-6m0-10H4v2h16z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["navigation.tabs","navigation.sections","navigation.expand","navigation.top","navigation.instant","navigation.path","content.code.copy","content.code.annotate","search.suggest","search.highlight"],"search":"../../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":{"provider":"mike"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.e886cdf1.min.js"></script>
+      
+        <script src="../../javascripts/shortcuts.js"></script>
+      
+        <script src="../../javascripts/header-title.js"></script>
+      
+        <script src="../../javascripts/lightbox.js"></script>
+      
+    
+  </body>
+</html>
