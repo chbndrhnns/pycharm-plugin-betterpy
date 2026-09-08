@@ -1,0 +1,8 @@
+# Feature screenshot assets
+
+Screenshots referenced by a feature's `screenshots:` metadata live under
+`docs/assets/features/<feature-id>/`.
+
+See `.junie/guidelines.md` → "Embedding screenshots in a feature" for the
+conventions, and `FeatureCatalogSyncTest.testFeatureScreenshotFilesExist`
+for the guardrail that checks declared paths resolve to files.
