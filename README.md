@@ -111,7 +111,7 @@ which are API backend development, domain-driven design and automated testing.
 
 #### Completion & References
 - [**Mock patch object attribute completion**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/pytest/#mock-patch-object-attribute-completion) - Completes attributes for mock.patch.object targets
-- [**Mock patch reference**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/pytest/#mock-patch-reference) - Provides reference resolution for mock.patch target strings
+- [**Mock string references**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/pytest/#mock-string-references) - Navigates mock.patch targets on older IDEs and standalone patch calls, plus pytest-mock spy names
 - [**NewType/TypeVar/ParamSpec reference & rename**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/newtype-typevar-paramspec-reference/) ([PY-82966](https://youtrack.jetbrains.com/issue/PY-82966), [PY-53658](https://youtrack.jetbrains.com/issue/PY-53658)) - Adds references for NewType/TypeVar/ParamSpec name literals, keeps the name string in sync on rename, and repairs manual NewType drift
 - [**Pytest identifier in Search Everywhere**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/pytest-identifier-search-everywhere/) ([PY-57148](https://youtrack.jetbrains.com/issue/PY-57148)) - Includes pytest identifiers in Search Everywhere results
 - [**Pytest mark completion**](https://chbndrhnns.github.io/pycharm-plugin-betterpy/latest/features/pytest-mark-completion/) ([PY-57354](https://youtrack.jetbrains.com/issue/PY-57354)) - Completes @pytest.mark.<name> decorators with built-in, config, and plugin markers
