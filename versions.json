@@ -1,5 +1,12 @@
 [
   {
+    "version": "2026.10.1+263",
+    "title": "2026.10.1+263",
+    "aliases": [
+      "latest"
+    ]
+  },
+  {
     "version": "2026.10.1+262",
     "title": "2026.10.1+262",
     "aliases": []
@@ -12,9 +19,7 @@
   {
     "version": "2026.09.4",
     "title": "2026.09.4",
-    "aliases": [
-      "latest"
-    ]
+    "aliases": []
   },
   {
     "version": "2026.09.2",
