@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BetterPy for PyCharm | Less ceremony. More Python.</title>
+  <meta name="description" content="Stay in your Python flow with BetterPy for PyCharm. Practical refactorings, pytest inspections, and smarter navigation. Free.">
+  <link rel="canonical" href="{{ page.canonical_url }}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="BetterPy — Less ceremony. More Python.">
+  <meta property="og:description" content="Practical tools for the Python you write every day. Built for PyCharm. Free.">
+  <meta property="og:url" content="{{ page.canonical_url }}">
+  <meta property="og:image" content="{{ page.canonical_url }}assets/landing-social.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="{{ 'assets/logo.svg' | url }}" type="image/svg+xml">
+  <link rel="preload" href="{{ 'assets/fonts/manrope-regular.ttf' | url }}" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="{{ 'stylesheets/landing.css' | url }}">
+  <script src="{{ 'javascripts/landing.js' | url }}" defer></script>
+  {% if page.meta.ide_scenes %}
+  <link rel="stylesheet" href="{{ 'stylesheets/ide-scenes-embed.css' | url }}">
+  <script src="{{ 'javascripts/ide-scenes-embed.js' | url }}" defer></script>
+  {% endif %}
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav-shell">
+  <nav aria-label="Main navigation" class="nav">
+    <a class="brand" href="{{ '.' | url }}" aria-current="page"><img src="{{ 'assets/logo.svg' | url }}" width="32" height="32" alt="">BetterPy</a>
+    <div class="nav-links"><a href="#benefits">Why BetterPy</a><a href="{{ 'features/' | url }}">Documentation</a><a href="#faq">FAQ</a></div>
+    <a class="button nav-install" href="https://plugins.jetbrains.com/plugin/29896-betterpy">Install BetterPy <span aria-hidden="true">↗</span></a>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu" hidden><span></span><span></span></button>
+  </nav>
+</header>
+<dialog id="mobile-menu" class="mobile-menu" aria-label="Navigation menu">
+  <button class="menu-close" aria-label="Close menu">Close ×</button>
+  <a href="#benefits">Why BetterPy</a><a href="{{ 'features/' | url }}">Documentation</a><a href="#faq">FAQ</a><a href="https://plugins.jetbrains.com/plugin/29896-betterpy">Install BetterPy ↗</a>
+</dialog>
+<p class="wrap fallback-navigation"><a href="{{ 'features/' | url }}">Browse the documentation</a></p>
+<main id="main" tabindex="-1">{{ page.content }}</main>
+<footer class="footer wrap">
+  <a class="brand" href="{{ '.' | url }}"><img src="{{ 'assets/logo.svg' | url }}" width="32" height="32" alt="">BetterPy</a>
+  <p>A little more power in your Python.</p>
+  <div><a href="{{ 'privacy/' | url }}">Privacy</a><a href="{{ 'terms/' | url }}">Terms</a><a href="https://github.com/chbndrhnns/pycharm-plugin-betterpy/issues">Feedback ↗</a></div>
+</footer>
+</body>
+</html>
