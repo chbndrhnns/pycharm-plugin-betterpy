@@ -175,10 +175,7 @@ Every feature can be individually toggled in **Settings → Tools → BetterPy**
 
 ### Pricing
 
-BetterPy is **free during an extended beta** period. 
-
-I plan to offer a paid version in the future, probably using a freemium approach. 
-The details are yet to be determined and also shaped by feedback I am able to collect.
+BetterPy is **free**.
 
 ### Personal Motivation
 
