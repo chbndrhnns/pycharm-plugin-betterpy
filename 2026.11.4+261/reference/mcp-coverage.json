@@ -1,0 +1,2515 @@
+{
+  "summary": {
+    "tools": 104,
+    "complete": 3,
+    "directSuccess": 5,
+    "semanticFailure": 3,
+    "junieThreeAttempts": 4
+  },
+  "tools": [
+    {
+      "tool": "add_dataclass_decorator",
+      "available": true,
+      "directSuccess": "passed",
+      "semanticFailure": "passed",
+      "variants": {
+        "default": "passed"
+      },
+      "junie": "passed",
+      "scenarioIds": [
+        "add_dataclass_decorator-missing-file",
+        "add_dataclass_decorator-behavior",
+        "add_dataclass_decorator-already-decorated"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [
+        {
+          "scenario": "add_dataclass_decorator-behavior",
+          "evidence": "build/mcp-harness/run-p_zygrh7",
+          "artifact": "7a7eff9cf3811ea7b47320455e2b078b43dd2cf5bea7bc24509c156d8a8a978a"
+        },
+        {
+          "scenario": "add_dataclass_decorator-behavior",
+          "evidence": "build/mcp-harness/run-x5lxrxa2",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        }
+      ],
+      "latestEvidence": "build/mcp-harness/run-iaigo1l1",
+      "complete": true
+    },
+    {
+      "tool": "add_exception_capture",
+      "available": true,
+      "directSuccess": "untested",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "untested"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "add_exception_capture-missing-file",
+        "add_exception_capture-success"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": "build/mcp-harness/run-2mu0fmto",
+      "complete": false
+    },
+    {
+      "tool": "add_optional_model_field",
+      "available": true,
+      "directSuccess": "failed",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "failed"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "add_optional_model_field-missing-file",
+        "add_optional_model_field-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [
+        {
+          "scenario": "add_optional_model_field-behavior",
+          "evidence": "build/mcp-harness/run-p_zygrh7",
+          "artifact": "7a7eff9cf3811ea7b47320455e2b078b43dd2cf5bea7bc24509c156d8a8a978a"
+        },
+        {
+          "scenario": "add_optional_model_field-behavior",
+          "evidence": "build/mcp-harness/run-x5lxrxa2",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        }
+      ],
+      "latestEvidence": "build/mcp-harness/run-x5lxrxa2",
+      "complete": false
+    },
+    {
+      "tool": "add_overloads",
+      "available": true,
+      "directSuccess": "failed",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "failed"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "add_overloads-missing-file",
+        "add_overloads-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [
+        {
+          "scenario": "add_overloads-behavior",
+          "evidence": "build/mcp-harness/run-p_zygrh7",
+          "artifact": "7a7eff9cf3811ea7b47320455e2b078b43dd2cf5bea7bc24509c156d8a8a978a"
+        },
+        {
+          "scenario": "add_overloads-behavior",
+          "evidence": "build/mcp-harness/run-2mu0fmto",
+          "artifact": "7a7eff9cf3811ea7b47320455e2b078b43dd2cf5bea7bc24509c156d8a8a978a"
+        },
+        {
+          "scenario": "add_overloads-behavior",
+          "evidence": "build/mcp-harness/run-x5lxrxa2",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        }
+      ],
+      "latestEvidence": "build/mcp-harness/run-x5lxrxa2",
+      "complete": false
+    },
+    {
+      "tool": "add_parametrize_parameter",
+      "available": true,
+      "directSuccess": "missing",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "missing"
+      },
+      "junie": "missing",
+      "scenarioIds": [
+        "add_parametrize_parameter-missing-file"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": null,
+      "complete": false
+    },
+    {
+      "tool": "add_self_parameter",
+      "available": true,
+      "directSuccess": "untested",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "untested"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "add_self_parameter-missing-file",
+        "add_self_parameter-success"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": "build/mcp-harness/run-2mu0fmto",
+      "complete": false
+    },
+    {
+      "tool": "analyze_extract_function_to_scope",
+      "available": true,
+      "directSuccess": "untested",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "untested"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "analyze_extract_function_to_scope-missing-file",
+        "analyze_extract_function_to_scope-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": "build/mcp-harness/run-2mu0fmto",
+      "complete": false
+    },
+    {
+      "tool": "api_routes",
+      "available": true,
+      "directSuccess": "untested",
+      "semanticFailure": "untested",
+      "variants": {
+        "fastapi": "untested",
+        "flask": "missing"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "api_routes-invalid-prerequisite",
+        "api_routes-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": "build/mcp-harness/run-2mu0fmto",
+      "complete": false
+    },
+    {
+      "tool": "attribute_implementations",
+      "available": true,
+      "directSuccess": "untested",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "untested"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "attribute_implementations-missing-file",
+        "attribute_implementations-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": "build/mcp-harness/run-2mu0fmto",
+      "complete": false
+    },
+    {
+      "tool": "block_with_dependencies",
+      "available": true,
+      "directSuccess": "untested",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "untested"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "block_with_dependencies-missing-file",
+        "block_with_dependencies-success"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": "build/mcp-harness/run-2mu0fmto",
+      "complete": false
+    },
+    {
+      "tool": "capture_unused_parameters",
+      "available": true,
+      "directSuccess": "untested",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "untested"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "capture_unused_parameters-missing-file",
+        "capture_unused_parameters-success"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": "build/mcp-harness/run-2mu0fmto",
+      "complete": false
+    },
+    {
+      "tool": "change_visibility",
+      "available": true,
+      "directSuccess": "failed",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "failed"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "change_visibility-missing-file",
+        "change_visibility-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [
+        {
+          "scenario": "change_visibility-behavior",
+          "evidence": "build/mcp-harness/run-p_zygrh7",
+          "artifact": "7a7eff9cf3811ea7b47320455e2b078b43dd2cf5bea7bc24509c156d8a8a978a"
+        },
+        {
+          "scenario": "change_visibility-behavior",
+          "evidence": "build/mcp-harness/run-2mu0fmto",
+          "artifact": "7a7eff9cf3811ea7b47320455e2b078b43dd2cf5bea7bc24509c156d8a8a978a"
+        },
+        {
+          "scenario": "change_visibility-behavior",
+          "evidence": "build/mcp-harness/run-x5lxrxa2",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        }
+      ],
+      "latestEvidence": "build/mcp-harness/run-x5lxrxa2",
+      "complete": false
+    },
+    {
+      "tool": "class_implementations",
+      "available": true,
+      "directSuccess": "untested",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "untested"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "class_implementations-missing-file",
+        "class_implementations-success"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": "build/mcp-harness/run-2mu0fmto",
+      "complete": false
+    },
+    {
+      "tool": "convert_async_function_to_sync",
+      "available": true,
+      "directSuccess": "untested",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "untested"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "convert_async_function_to_sync-missing-file",
+        "convert_async_function_to_sync-success"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": "build/mcp-harness/run-2mu0fmto",
+      "complete": false
+    },
+    {
+      "tool": "convert_callable_to_protocol",
+      "available": true,
+      "directSuccess": "failed",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "failed"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "convert_callable_to_protocol-missing-file",
+        "convert_callable_to_protocol-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [
+        {
+          "scenario": "convert_callable_to_protocol-behavior",
+          "evidence": "build/mcp-harness/run-p_zygrh7",
+          "artifact": "7a7eff9cf3811ea7b47320455e2b078b43dd2cf5bea7bc24509c156d8a8a978a"
+        },
+        {
+          "scenario": "convert_callable_to_protocol-behavior",
+          "evidence": "build/mcp-harness/run-2mu0fmto",
+          "artifact": "7a7eff9cf3811ea7b47320455e2b078b43dd2cf5bea7bc24509c156d8a8a978a"
+        },
+        {
+          "scenario": "convert_callable_to_protocol-behavior",
+          "evidence": "build/mcp-harness/run-x5lxrxa2",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        }
+      ],
+      "latestEvidence": "build/mcp-harness/run-x5lxrxa2",
+      "complete": false
+    },
+    {
+      "tool": "convert_fixture_injection",
+      "available": true,
+      "directSuccess": "failed",
+      "semanticFailure": "failed",
+      "variants": {
+        "parameter_to_usefixtures": "failed",
+        "usefixtures_to_argument": "failed"
+      },
+      "junie": "failed",
+      "scenarioIds": [
+        "convert_fixture_injection-missing-file",
+        "convert_fixture_injection-parameter_to_usefixtures",
+        "convert_fixture_injection-usefixtures_to_argument",
+        "convert_fixture_injection-usefixtures_to_parameter",
+        "convert_fixture_injection-used-value"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [
+        {
+          "scenario": "convert_fixture_injection-missing-file",
+          "evidence": "build/mcp-harness/run-jrw4veyi",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        },
+        {
+          "scenario": "convert_fixture_injection-parameter_to_usefixtures",
+          "evidence": "build/mcp-harness/run-jrw4veyi",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        },
+        {
+          "scenario": "convert_fixture_injection-usefixtures_to_argument",
+          "evidence": "build/mcp-harness/run-jrw4veyi",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        },
+        {
+          "scenario": "convert_fixture_injection-usefixtures_to_parameter",
+          "evidence": "build/mcp-harness/run-jrw4veyi",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        },
+        {
+          "scenario": "convert_fixture_injection-used-value",
+          "evidence": "build/mcp-harness/run-jrw4veyi",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        },
+        {
+          "scenario": "convert_fixture_injection-parameter_to_usefixtures",
+          "evidence": "build/mcp-harness/run-jrw4veyi",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        },
+        {
+          "scenario": "convert_fixture_injection-usefixtures_to_argument",
+          "evidence": "build/mcp-harness/run-jrw4veyi",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        },
+        {
+          "scenario": "convert_fixture_injection-usefixtures_to_parameter",
+          "evidence": "build/mcp-harness/run-jrw4veyi",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        }
+      ],
+      "latestEvidence": "build/mcp-harness/run-jrw4veyi",
+      "complete": false
+    },
+    {
+      "tool": "convert_function_to_lambda",
+      "available": true,
+      "directSuccess": "untested",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "untested"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "convert_function_to_lambda-missing-file",
+        "convert_function_to_lambda-success"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": "build/mcp-harness/run-2mu0fmto",
+      "complete": false
+    },
+    {
+      "tool": "convert_parametrize_argnames",
+      "available": true,
+      "directSuccess": "failed",
+      "semanticFailure": "missing",
+      "variants": {
+        "tuple": "failed",
+        "comma_separated": "missing"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "convert_parametrize_argnames-missing-file",
+        "convert_parametrize_argnames-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [
+        {
+          "scenario": "convert_parametrize_argnames-behavior",
+          "evidence": "build/mcp-harness/run-727czjss",
+          "artifact": "7a7eff9cf3811ea7b47320455e2b078b43dd2cf5bea7bc24509c156d8a8a978a"
+        },
+        {
+          "scenario": "convert_parametrize_argnames-behavior",
+          "evidence": "build/mcp-harness/run-x5lxrxa2",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        }
+      ],
+      "latestEvidence": "build/mcp-harness/run-x5lxrxa2",
+      "complete": false
+    },
+    {
+      "tool": "convert_pytest_param",
+      "available": true,
+      "directSuccess": "failed",
+      "semanticFailure": "failed",
+      "variants": {
+        "to_plain": "failed",
+        "to_pytest_param": "failed"
+      },
+      "junie": "failed",
+      "scenarioIds": [
+        "convert_pytest_param-missing-file",
+        "convert_pytest_param-to_pytest_param",
+        "convert_pytest_param-to_plain",
+        "convert_pytest_param-already-wrapped"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [
+        {
+          "scenario": "convert_pytest_param-missing-file",
+          "evidence": "build/mcp-harness/run-jrw4veyi",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        },
+        {
+          "scenario": "convert_pytest_param-to_pytest_param",
+          "evidence": "build/mcp-harness/run-jrw4veyi",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        },
+        {
+          "scenario": "convert_pytest_param-to_plain",
+          "evidence": "build/mcp-harness/run-jrw4veyi",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        },
+        {
+          "scenario": "convert_pytest_param-already-wrapped",
+          "evidence": "build/mcp-harness/run-jrw4veyi",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        },
+        {
+          "scenario": "convert_pytest_param-to_pytest_param",
+          "evidence": "build/mcp-harness/run-jrw4veyi",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        }
+      ],
+      "latestEvidence": "build/mcp-harness/run-jrw4veyi",
+      "complete": false
+    },
+    {
+      "tool": "convert_static_to_instance_method",
+      "available": true,
+      "directSuccess": "failed",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "failed"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "convert_static_to_instance_method-missing-file",
+        "convert_static_to_instance_method-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [
+        {
+          "scenario": "convert_static_to_instance_method-behavior",
+          "evidence": "build/mcp-harness/run-p_zygrh7",
+          "artifact": "7a7eff9cf3811ea7b47320455e2b078b43dd2cf5bea7bc24509c156d8a8a978a"
+        },
+        {
+          "scenario": "convert_static_to_instance_method-behavior",
+          "evidence": "build/mcp-harness/run-2mu0fmto",
+          "artifact": "7a7eff9cf3811ea7b47320455e2b078b43dd2cf5bea7bc24509c156d8a8a978a"
+        },
+        {
+          "scenario": "convert_static_to_instance_method-behavior",
+          "evidence": "build/mcp-harness/run-x5lxrxa2",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        }
+      ],
+      "latestEvidence": "build/mcp-harness/run-x5lxrxa2",
+      "complete": false
+    },
+    {
+      "tool": "convert_static_to_instance_method_with_callsite_analysis",
+      "available": true,
+      "directSuccess": "missing",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "missing"
+      },
+      "junie": "missing",
+      "scenarioIds": [
+        "convert_static_to_instance_method_with_callsite_analysis-missing-file"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": null,
+      "complete": false
+    },
+    {
+      "tool": "convert_to_f_string",
+      "available": true,
+      "directSuccess": "untested",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "untested"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "convert_to_f_string-missing-file",
+        "convert_to_f_string-success"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": "build/mcp-harness/run-2mu0fmto",
+      "complete": false
+    },
+    {
+      "tool": "copy_method_annotations_from_parent",
+      "available": true,
+      "directSuccess": "passed",
+      "semanticFailure": "passed",
+      "variants": {
+        "default": "passed"
+      },
+      "junie": "passed",
+      "scenarioIds": [
+        "copy_method_annotations_from_parent-missing-file",
+        "copy_method_annotations_from_parent-behavior",
+        "copy_method_annotations_from_parent-no-parent"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [
+        {
+          "scenario": "copy_method_annotations_from_parent-behavior",
+          "evidence": "build/mcp-harness/run-p_zygrh7",
+          "artifact": "7a7eff9cf3811ea7b47320455e2b078b43dd2cf5bea7bc24509c156d8a8a978a"
+        },
+        {
+          "scenario": "copy_method_annotations_from_parent-behavior",
+          "evidence": "build/mcp-harness/run-4_n7hgf2",
+          "artifact": "7a7eff9cf3811ea7b47320455e2b078b43dd2cf5bea7bc24509c156d8a8a978a"
+        },
+        {
+          "scenario": "copy_method_annotations_from_parent-behavior",
+          "evidence": "build/mcp-harness/run-x5lxrxa2",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        },
+        {
+          "scenario": "copy_method_annotations_from_parent-no-parent",
+          "evidence": "build/mcp-harness/run-x5lxrxa2",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        }
+      ],
+      "latestEvidence": "build/mcp-harness/run-zlzhlv5m",
+      "complete": true
+    },
+    {
+      "tool": "copy_with_imports",
+      "available": true,
+      "directSuccess": "untested",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "untested"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "copy_with_imports-missing-file",
+        "copy_with_imports-success"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": "build/mcp-harness/run-2mu0fmto",
+      "complete": false
+    },
+    {
+      "tool": "create_implementation",
+      "available": true,
+      "directSuccess": "failed",
+      "semanticFailure": "missing",
+      "variants": {
+        "protocol_class": "missing",
+        "callable_function": "missing",
+        "callable_class": "failed"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "create_implementation-missing-file",
+        "create_implementation-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [
+        {
+          "scenario": "create_implementation-behavior",
+          "evidence": "build/mcp-harness/run-4_n7hgf2",
+          "artifact": "7a7eff9cf3811ea7b47320455e2b078b43dd2cf5bea7bc24509c156d8a8a978a"
+        },
+        {
+          "scenario": "create_implementation-behavior",
+          "evidence": "build/mcp-harness/run-x5lxrxa2",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        }
+      ],
+      "latestEvidence": "build/mcp-harness/run-x5lxrxa2",
+      "complete": false
+    },
+    {
+      "tool": "create_local_variable",
+      "available": true,
+      "directSuccess": "untested",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "untested"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "create_local_variable-missing-file",
+        "create_local_variable-success"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": "build/mcp-harness/run-2mu0fmto",
+      "complete": false
+    },
+    {
+      "tool": "create_pytest_fixture",
+      "available": true,
+      "directSuccess": "failed",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "failed"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "create_pytest_fixture-missing-file",
+        "create_pytest_fixture-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [
+        {
+          "scenario": "create_pytest_fixture-behavior",
+          "evidence": "build/mcp-harness/run-p_zygrh7",
+          "artifact": "7a7eff9cf3811ea7b47320455e2b078b43dd2cf5bea7bc24509c156d8a8a978a"
+        },
+        {
+          "scenario": "create_pytest_fixture-behavior",
+          "evidence": "build/mcp-harness/run-x5lxrxa2",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        }
+      ],
+      "latestEvidence": "build/mcp-harness/run-x5lxrxa2",
+      "complete": false
+    },
+    {
+      "tool": "create_pytest_member",
+      "available": true,
+      "directSuccess": "untested",
+      "semanticFailure": "missing",
+      "variants": {
+        "test": "untested",
+        "fixture": "missing"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "create_pytest_member-missing-file",
+        "create_pytest_member-success"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": "build/mcp-harness/run-2mu0fmto",
+      "complete": false
+    },
+    {
+      "tool": "data_model_info",
+      "available": true,
+      "directSuccess": "failed",
+      "semanticFailure": "untested",
+      "variants": {
+        "dataclass": "untested",
+        "typeddict": "failed",
+        "pydantic": "missing"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "data_model_info-missing-file",
+        "data_model_info-behavior",
+        "data_model_info-ineligible",
+        "data_model_info-typeddict"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [
+        {
+          "scenario": "data_model_info-typeddict",
+          "evidence": "build/mcp-harness/run-2mu0fmto",
+          "artifact": "7a7eff9cf3811ea7b47320455e2b078b43dd2cf5bea7bc24509c156d8a8a978a"
+        },
+        {
+          "scenario": "data_model_info-typeddict",
+          "evidence": "build/mcp-harness/run-x5lxrxa2",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        }
+      ],
+      "latestEvidence": "build/mcp-harness/run-x5lxrxa2",
+      "complete": false
+    },
+    {
+      "tool": "dict_access",
+      "available": true,
+      "directSuccess": "untested",
+      "semanticFailure": "missing",
+      "variants": {
+        "bracket_to_get": "missing",
+        "get_to_bracket": "missing"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "dict_access-missing-file",
+        "dict_access-success"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": "build/mcp-harness/run-2mu0fmto",
+      "complete": false
+    },
+    {
+      "tool": "ensure_dunder_all_export",
+      "available": true,
+      "directSuccess": "failed",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "failed"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "ensure_dunder_all_export-missing-file",
+        "ensure_dunder_all_export-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [
+        {
+          "scenario": "ensure_dunder_all_export-behavior",
+          "evidence": "build/mcp-harness/run-4_n7hgf2",
+          "artifact": "7a7eff9cf3811ea7b47320455e2b078b43dd2cf5bea7bc24509c156d8a8a978a"
+        },
+        {
+          "scenario": "ensure_dunder_all_export-behavior",
+          "evidence": "build/mcp-harness/run-x5lxrxa2",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        }
+      ],
+      "latestEvidence": "build/mcp-harness/run-x5lxrxa2",
+      "complete": false
+    },
+    {
+      "tool": "export_symbol_to_target",
+      "available": true,
+      "directSuccess": "failed",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "failed"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "export_symbol_to_target-missing-file",
+        "export_symbol_to_target-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [
+        {
+          "scenario": "export_symbol_to_target-behavior",
+          "evidence": "build/mcp-harness/run-4_n7hgf2",
+          "artifact": "7a7eff9cf3811ea7b47320455e2b078b43dd2cf5bea7bc24509c156d8a8a978a"
+        },
+        {
+          "scenario": "export_symbol_to_target-behavior",
+          "evidence": "build/mcp-harness/run-x5lxrxa2",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        }
+      ],
+      "latestEvidence": "build/mcp-harness/run-x5lxrxa2",
+      "complete": false
+    },
+    {
+      "tool": "extract_function_to_scope",
+      "available": true,
+      "directSuccess": "missing",
+      "semanticFailure": "missing",
+      "variants": {
+        "local": "missing",
+        "enclosing": "missing",
+        "module": "missing"
+      },
+      "junie": "missing",
+      "scenarioIds": [
+        "extract_function_to_scope-missing-file"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": null,
+      "complete": false
+    },
+    {
+      "tool": "extract_protocol",
+      "available": true,
+      "directSuccess": "failed",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "failed"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "extract_protocol-missing-file",
+        "extract_protocol-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [
+        {
+          "scenario": "extract_protocol-behavior",
+          "evidence": "build/mcp-harness/run-p_zygrh7",
+          "artifact": "7a7eff9cf3811ea7b47320455e2b078b43dd2cf5bea7bc24509c156d8a8a978a"
+        },
+        {
+          "scenario": "extract_protocol-behavior",
+          "evidence": "build/mcp-harness/run-x5lxrxa2",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        }
+      ],
+      "latestEvidence": "build/mcp-harness/run-x5lxrxa2",
+      "complete": false
+    },
+    {
+      "tool": "extract_pytest_fixture",
+      "available": true,
+      "directSuccess": "failed",
+      "semanticFailure": "missing",
+      "variants": {
+        "fixture": "missing",
+        "helper": "failed"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "extract_pytest_fixture-missing-file",
+        "extract_pytest_fixture-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [
+        {
+          "scenario": "extract_pytest_fixture-behavior",
+          "evidence": "build/mcp-harness/run-727czjss",
+          "artifact": "7a7eff9cf3811ea7b47320455e2b078b43dd2cf5bea7bc24509c156d8a8a978a"
+        },
+        {
+          "scenario": "extract_pytest_fixture-behavior",
+          "evidence": "build/mcp-harness/run-x5lxrxa2",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        }
+      ],
+      "latestEvidence": "build/mcp-harness/run-x5lxrxa2",
+      "complete": false
+    },
+    {
+      "tool": "extract_top_level_function",
+      "available": true,
+      "directSuccess": "failed",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "failed"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "extract_top_level_function-missing-file",
+        "extract_top_level_function-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [
+        {
+          "scenario": "extract_top_level_function-behavior",
+          "evidence": "build/mcp-harness/run-p_zygrh7",
+          "artifact": "7a7eff9cf3811ea7b47320455e2b078b43dd2cf5bea7bc24509c156d8a8a978a"
+        },
+        {
+          "scenario": "extract_top_level_function-behavior",
+          "evidence": "build/mcp-harness/run-x5lxrxa2",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        }
+      ],
+      "latestEvidence": "build/mcp-harness/run-x5lxrxa2",
+      "complete": false
+    },
+    {
+      "tool": "fixture_documentation",
+      "available": true,
+      "directSuccess": "untested",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "untested"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "fixture_documentation-missing-file",
+        "fixture_documentation-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": "build/mcp-harness/run-2mu0fmto",
+      "complete": false
+    },
+    {
+      "tool": "function_to_protocol",
+      "available": true,
+      "directSuccess": "failed",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "failed"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "function_to_protocol-missing-file",
+        "function_to_protocol-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [
+        {
+          "scenario": "function_to_protocol-behavior",
+          "evidence": "build/mcp-harness/run-p_zygrh7",
+          "artifact": "7a7eff9cf3811ea7b47320455e2b078b43dd2cf5bea7bc24509c156d8a8a978a"
+        },
+        {
+          "scenario": "function_to_protocol-behavior",
+          "evidence": "build/mcp-harness/run-x5lxrxa2",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        }
+      ],
+      "latestEvidence": "build/mcp-harness/run-x5lxrxa2",
+      "complete": false
+    },
+    {
+      "tool": "generate_class",
+      "available": true,
+      "directSuccess": "failed",
+      "semanticFailure": "missing",
+      "variants": {
+        "dataclass": "failed",
+        "frozen_dataclass": "missing",
+        "pytest_class": "missing",
+        "pydantic_model": "missing"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "generate_class-missing-file",
+        "generate_class-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [
+        {
+          "scenario": "generate_class-behavior",
+          "evidence": "build/mcp-harness/run-727czjss",
+          "artifact": "7a7eff9cf3811ea7b47320455e2b078b43dd2cf5bea7bc24509c156d8a8a978a"
+        },
+        {
+          "scenario": "generate_class-behavior",
+          "evidence": "build/mcp-harness/run-x5lxrxa2",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        }
+      ],
+      "latestEvidence": "build/mcp-harness/run-x5lxrxa2",
+      "complete": false
+    },
+    {
+      "tool": "generate_uv_script_entry_point",
+      "available": true,
+      "directSuccess": "untested",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "untested"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "generate_uv_script_entry_point-missing-file",
+        "generate_uv_script_entry_point-success"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": "build/mcp-harness/run-2mu0fmto",
+      "complete": false
+    },
+    {
+      "tool": "generic_type_declarations",
+      "available": true,
+      "directSuccess": "untested",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "untested"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "generic_type_declarations-missing-file",
+        "generic_type_declarations-success",
+        "generic_type_declarations-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": "build/mcp-harness/run-2mu0fmto",
+      "complete": false
+    },
+    {
+      "tool": "ide_remote_action",
+      "available": true,
+      "directSuccess": "untested",
+      "semanticFailure": "missing",
+      "variants": {
+        "wait": "untested",
+        "queued": "missing"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "ide_remote_action-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [
+        {
+          "scenario": "ide_remote_action-behavior",
+          "evidence": "build/mcp-harness/run-727czjss",
+          "artifact": "7a7eff9cf3811ea7b47320455e2b078b43dd2cf5bea7bc24509c156d8a8a978a"
+        },
+        {
+          "scenario": "ide_remote_action-behavior",
+          "evidence": "build/mcp-harness/run-nu_5nxok",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        },
+        {
+          "scenario": "ide_remote_action-behavior",
+          "evidence": "build/mcp-harness/run-2mu0fmto",
+          "artifact": "7a7eff9cf3811ea7b47320455e2b078b43dd2cf5bea7bc24509c156d8a8a978a"
+        }
+      ],
+      "latestEvidence": "build/mcp-harness/run-h4wx7sev",
+      "complete": false
+    },
+    {
+      "tool": "ide_remote_diagnostics",
+      "available": true,
+      "directSuccess": "untested",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "untested"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "ide_remote_diagnostics-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [
+        {
+          "scenario": "ide_remote_diagnostics-behavior",
+          "evidence": "build/mcp-harness/run-727czjss",
+          "artifact": "7a7eff9cf3811ea7b47320455e2b078b43dd2cf5bea7bc24509c156d8a8a978a"
+        },
+        {
+          "scenario": "ide_remote_diagnostics-behavior",
+          "evidence": "build/mcp-harness/run-nu_5nxok",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        },
+        {
+          "scenario": "ide_remote_diagnostics-behavior",
+          "evidence": "build/mcp-harness/run-2mu0fmto",
+          "artifact": "7a7eff9cf3811ea7b47320455e2b078b43dd2cf5bea7bc24509c156d8a8a978a"
+        }
+      ],
+      "latestEvidence": "build/mcp-harness/run-h4wx7sev",
+      "complete": false
+    },
+    {
+      "tool": "ide_remote_mcp_tools",
+      "available": true,
+      "directSuccess": "untested",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "untested"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "ide_remote_mcp_tools-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": "build/mcp-harness/run-2mu0fmto",
+      "complete": false
+    },
+    {
+      "tool": "ide_remote_modal",
+      "available": true,
+      "directSuccess": "passed",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "passed"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "ide_remote_modal-closed",
+        "ide_remote_modal-owned-default"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": "build/mcp-harness/run-h4wx7sev",
+      "complete": false
+    },
+    {
+      "tool": "ide_remote_modal_action",
+      "available": true,
+      "directSuccess": "passed",
+      "semanticFailure": "untested",
+      "variants": {
+        "click": "passed",
+        "escape": "passed"
+      },
+      "junie": "passed",
+      "scenarioIds": [
+        "ide_remote_modal_action-no-dialog",
+        "ide_remote_modal_action-owned-click",
+        "ide_remote_modal_action-owned-escape"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [
+        {
+          "scenario": "ide_remote_modal_action-no-dialog",
+          "evidence": "build/mcp-harness/run-727czjss",
+          "artifact": "7a7eff9cf3811ea7b47320455e2b078b43dd2cf5bea7bc24509c156d8a8a978a"
+        },
+        {
+          "scenario": "ide_remote_modal_action-owned-click",
+          "evidence": "build/mcp-harness/run-h4wx7sev",
+          "artifact": null
+        }
+      ],
+      "latestEvidence": "build/mcp-harness/run-ywncyd8e",
+      "complete": false
+    },
+    {
+      "tool": "ide_remote_open",
+      "available": true,
+      "directSuccess": "untested",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "untested"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "ide_remote_open-behavior",
+        "ide_remote_open-missing-file"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [
+        {
+          "scenario": "ide_remote_open-behavior",
+          "evidence": "build/mcp-harness/run-727czjss",
+          "artifact": "7a7eff9cf3811ea7b47320455e2b078b43dd2cf5bea7bc24509c156d8a8a978a"
+        },
+        {
+          "scenario": "ide_remote_open-missing-file",
+          "evidence": "build/mcp-harness/run-727czjss",
+          "artifact": "7a7eff9cf3811ea7b47320455e2b078b43dd2cf5bea7bc24509c156d8a8a978a"
+        }
+      ],
+      "latestEvidence": "build/mcp-harness/run-2mu0fmto",
+      "complete": false
+    },
+    {
+      "tool": "ide_remote_status",
+      "available": true,
+      "directSuccess": "untested",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "untested"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "ide_remote_status-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": "build/mcp-harness/run-2mu0fmto",
+      "complete": false
+    },
+    {
+      "tool": "ide_remote_wait_ready",
+      "available": true,
+      "directSuccess": "untested",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "untested"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "ide_remote_wait_ready-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": "build/mcp-harness/run-2mu0fmto",
+      "complete": false
+    },
+    {
+      "tool": "implement_abstract_method_in_children",
+      "available": true,
+      "directSuccess": "failed",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "failed"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "implement_abstract_method_in_children-missing-file",
+        "implement_abstract_method_in_children-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [
+        {
+          "scenario": "implement_abstract_method_in_children-behavior",
+          "evidence": "build/mcp-harness/run-727czjss",
+          "artifact": "7a7eff9cf3811ea7b47320455e2b078b43dd2cf5bea7bc24509c156d8a8a978a"
+        },
+        {
+          "scenario": "implement_abstract_method_in_children-behavior",
+          "evidence": "build/mcp-harness/run-x5lxrxa2",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        }
+      ],
+      "latestEvidence": "build/mcp-harness/run-x5lxrxa2",
+      "complete": false
+    },
+    {
+      "tool": "implement_missing_abstract_methods",
+      "available": true,
+      "directSuccess": "failed",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "failed"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "implement_missing_abstract_methods-missing-file",
+        "implement_missing_abstract_methods-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [
+        {
+          "scenario": "implement_missing_abstract_methods-behavior",
+          "evidence": "build/mcp-harness/run-727czjss",
+          "artifact": "7a7eff9cf3811ea7b47320455e2b078b43dd2cf5bea7bc24509c156d8a8a978a"
+        },
+        {
+          "scenario": "implement_missing_abstract_methods-behavior",
+          "evidence": "build/mcp-harness/run-x5lxrxa2",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        }
+      ],
+      "latestEvidence": "build/mcp-harness/run-x5lxrxa2",
+      "complete": false
+    },
+    {
+      "tool": "import_alias_usages",
+      "available": true,
+      "directSuccess": "untested",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "untested"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "import_alias_usages-missing-file",
+        "import_alias_usages-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": "build/mcp-harness/run-2mu0fmto",
+      "complete": false
+    },
+    {
+      "tool": "import_statement_at",
+      "available": true,
+      "directSuccess": "untested",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "untested"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "import_statement_at-missing-file",
+        "import_statement_at-success"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": "build/mcp-harness/run-2mu0fmto",
+      "complete": false
+    },
+    {
+      "tool": "inherited_constructor_documentation",
+      "available": true,
+      "directSuccess": "untested",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "untested"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "inherited_constructor_documentation-missing-file",
+        "inherited_constructor_documentation-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": "build/mcp-harness/run-2mu0fmto",
+      "complete": false
+    },
+    {
+      "tool": "init_classmethod_usages",
+      "available": true,
+      "directSuccess": "untested",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "untested"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "init_classmethod_usages-missing-file",
+        "init_classmethod_usages-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": "build/mcp-harness/run-2mu0fmto",
+      "complete": false
+    },
+    {
+      "tool": "inline_module_symbol",
+      "available": true,
+      "directSuccess": "failed",
+      "semanticFailure": "missing",
+      "variants": {
+        "all_remove_declaration": "failed",
+        "all_keep_declaration": "missing",
+        "this_keep_declaration": "missing"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "inline_module_symbol-missing-file",
+        "inline_module_symbol-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [
+        {
+          "scenario": "inline_module_symbol-behavior",
+          "evidence": "build/mcp-harness/run-727czjss",
+          "artifact": "7a7eff9cf3811ea7b47320455e2b078b43dd2cf5bea7bc24509c156d8a8a978a"
+        },
+        {
+          "scenario": "inline_module_symbol-behavior",
+          "evidence": "build/mcp-harness/run-x5lxrxa2",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        }
+      ],
+      "latestEvidence": "build/mcp-harness/run-x5lxrxa2",
+      "complete": false
+    },
+    {
+      "tool": "inline_parameterObject",
+      "available": true,
+      "directSuccess": "missing",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "missing"
+      },
+      "junie": "missing",
+      "scenarioIds": [
+        "inline_parameterObject-missing-file"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": null,
+      "complete": false
+    },
+    {
+      "tool": "inline_pytest_fixture",
+      "available": true,
+      "directSuccess": "failed",
+      "semanticFailure": "missing",
+      "variants": {
+        "all_remove": "failed",
+        "this_only": "missing"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "inline_pytest_fixture-missing-file",
+        "inline_pytest_fixture-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [
+        {
+          "scenario": "inline_pytest_fixture-behavior",
+          "evidence": "build/mcp-harness/run-727czjss",
+          "artifact": "7a7eff9cf3811ea7b47320455e2b078b43dd2cf5bea7bc24509c156d8a8a978a"
+        },
+        {
+          "scenario": "inline_pytest_fixture-behavior",
+          "evidence": "build/mcp-harness/run-x5lxrxa2",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        }
+      ],
+      "latestEvidence": "build/mcp-harness/run-x5lxrxa2",
+      "complete": false
+    },
+    {
+      "tool": "introduce_custom_type",
+      "available": true,
+      "directSuccess": "failed",
+      "semanticFailure": "missing",
+      "variants": {
+        "subclass": "failed",
+        "newtype": "missing",
+        "frozen_dataclass": "missing",
+        "pydantic_value_object": "missing"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "introduce_custom_type-missing-file",
+        "introduce_custom_type-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [
+        {
+          "scenario": "introduce_custom_type-behavior",
+          "evidence": "build/mcp-harness/run-727czjss",
+          "artifact": "7a7eff9cf3811ea7b47320455e2b078b43dd2cf5bea7bc24509c156d8a8a978a"
+        },
+        {
+          "scenario": "introduce_custom_type-behavior",
+          "evidence": "build/mcp-harness/run-x5lxrxa2",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        }
+      ],
+      "latestEvidence": "build/mcp-harness/run-x5lxrxa2",
+      "complete": false
+    },
+    {
+      "tool": "introduce_parameterObject",
+      "available": true,
+      "directSuccess": "untested",
+      "semanticFailure": "untested",
+      "variants": {
+        "dataclass": "missing",
+        "typeddict": "missing",
+        "namedtuple": "untested",
+        "pydantic": "missing",
+        "attrs": "missing"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "introduce_parameterObject-namedtuple",
+        "introduce_parameterObject-unpacked-call",
+        "introduce_parameterObject-missing-file"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": null,
+      "complete": false
+    },
+    {
+      "tool": "item_operation_usages",
+      "available": true,
+      "directSuccess": "untested",
+      "semanticFailure": "missing",
+      "variants": {
+        "getitem": "untested",
+        "setitem": "untested"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "item_operation_usages-missing-file",
+        "item_operation_usages-behavior",
+        "item_operation_usages-setitem"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": "build/mcp-harness/run-2mu0fmto",
+      "complete": false
+    },
+    {
+      "tool": "make_member_abstract",
+      "available": true,
+      "directSuccess": "failed",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "failed"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "make_member_abstract-missing-file",
+        "make_member_abstract-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [
+        {
+          "scenario": "make_member_abstract-behavior",
+          "evidence": "build/mcp-harness/run-727czjss",
+          "artifact": "7a7eff9cf3811ea7b47320455e2b078b43dd2cf5bea7bc24509c156d8a8a978a"
+        },
+        {
+          "scenario": "make_member_abstract-behavior",
+          "evidence": "build/mcp-harness/run-x5lxrxa2",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        }
+      ],
+      "latestEvidence": "build/mcp-harness/run-x5lxrxa2",
+      "complete": false
+    },
+    {
+      "tool": "make_parameter_mandatory",
+      "available": true,
+      "directSuccess": "untested",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "untested"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "make_parameter_mandatory-missing-file",
+        "make_parameter_mandatory-success"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": "build/mcp-harness/run-2mu0fmto",
+      "complete": false
+    },
+    {
+      "tool": "make_parameter_optional",
+      "available": true,
+      "directSuccess": "untested",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "untested"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "make_parameter_optional-missing-file",
+        "make_parameter_optional-success"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": "build/mcp-harness/run-2mu0fmto",
+      "complete": false
+    },
+    {
+      "tool": "migrate_pytest_config",
+      "available": true,
+      "directSuccess": "failed",
+      "semanticFailure": "missing",
+      "variants": {
+        "pyproject_toml": "failed",
+        "pytest_ini": "missing"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "migrate_pytest_config-missing-file",
+        "migrate_pytest_config-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [
+        {
+          "scenario": "migrate_pytest_config-behavior",
+          "evidence": "build/mcp-harness/run-727czjss",
+          "artifact": "7a7eff9cf3811ea7b47320455e2b078b43dd2cf5bea7bc24509c156d8a8a978a"
+        },
+        {
+          "scenario": "migrate_pytest_config-behavior",
+          "evidence": "build/mcp-harness/run-x5lxrxa2",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        }
+      ],
+      "latestEvidence": "build/mcp-harness/run-x5lxrxa2",
+      "complete": false
+    },
+    {
+      "tool": "mock_spec_implementations",
+      "available": true,
+      "directSuccess": "untested",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "untested"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "mock_spec_implementations-missing-file",
+        "mock_spec_implementations-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": "build/mcp-harness/run-2mu0fmto",
+      "complete": false
+    },
+    {
+      "tool": "module_assignment_usages",
+      "available": true,
+      "directSuccess": "untested",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "untested"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "module_assignment_usages-missing-file",
+        "module_assignment_usages-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": "build/mcp-harness/run-2mu0fmto",
+      "complete": false
+    },
+    {
+      "tool": "move_to_inner_scope",
+      "available": true,
+      "directSuccess": "failed",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "failed"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "move_to_inner_scope-missing-file",
+        "move_to_inner_scope-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [
+        {
+          "scenario": "move_to_inner_scope-behavior",
+          "evidence": "build/mcp-harness/run-727czjss",
+          "artifact": "7a7eff9cf3811ea7b47320455e2b078b43dd2cf5bea7bc24509c156d8a8a978a"
+        },
+        {
+          "scenario": "move_to_inner_scope-behavior",
+          "evidence": "build/mcp-harness/run-x5lxrxa2",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        }
+      ],
+      "latestEvidence": "build/mcp-harness/run-x5lxrxa2",
+      "complete": false
+    },
+    {
+      "tool": "move_to_outer_scope",
+      "available": true,
+      "directSuccess": "failed",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "failed"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "move_to_outer_scope-missing-file",
+        "move_to_outer_scope-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [
+        {
+          "scenario": "move_to_outer_scope-behavior",
+          "evidence": "build/mcp-harness/run-727czjss",
+          "artifact": "7a7eff9cf3811ea7b47320455e2b078b43dd2cf5bea7bc24509c156d8a8a978a"
+        },
+        {
+          "scenario": "move_to_outer_scope-behavior",
+          "evidence": "build/mcp-harness/run-x5lxrxa2",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        }
+      ],
+      "latestEvidence": "build/mcp-harness/run-x5lxrxa2",
+      "complete": false
+    },
+    {
+      "tool": "parametrize_pytest_test",
+      "available": true,
+      "directSuccess": "failed",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "failed"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "parametrize_pytest_test-missing-file",
+        "parametrize_pytest_test-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [
+        {
+          "scenario": "parametrize_pytest_test-behavior",
+          "evidence": "build/mcp-harness/run-727czjss",
+          "artifact": "7a7eff9cf3811ea7b47320455e2b078b43dd2cf5bea7bc24509c156d8a8a978a"
+        },
+        {
+          "scenario": "parametrize_pytest_test-behavior",
+          "evidence": "build/mcp-harness/run-x5lxrxa2",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        }
+      ],
+      "latestEvidence": "build/mcp-harness/run-x5lxrxa2",
+      "complete": false
+    },
+    {
+      "tool": "populate_python_call_arguments",
+      "available": true,
+      "directSuccess": "failed",
+      "semanticFailure": "missing",
+      "variants": {
+        "all": "missing",
+        "required_only": "failed"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "populate_python_call_arguments-missing-file",
+        "populate_python_call_arguments-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [
+        {
+          "scenario": "populate_python_call_arguments-behavior",
+          "evidence": "build/mcp-harness/run-727czjss",
+          "artifact": "7a7eff9cf3811ea7b47320455e2b078b43dd2cf5bea7bc24509c156d8a8a978a"
+        },
+        {
+          "scenario": "populate_python_call_arguments-behavior",
+          "evidence": "build/mcp-harness/run-x5lxrxa2",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        }
+      ],
+      "latestEvidence": "build/mcp-harness/run-x5lxrxa2",
+      "complete": false
+    },
+    {
+      "tool": "property_usages",
+      "available": true,
+      "directSuccess": "untested",
+      "semanticFailure": "untested",
+      "variants": {
+        "default": "untested"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "property_usages-missing-file",
+        "property_usages-behavior",
+        "property_usages-ineligible"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": "build/mcp-harness/run-2mu0fmto",
+      "complete": false
+    },
+    {
+      "tool": "protocol_implementations",
+      "available": true,
+      "directSuccess": "untested",
+      "semanticFailure": "missing",
+      "variants": {
+        "file": "untested",
+        "project": "missing"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "protocol_implementations-missing-file",
+        "protocol_implementations-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": "build/mcp-harness/run-2mu0fmto",
+      "complete": false
+    },
+    {
+      "tool": "pull_up_pytest_fixture",
+      "available": true,
+      "directSuccess": "failed",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "failed"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "pull_up_pytest_fixture-missing-file",
+        "pull_up_pytest_fixture-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [
+        {
+          "scenario": "pull_up_pytest_fixture-behavior",
+          "evidence": "build/mcp-harness/run-727czjss",
+          "artifact": "7a7eff9cf3811ea7b47320455e2b078b43dd2cf5bea7bc24509c156d8a8a978a"
+        },
+        {
+          "scenario": "pull_up_pytest_fixture-behavior",
+          "evidence": "build/mcp-harness/run-x5lxrxa2",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        }
+      ],
+      "latestEvidence": "build/mcp-harness/run-x5lxrxa2",
+      "complete": false
+    },
+    {
+      "tool": "push_down_pytest_fixture",
+      "available": true,
+      "directSuccess": "failed",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "failed"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "push_down_pytest_fixture-missing-file",
+        "push_down_pytest_fixture-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [
+        {
+          "scenario": "push_down_pytest_fixture-behavior",
+          "evidence": "build/mcp-harness/run-727czjss",
+          "artifact": "7a7eff9cf3811ea7b47320455e2b078b43dd2cf5bea7bc24509c156d8a8a978a"
+        },
+        {
+          "scenario": "push_down_pytest_fixture-behavior",
+          "evidence": "build/mcp-harness/run-x5lxrxa2",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        }
+      ],
+      "latestEvidence": "build/mcp-harness/run-x5lxrxa2",
+      "complete": false
+    },
+    {
+      "tool": "pytest_collection_items",
+      "available": true,
+      "directSuccess": "missing",
+      "semanticFailure": "untested",
+      "variants": {
+        "tests": "missing",
+        "fixtures": "missing"
+      },
+      "junie": "missing",
+      "scenarioIds": [
+        "pytest_collection_items-invalid-prerequisite"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": "build/mcp-harness/run-2mu0fmto",
+      "complete": false
+    },
+    {
+      "tool": "pytest_node_id_at",
+      "available": true,
+      "directSuccess": "untested",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "untested"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "pytest_node_id_at-missing-file",
+        "pytest_node_id_at-success"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": "build/mcp-harness/run-2mu0fmto",
+      "complete": false
+    },
+    {
+      "tool": "pytest_node_ids",
+      "available": true,
+      "directSuccess": "untested",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "untested"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "pytest_node_ids-missing-file",
+        "pytest_node_ids-success"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": "build/mcp-harness/run-2mu0fmto",
+      "complete": false
+    },
+    {
+      "tool": "remove_parametrize_parameter",
+      "available": true,
+      "directSuccess": "missing",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "missing"
+      },
+      "junie": "missing",
+      "scenarioIds": [
+        "remove_parametrize_parameter-missing-file"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": null,
+      "complete": false
+    },
+    {
+      "tool": "remove_unnecessary_inspection_suppression",
+      "available": true,
+      "directSuccess": "untested",
+      "semanticFailure": "untested",
+      "variants": {
+        "selective": "untested",
+        "sole": "untested"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "remove_unnecessary_inspection_suppression-missing-file",
+        "remove_unnecessary_inspection_suppression-selective",
+        "remove_unnecessary_inspection_suppression-sole",
+        "remove_unnecessary_inspection_suppression-all",
+        "remove_unnecessary_inspection_suppression-absent",
+        "remove_unnecessary_inspection_suppression-inline"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": "build/mcp-harness/run-2mu0fmto",
+      "complete": false
+    },
+    {
+      "tool": "rename_import_alias",
+      "available": true,
+      "directSuccess": "passed",
+      "semanticFailure": "passed",
+      "variants": {
+        "default": "passed"
+      },
+      "junie": "passed",
+      "scenarioIds": [
+        "rename_import_alias-missing-file",
+        "rename_import_alias-behavior",
+        "rename_import_alias-conflict"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": "build/mcp-harness/run-zlzhlv5m",
+      "complete": true
+    },
+    {
+      "tool": "resolve_pytest_identifier",
+      "available": true,
+      "directSuccess": "untested",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "untested"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "resolve_pytest_identifier-no-match",
+        "resolve_pytest_identifier-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": "build/mcp-harness/run-2mu0fmto",
+      "complete": false
+    },
+    {
+      "tool": "run_pytest_with_debug_logging",
+      "available": true,
+      "directSuccess": "missing",
+      "semanticFailure": "untested",
+      "variants": {
+        "run": "missing"
+      },
+      "junie": "missing",
+      "scenarioIds": [
+        "run_pytest_with_debug_logging-invalid-prerequisite"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": "build/mcp-harness/run-2mu0fmto",
+      "complete": false
+    },
+    {
+      "tool": "run_python_package",
+      "available": true,
+      "directSuccess": "missing",
+      "semanticFailure": "untested",
+      "variants": {
+        "module": "missing"
+      },
+      "junie": "missing",
+      "scenarioIds": [
+        "run_python_package-invalid-prerequisite"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": "build/mcp-harness/run-2mu0fmto",
+      "complete": false
+    },
+    {
+      "tool": "run_uv_script",
+      "available": true,
+      "directSuccess": "missing",
+      "semanticFailure": "missing",
+      "variants": {
+        "run": "missing"
+      },
+      "junie": "missing",
+      "scenarioIds": [
+        "run_uv_script-missing-file"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": null,
+      "complete": false
+    },
+    {
+      "tool": "scan_python_sdks",
+      "available": true,
+      "directSuccess": "untested",
+      "semanticFailure": "missing",
+      "variants": {
+        "all": "missing",
+        "brokenOnly": "missing"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "scan_python_sdks-project-sdk"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": "build/mcp-harness/run-2mu0fmto",
+      "complete": false
+    },
+    {
+      "tool": "set_pytest_fixture_alias",
+      "available": true,
+      "directSuccess": "failed",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "failed"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "set_pytest_fixture_alias-missing-file",
+        "set_pytest_fixture_alias-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [
+        {
+          "scenario": "set_pytest_fixture_alias-behavior",
+          "evidence": "build/mcp-harness/run-727czjss",
+          "artifact": "7a7eff9cf3811ea7b47320455e2b078b43dd2cf5bea7bc24509c156d8a8a978a"
+        },
+        {
+          "scenario": "set_pytest_fixture_alias-behavior",
+          "evidence": "build/mcp-harness/run-x5lxrxa2",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        }
+      ],
+      "latestEvidence": "build/mcp-harness/run-x5lxrxa2",
+      "complete": false
+    },
+    {
+      "tool": "strip_signature_type_annotations",
+      "available": true,
+      "directSuccess": "untested",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "untested"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "strip_signature_type_annotations-missing-file",
+        "strip_signature_type_annotations-success"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": "build/mcp-harness/run-2mu0fmto",
+      "complete": false
+    },
+    {
+      "tool": "surround_with_pytest_raises",
+      "available": true,
+      "directSuccess": "failed",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "failed"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "surround_with_pytest_raises-missing-file",
+        "surround_with_pytest_raises-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [
+        {
+          "scenario": "surround_with_pytest_raises-behavior",
+          "evidence": "build/mcp-harness/run-727czjss",
+          "artifact": "7a7eff9cf3811ea7b47320455e2b078b43dd2cf5bea7bc24509c156d8a8a978a"
+        },
+        {
+          "scenario": "surround_with_pytest_raises-behavior",
+          "evidence": "build/mcp-harness/run-x5lxrxa2",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        }
+      ],
+      "latestEvidence": "build/mcp-harness/run-x5lxrxa2",
+      "complete": false
+    },
+    {
+      "tool": "toggle_enum_member_value",
+      "available": true,
+      "directSuccess": "untested",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "untested"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "toggle_enum_member_value-missing-file",
+        "toggle_enum_member_value-success"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": "build/mcp-harness/run-2mu0fmto",
+      "complete": false
+    },
+    {
+      "tool": "toggle_pytest_skip",
+      "available": true,
+      "directSuccess": "failed",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "failed"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "toggle_pytest_skip-missing-file",
+        "toggle_pytest_skip-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [
+        {
+          "scenario": "toggle_pytest_skip-behavior",
+          "evidence": "build/mcp-harness/run-4_n7hgf2",
+          "artifact": "7a7eff9cf3811ea7b47320455e2b078b43dd2cf5bea7bc24509c156d8a8a978a"
+        },
+        {
+          "scenario": "toggle_pytest_skip-behavior",
+          "evidence": "build/mcp-harness/run-x5lxrxa2",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        }
+      ],
+      "latestEvidence": "build/mcp-harness/run-x5lxrxa2",
+      "complete": false
+    },
+    {
+      "tool": "toggle_pytest_skip_from_test_tree",
+      "available": true,
+      "directSuccess": "failed",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "failed"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "toggle_pytest_skip_from_test_tree-missing-file",
+        "toggle_pytest_skip_from_test_tree-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [
+        {
+          "scenario": "toggle_pytest_skip_from_test_tree-behavior",
+          "evidence": "build/mcp-harness/run-4_n7hgf2",
+          "artifact": "7a7eff9cf3811ea7b47320455e2b078b43dd2cf5bea7bc24509c156d8a8a978a"
+        },
+        {
+          "scenario": "toggle_pytest_skip_from_test_tree-behavior",
+          "evidence": "build/mcp-harness/run-x5lxrxa2",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        }
+      ],
+      "latestEvidence": "build/mcp-harness/run-x5lxrxa2",
+      "complete": false
+    },
+    {
+      "tool": "toggle_type_alias",
+      "available": true,
+      "directSuccess": "failed",
+      "semanticFailure": "missing",
+      "variants": {
+        "extract": "missing",
+        "inline": "missing"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "toggle_type_alias-missing-file",
+        "toggle_type_alias-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [
+        {
+          "scenario": "toggle_type_alias-behavior",
+          "evidence": "build/mcp-harness/run-4_n7hgf2",
+          "artifact": "7a7eff9cf3811ea7b47320455e2b078b43dd2cf5bea7bc24509c156d8a8a978a"
+        },
+        {
+          "scenario": "toggle_type_alias-behavior",
+          "evidence": "build/mcp-harness/run-x5lxrxa2",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        }
+      ],
+      "latestEvidence": "build/mcp-harness/run-x5lxrxa2",
+      "complete": false
+    },
+    {
+      "tool": "unexport_symbol",
+      "available": true,
+      "directSuccess": "failed",
+      "semanticFailure": "missing",
+      "variants": {
+        "unused": "failed",
+        "force": "missing"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "unexport_symbol-missing-file",
+        "unexport_symbol-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [
+        {
+          "scenario": "unexport_symbol-behavior",
+          "evidence": "build/mcp-harness/run-4_n7hgf2",
+          "artifact": "7a7eff9cf3811ea7b47320455e2b078b43dd2cf5bea7bc24509c156d8a8a978a"
+        },
+        {
+          "scenario": "unexport_symbol-behavior",
+          "evidence": "build/mcp-harness/run-x5lxrxa2",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        }
+      ],
+      "latestEvidence": "build/mcp-harness/run-x5lxrxa2",
+      "complete": false
+    },
+    {
+      "tool": "unwrap_items_to_expected_type",
+      "available": true,
+      "directSuccess": "untested",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "untested"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "unwrap_items_to_expected_type-missing-file",
+        "unwrap_items_to_expected_type-success"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": "build/mcp-harness/run-2mu0fmto",
+      "complete": false
+    },
+    {
+      "tool": "unwrap_to_expected_type",
+      "available": true,
+      "directSuccess": "untested",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "untested"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "unwrap_to_expected_type-missing-file",
+        "unwrap_to_expected_type-success"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": "build/mcp-harness/run-2mu0fmto",
+      "complete": false
+    },
+    {
+      "tool": "use_actual_test_outcome",
+      "available": true,
+      "directSuccess": "missing",
+      "semanticFailure": "missing",
+      "variants": {
+        "failed_assertion": "missing"
+      },
+      "junie": "missing",
+      "scenarioIds": [
+        "use_actual_test_outcome-missing-file"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": null,
+      "complete": false
+    },
+    {
+      "tool": "uv_script_entry_points",
+      "available": true,
+      "directSuccess": "untested",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "untested"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "uv_script_entry_points-missing-file",
+        "uv_script_entry_points-success"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": "build/mcp-harness/run-2mu0fmto",
+      "complete": false
+    },
+    {
+      "tool": "wrap_exceptions_with_parentheses",
+      "available": true,
+      "directSuccess": "untested",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "untested"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "wrap_exceptions_with_parentheses-missing-file",
+        "wrap_exceptions_with_parentheses-success"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": "build/mcp-harness/run-2mu0fmto",
+      "complete": false
+    },
+    {
+      "tool": "wrap_items_with_expected_type",
+      "available": true,
+      "directSuccess": "failed",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "failed"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "wrap_items_with_expected_type-missing-file",
+        "wrap_items_with_expected_type-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [
+        {
+          "scenario": "wrap_items_with_expected_type-behavior",
+          "evidence": "build/mcp-harness/run-727czjss",
+          "artifact": "7a7eff9cf3811ea7b47320455e2b078b43dd2cf5bea7bc24509c156d8a8a978a"
+        },
+        {
+          "scenario": "wrap_items_with_expected_type-behavior",
+          "evidence": "build/mcp-harness/run-x5lxrxa2",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        }
+      ],
+      "latestEvidence": "build/mcp-harness/run-x5lxrxa2",
+      "complete": false
+    },
+    {
+      "tool": "wrap_test_in_class",
+      "available": true,
+      "directSuccess": "failed",
+      "semanticFailure": "missing",
+      "variants": {
+        "create": "failed",
+        "existing": "missing"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "wrap_test_in_class-missing-file",
+        "wrap_test_in_class-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [
+        {
+          "scenario": "wrap_test_in_class-behavior",
+          "evidence": "build/mcp-harness/run-727czjss",
+          "artifact": "7a7eff9cf3811ea7b47320455e2b078b43dd2cf5bea7bc24509c156d8a8a978a"
+        },
+        {
+          "scenario": "wrap_test_in_class-behavior",
+          "evidence": "build/mcp-harness/run-x5lxrxa2",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        }
+      ],
+      "latestEvidence": "build/mcp-harness/run-x5lxrxa2",
+      "complete": false
+    },
+    {
+      "tool": "wrap_type_annotation_in_string",
+      "available": true,
+      "directSuccess": "untested",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "untested"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "wrap_type_annotation_in_string-missing-file",
+        "wrap_type_annotation_in_string-success"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": "build/mcp-harness/run-2mu0fmto",
+      "complete": false
+    },
+    {
+      "tool": "wrap_with_annotated",
+      "available": true,
+      "directSuccess": "untested",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "untested"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "wrap_with_annotated-missing-file",
+        "wrap_with_annotated-success"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [],
+      "latestEvidence": "build/mcp-harness/run-2mu0fmto",
+      "complete": false
+    },
+    {
+      "tool": "wrap_with_expected_type",
+      "available": true,
+      "directSuccess": "failed",
+      "semanticFailure": "missing",
+      "variants": {
+        "default": "failed"
+      },
+      "junie": "untested",
+      "scenarioIds": [
+        "wrap_with_expected_type-missing-file",
+        "wrap_with_expected_type-behavior"
+      ],
+      "validationArtifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4",
+      "historicalFailures": [
+        {
+          "scenario": "wrap_with_expected_type-behavior",
+          "evidence": "build/mcp-harness/run-727czjss",
+          "artifact": "7a7eff9cf3811ea7b47320455e2b078b43dd2cf5bea7bc24509c156d8a8a978a"
+        },
+        {
+          "scenario": "wrap_with_expected_type-behavior",
+          "evidence": "build/mcp-harness/run-x5lxrxa2",
+          "artifact": "6e210097be149711a06a35cdbd07864b3165f151ca089dbb3d82f36db38a45a4"
+        }
+      ],
+      "latestEvidence": "build/mcp-harness/run-x5lxrxa2",
+      "complete": false
+    }
+  ]
+}
