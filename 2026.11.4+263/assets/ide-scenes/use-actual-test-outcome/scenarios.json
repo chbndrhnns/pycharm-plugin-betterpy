@@ -1,0 +1,5975 @@
+[
+  {
+    "version": 1,
+    "id": "use-actual-outcome",
+    "title": "Use actual outcome",
+    "description": "Review the result from a failed test, then update its expected value.",
+    "link": "",
+    "files": {
+      "test_total.py": {
+        "before": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n",
+        "after": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 30\n",
+        "language": "python"
+      }
+    },
+    "layout": {
+      "editor": "test_total.py",
+      "project": "my_python_project",
+      "panels": [
+        {
+          "id": "test-results",
+          "title": "Test results \u00b7 Last run",
+          "position": "bottom"
+        }
+      ]
+    },
+    "duration": 10541,
+    "boundaries": [
+      0,
+      1000,
+      1380,
+      2580,
+      3780,
+      3781,
+      4781,
+      5781,
+      8541,
+      9541,
+      10541
+    ],
+    "runs": [
+      {
+        "marker": "run-total",
+        "target": "test_total.py::test_total",
+        "start": 1380,
+        "end": 2580
+      }
+    ],
+    "segments": {},
+    "entry": 0,
+    "branches": {
+      "__dismiss__/main/8": {
+        "frames": [
+          {
+            "time": 0,
+            "state": {
+              "files": {
+                "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+              },
+              "file_paths": {
+                "test_total.py": "test_total.py"
+              },
+              "editor_groups": null,
+              "saved_layouts": {},
+              "diff_view": null,
+              "annotations": {},
+              "injections": {},
+              "environment": {},
+              "settings": null,
+              "transcript": null,
+              "directories": [],
+              "source_roots": [],
+              "transaction": null,
+              "undo_stack": [],
+              "redo_stack": [],
+              "active_file": "test_total.py",
+              "selection": {
+                "file": "test_total.py",
+                "start": 76,
+                "end": 78
+              },
+              "caret": {
+                "file": "test_total.py",
+                "offset": 76
+              },
+              "diagnostics": [],
+              "menu": null,
+              "modal": null,
+              "gutters": {},
+              "decision": null,
+              "chooser": null,
+              "completion": null,
+              "caption": "Review the result from a failed test, then update its expected value.",
+              "edit": null,
+              "mouse": {
+                "from": {
+                  "surface": "titlebar"
+                },
+                "target": {
+                  "surface": "titlebar"
+                },
+                "origins": [],
+                "start": 0,
+                "end": 0,
+                "click_end": null
+              },
+              "documentation": null,
+              "clipboard": null,
+              "notification": "",
+              "panels": {
+                "test-results": {
+                  "id": "test-results",
+                  "title": "Test results \u00b7 Last run",
+                  "position": "bottom",
+                  "visible": false,
+                  "text": "",
+                  "status": "info"
+                }
+              },
+              "tokens": {
+                "test_total.py": "0"
+              }
+            },
+            "navigate": {}
+          },
+          {
+            "time": 1000,
+            "state": {
+              "files": {
+                "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+              },
+              "file_paths": {
+                "test_total.py": "test_total.py"
+              },
+              "editor_groups": null,
+              "saved_layouts": {},
+              "diff_view": null,
+              "annotations": {},
+              "injections": {},
+              "environment": {},
+              "settings": null,
+              "transcript": null,
+              "directories": [],
+              "source_roots": [],
+              "transaction": null,
+              "undo_stack": [],
+              "redo_stack": [],
+              "active_file": "test_total.py",
+              "selection": {
+                "file": "test_total.py",
+                "start": 76,
+                "end": 78
+              },
+              "caret": {
+                "file": "test_total.py",
+                "offset": 76
+              },
+              "diagnostics": [],
+              "menu": null,
+              "modal": null,
+              "gutters": {
+                "run-total": {
+                  "file": "test_total.py",
+                  "start": 0,
+                  "end": 14,
+                  "id": "run-total",
+                  "label": "Run test_total"
+                }
+              },
+              "decision": null,
+              "chooser": null,
+              "completion": null,
+              "caption": "Review the result from a failed test, then update its expected value.",
+              "edit": null,
+              "mouse": {
+                "from": {
+                  "surface": "titlebar"
+                },
+                "target": {
+                  "surface": "gutter",
+                  "id": "run-total"
+                },
+                "origins": [
+                  {
+                    "surface": "titlebar"
+                  }
+                ],
+                "start": 1000,
+                "end": 1300,
+                "click_end": 1380
+              },
+              "documentation": null,
+              "clipboard": null,
+              "notification": "",
+              "panels": {
+                "test-results": {
+                  "id": "test-results",
+                  "title": "Test results \u00b7 Last run",
+                  "position": "bottom",
+                  "visible": false,
+                  "text": "",
+                  "status": "info"
+                }
+              },
+              "tokens": {
+                "test_total.py": "0"
+              }
+            },
+            "navigate": {}
+          },
+          {
+            "time": 1380,
+            "state": {
+              "files": {
+                "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+              },
+              "file_paths": {
+                "test_total.py": "test_total.py"
+              },
+              "editor_groups": null,
+              "saved_layouts": {},
+              "diff_view": null,
+              "annotations": {},
+              "injections": {},
+              "environment": {},
+              "settings": null,
+              "transcript": null,
+              "directories": [],
+              "source_roots": [],
+              "transaction": null,
+              "undo_stack": [],
+              "redo_stack": [],
+              "active_file": "test_total.py",
+              "selection": null,
+              "caret": null,
+              "diagnostics": [],
+              "menu": null,
+              "modal": null,
+              "gutters": {
+                "run-total": {
+                  "file": "test_total.py",
+                  "start": 0,
+                  "end": 14,
+                  "id": "run-total",
+                  "label": "Run test_total"
+                }
+              },
+              "decision": null,
+              "chooser": null,
+              "completion": null,
+              "caption": "Review the result from a failed test, then update its expected value.",
+              "edit": null,
+              "mouse": {
+                "from": {
+                  "surface": "titlebar"
+                },
+                "target": {
+                  "surface": "gutter",
+                  "id": "run-total"
+                },
+                "origins": [
+                  {
+                    "surface": "titlebar"
+                  }
+                ],
+                "start": 1000,
+                "end": 1300,
+                "click_end": 1380
+              },
+              "documentation": null,
+              "clipboard": null,
+              "notification": "",
+              "panels": {
+                "test-results": {
+                  "id": "test-results",
+                  "title": "Test results \u00b7 Last run",
+                  "position": "bottom",
+                  "visible": true,
+                  "text": "Running test_total.py::test_total",
+                  "status": "running"
+                }
+              },
+              "tokens": {
+                "test_total.py": "0"
+              }
+            },
+            "navigate": {}
+          },
+          {
+            "time": 2580,
+            "state": {
+              "files": {
+                "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+              },
+              "file_paths": {
+                "test_total.py": "test_total.py"
+              },
+              "editor_groups": null,
+              "saved_layouts": {},
+              "diff_view": null,
+              "annotations": {},
+              "injections": {},
+              "environment": {},
+              "settings": null,
+              "transcript": null,
+              "directories": [],
+              "source_roots": [],
+              "transaction": null,
+              "undo_stack": [],
+              "redo_stack": [],
+              "active_file": "test_total.py",
+              "selection": null,
+              "caret": null,
+              "diagnostics": [],
+              "menu": null,
+              "modal": null,
+              "gutters": {
+                "run-total": {
+                  "file": "test_total.py",
+                  "start": 0,
+                  "end": 14,
+                  "id": "run-total",
+                  "label": "Run test_total"
+                }
+              },
+              "decision": null,
+              "chooser": null,
+              "completion": null,
+              "caption": "Review the result from a failed test, then update its expected value.",
+              "edit": null,
+              "mouse": {
+                "from": {
+                  "surface": "titlebar"
+                },
+                "target": {
+                  "surface": "gutter",
+                  "id": "run-total"
+                },
+                "origins": [
+                  {
+                    "surface": "titlebar"
+                  }
+                ],
+                "start": 1000,
+                "end": 1300,
+                "click_end": 1380
+              },
+              "documentation": null,
+              "clipboard": null,
+              "notification": "",
+              "panels": {
+                "test-results": {
+                  "id": "test-results",
+                  "title": "Test results \u00b7 Last run",
+                  "position": "bottom",
+                  "visible": true,
+                  "text": "test_total failed\nExpected: 25 \u2192 Actual: 30",
+                  "status": "failed"
+                }
+              },
+              "tokens": {
+                "test_total.py": "0"
+              }
+            },
+            "navigate": {}
+          },
+          {
+            "time": 3780,
+            "state": {
+              "files": {
+                "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+              },
+              "file_paths": {
+                "test_total.py": "test_total.py"
+              },
+              "editor_groups": null,
+              "saved_layouts": {},
+              "diff_view": null,
+              "annotations": {},
+              "injections": {},
+              "environment": {},
+              "settings": null,
+              "transcript": null,
+              "directories": [],
+              "source_roots": [],
+              "transaction": null,
+              "undo_stack": [],
+              "redo_stack": [],
+              "active_file": "test_total.py",
+              "selection": null,
+              "caret": null,
+              "diagnostics": [],
+              "menu": null,
+              "modal": null,
+              "gutters": {
+                "run-total": {
+                  "file": "test_total.py",
+                  "start": 0,
+                  "end": 14,
+                  "id": "run-total",
+                  "label": "Run test_total"
+                }
+              },
+              "decision": null,
+              "chooser": null,
+              "completion": null,
+              "caption": "Review the result from a failed test, then update its expected value.",
+              "edit": null,
+              "mouse": {
+                "from": {
+                  "surface": "titlebar"
+                },
+                "target": {
+                  "surface": "gutter",
+                  "id": "run-total"
+                },
+                "origins": [
+                  {
+                    "surface": "titlebar"
+                  }
+                ],
+                "start": 1000,
+                "end": 1300,
+                "click_end": 1380
+              },
+              "documentation": null,
+              "clipboard": null,
+              "notification": "",
+              "panels": {
+                "test-results": {
+                  "id": "test-results",
+                  "title": "Test results \u00b7 Last run",
+                  "position": "bottom",
+                  "visible": true,
+                  "text": "test_total failed\nExpected: 25 \u2192 Actual: 30",
+                  "status": "failed"
+                }
+              },
+              "tokens": {
+                "test_total.py": "0"
+              }
+            },
+            "navigate": {}
+          },
+          {
+            "time": 3781,
+            "state": {
+              "files": {
+                "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+              },
+              "file_paths": {
+                "test_total.py": "test_total.py"
+              },
+              "editor_groups": null,
+              "saved_layouts": {},
+              "diff_view": null,
+              "annotations": {},
+              "injections": {},
+              "environment": {},
+              "settings": null,
+              "transcript": null,
+              "directories": [],
+              "source_roots": [],
+              "transaction": null,
+              "undo_stack": [],
+              "redo_stack": [],
+              "active_file": "test_total.py",
+              "selection": null,
+              "caret": null,
+              "diagnostics": [
+                {
+                  "file": "test_total.py",
+                  "start": 76,
+                  "end": 78,
+                  "severity": "error",
+                  "message": "AssertionError: expected 25, got 30"
+                }
+              ],
+              "menu": null,
+              "modal": null,
+              "gutters": {
+                "run-total": {
+                  "file": "test_total.py",
+                  "start": 0,
+                  "end": 14,
+                  "id": "run-total",
+                  "label": "Run test_total"
+                }
+              },
+              "decision": null,
+              "chooser": null,
+              "completion": null,
+              "caption": "Review the result from a failed test, then update its expected value.",
+              "edit": null,
+              "mouse": {
+                "from": {
+                  "surface": "titlebar"
+                },
+                "target": {
+                  "surface": "gutter",
+                  "id": "run-total"
+                },
+                "origins": [
+                  {
+                    "surface": "titlebar"
+                  }
+                ],
+                "start": 1000,
+                "end": 1300,
+                "click_end": 1380
+              },
+              "documentation": null,
+              "clipboard": null,
+              "notification": "",
+              "panels": {
+                "test-results": {
+                  "id": "test-results",
+                  "title": "Test results \u00b7 Last run",
+                  "position": "bottom",
+                  "visible": true,
+                  "text": "test_total failed\nExpected: 25 \u2192 Actual: 30",
+                  "status": "failed"
+                }
+              },
+              "tokens": {
+                "test_total.py": "0"
+              }
+            },
+            "navigate": {}
+          },
+          {
+            "time": 4781,
+            "state": {
+              "files": {
+                "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+              },
+              "file_paths": {
+                "test_total.py": "test_total.py"
+              },
+              "editor_groups": null,
+              "saved_layouts": {},
+              "diff_view": null,
+              "annotations": {},
+              "injections": {},
+              "environment": {},
+              "settings": null,
+              "transcript": null,
+              "directories": [],
+              "source_roots": [],
+              "transaction": null,
+              "undo_stack": [],
+              "redo_stack": [],
+              "active_file": "test_total.py",
+              "selection": null,
+              "caret": null,
+              "diagnostics": [
+                {
+                  "file": "test_total.py",
+                  "start": 76,
+                  "end": 78,
+                  "severity": "error",
+                  "message": "AssertionError: expected 25, got 30"
+                }
+              ],
+              "menu": null,
+              "modal": null,
+              "gutters": {
+                "run-total": {
+                  "file": "test_total.py",
+                  "start": 0,
+                  "end": 14,
+                  "id": "run-total",
+                  "label": "Run test_total"
+                }
+              },
+              "decision": null,
+              "chooser": null,
+              "completion": null,
+              "caption": "The result is right. Update the expectation.",
+              "edit": null,
+              "mouse": {
+                "from": {
+                  "surface": "titlebar"
+                },
+                "target": {
+                  "surface": "gutter",
+                  "id": "run-total"
+                },
+                "origins": [
+                  {
+                    "surface": "titlebar"
+                  }
+                ],
+                "start": 1000,
+                "end": 1300,
+                "click_end": 1380
+              },
+              "documentation": null,
+              "clipboard": null,
+              "notification": "",
+              "panels": {
+                "test-results": {
+                  "id": "test-results",
+                  "title": "Test results \u00b7 Last run",
+                  "position": "bottom",
+                  "visible": true,
+                  "text": "test_total failed\nExpected: 25 \u2192 Actual: 30",
+                  "status": "failed"
+                }
+              },
+              "tokens": {
+                "test_total.py": "0"
+              }
+            },
+            "navigate": {}
+          },
+          {
+            "time": 5781,
+            "state": {
+              "files": {
+                "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+              },
+              "file_paths": {
+                "test_total.py": "test_total.py"
+              },
+              "editor_groups": null,
+              "saved_layouts": {},
+              "diff_view": null,
+              "annotations": {},
+              "injections": {},
+              "environment": {},
+              "settings": null,
+              "transcript": null,
+              "directories": [],
+              "source_roots": [],
+              "transaction": null,
+              "undo_stack": [],
+              "redo_stack": [],
+              "active_file": "test_total.py",
+              "selection": {
+                "file": "test_total.py",
+                "start": 76,
+                "end": 78
+              },
+              "caret": {
+                "file": "test_total.py",
+                "offset": 78
+              },
+              "diagnostics": [
+                {
+                  "file": "test_total.py",
+                  "start": 76,
+                  "end": 78,
+                  "severity": "error",
+                  "message": "AssertionError: expected 25, got 30"
+                }
+              ],
+              "menu": null,
+              "modal": null,
+              "gutters": {
+                "run-total": {
+                  "file": "test_total.py",
+                  "start": 0,
+                  "end": 14,
+                  "id": "run-total",
+                  "label": "Run test_total"
+                }
+              },
+              "decision": null,
+              "chooser": null,
+              "completion": null,
+              "caption": "The result is right. Update the expectation.",
+              "edit": null,
+              "mouse": {
+                "from": {
+                  "surface": "gutter",
+                  "id": "run-total"
+                },
+                "target": {
+                  "surface": "caret"
+                },
+                "origins": [
+                  {
+                    "surface": "titlebar"
+                  },
+                  {
+                    "surface": "titlebar"
+                  }
+                ],
+                "start": 5781,
+                "end": 6081,
+                "click_end": 6161
+              },
+              "documentation": null,
+              "clipboard": null,
+              "notification": "",
+              "panels": {
+                "test-results": {
+                  "id": "test-results",
+                  "title": "Test results \u00b7 Last run",
+                  "position": "bottom",
+                  "visible": true,
+                  "text": "test_total failed\nExpected: 25 \u2192 Actual: 30",
+                  "status": "failed"
+                }
+              },
+              "tokens": {
+                "test_total.py": "0"
+              }
+            },
+            "navigate": {}
+          },
+          {
+            "time": 6161,
+            "state": {
+              "files": {
+                "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+              },
+              "file_paths": {
+                "test_total.py": "test_total.py"
+              },
+              "editor_groups": null,
+              "saved_layouts": {},
+              "diff_view": null,
+              "annotations": {},
+              "injections": {},
+              "environment": {},
+              "settings": null,
+              "transcript": null,
+              "directories": [],
+              "source_roots": [],
+              "transaction": null,
+              "undo_stack": [],
+              "redo_stack": [],
+              "active_file": "test_total.py",
+              "selection": {
+                "file": "test_total.py",
+                "start": 76,
+                "end": 78
+              },
+              "caret": {
+                "file": "test_total.py",
+                "offset": 78
+              },
+              "diagnostics": [
+                {
+                  "file": "test_total.py",
+                  "start": 76,
+                  "end": 78,
+                  "severity": "error",
+                  "message": "AssertionError: expected 25, got 30"
+                }
+              ],
+              "menu": {
+                "kind": "context_menu",
+                "title": "Context actions",
+                "items": [
+                  {
+                    "id": "use-actual",
+                    "label": "Use actual test outcome",
+                    "shortcut": "Enter"
+                  },
+                  {
+                    "id": "explain",
+                    "label": "Explain inspection"
+                  }
+                ],
+                "path": [],
+                "selected": null,
+                "anchor": {
+                  "surface": "caret"
+                }
+              },
+              "modal": null,
+              "gutters": {
+                "run-total": {
+                  "file": "test_total.py",
+                  "start": 0,
+                  "end": 14,
+                  "id": "run-total",
+                  "label": "Run test_total"
+                }
+              },
+              "decision": null,
+              "chooser": null,
+              "completion": null,
+              "caption": "The result is right. Update the expectation.",
+              "edit": null,
+              "mouse": {
+                "from": {
+                  "surface": "gutter",
+                  "id": "run-total"
+                },
+                "target": {
+                  "surface": "caret"
+                },
+                "origins": [
+                  {
+                    "surface": "titlebar"
+                  },
+                  {
+                    "surface": "titlebar"
+                  }
+                ],
+                "start": 5781,
+                "end": 6081,
+                "click_end": 6161
+              },
+              "documentation": null,
+              "clipboard": null,
+              "notification": "",
+              "panels": {
+                "test-results": {
+                  "id": "test-results",
+                  "title": "Test results \u00b7 Last run",
+                  "position": "bottom",
+                  "visible": true,
+                  "text": "test_total failed\nExpected: 25 \u2192 Actual: 30",
+                  "status": "failed"
+                }
+              },
+              "tokens": {
+                "test_total.py": "0"
+              }
+            },
+            "dismiss": "__dismiss__/main/8",
+            "navigate": {}
+          },
+          {
+            "time": 6162,
+            "state": {
+              "files": {
+                "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+              },
+              "file_paths": {
+                "test_total.py": "test_total.py"
+              },
+              "editor_groups": null,
+              "saved_layouts": {},
+              "diff_view": null,
+              "annotations": {},
+              "injections": {},
+              "environment": {},
+              "settings": null,
+              "transcript": null,
+              "directories": [],
+              "source_roots": [],
+              "transaction": null,
+              "undo_stack": [],
+              "redo_stack": [],
+              "active_file": "test_total.py",
+              "selection": {
+                "file": "test_total.py",
+                "start": 76,
+                "end": 78
+              },
+              "caret": {
+                "file": "test_total.py",
+                "offset": 78
+              },
+              "diagnostics": [
+                {
+                  "file": "test_total.py",
+                  "start": 76,
+                  "end": 78,
+                  "severity": "error",
+                  "message": "AssertionError: expected 25, got 30"
+                }
+              ],
+              "menu": null,
+              "modal": null,
+              "gutters": {
+                "run-total": {
+                  "file": "test_total.py",
+                  "start": 0,
+                  "end": 14,
+                  "id": "run-total",
+                  "label": "Run test_total"
+                }
+              },
+              "decision": null,
+              "chooser": null,
+              "completion": null,
+              "caption": "The result is right. Update the expectation.",
+              "edit": null,
+              "mouse": {
+                "from": {
+                  "surface": "gutter",
+                  "id": "run-total"
+                },
+                "target": {
+                  "surface": "caret"
+                },
+                "origins": [
+                  {
+                    "surface": "titlebar"
+                  },
+                  {
+                    "surface": "titlebar"
+                  }
+                ],
+                "start": 5781,
+                "end": 6081,
+                "click_end": 6161
+              },
+              "documentation": null,
+              "clipboard": null,
+              "notification": "",
+              "panels": {
+                "test-results": {
+                  "id": "test-results",
+                  "title": "Test results \u00b7 Last run",
+                  "position": "bottom",
+                  "visible": true,
+                  "text": "test_total failed\nExpected: 25 \u2192 Actual: 30",
+                  "status": "failed"
+                }
+              },
+              "tokens": {
+                "test_total.py": "0"
+              }
+            }
+          }
+        ],
+        "duration": 6162,
+        "entry": 6161,
+        "boundaries": [
+          0,
+          1000,
+          1380,
+          2580,
+          3780,
+          3781,
+          4781,
+          5781,
+          6162
+        ],
+        "runs": [],
+        "segments": {},
+        "branches": {}
+      },
+      "__dismiss__/main/9": {
+        "frames": [
+          {
+            "time": 0,
+            "state": {
+              "files": {
+                "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+              },
+              "file_paths": {
+                "test_total.py": "test_total.py"
+              },
+              "editor_groups": null,
+              "saved_layouts": {},
+              "diff_view": null,
+              "annotations": {},
+              "injections": {},
+              "environment": {},
+              "settings": null,
+              "transcript": null,
+              "directories": [],
+              "source_roots": [],
+              "transaction": null,
+              "undo_stack": [],
+              "redo_stack": [],
+              "active_file": "test_total.py",
+              "selection": {
+                "file": "test_total.py",
+                "start": 76,
+                "end": 78
+              },
+              "caret": {
+                "file": "test_total.py",
+                "offset": 76
+              },
+              "diagnostics": [],
+              "menu": null,
+              "modal": null,
+              "gutters": {},
+              "decision": null,
+              "chooser": null,
+              "completion": null,
+              "caption": "Review the result from a failed test, then update its expected value.",
+              "edit": null,
+              "mouse": {
+                "from": {
+                  "surface": "titlebar"
+                },
+                "target": {
+                  "surface": "titlebar"
+                },
+                "origins": [],
+                "start": 0,
+                "end": 0,
+                "click_end": null
+              },
+              "documentation": null,
+              "clipboard": null,
+              "notification": "",
+              "panels": {
+                "test-results": {
+                  "id": "test-results",
+                  "title": "Test results \u00b7 Last run",
+                  "position": "bottom",
+                  "visible": false,
+                  "text": "",
+                  "status": "info"
+                }
+              },
+              "tokens": {
+                "test_total.py": "0"
+              }
+            },
+            "navigate": {}
+          },
+          {
+            "time": 1000,
+            "state": {
+              "files": {
+                "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+              },
+              "file_paths": {
+                "test_total.py": "test_total.py"
+              },
+              "editor_groups": null,
+              "saved_layouts": {},
+              "diff_view": null,
+              "annotations": {},
+              "injections": {},
+              "environment": {},
+              "settings": null,
+              "transcript": null,
+              "directories": [],
+              "source_roots": [],
+              "transaction": null,
+              "undo_stack": [],
+              "redo_stack": [],
+              "active_file": "test_total.py",
+              "selection": {
+                "file": "test_total.py",
+                "start": 76,
+                "end": 78
+              },
+              "caret": {
+                "file": "test_total.py",
+                "offset": 76
+              },
+              "diagnostics": [],
+              "menu": null,
+              "modal": null,
+              "gutters": {
+                "run-total": {
+                  "file": "test_total.py",
+                  "start": 0,
+                  "end": 14,
+                  "id": "run-total",
+                  "label": "Run test_total"
+                }
+              },
+              "decision": null,
+              "chooser": null,
+              "completion": null,
+              "caption": "Review the result from a failed test, then update its expected value.",
+              "edit": null,
+              "mouse": {
+                "from": {
+                  "surface": "titlebar"
+                },
+                "target": {
+                  "surface": "gutter",
+                  "id": "run-total"
+                },
+                "origins": [
+                  {
+                    "surface": "titlebar"
+                  }
+                ],
+                "start": 1000,
+                "end": 1300,
+                "click_end": 1380
+              },
+              "documentation": null,
+              "clipboard": null,
+              "notification": "",
+              "panels": {
+                "test-results": {
+                  "id": "test-results",
+                  "title": "Test results \u00b7 Last run",
+                  "position": "bottom",
+                  "visible": false,
+                  "text": "",
+                  "status": "info"
+                }
+              },
+              "tokens": {
+                "test_total.py": "0"
+              }
+            },
+            "navigate": {}
+          },
+          {
+            "time": 1380,
+            "state": {
+              "files": {
+                "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+              },
+              "file_paths": {
+                "test_total.py": "test_total.py"
+              },
+              "editor_groups": null,
+              "saved_layouts": {},
+              "diff_view": null,
+              "annotations": {},
+              "injections": {},
+              "environment": {},
+              "settings": null,
+              "transcript": null,
+              "directories": [],
+              "source_roots": [],
+              "transaction": null,
+              "undo_stack": [],
+              "redo_stack": [],
+              "active_file": "test_total.py",
+              "selection": null,
+              "caret": null,
+              "diagnostics": [],
+              "menu": null,
+              "modal": null,
+              "gutters": {
+                "run-total": {
+                  "file": "test_total.py",
+                  "start": 0,
+                  "end": 14,
+                  "id": "run-total",
+                  "label": "Run test_total"
+                }
+              },
+              "decision": null,
+              "chooser": null,
+              "completion": null,
+              "caption": "Review the result from a failed test, then update its expected value.",
+              "edit": null,
+              "mouse": {
+                "from": {
+                  "surface": "titlebar"
+                },
+                "target": {
+                  "surface": "gutter",
+                  "id": "run-total"
+                },
+                "origins": [
+                  {
+                    "surface": "titlebar"
+                  }
+                ],
+                "start": 1000,
+                "end": 1300,
+                "click_end": 1380
+              },
+              "documentation": null,
+              "clipboard": null,
+              "notification": "",
+              "panels": {
+                "test-results": {
+                  "id": "test-results",
+                  "title": "Test results \u00b7 Last run",
+                  "position": "bottom",
+                  "visible": true,
+                  "text": "Running test_total.py::test_total",
+                  "status": "running"
+                }
+              },
+              "tokens": {
+                "test_total.py": "0"
+              }
+            },
+            "navigate": {}
+          },
+          {
+            "time": 2580,
+            "state": {
+              "files": {
+                "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+              },
+              "file_paths": {
+                "test_total.py": "test_total.py"
+              },
+              "editor_groups": null,
+              "saved_layouts": {},
+              "diff_view": null,
+              "annotations": {},
+              "injections": {},
+              "environment": {},
+              "settings": null,
+              "transcript": null,
+              "directories": [],
+              "source_roots": [],
+              "transaction": null,
+              "undo_stack": [],
+              "redo_stack": [],
+              "active_file": "test_total.py",
+              "selection": null,
+              "caret": null,
+              "diagnostics": [],
+              "menu": null,
+              "modal": null,
+              "gutters": {
+                "run-total": {
+                  "file": "test_total.py",
+                  "start": 0,
+                  "end": 14,
+                  "id": "run-total",
+                  "label": "Run test_total"
+                }
+              },
+              "decision": null,
+              "chooser": null,
+              "completion": null,
+              "caption": "Review the result from a failed test, then update its expected value.",
+              "edit": null,
+              "mouse": {
+                "from": {
+                  "surface": "titlebar"
+                },
+                "target": {
+                  "surface": "gutter",
+                  "id": "run-total"
+                },
+                "origins": [
+                  {
+                    "surface": "titlebar"
+                  }
+                ],
+                "start": 1000,
+                "end": 1300,
+                "click_end": 1380
+              },
+              "documentation": null,
+              "clipboard": null,
+              "notification": "",
+              "panels": {
+                "test-results": {
+                  "id": "test-results",
+                  "title": "Test results \u00b7 Last run",
+                  "position": "bottom",
+                  "visible": true,
+                  "text": "test_total failed\nExpected: 25 \u2192 Actual: 30",
+                  "status": "failed"
+                }
+              },
+              "tokens": {
+                "test_total.py": "0"
+              }
+            },
+            "navigate": {}
+          },
+          {
+            "time": 3780,
+            "state": {
+              "files": {
+                "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+              },
+              "file_paths": {
+                "test_total.py": "test_total.py"
+              },
+              "editor_groups": null,
+              "saved_layouts": {},
+              "diff_view": null,
+              "annotations": {},
+              "injections": {},
+              "environment": {},
+              "settings": null,
+              "transcript": null,
+              "directories": [],
+              "source_roots": [],
+              "transaction": null,
+              "undo_stack": [],
+              "redo_stack": [],
+              "active_file": "test_total.py",
+              "selection": null,
+              "caret": null,
+              "diagnostics": [],
+              "menu": null,
+              "modal": null,
+              "gutters": {
+                "run-total": {
+                  "file": "test_total.py",
+                  "start": 0,
+                  "end": 14,
+                  "id": "run-total",
+                  "label": "Run test_total"
+                }
+              },
+              "decision": null,
+              "chooser": null,
+              "completion": null,
+              "caption": "Review the result from a failed test, then update its expected value.",
+              "edit": null,
+              "mouse": {
+                "from": {
+                  "surface": "titlebar"
+                },
+                "target": {
+                  "surface": "gutter",
+                  "id": "run-total"
+                },
+                "origins": [
+                  {
+                    "surface": "titlebar"
+                  }
+                ],
+                "start": 1000,
+                "end": 1300,
+                "click_end": 1380
+              },
+              "documentation": null,
+              "clipboard": null,
+              "notification": "",
+              "panels": {
+                "test-results": {
+                  "id": "test-results",
+                  "title": "Test results \u00b7 Last run",
+                  "position": "bottom",
+                  "visible": true,
+                  "text": "test_total failed\nExpected: 25 \u2192 Actual: 30",
+                  "status": "failed"
+                }
+              },
+              "tokens": {
+                "test_total.py": "0"
+              }
+            },
+            "navigate": {}
+          },
+          {
+            "time": 3781,
+            "state": {
+              "files": {
+                "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+              },
+              "file_paths": {
+                "test_total.py": "test_total.py"
+              },
+              "editor_groups": null,
+              "saved_layouts": {},
+              "diff_view": null,
+              "annotations": {},
+              "injections": {},
+              "environment": {},
+              "settings": null,
+              "transcript": null,
+              "directories": [],
+              "source_roots": [],
+              "transaction": null,
+              "undo_stack": [],
+              "redo_stack": [],
+              "active_file": "test_total.py",
+              "selection": null,
+              "caret": null,
+              "diagnostics": [
+                {
+                  "file": "test_total.py",
+                  "start": 76,
+                  "end": 78,
+                  "severity": "error",
+                  "message": "AssertionError: expected 25, got 30"
+                }
+              ],
+              "menu": null,
+              "modal": null,
+              "gutters": {
+                "run-total": {
+                  "file": "test_total.py",
+                  "start": 0,
+                  "end": 14,
+                  "id": "run-total",
+                  "label": "Run test_total"
+                }
+              },
+              "decision": null,
+              "chooser": null,
+              "completion": null,
+              "caption": "Review the result from a failed test, then update its expected value.",
+              "edit": null,
+              "mouse": {
+                "from": {
+                  "surface": "titlebar"
+                },
+                "target": {
+                  "surface": "gutter",
+                  "id": "run-total"
+                },
+                "origins": [
+                  {
+                    "surface": "titlebar"
+                  }
+                ],
+                "start": 1000,
+                "end": 1300,
+                "click_end": 1380
+              },
+              "documentation": null,
+              "clipboard": null,
+              "notification": "",
+              "panels": {
+                "test-results": {
+                  "id": "test-results",
+                  "title": "Test results \u00b7 Last run",
+                  "position": "bottom",
+                  "visible": true,
+                  "text": "test_total failed\nExpected: 25 \u2192 Actual: 30",
+                  "status": "failed"
+                }
+              },
+              "tokens": {
+                "test_total.py": "0"
+              }
+            },
+            "navigate": {}
+          },
+          {
+            "time": 4781,
+            "state": {
+              "files": {
+                "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+              },
+              "file_paths": {
+                "test_total.py": "test_total.py"
+              },
+              "editor_groups": null,
+              "saved_layouts": {},
+              "diff_view": null,
+              "annotations": {},
+              "injections": {},
+              "environment": {},
+              "settings": null,
+              "transcript": null,
+              "directories": [],
+              "source_roots": [],
+              "transaction": null,
+              "undo_stack": [],
+              "redo_stack": [],
+              "active_file": "test_total.py",
+              "selection": null,
+              "caret": null,
+              "diagnostics": [
+                {
+                  "file": "test_total.py",
+                  "start": 76,
+                  "end": 78,
+                  "severity": "error",
+                  "message": "AssertionError: expected 25, got 30"
+                }
+              ],
+              "menu": null,
+              "modal": null,
+              "gutters": {
+                "run-total": {
+                  "file": "test_total.py",
+                  "start": 0,
+                  "end": 14,
+                  "id": "run-total",
+                  "label": "Run test_total"
+                }
+              },
+              "decision": null,
+              "chooser": null,
+              "completion": null,
+              "caption": "The result is right. Update the expectation.",
+              "edit": null,
+              "mouse": {
+                "from": {
+                  "surface": "titlebar"
+                },
+                "target": {
+                  "surface": "gutter",
+                  "id": "run-total"
+                },
+                "origins": [
+                  {
+                    "surface": "titlebar"
+                  }
+                ],
+                "start": 1000,
+                "end": 1300,
+                "click_end": 1380
+              },
+              "documentation": null,
+              "clipboard": null,
+              "notification": "",
+              "panels": {
+                "test-results": {
+                  "id": "test-results",
+                  "title": "Test results \u00b7 Last run",
+                  "position": "bottom",
+                  "visible": true,
+                  "text": "test_total failed\nExpected: 25 \u2192 Actual: 30",
+                  "status": "failed"
+                }
+              },
+              "tokens": {
+                "test_total.py": "0"
+              }
+            },
+            "navigate": {}
+          },
+          {
+            "time": 5781,
+            "state": {
+              "files": {
+                "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+              },
+              "file_paths": {
+                "test_total.py": "test_total.py"
+              },
+              "editor_groups": null,
+              "saved_layouts": {},
+              "diff_view": null,
+              "annotations": {},
+              "injections": {},
+              "environment": {},
+              "settings": null,
+              "transcript": null,
+              "directories": [],
+              "source_roots": [],
+              "transaction": null,
+              "undo_stack": [],
+              "redo_stack": [],
+              "active_file": "test_total.py",
+              "selection": {
+                "file": "test_total.py",
+                "start": 76,
+                "end": 78
+              },
+              "caret": {
+                "file": "test_total.py",
+                "offset": 78
+              },
+              "diagnostics": [
+                {
+                  "file": "test_total.py",
+                  "start": 76,
+                  "end": 78,
+                  "severity": "error",
+                  "message": "AssertionError: expected 25, got 30"
+                }
+              ],
+              "menu": null,
+              "modal": null,
+              "gutters": {
+                "run-total": {
+                  "file": "test_total.py",
+                  "start": 0,
+                  "end": 14,
+                  "id": "run-total",
+                  "label": "Run test_total"
+                }
+              },
+              "decision": null,
+              "chooser": null,
+              "completion": null,
+              "caption": "The result is right. Update the expectation.",
+              "edit": null,
+              "mouse": {
+                "from": {
+                  "surface": "gutter",
+                  "id": "run-total"
+                },
+                "target": {
+                  "surface": "caret"
+                },
+                "origins": [
+                  {
+                    "surface": "titlebar"
+                  },
+                  {
+                    "surface": "titlebar"
+                  }
+                ],
+                "start": 5781,
+                "end": 6081,
+                "click_end": 6161
+              },
+              "documentation": null,
+              "clipboard": null,
+              "notification": "",
+              "panels": {
+                "test-results": {
+                  "id": "test-results",
+                  "title": "Test results \u00b7 Last run",
+                  "position": "bottom",
+                  "visible": true,
+                  "text": "test_total failed\nExpected: 25 \u2192 Actual: 30",
+                  "status": "failed"
+                }
+              },
+              "tokens": {
+                "test_total.py": "0"
+              }
+            },
+            "navigate": {}
+          },
+          {
+            "time": 6161,
+            "state": {
+              "files": {
+                "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+              },
+              "file_paths": {
+                "test_total.py": "test_total.py"
+              },
+              "editor_groups": null,
+              "saved_layouts": {},
+              "diff_view": null,
+              "annotations": {},
+              "injections": {},
+              "environment": {},
+              "settings": null,
+              "transcript": null,
+              "directories": [],
+              "source_roots": [],
+              "transaction": null,
+              "undo_stack": [],
+              "redo_stack": [],
+              "active_file": "test_total.py",
+              "selection": {
+                "file": "test_total.py",
+                "start": 76,
+                "end": 78
+              },
+              "caret": {
+                "file": "test_total.py",
+                "offset": 78
+              },
+              "diagnostics": [
+                {
+                  "file": "test_total.py",
+                  "start": 76,
+                  "end": 78,
+                  "severity": "error",
+                  "message": "AssertionError: expected 25, got 30"
+                }
+              ],
+              "menu": {
+                "kind": "context_menu",
+                "title": "Context actions",
+                "items": [
+                  {
+                    "id": "use-actual",
+                    "label": "Use actual test outcome",
+                    "shortcut": "Enter"
+                  },
+                  {
+                    "id": "explain",
+                    "label": "Explain inspection"
+                  }
+                ],
+                "path": [],
+                "selected": null,
+                "anchor": {
+                  "surface": "caret"
+                }
+              },
+              "modal": null,
+              "gutters": {
+                "run-total": {
+                  "file": "test_total.py",
+                  "start": 0,
+                  "end": 14,
+                  "id": "run-total",
+                  "label": "Run test_total"
+                }
+              },
+              "decision": null,
+              "chooser": null,
+              "completion": null,
+              "caption": "The result is right. Update the expectation.",
+              "edit": null,
+              "mouse": {
+                "from": {
+                  "surface": "gutter",
+                  "id": "run-total"
+                },
+                "target": {
+                  "surface": "caret"
+                },
+                "origins": [
+                  {
+                    "surface": "titlebar"
+                  },
+                  {
+                    "surface": "titlebar"
+                  }
+                ],
+                "start": 5781,
+                "end": 6081,
+                "click_end": 6161
+              },
+              "documentation": null,
+              "clipboard": null,
+              "notification": "",
+              "panels": {
+                "test-results": {
+                  "id": "test-results",
+                  "title": "Test results \u00b7 Last run",
+                  "position": "bottom",
+                  "visible": true,
+                  "text": "test_total failed\nExpected: 25 \u2192 Actual: 30",
+                  "status": "failed"
+                }
+              },
+              "tokens": {
+                "test_total.py": "0"
+              }
+            },
+            "dismiss": "__dismiss__/main/8",
+            "navigate": {}
+          },
+          {
+            "time": 7161,
+            "state": {
+              "files": {
+                "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+              },
+              "file_paths": {
+                "test_total.py": "test_total.py"
+              },
+              "editor_groups": null,
+              "saved_layouts": {},
+              "diff_view": null,
+              "annotations": {},
+              "injections": {},
+              "environment": {},
+              "settings": null,
+              "transcript": null,
+              "directories": [],
+              "source_roots": [],
+              "transaction": null,
+              "undo_stack": [],
+              "redo_stack": [],
+              "active_file": "test_total.py",
+              "selection": {
+                "file": "test_total.py",
+                "start": 76,
+                "end": 78
+              },
+              "caret": {
+                "file": "test_total.py",
+                "offset": 78
+              },
+              "diagnostics": [
+                {
+                  "file": "test_total.py",
+                  "start": 76,
+                  "end": 78,
+                  "severity": "error",
+                  "message": "AssertionError: expected 25, got 30"
+                }
+              ],
+              "menu": {
+                "kind": "context_menu",
+                "title": "Context actions",
+                "items": [
+                  {
+                    "id": "use-actual",
+                    "label": "Use actual test outcome",
+                    "shortcut": "Enter"
+                  },
+                  {
+                    "id": "explain",
+                    "label": "Explain inspection"
+                  }
+                ],
+                "path": [],
+                "selected": null,
+                "anchor": {
+                  "surface": "caret"
+                }
+              },
+              "modal": null,
+              "gutters": {
+                "run-total": {
+                  "file": "test_total.py",
+                  "start": 0,
+                  "end": 14,
+                  "id": "run-total",
+                  "label": "Run test_total"
+                }
+              },
+              "decision": null,
+              "chooser": null,
+              "completion": null,
+              "caption": "The result is right. Update the expectation.",
+              "edit": null,
+              "mouse": {
+                "from": {
+                  "surface": "caret"
+                },
+                "target": {
+                  "surface": "menu_item",
+                  "id": "use-actual"
+                },
+                "origins": [
+                  {
+                    "surface": "gutter",
+                    "id": "run-total"
+                  },
+                  {
+                    "surface": "titlebar"
+                  },
+                  {
+                    "surface": "titlebar"
+                  }
+                ],
+                "start": 7161,
+                "end": 7461,
+                "click_end": 7541
+              },
+              "documentation": null,
+              "clipboard": null,
+              "notification": "",
+              "panels": {
+                "test-results": {
+                  "id": "test-results",
+                  "title": "Test results \u00b7 Last run",
+                  "position": "bottom",
+                  "visible": true,
+                  "text": "test_total failed\nExpected: 25 \u2192 Actual: 30",
+                  "status": "failed"
+                }
+              },
+              "tokens": {
+                "test_total.py": "0"
+              }
+            },
+            "dismiss": "__dismiss__/main/9",
+            "navigate": {}
+          },
+          {
+            "time": 7162,
+            "state": {
+              "files": {
+                "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+              },
+              "file_paths": {
+                "test_total.py": "test_total.py"
+              },
+              "editor_groups": null,
+              "saved_layouts": {},
+              "diff_view": null,
+              "annotations": {},
+              "injections": {},
+              "environment": {},
+              "settings": null,
+              "transcript": null,
+              "directories": [],
+              "source_roots": [],
+              "transaction": null,
+              "undo_stack": [],
+              "redo_stack": [],
+              "active_file": "test_total.py",
+              "selection": {
+                "file": "test_total.py",
+                "start": 76,
+                "end": 78
+              },
+              "caret": {
+                "file": "test_total.py",
+                "offset": 78
+              },
+              "diagnostics": [
+                {
+                  "file": "test_total.py",
+                  "start": 76,
+                  "end": 78,
+                  "severity": "error",
+                  "message": "AssertionError: expected 25, got 30"
+                }
+              ],
+              "menu": null,
+              "modal": null,
+              "gutters": {
+                "run-total": {
+                  "file": "test_total.py",
+                  "start": 0,
+                  "end": 14,
+                  "id": "run-total",
+                  "label": "Run test_total"
+                }
+              },
+              "decision": null,
+              "chooser": null,
+              "completion": null,
+              "caption": "The result is right. Update the expectation.",
+              "edit": null,
+              "mouse": {
+                "from": {
+                  "surface": "caret"
+                },
+                "target": {
+                  "surface": "menu_item",
+                  "id": "use-actual"
+                },
+                "origins": [
+                  {
+                    "surface": "gutter",
+                    "id": "run-total"
+                  },
+                  {
+                    "surface": "titlebar"
+                  },
+                  {
+                    "surface": "titlebar"
+                  }
+                ],
+                "start": 7161,
+                "end": 7461,
+                "click_end": 7541
+              },
+              "documentation": null,
+              "clipboard": null,
+              "notification": "",
+              "panels": {
+                "test-results": {
+                  "id": "test-results",
+                  "title": "Test results \u00b7 Last run",
+                  "position": "bottom",
+                  "visible": true,
+                  "text": "test_total failed\nExpected: 25 \u2192 Actual: 30",
+                  "status": "failed"
+                }
+              },
+              "tokens": {
+                "test_total.py": "0"
+              }
+            }
+          }
+        ],
+        "duration": 7162,
+        "entry": 7161,
+        "boundaries": [
+          0,
+          1000,
+          1380,
+          2580,
+          3780,
+          3781,
+          4781,
+          5781,
+          7162
+        ],
+        "runs": [],
+        "segments": {},
+        "branches": {}
+      },
+      "__dismiss__/main/10": {
+        "frames": [
+          {
+            "time": 0,
+            "state": {
+              "files": {
+                "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+              },
+              "file_paths": {
+                "test_total.py": "test_total.py"
+              },
+              "editor_groups": null,
+              "saved_layouts": {},
+              "diff_view": null,
+              "annotations": {},
+              "injections": {},
+              "environment": {},
+              "settings": null,
+              "transcript": null,
+              "directories": [],
+              "source_roots": [],
+              "transaction": null,
+              "undo_stack": [],
+              "redo_stack": [],
+              "active_file": "test_total.py",
+              "selection": {
+                "file": "test_total.py",
+                "start": 76,
+                "end": 78
+              },
+              "caret": {
+                "file": "test_total.py",
+                "offset": 76
+              },
+              "diagnostics": [],
+              "menu": null,
+              "modal": null,
+              "gutters": {},
+              "decision": null,
+              "chooser": null,
+              "completion": null,
+              "caption": "Review the result from a failed test, then update its expected value.",
+              "edit": null,
+              "mouse": {
+                "from": {
+                  "surface": "titlebar"
+                },
+                "target": {
+                  "surface": "titlebar"
+                },
+                "origins": [],
+                "start": 0,
+                "end": 0,
+                "click_end": null
+              },
+              "documentation": null,
+              "clipboard": null,
+              "notification": "",
+              "panels": {
+                "test-results": {
+                  "id": "test-results",
+                  "title": "Test results \u00b7 Last run",
+                  "position": "bottom",
+                  "visible": false,
+                  "text": "",
+                  "status": "info"
+                }
+              },
+              "tokens": {
+                "test_total.py": "0"
+              }
+            },
+            "navigate": {}
+          },
+          {
+            "time": 1000,
+            "state": {
+              "files": {
+                "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+              },
+              "file_paths": {
+                "test_total.py": "test_total.py"
+              },
+              "editor_groups": null,
+              "saved_layouts": {},
+              "diff_view": null,
+              "annotations": {},
+              "injections": {},
+              "environment": {},
+              "settings": null,
+              "transcript": null,
+              "directories": [],
+              "source_roots": [],
+              "transaction": null,
+              "undo_stack": [],
+              "redo_stack": [],
+              "active_file": "test_total.py",
+              "selection": {
+                "file": "test_total.py",
+                "start": 76,
+                "end": 78
+              },
+              "caret": {
+                "file": "test_total.py",
+                "offset": 76
+              },
+              "diagnostics": [],
+              "menu": null,
+              "modal": null,
+              "gutters": {
+                "run-total": {
+                  "file": "test_total.py",
+                  "start": 0,
+                  "end": 14,
+                  "id": "run-total",
+                  "label": "Run test_total"
+                }
+              },
+              "decision": null,
+              "chooser": null,
+              "completion": null,
+              "caption": "Review the result from a failed test, then update its expected value.",
+              "edit": null,
+              "mouse": {
+                "from": {
+                  "surface": "titlebar"
+                },
+                "target": {
+                  "surface": "gutter",
+                  "id": "run-total"
+                },
+                "origins": [
+                  {
+                    "surface": "titlebar"
+                  }
+                ],
+                "start": 1000,
+                "end": 1300,
+                "click_end": 1380
+              },
+              "documentation": null,
+              "clipboard": null,
+              "notification": "",
+              "panels": {
+                "test-results": {
+                  "id": "test-results",
+                  "title": "Test results \u00b7 Last run",
+                  "position": "bottom",
+                  "visible": false,
+                  "text": "",
+                  "status": "info"
+                }
+              },
+              "tokens": {
+                "test_total.py": "0"
+              }
+            },
+            "navigate": {}
+          },
+          {
+            "time": 1380,
+            "state": {
+              "files": {
+                "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+              },
+              "file_paths": {
+                "test_total.py": "test_total.py"
+              },
+              "editor_groups": null,
+              "saved_layouts": {},
+              "diff_view": null,
+              "annotations": {},
+              "injections": {},
+              "environment": {},
+              "settings": null,
+              "transcript": null,
+              "directories": [],
+              "source_roots": [],
+              "transaction": null,
+              "undo_stack": [],
+              "redo_stack": [],
+              "active_file": "test_total.py",
+              "selection": null,
+              "caret": null,
+              "diagnostics": [],
+              "menu": null,
+              "modal": null,
+              "gutters": {
+                "run-total": {
+                  "file": "test_total.py",
+                  "start": 0,
+                  "end": 14,
+                  "id": "run-total",
+                  "label": "Run test_total"
+                }
+              },
+              "decision": null,
+              "chooser": null,
+              "completion": null,
+              "caption": "Review the result from a failed test, then update its expected value.",
+              "edit": null,
+              "mouse": {
+                "from": {
+                  "surface": "titlebar"
+                },
+                "target": {
+                  "surface": "gutter",
+                  "id": "run-total"
+                },
+                "origins": [
+                  {
+                    "surface": "titlebar"
+                  }
+                ],
+                "start": 1000,
+                "end": 1300,
+                "click_end": 1380
+              },
+              "documentation": null,
+              "clipboard": null,
+              "notification": "",
+              "panels": {
+                "test-results": {
+                  "id": "test-results",
+                  "title": "Test results \u00b7 Last run",
+                  "position": "bottom",
+                  "visible": true,
+                  "text": "Running test_total.py::test_total",
+                  "status": "running"
+                }
+              },
+              "tokens": {
+                "test_total.py": "0"
+              }
+            },
+            "navigate": {}
+          },
+          {
+            "time": 2580,
+            "state": {
+              "files": {
+                "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+              },
+              "file_paths": {
+                "test_total.py": "test_total.py"
+              },
+              "editor_groups": null,
+              "saved_layouts": {},
+              "diff_view": null,
+              "annotations": {},
+              "injections": {},
+              "environment": {},
+              "settings": null,
+              "transcript": null,
+              "directories": [],
+              "source_roots": [],
+              "transaction": null,
+              "undo_stack": [],
+              "redo_stack": [],
+              "active_file": "test_total.py",
+              "selection": null,
+              "caret": null,
+              "diagnostics": [],
+              "menu": null,
+              "modal": null,
+              "gutters": {
+                "run-total": {
+                  "file": "test_total.py",
+                  "start": 0,
+                  "end": 14,
+                  "id": "run-total",
+                  "label": "Run test_total"
+                }
+              },
+              "decision": null,
+              "chooser": null,
+              "completion": null,
+              "caption": "Review the result from a failed test, then update its expected value.",
+              "edit": null,
+              "mouse": {
+                "from": {
+                  "surface": "titlebar"
+                },
+                "target": {
+                  "surface": "gutter",
+                  "id": "run-total"
+                },
+                "origins": [
+                  {
+                    "surface": "titlebar"
+                  }
+                ],
+                "start": 1000,
+                "end": 1300,
+                "click_end": 1380
+              },
+              "documentation": null,
+              "clipboard": null,
+              "notification": "",
+              "panels": {
+                "test-results": {
+                  "id": "test-results",
+                  "title": "Test results \u00b7 Last run",
+                  "position": "bottom",
+                  "visible": true,
+                  "text": "test_total failed\nExpected: 25 \u2192 Actual: 30",
+                  "status": "failed"
+                }
+              },
+              "tokens": {
+                "test_total.py": "0"
+              }
+            },
+            "navigate": {}
+          },
+          {
+            "time": 3780,
+            "state": {
+              "files": {
+                "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+              },
+              "file_paths": {
+                "test_total.py": "test_total.py"
+              },
+              "editor_groups": null,
+              "saved_layouts": {},
+              "diff_view": null,
+              "annotations": {},
+              "injections": {},
+              "environment": {},
+              "settings": null,
+              "transcript": null,
+              "directories": [],
+              "source_roots": [],
+              "transaction": null,
+              "undo_stack": [],
+              "redo_stack": [],
+              "active_file": "test_total.py",
+              "selection": null,
+              "caret": null,
+              "diagnostics": [],
+              "menu": null,
+              "modal": null,
+              "gutters": {
+                "run-total": {
+                  "file": "test_total.py",
+                  "start": 0,
+                  "end": 14,
+                  "id": "run-total",
+                  "label": "Run test_total"
+                }
+              },
+              "decision": null,
+              "chooser": null,
+              "completion": null,
+              "caption": "Review the result from a failed test, then update its expected value.",
+              "edit": null,
+              "mouse": {
+                "from": {
+                  "surface": "titlebar"
+                },
+                "target": {
+                  "surface": "gutter",
+                  "id": "run-total"
+                },
+                "origins": [
+                  {
+                    "surface": "titlebar"
+                  }
+                ],
+                "start": 1000,
+                "end": 1300,
+                "click_end": 1380
+              },
+              "documentation": null,
+              "clipboard": null,
+              "notification": "",
+              "panels": {
+                "test-results": {
+                  "id": "test-results",
+                  "title": "Test results \u00b7 Last run",
+                  "position": "bottom",
+                  "visible": true,
+                  "text": "test_total failed\nExpected: 25 \u2192 Actual: 30",
+                  "status": "failed"
+                }
+              },
+              "tokens": {
+                "test_total.py": "0"
+              }
+            },
+            "navigate": {}
+          },
+          {
+            "time": 3781,
+            "state": {
+              "files": {
+                "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+              },
+              "file_paths": {
+                "test_total.py": "test_total.py"
+              },
+              "editor_groups": null,
+              "saved_layouts": {},
+              "diff_view": null,
+              "annotations": {},
+              "injections": {},
+              "environment": {},
+              "settings": null,
+              "transcript": null,
+              "directories": [],
+              "source_roots": [],
+              "transaction": null,
+              "undo_stack": [],
+              "redo_stack": [],
+              "active_file": "test_total.py",
+              "selection": null,
+              "caret": null,
+              "diagnostics": [
+                {
+                  "file": "test_total.py",
+                  "start": 76,
+                  "end": 78,
+                  "severity": "error",
+                  "message": "AssertionError: expected 25, got 30"
+                }
+              ],
+              "menu": null,
+              "modal": null,
+              "gutters": {
+                "run-total": {
+                  "file": "test_total.py",
+                  "start": 0,
+                  "end": 14,
+                  "id": "run-total",
+                  "label": "Run test_total"
+                }
+              },
+              "decision": null,
+              "chooser": null,
+              "completion": null,
+              "caption": "Review the result from a failed test, then update its expected value.",
+              "edit": null,
+              "mouse": {
+                "from": {
+                  "surface": "titlebar"
+                },
+                "target": {
+                  "surface": "gutter",
+                  "id": "run-total"
+                },
+                "origins": [
+                  {
+                    "surface": "titlebar"
+                  }
+                ],
+                "start": 1000,
+                "end": 1300,
+                "click_end": 1380
+              },
+              "documentation": null,
+              "clipboard": null,
+              "notification": "",
+              "panels": {
+                "test-results": {
+                  "id": "test-results",
+                  "title": "Test results \u00b7 Last run",
+                  "position": "bottom",
+                  "visible": true,
+                  "text": "test_total failed\nExpected: 25 \u2192 Actual: 30",
+                  "status": "failed"
+                }
+              },
+              "tokens": {
+                "test_total.py": "0"
+              }
+            },
+            "navigate": {}
+          },
+          {
+            "time": 4781,
+            "state": {
+              "files": {
+                "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+              },
+              "file_paths": {
+                "test_total.py": "test_total.py"
+              },
+              "editor_groups": null,
+              "saved_layouts": {},
+              "diff_view": null,
+              "annotations": {},
+              "injections": {},
+              "environment": {},
+              "settings": null,
+              "transcript": null,
+              "directories": [],
+              "source_roots": [],
+              "transaction": null,
+              "undo_stack": [],
+              "redo_stack": [],
+              "active_file": "test_total.py",
+              "selection": null,
+              "caret": null,
+              "diagnostics": [
+                {
+                  "file": "test_total.py",
+                  "start": 76,
+                  "end": 78,
+                  "severity": "error",
+                  "message": "AssertionError: expected 25, got 30"
+                }
+              ],
+              "menu": null,
+              "modal": null,
+              "gutters": {
+                "run-total": {
+                  "file": "test_total.py",
+                  "start": 0,
+                  "end": 14,
+                  "id": "run-total",
+                  "label": "Run test_total"
+                }
+              },
+              "decision": null,
+              "chooser": null,
+              "completion": null,
+              "caption": "The result is right. Update the expectation.",
+              "edit": null,
+              "mouse": {
+                "from": {
+                  "surface": "titlebar"
+                },
+                "target": {
+                  "surface": "gutter",
+                  "id": "run-total"
+                },
+                "origins": [
+                  {
+                    "surface": "titlebar"
+                  }
+                ],
+                "start": 1000,
+                "end": 1300,
+                "click_end": 1380
+              },
+              "documentation": null,
+              "clipboard": null,
+              "notification": "",
+              "panels": {
+                "test-results": {
+                  "id": "test-results",
+                  "title": "Test results \u00b7 Last run",
+                  "position": "bottom",
+                  "visible": true,
+                  "text": "test_total failed\nExpected: 25 \u2192 Actual: 30",
+                  "status": "failed"
+                }
+              },
+              "tokens": {
+                "test_total.py": "0"
+              }
+            },
+            "navigate": {}
+          },
+          {
+            "time": 5781,
+            "state": {
+              "files": {
+                "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+              },
+              "file_paths": {
+                "test_total.py": "test_total.py"
+              },
+              "editor_groups": null,
+              "saved_layouts": {},
+              "diff_view": null,
+              "annotations": {},
+              "injections": {},
+              "environment": {},
+              "settings": null,
+              "transcript": null,
+              "directories": [],
+              "source_roots": [],
+              "transaction": null,
+              "undo_stack": [],
+              "redo_stack": [],
+              "active_file": "test_total.py",
+              "selection": {
+                "file": "test_total.py",
+                "start": 76,
+                "end": 78
+              },
+              "caret": {
+                "file": "test_total.py",
+                "offset": 78
+              },
+              "diagnostics": [
+                {
+                  "file": "test_total.py",
+                  "start": 76,
+                  "end": 78,
+                  "severity": "error",
+                  "message": "AssertionError: expected 25, got 30"
+                }
+              ],
+              "menu": null,
+              "modal": null,
+              "gutters": {
+                "run-total": {
+                  "file": "test_total.py",
+                  "start": 0,
+                  "end": 14,
+                  "id": "run-total",
+                  "label": "Run test_total"
+                }
+              },
+              "decision": null,
+              "chooser": null,
+              "completion": null,
+              "caption": "The result is right. Update the expectation.",
+              "edit": null,
+              "mouse": {
+                "from": {
+                  "surface": "gutter",
+                  "id": "run-total"
+                },
+                "target": {
+                  "surface": "caret"
+                },
+                "origins": [
+                  {
+                    "surface": "titlebar"
+                  },
+                  {
+                    "surface": "titlebar"
+                  }
+                ],
+                "start": 5781,
+                "end": 6081,
+                "click_end": 6161
+              },
+              "documentation": null,
+              "clipboard": null,
+              "notification": "",
+              "panels": {
+                "test-results": {
+                  "id": "test-results",
+                  "title": "Test results \u00b7 Last run",
+                  "position": "bottom",
+                  "visible": true,
+                  "text": "test_total failed\nExpected: 25 \u2192 Actual: 30",
+                  "status": "failed"
+                }
+              },
+              "tokens": {
+                "test_total.py": "0"
+              }
+            },
+            "navigate": {}
+          },
+          {
+            "time": 6161,
+            "state": {
+              "files": {
+                "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+              },
+              "file_paths": {
+                "test_total.py": "test_total.py"
+              },
+              "editor_groups": null,
+              "saved_layouts": {},
+              "diff_view": null,
+              "annotations": {},
+              "injections": {},
+              "environment": {},
+              "settings": null,
+              "transcript": null,
+              "directories": [],
+              "source_roots": [],
+              "transaction": null,
+              "undo_stack": [],
+              "redo_stack": [],
+              "active_file": "test_total.py",
+              "selection": {
+                "file": "test_total.py",
+                "start": 76,
+                "end": 78
+              },
+              "caret": {
+                "file": "test_total.py",
+                "offset": 78
+              },
+              "diagnostics": [
+                {
+                  "file": "test_total.py",
+                  "start": 76,
+                  "end": 78,
+                  "severity": "error",
+                  "message": "AssertionError: expected 25, got 30"
+                }
+              ],
+              "menu": {
+                "kind": "context_menu",
+                "title": "Context actions",
+                "items": [
+                  {
+                    "id": "use-actual",
+                    "label": "Use actual test outcome",
+                    "shortcut": "Enter"
+                  },
+                  {
+                    "id": "explain",
+                    "label": "Explain inspection"
+                  }
+                ],
+                "path": [],
+                "selected": null,
+                "anchor": {
+                  "surface": "caret"
+                }
+              },
+              "modal": null,
+              "gutters": {
+                "run-total": {
+                  "file": "test_total.py",
+                  "start": 0,
+                  "end": 14,
+                  "id": "run-total",
+                  "label": "Run test_total"
+                }
+              },
+              "decision": null,
+              "chooser": null,
+              "completion": null,
+              "caption": "The result is right. Update the expectation.",
+              "edit": null,
+              "mouse": {
+                "from": {
+                  "surface": "gutter",
+                  "id": "run-total"
+                },
+                "target": {
+                  "surface": "caret"
+                },
+                "origins": [
+                  {
+                    "surface": "titlebar"
+                  },
+                  {
+                    "surface": "titlebar"
+                  }
+                ],
+                "start": 5781,
+                "end": 6081,
+                "click_end": 6161
+              },
+              "documentation": null,
+              "clipboard": null,
+              "notification": "",
+              "panels": {
+                "test-results": {
+                  "id": "test-results",
+                  "title": "Test results \u00b7 Last run",
+                  "position": "bottom",
+                  "visible": true,
+                  "text": "test_total failed\nExpected: 25 \u2192 Actual: 30",
+                  "status": "failed"
+                }
+              },
+              "tokens": {
+                "test_total.py": "0"
+              }
+            },
+            "dismiss": "__dismiss__/main/8",
+            "navigate": {}
+          },
+          {
+            "time": 7161,
+            "state": {
+              "files": {
+                "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+              },
+              "file_paths": {
+                "test_total.py": "test_total.py"
+              },
+              "editor_groups": null,
+              "saved_layouts": {},
+              "diff_view": null,
+              "annotations": {},
+              "injections": {},
+              "environment": {},
+              "settings": null,
+              "transcript": null,
+              "directories": [],
+              "source_roots": [],
+              "transaction": null,
+              "undo_stack": [],
+              "redo_stack": [],
+              "active_file": "test_total.py",
+              "selection": {
+                "file": "test_total.py",
+                "start": 76,
+                "end": 78
+              },
+              "caret": {
+                "file": "test_total.py",
+                "offset": 78
+              },
+              "diagnostics": [
+                {
+                  "file": "test_total.py",
+                  "start": 76,
+                  "end": 78,
+                  "severity": "error",
+                  "message": "AssertionError: expected 25, got 30"
+                }
+              ],
+              "menu": {
+                "kind": "context_menu",
+                "title": "Context actions",
+                "items": [
+                  {
+                    "id": "use-actual",
+                    "label": "Use actual test outcome",
+                    "shortcut": "Enter"
+                  },
+                  {
+                    "id": "explain",
+                    "label": "Explain inspection"
+                  }
+                ],
+                "path": [],
+                "selected": null,
+                "anchor": {
+                  "surface": "caret"
+                }
+              },
+              "modal": null,
+              "gutters": {
+                "run-total": {
+                  "file": "test_total.py",
+                  "start": 0,
+                  "end": 14,
+                  "id": "run-total",
+                  "label": "Run test_total"
+                }
+              },
+              "decision": null,
+              "chooser": null,
+              "completion": null,
+              "caption": "The result is right. Update the expectation.",
+              "edit": null,
+              "mouse": {
+                "from": {
+                  "surface": "caret"
+                },
+                "target": {
+                  "surface": "menu_item",
+                  "id": "use-actual"
+                },
+                "origins": [
+                  {
+                    "surface": "gutter",
+                    "id": "run-total"
+                  },
+                  {
+                    "surface": "titlebar"
+                  },
+                  {
+                    "surface": "titlebar"
+                  }
+                ],
+                "start": 7161,
+                "end": 7461,
+                "click_end": 7541
+              },
+              "documentation": null,
+              "clipboard": null,
+              "notification": "",
+              "panels": {
+                "test-results": {
+                  "id": "test-results",
+                  "title": "Test results \u00b7 Last run",
+                  "position": "bottom",
+                  "visible": true,
+                  "text": "test_total failed\nExpected: 25 \u2192 Actual: 30",
+                  "status": "failed"
+                }
+              },
+              "tokens": {
+                "test_total.py": "0"
+              }
+            },
+            "dismiss": "__dismiss__/main/9",
+            "navigate": {}
+          },
+          {
+            "time": 7541,
+            "state": {
+              "files": {
+                "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+              },
+              "file_paths": {
+                "test_total.py": "test_total.py"
+              },
+              "editor_groups": null,
+              "saved_layouts": {},
+              "diff_view": null,
+              "annotations": {},
+              "injections": {},
+              "environment": {},
+              "settings": null,
+              "transcript": null,
+              "directories": [],
+              "source_roots": [],
+              "transaction": null,
+              "undo_stack": [],
+              "redo_stack": [],
+              "active_file": "test_total.py",
+              "selection": {
+                "file": "test_total.py",
+                "start": 76,
+                "end": 78
+              },
+              "caret": {
+                "file": "test_total.py",
+                "offset": 78
+              },
+              "diagnostics": [
+                {
+                  "file": "test_total.py",
+                  "start": 76,
+                  "end": 78,
+                  "severity": "error",
+                  "message": "AssertionError: expected 25, got 30"
+                }
+              ],
+              "menu": {
+                "kind": "context_menu",
+                "title": "Context actions",
+                "items": [
+                  {
+                    "id": "use-actual",
+                    "label": "Use actual test outcome",
+                    "shortcut": "Enter"
+                  },
+                  {
+                    "id": "explain",
+                    "label": "Explain inspection"
+                  }
+                ],
+                "path": [
+                  "use-actual"
+                ],
+                "selected": "use-actual",
+                "anchor": {
+                  "surface": "caret"
+                }
+              },
+              "modal": null,
+              "gutters": {
+                "run-total": {
+                  "file": "test_total.py",
+                  "start": 0,
+                  "end": 14,
+                  "id": "run-total",
+                  "label": "Run test_total"
+                }
+              },
+              "decision": null,
+              "chooser": null,
+              "completion": null,
+              "caption": "The result is right. Update the expectation.",
+              "edit": null,
+              "mouse": {
+                "from": {
+                  "surface": "caret"
+                },
+                "target": {
+                  "surface": "menu_item",
+                  "id": "use-actual"
+                },
+                "origins": [
+                  {
+                    "surface": "gutter",
+                    "id": "run-total"
+                  },
+                  {
+                    "surface": "titlebar"
+                  },
+                  {
+                    "surface": "titlebar"
+                  }
+                ],
+                "start": 7161,
+                "end": 7461,
+                "click_end": 7541
+              },
+              "documentation": null,
+              "clipboard": null,
+              "notification": "",
+              "panels": {
+                "test-results": {
+                  "id": "test-results",
+                  "title": "Test results \u00b7 Last run",
+                  "position": "bottom",
+                  "visible": true,
+                  "text": "test_total failed\nExpected: 25 \u2192 Actual: 30",
+                  "status": "failed"
+                }
+              },
+              "tokens": {
+                "test_total.py": "0"
+              }
+            },
+            "dismiss": "__dismiss__/main/10",
+            "navigate": {}
+          },
+          {
+            "time": 7542,
+            "state": {
+              "files": {
+                "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+              },
+              "file_paths": {
+                "test_total.py": "test_total.py"
+              },
+              "editor_groups": null,
+              "saved_layouts": {},
+              "diff_view": null,
+              "annotations": {},
+              "injections": {},
+              "environment": {},
+              "settings": null,
+              "transcript": null,
+              "directories": [],
+              "source_roots": [],
+              "transaction": null,
+              "undo_stack": [],
+              "redo_stack": [],
+              "active_file": "test_total.py",
+              "selection": {
+                "file": "test_total.py",
+                "start": 76,
+                "end": 78
+              },
+              "caret": {
+                "file": "test_total.py",
+                "offset": 78
+              },
+              "diagnostics": [
+                {
+                  "file": "test_total.py",
+                  "start": 76,
+                  "end": 78,
+                  "severity": "error",
+                  "message": "AssertionError: expected 25, got 30"
+                }
+              ],
+              "menu": null,
+              "modal": null,
+              "gutters": {
+                "run-total": {
+                  "file": "test_total.py",
+                  "start": 0,
+                  "end": 14,
+                  "id": "run-total",
+                  "label": "Run test_total"
+                }
+              },
+              "decision": null,
+              "chooser": null,
+              "completion": null,
+              "caption": "The result is right. Update the expectation.",
+              "edit": null,
+              "mouse": {
+                "from": {
+                  "surface": "caret"
+                },
+                "target": {
+                  "surface": "menu_item",
+                  "id": "use-actual"
+                },
+                "origins": [
+                  {
+                    "surface": "gutter",
+                    "id": "run-total"
+                  },
+                  {
+                    "surface": "titlebar"
+                  },
+                  {
+                    "surface": "titlebar"
+                  }
+                ],
+                "start": 7161,
+                "end": 7461,
+                "click_end": 7541
+              },
+              "documentation": null,
+              "clipboard": null,
+              "notification": "",
+              "panels": {
+                "test-results": {
+                  "id": "test-results",
+                  "title": "Test results \u00b7 Last run",
+                  "position": "bottom",
+                  "visible": true,
+                  "text": "test_total failed\nExpected: 25 \u2192 Actual: 30",
+                  "status": "failed"
+                }
+              },
+              "tokens": {
+                "test_total.py": "0"
+              }
+            }
+          }
+        ],
+        "duration": 7542,
+        "entry": 7541,
+        "boundaries": [
+          0,
+          1000,
+          1380,
+          2580,
+          3780,
+          3781,
+          4781,
+          5781,
+          7542
+        ],
+        "runs": [],
+        "segments": {},
+        "branches": {}
+      },
+      "__dismiss__/main/11": {
+        "frames": [
+          {
+            "time": 0,
+            "state": {
+              "files": {
+                "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+              },
+              "file_paths": {
+                "test_total.py": "test_total.py"
+              },
+              "editor_groups": null,
+              "saved_layouts": {},
+              "diff_view": null,
+              "annotations": {},
+              "injections": {},
+              "environment": {},
+              "settings": null,
+              "transcript": null,
+              "directories": [],
+              "source_roots": [],
+              "transaction": null,
+              "undo_stack": [],
+              "redo_stack": [],
+              "active_file": "test_total.py",
+              "selection": {
+                "file": "test_total.py",
+                "start": 76,
+                "end": 78
+              },
+              "caret": {
+                "file": "test_total.py",
+                "offset": 76
+              },
+              "diagnostics": [],
+              "menu": null,
+              "modal": null,
+              "gutters": {},
+              "decision": null,
+              "chooser": null,
+              "completion": null,
+              "caption": "Review the result from a failed test, then update its expected value.",
+              "edit": null,
+              "mouse": {
+                "from": {
+                  "surface": "titlebar"
+                },
+                "target": {
+                  "surface": "titlebar"
+                },
+                "origins": [],
+                "start": 0,
+                "end": 0,
+                "click_end": null
+              },
+              "documentation": null,
+              "clipboard": null,
+              "notification": "",
+              "panels": {
+                "test-results": {
+                  "id": "test-results",
+                  "title": "Test results \u00b7 Last run",
+                  "position": "bottom",
+                  "visible": false,
+                  "text": "",
+                  "status": "info"
+                }
+              },
+              "tokens": {
+                "test_total.py": "0"
+              }
+            },
+            "navigate": {}
+          },
+          {
+            "time": 1000,
+            "state": {
+              "files": {
+                "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+              },
+              "file_paths": {
+                "test_total.py": "test_total.py"
+              },
+              "editor_groups": null,
+              "saved_layouts": {},
+              "diff_view": null,
+              "annotations": {},
+              "injections": {},
+              "environment": {},
+              "settings": null,
+              "transcript": null,
+              "directories": [],
+              "source_roots": [],
+              "transaction": null,
+              "undo_stack": [],
+              "redo_stack": [],
+              "active_file": "test_total.py",
+              "selection": {
+                "file": "test_total.py",
+                "start": 76,
+                "end": 78
+              },
+              "caret": {
+                "file": "test_total.py",
+                "offset": 76
+              },
+              "diagnostics": [],
+              "menu": null,
+              "modal": null,
+              "gutters": {
+                "run-total": {
+                  "file": "test_total.py",
+                  "start": 0,
+                  "end": 14,
+                  "id": "run-total",
+                  "label": "Run test_total"
+                }
+              },
+              "decision": null,
+              "chooser": null,
+              "completion": null,
+              "caption": "Review the result from a failed test, then update its expected value.",
+              "edit": null,
+              "mouse": {
+                "from": {
+                  "surface": "titlebar"
+                },
+                "target": {
+                  "surface": "gutter",
+                  "id": "run-total"
+                },
+                "origins": [
+                  {
+                    "surface": "titlebar"
+                  }
+                ],
+                "start": 1000,
+                "end": 1300,
+                "click_end": 1380
+              },
+              "documentation": null,
+              "clipboard": null,
+              "notification": "",
+              "panels": {
+                "test-results": {
+                  "id": "test-results",
+                  "title": "Test results \u00b7 Last run",
+                  "position": "bottom",
+                  "visible": false,
+                  "text": "",
+                  "status": "info"
+                }
+              },
+              "tokens": {
+                "test_total.py": "0"
+              }
+            },
+            "navigate": {}
+          },
+          {
+            "time": 1380,
+            "state": {
+              "files": {
+                "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+              },
+              "file_paths": {
+                "test_total.py": "test_total.py"
+              },
+              "editor_groups": null,
+              "saved_layouts": {},
+              "diff_view": null,
+              "annotations": {},
+              "injections": {},
+              "environment": {},
+              "settings": null,
+              "transcript": null,
+              "directories": [],
+              "source_roots": [],
+              "transaction": null,
+              "undo_stack": [],
+              "redo_stack": [],
+              "active_file": "test_total.py",
+              "selection": null,
+              "caret": null,
+              "diagnostics": [],
+              "menu": null,
+              "modal": null,
+              "gutters": {
+                "run-total": {
+                  "file": "test_total.py",
+                  "start": 0,
+                  "end": 14,
+                  "id": "run-total",
+                  "label": "Run test_total"
+                }
+              },
+              "decision": null,
+              "chooser": null,
+              "completion": null,
+              "caption": "Review the result from a failed test, then update its expected value.",
+              "edit": null,
+              "mouse": {
+                "from": {
+                  "surface": "titlebar"
+                },
+                "target": {
+                  "surface": "gutter",
+                  "id": "run-total"
+                },
+                "origins": [
+                  {
+                    "surface": "titlebar"
+                  }
+                ],
+                "start": 1000,
+                "end": 1300,
+                "click_end": 1380
+              },
+              "documentation": null,
+              "clipboard": null,
+              "notification": "",
+              "panels": {
+                "test-results": {
+                  "id": "test-results",
+                  "title": "Test results \u00b7 Last run",
+                  "position": "bottom",
+                  "visible": true,
+                  "text": "Running test_total.py::test_total",
+                  "status": "running"
+                }
+              },
+              "tokens": {
+                "test_total.py": "0"
+              }
+            },
+            "navigate": {}
+          },
+          {
+            "time": 2580,
+            "state": {
+              "files": {
+                "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+              },
+              "file_paths": {
+                "test_total.py": "test_total.py"
+              },
+              "editor_groups": null,
+              "saved_layouts": {},
+              "diff_view": null,
+              "annotations": {},
+              "injections": {},
+              "environment": {},
+              "settings": null,
+              "transcript": null,
+              "directories": [],
+              "source_roots": [],
+              "transaction": null,
+              "undo_stack": [],
+              "redo_stack": [],
+              "active_file": "test_total.py",
+              "selection": null,
+              "caret": null,
+              "diagnostics": [],
+              "menu": null,
+              "modal": null,
+              "gutters": {
+                "run-total": {
+                  "file": "test_total.py",
+                  "start": 0,
+                  "end": 14,
+                  "id": "run-total",
+                  "label": "Run test_total"
+                }
+              },
+              "decision": null,
+              "chooser": null,
+              "completion": null,
+              "caption": "Review the result from a failed test, then update its expected value.",
+              "edit": null,
+              "mouse": {
+                "from": {
+                  "surface": "titlebar"
+                },
+                "target": {
+                  "surface": "gutter",
+                  "id": "run-total"
+                },
+                "origins": [
+                  {
+                    "surface": "titlebar"
+                  }
+                ],
+                "start": 1000,
+                "end": 1300,
+                "click_end": 1380
+              },
+              "documentation": null,
+              "clipboard": null,
+              "notification": "",
+              "panels": {
+                "test-results": {
+                  "id": "test-results",
+                  "title": "Test results \u00b7 Last run",
+                  "position": "bottom",
+                  "visible": true,
+                  "text": "test_total failed\nExpected: 25 \u2192 Actual: 30",
+                  "status": "failed"
+                }
+              },
+              "tokens": {
+                "test_total.py": "0"
+              }
+            },
+            "navigate": {}
+          },
+          {
+            "time": 3780,
+            "state": {
+              "files": {
+                "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+              },
+              "file_paths": {
+                "test_total.py": "test_total.py"
+              },
+              "editor_groups": null,
+              "saved_layouts": {},
+              "diff_view": null,
+              "annotations": {},
+              "injections": {},
+              "environment": {},
+              "settings": null,
+              "transcript": null,
+              "directories": [],
+              "source_roots": [],
+              "transaction": null,
+              "undo_stack": [],
+              "redo_stack": [],
+              "active_file": "test_total.py",
+              "selection": null,
+              "caret": null,
+              "diagnostics": [],
+              "menu": null,
+              "modal": null,
+              "gutters": {
+                "run-total": {
+                  "file": "test_total.py",
+                  "start": 0,
+                  "end": 14,
+                  "id": "run-total",
+                  "label": "Run test_total"
+                }
+              },
+              "decision": null,
+              "chooser": null,
+              "completion": null,
+              "caption": "Review the result from a failed test, then update its expected value.",
+              "edit": null,
+              "mouse": {
+                "from": {
+                  "surface": "titlebar"
+                },
+                "target": {
+                  "surface": "gutter",
+                  "id": "run-total"
+                },
+                "origins": [
+                  {
+                    "surface": "titlebar"
+                  }
+                ],
+                "start": 1000,
+                "end": 1300,
+                "click_end": 1380
+              },
+              "documentation": null,
+              "clipboard": null,
+              "notification": "",
+              "panels": {
+                "test-results": {
+                  "id": "test-results",
+                  "title": "Test results \u00b7 Last run",
+                  "position": "bottom",
+                  "visible": true,
+                  "text": "test_total failed\nExpected: 25 \u2192 Actual: 30",
+                  "status": "failed"
+                }
+              },
+              "tokens": {
+                "test_total.py": "0"
+              }
+            },
+            "navigate": {}
+          },
+          {
+            "time": 3781,
+            "state": {
+              "files": {
+                "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+              },
+              "file_paths": {
+                "test_total.py": "test_total.py"
+              },
+              "editor_groups": null,
+              "saved_layouts": {},
+              "diff_view": null,
+              "annotations": {},
+              "injections": {},
+              "environment": {},
+              "settings": null,
+              "transcript": null,
+              "directories": [],
+              "source_roots": [],
+              "transaction": null,
+              "undo_stack": [],
+              "redo_stack": [],
+              "active_file": "test_total.py",
+              "selection": null,
+              "caret": null,
+              "diagnostics": [
+                {
+                  "file": "test_total.py",
+                  "start": 76,
+                  "end": 78,
+                  "severity": "error",
+                  "message": "AssertionError: expected 25, got 30"
+                }
+              ],
+              "menu": null,
+              "modal": null,
+              "gutters": {
+                "run-total": {
+                  "file": "test_total.py",
+                  "start": 0,
+                  "end": 14,
+                  "id": "run-total",
+                  "label": "Run test_total"
+                }
+              },
+              "decision": null,
+              "chooser": null,
+              "completion": null,
+              "caption": "Review the result from a failed test, then update its expected value.",
+              "edit": null,
+              "mouse": {
+                "from": {
+                  "surface": "titlebar"
+                },
+                "target": {
+                  "surface": "gutter",
+                  "id": "run-total"
+                },
+                "origins": [
+                  {
+                    "surface": "titlebar"
+                  }
+                ],
+                "start": 1000,
+                "end": 1300,
+                "click_end": 1380
+              },
+              "documentation": null,
+              "clipboard": null,
+              "notification": "",
+              "panels": {
+                "test-results": {
+                  "id": "test-results",
+                  "title": "Test results \u00b7 Last run",
+                  "position": "bottom",
+                  "visible": true,
+                  "text": "test_total failed\nExpected: 25 \u2192 Actual: 30",
+                  "status": "failed"
+                }
+              },
+              "tokens": {
+                "test_total.py": "0"
+              }
+            },
+            "navigate": {}
+          },
+          {
+            "time": 4781,
+            "state": {
+              "files": {
+                "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+              },
+              "file_paths": {
+                "test_total.py": "test_total.py"
+              },
+              "editor_groups": null,
+              "saved_layouts": {},
+              "diff_view": null,
+              "annotations": {},
+              "injections": {},
+              "environment": {},
+              "settings": null,
+              "transcript": null,
+              "directories": [],
+              "source_roots": [],
+              "transaction": null,
+              "undo_stack": [],
+              "redo_stack": [],
+              "active_file": "test_total.py",
+              "selection": null,
+              "caret": null,
+              "diagnostics": [
+                {
+                  "file": "test_total.py",
+                  "start": 76,
+                  "end": 78,
+                  "severity": "error",
+                  "message": "AssertionError: expected 25, got 30"
+                }
+              ],
+              "menu": null,
+              "modal": null,
+              "gutters": {
+                "run-total": {
+                  "file": "test_total.py",
+                  "start": 0,
+                  "end": 14,
+                  "id": "run-total",
+                  "label": "Run test_total"
+                }
+              },
+              "decision": null,
+              "chooser": null,
+              "completion": null,
+              "caption": "The result is right. Update the expectation.",
+              "edit": null,
+              "mouse": {
+                "from": {
+                  "surface": "titlebar"
+                },
+                "target": {
+                  "surface": "gutter",
+                  "id": "run-total"
+                },
+                "origins": [
+                  {
+                    "surface": "titlebar"
+                  }
+                ],
+                "start": 1000,
+                "end": 1300,
+                "click_end": 1380
+              },
+              "documentation": null,
+              "clipboard": null,
+              "notification": "",
+              "panels": {
+                "test-results": {
+                  "id": "test-results",
+                  "title": "Test results \u00b7 Last run",
+                  "position": "bottom",
+                  "visible": true,
+                  "text": "test_total failed\nExpected: 25 \u2192 Actual: 30",
+                  "status": "failed"
+                }
+              },
+              "tokens": {
+                "test_total.py": "0"
+              }
+            },
+            "navigate": {}
+          },
+          {
+            "time": 5781,
+            "state": {
+              "files": {
+                "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+              },
+              "file_paths": {
+                "test_total.py": "test_total.py"
+              },
+              "editor_groups": null,
+              "saved_layouts": {},
+              "diff_view": null,
+              "annotations": {},
+              "injections": {},
+              "environment": {},
+              "settings": null,
+              "transcript": null,
+              "directories": [],
+              "source_roots": [],
+              "transaction": null,
+              "undo_stack": [],
+              "redo_stack": [],
+              "active_file": "test_total.py",
+              "selection": {
+                "file": "test_total.py",
+                "start": 76,
+                "end": 78
+              },
+              "caret": {
+                "file": "test_total.py",
+                "offset": 78
+              },
+              "diagnostics": [
+                {
+                  "file": "test_total.py",
+                  "start": 76,
+                  "end": 78,
+                  "severity": "error",
+                  "message": "AssertionError: expected 25, got 30"
+                }
+              ],
+              "menu": null,
+              "modal": null,
+              "gutters": {
+                "run-total": {
+                  "file": "test_total.py",
+                  "start": 0,
+                  "end": 14,
+                  "id": "run-total",
+                  "label": "Run test_total"
+                }
+              },
+              "decision": null,
+              "chooser": null,
+              "completion": null,
+              "caption": "The result is right. Update the expectation.",
+              "edit": null,
+              "mouse": {
+                "from": {
+                  "surface": "gutter",
+                  "id": "run-total"
+                },
+                "target": {
+                  "surface": "caret"
+                },
+                "origins": [
+                  {
+                    "surface": "titlebar"
+                  },
+                  {
+                    "surface": "titlebar"
+                  }
+                ],
+                "start": 5781,
+                "end": 6081,
+                "click_end": 6161
+              },
+              "documentation": null,
+              "clipboard": null,
+              "notification": "",
+              "panels": {
+                "test-results": {
+                  "id": "test-results",
+                  "title": "Test results \u00b7 Last run",
+                  "position": "bottom",
+                  "visible": true,
+                  "text": "test_total failed\nExpected: 25 \u2192 Actual: 30",
+                  "status": "failed"
+                }
+              },
+              "tokens": {
+                "test_total.py": "0"
+              }
+            },
+            "navigate": {}
+          },
+          {
+            "time": 6161,
+            "state": {
+              "files": {
+                "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+              },
+              "file_paths": {
+                "test_total.py": "test_total.py"
+              },
+              "editor_groups": null,
+              "saved_layouts": {},
+              "diff_view": null,
+              "annotations": {},
+              "injections": {},
+              "environment": {},
+              "settings": null,
+              "transcript": null,
+              "directories": [],
+              "source_roots": [],
+              "transaction": null,
+              "undo_stack": [],
+              "redo_stack": [],
+              "active_file": "test_total.py",
+              "selection": {
+                "file": "test_total.py",
+                "start": 76,
+                "end": 78
+              },
+              "caret": {
+                "file": "test_total.py",
+                "offset": 78
+              },
+              "diagnostics": [
+                {
+                  "file": "test_total.py",
+                  "start": 76,
+                  "end": 78,
+                  "severity": "error",
+                  "message": "AssertionError: expected 25, got 30"
+                }
+              ],
+              "menu": {
+                "kind": "context_menu",
+                "title": "Context actions",
+                "items": [
+                  {
+                    "id": "use-actual",
+                    "label": "Use actual test outcome",
+                    "shortcut": "Enter"
+                  },
+                  {
+                    "id": "explain",
+                    "label": "Explain inspection"
+                  }
+                ],
+                "path": [],
+                "selected": null,
+                "anchor": {
+                  "surface": "caret"
+                }
+              },
+              "modal": null,
+              "gutters": {
+                "run-total": {
+                  "file": "test_total.py",
+                  "start": 0,
+                  "end": 14,
+                  "id": "run-total",
+                  "label": "Run test_total"
+                }
+              },
+              "decision": null,
+              "chooser": null,
+              "completion": null,
+              "caption": "The result is right. Update the expectation.",
+              "edit": null,
+              "mouse": {
+                "from": {
+                  "surface": "gutter",
+                  "id": "run-total"
+                },
+                "target": {
+                  "surface": "caret"
+                },
+                "origins": [
+                  {
+                    "surface": "titlebar"
+                  },
+                  {
+                    "surface": "titlebar"
+                  }
+                ],
+                "start": 5781,
+                "end": 6081,
+                "click_end": 6161
+              },
+              "documentation": null,
+              "clipboard": null,
+              "notification": "",
+              "panels": {
+                "test-results": {
+                  "id": "test-results",
+                  "title": "Test results \u00b7 Last run",
+                  "position": "bottom",
+                  "visible": true,
+                  "text": "test_total failed\nExpected: 25 \u2192 Actual: 30",
+                  "status": "failed"
+                }
+              },
+              "tokens": {
+                "test_total.py": "0"
+              }
+            },
+            "dismiss": "__dismiss__/main/8",
+            "navigate": {}
+          },
+          {
+            "time": 7161,
+            "state": {
+              "files": {
+                "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+              },
+              "file_paths": {
+                "test_total.py": "test_total.py"
+              },
+              "editor_groups": null,
+              "saved_layouts": {},
+              "diff_view": null,
+              "annotations": {},
+              "injections": {},
+              "environment": {},
+              "settings": null,
+              "transcript": null,
+              "directories": [],
+              "source_roots": [],
+              "transaction": null,
+              "undo_stack": [],
+              "redo_stack": [],
+              "active_file": "test_total.py",
+              "selection": {
+                "file": "test_total.py",
+                "start": 76,
+                "end": 78
+              },
+              "caret": {
+                "file": "test_total.py",
+                "offset": 78
+              },
+              "diagnostics": [
+                {
+                  "file": "test_total.py",
+                  "start": 76,
+                  "end": 78,
+                  "severity": "error",
+                  "message": "AssertionError: expected 25, got 30"
+                }
+              ],
+              "menu": {
+                "kind": "context_menu",
+                "title": "Context actions",
+                "items": [
+                  {
+                    "id": "use-actual",
+                    "label": "Use actual test outcome",
+                    "shortcut": "Enter"
+                  },
+                  {
+                    "id": "explain",
+                    "label": "Explain inspection"
+                  }
+                ],
+                "path": [],
+                "selected": null,
+                "anchor": {
+                  "surface": "caret"
+                }
+              },
+              "modal": null,
+              "gutters": {
+                "run-total": {
+                  "file": "test_total.py",
+                  "start": 0,
+                  "end": 14,
+                  "id": "run-total",
+                  "label": "Run test_total"
+                }
+              },
+              "decision": null,
+              "chooser": null,
+              "completion": null,
+              "caption": "The result is right. Update the expectation.",
+              "edit": null,
+              "mouse": {
+                "from": {
+                  "surface": "caret"
+                },
+                "target": {
+                  "surface": "menu_item",
+                  "id": "use-actual"
+                },
+                "origins": [
+                  {
+                    "surface": "gutter",
+                    "id": "run-total"
+                  },
+                  {
+                    "surface": "titlebar"
+                  },
+                  {
+                    "surface": "titlebar"
+                  }
+                ],
+                "start": 7161,
+                "end": 7461,
+                "click_end": 7541
+              },
+              "documentation": null,
+              "clipboard": null,
+              "notification": "",
+              "panels": {
+                "test-results": {
+                  "id": "test-results",
+                  "title": "Test results \u00b7 Last run",
+                  "position": "bottom",
+                  "visible": true,
+                  "text": "test_total failed\nExpected: 25 \u2192 Actual: 30",
+                  "status": "failed"
+                }
+              },
+              "tokens": {
+                "test_total.py": "0"
+              }
+            },
+            "dismiss": "__dismiss__/main/9",
+            "navigate": {}
+          },
+          {
+            "time": 7541,
+            "state": {
+              "files": {
+                "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+              },
+              "file_paths": {
+                "test_total.py": "test_total.py"
+              },
+              "editor_groups": null,
+              "saved_layouts": {},
+              "diff_view": null,
+              "annotations": {},
+              "injections": {},
+              "environment": {},
+              "settings": null,
+              "transcript": null,
+              "directories": [],
+              "source_roots": [],
+              "transaction": null,
+              "undo_stack": [],
+              "redo_stack": [],
+              "active_file": "test_total.py",
+              "selection": {
+                "file": "test_total.py",
+                "start": 76,
+                "end": 78
+              },
+              "caret": {
+                "file": "test_total.py",
+                "offset": 78
+              },
+              "diagnostics": [
+                {
+                  "file": "test_total.py",
+                  "start": 76,
+                  "end": 78,
+                  "severity": "error",
+                  "message": "AssertionError: expected 25, got 30"
+                }
+              ],
+              "menu": {
+                "kind": "context_menu",
+                "title": "Context actions",
+                "items": [
+                  {
+                    "id": "use-actual",
+                    "label": "Use actual test outcome",
+                    "shortcut": "Enter"
+                  },
+                  {
+                    "id": "explain",
+                    "label": "Explain inspection"
+                  }
+                ],
+                "path": [
+                  "use-actual"
+                ],
+                "selected": "use-actual",
+                "anchor": {
+                  "surface": "caret"
+                }
+              },
+              "modal": null,
+              "gutters": {
+                "run-total": {
+                  "file": "test_total.py",
+                  "start": 0,
+                  "end": 14,
+                  "id": "run-total",
+                  "label": "Run test_total"
+                }
+              },
+              "decision": null,
+              "chooser": null,
+              "completion": null,
+              "caption": "The result is right. Update the expectation.",
+              "edit": null,
+              "mouse": {
+                "from": {
+                  "surface": "caret"
+                },
+                "target": {
+                  "surface": "menu_item",
+                  "id": "use-actual"
+                },
+                "origins": [
+                  {
+                    "surface": "gutter",
+                    "id": "run-total"
+                  },
+                  {
+                    "surface": "titlebar"
+                  },
+                  {
+                    "surface": "titlebar"
+                  }
+                ],
+                "start": 7161,
+                "end": 7461,
+                "click_end": 7541
+              },
+              "documentation": null,
+              "clipboard": null,
+              "notification": "",
+              "panels": {
+                "test-results": {
+                  "id": "test-results",
+                  "title": "Test results \u00b7 Last run",
+                  "position": "bottom",
+                  "visible": true,
+                  "text": "test_total failed\nExpected: 25 \u2192 Actual: 30",
+                  "status": "failed"
+                }
+              },
+              "tokens": {
+                "test_total.py": "0"
+              }
+            },
+            "dismiss": "__dismiss__/main/10",
+            "navigate": {}
+          },
+          {
+            "time": 8541,
+            "state": {
+              "files": {
+                "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+              },
+              "file_paths": {
+                "test_total.py": "test_total.py"
+              },
+              "editor_groups": null,
+              "saved_layouts": {},
+              "diff_view": null,
+              "annotations": {},
+              "injections": {},
+              "environment": {},
+              "settings": null,
+              "transcript": null,
+              "directories": [],
+              "source_roots": [],
+              "transaction": null,
+              "undo_stack": [],
+              "redo_stack": [],
+              "active_file": "test_total.py",
+              "selection": {
+                "file": "test_total.py",
+                "start": 76,
+                "end": 78
+              },
+              "caret": {
+                "file": "test_total.py",
+                "offset": 78
+              },
+              "diagnostics": [
+                {
+                  "file": "test_total.py",
+                  "start": 76,
+                  "end": 78,
+                  "severity": "error",
+                  "message": "AssertionError: expected 25, got 30"
+                }
+              ],
+              "menu": {
+                "kind": "context_menu",
+                "title": "Context actions",
+                "items": [
+                  {
+                    "id": "use-actual",
+                    "label": "Use actual test outcome",
+                    "shortcut": "Enter"
+                  },
+                  {
+                    "id": "explain",
+                    "label": "Explain inspection"
+                  }
+                ],
+                "path": [
+                  "use-actual"
+                ],
+                "selected": "use-actual",
+                "anchor": {
+                  "surface": "caret"
+                }
+              },
+              "modal": null,
+              "gutters": {
+                "run-total": {
+                  "file": "test_total.py",
+                  "start": 0,
+                  "end": 14,
+                  "id": "run-total",
+                  "label": "Run test_total"
+                }
+              },
+              "decision": null,
+              "chooser": null,
+              "completion": null,
+              "caption": "The result is right. Update the expectation.",
+              "edit": null,
+              "mouse": {
+                "from": {
+                  "surface": "caret"
+                },
+                "target": {
+                  "surface": "menu_item",
+                  "id": "use-actual"
+                },
+                "origins": [
+                  {
+                    "surface": "gutter",
+                    "id": "run-total"
+                  },
+                  {
+                    "surface": "titlebar"
+                  },
+                  {
+                    "surface": "titlebar"
+                  }
+                ],
+                "start": 7161,
+                "end": 7461,
+                "click_end": 7541
+              },
+              "documentation": null,
+              "clipboard": null,
+              "notification": "",
+              "panels": {
+                "test-results": {
+                  "id": "test-results",
+                  "title": "Test results \u00b7 Last run",
+                  "position": "bottom",
+                  "visible": true,
+                  "text": "test_total failed\nExpected: 25 \u2192 Actual: 30",
+                  "status": "failed"
+                }
+              },
+              "tokens": {
+                "test_total.py": "0"
+              }
+            },
+            "dismiss": "__dismiss__/main/11",
+            "navigate": {}
+          },
+          {
+            "time": 8542,
+            "state": {
+              "files": {
+                "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+              },
+              "file_paths": {
+                "test_total.py": "test_total.py"
+              },
+              "editor_groups": null,
+              "saved_layouts": {},
+              "diff_view": null,
+              "annotations": {},
+              "injections": {},
+              "environment": {},
+              "settings": null,
+              "transcript": null,
+              "directories": [],
+              "source_roots": [],
+              "transaction": null,
+              "undo_stack": [],
+              "redo_stack": [],
+              "active_file": "test_total.py",
+              "selection": {
+                "file": "test_total.py",
+                "start": 76,
+                "end": 78
+              },
+              "caret": {
+                "file": "test_total.py",
+                "offset": 78
+              },
+              "diagnostics": [
+                {
+                  "file": "test_total.py",
+                  "start": 76,
+                  "end": 78,
+                  "severity": "error",
+                  "message": "AssertionError: expected 25, got 30"
+                }
+              ],
+              "menu": null,
+              "modal": null,
+              "gutters": {
+                "run-total": {
+                  "file": "test_total.py",
+                  "start": 0,
+                  "end": 14,
+                  "id": "run-total",
+                  "label": "Run test_total"
+                }
+              },
+              "decision": null,
+              "chooser": null,
+              "completion": null,
+              "caption": "The result is right. Update the expectation.",
+              "edit": null,
+              "mouse": {
+                "from": {
+                  "surface": "caret"
+                },
+                "target": {
+                  "surface": "menu_item",
+                  "id": "use-actual"
+                },
+                "origins": [
+                  {
+                    "surface": "gutter",
+                    "id": "run-total"
+                  },
+                  {
+                    "surface": "titlebar"
+                  },
+                  {
+                    "surface": "titlebar"
+                  }
+                ],
+                "start": 7161,
+                "end": 7461,
+                "click_end": 7541
+              },
+              "documentation": null,
+              "clipboard": null,
+              "notification": "",
+              "panels": {
+                "test-results": {
+                  "id": "test-results",
+                  "title": "Test results \u00b7 Last run",
+                  "position": "bottom",
+                  "visible": true,
+                  "text": "test_total failed\nExpected: 25 \u2192 Actual: 30",
+                  "status": "failed"
+                }
+              },
+              "tokens": {
+                "test_total.py": "0"
+              }
+            }
+          }
+        ],
+        "duration": 8542,
+        "entry": 8541,
+        "boundaries": [
+          0,
+          1000,
+          1380,
+          2580,
+          3780,
+          3781,
+          4781,
+          5781,
+          8541,
+          8542
+        ],
+        "runs": [],
+        "segments": {},
+        "branches": {}
+      }
+    },
+    "frames": [
+      {
+        "time": 0,
+        "state": {
+          "files": {
+            "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+          },
+          "file_paths": {
+            "test_total.py": "test_total.py"
+          },
+          "editor_groups": null,
+          "saved_layouts": {},
+          "diff_view": null,
+          "annotations": {},
+          "injections": {},
+          "environment": {},
+          "settings": null,
+          "transcript": null,
+          "directories": [],
+          "source_roots": [],
+          "transaction": null,
+          "undo_stack": [],
+          "redo_stack": [],
+          "active_file": "test_total.py",
+          "selection": {
+            "file": "test_total.py",
+            "start": 76,
+            "end": 78
+          },
+          "caret": {
+            "file": "test_total.py",
+            "offset": 76
+          },
+          "diagnostics": [],
+          "menu": null,
+          "modal": null,
+          "gutters": {},
+          "decision": null,
+          "chooser": null,
+          "completion": null,
+          "caption": "Review the result from a failed test, then update its expected value.",
+          "edit": null,
+          "mouse": {
+            "from": {
+              "surface": "titlebar"
+            },
+            "target": {
+              "surface": "titlebar"
+            },
+            "origins": [],
+            "start": 0,
+            "end": 0,
+            "click_end": null
+          },
+          "documentation": null,
+          "clipboard": null,
+          "notification": "",
+          "panels": {
+            "test-results": {
+              "id": "test-results",
+              "title": "Test results \u00b7 Last run",
+              "position": "bottom",
+              "visible": false,
+              "text": "",
+              "status": "info"
+            }
+          },
+          "tokens": {
+            "test_total.py": "0"
+          }
+        },
+        "navigate": {}
+      },
+      {
+        "time": 1000,
+        "state": {
+          "files": {
+            "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+          },
+          "file_paths": {
+            "test_total.py": "test_total.py"
+          },
+          "editor_groups": null,
+          "saved_layouts": {},
+          "diff_view": null,
+          "annotations": {},
+          "injections": {},
+          "environment": {},
+          "settings": null,
+          "transcript": null,
+          "directories": [],
+          "source_roots": [],
+          "transaction": null,
+          "undo_stack": [],
+          "redo_stack": [],
+          "active_file": "test_total.py",
+          "selection": {
+            "file": "test_total.py",
+            "start": 76,
+            "end": 78
+          },
+          "caret": {
+            "file": "test_total.py",
+            "offset": 76
+          },
+          "diagnostics": [],
+          "menu": null,
+          "modal": null,
+          "gutters": {
+            "run-total": {
+              "file": "test_total.py",
+              "start": 0,
+              "end": 14,
+              "id": "run-total",
+              "label": "Run test_total"
+            }
+          },
+          "decision": null,
+          "chooser": null,
+          "completion": null,
+          "caption": "Review the result from a failed test, then update its expected value.",
+          "edit": null,
+          "mouse": {
+            "from": {
+              "surface": "titlebar"
+            },
+            "target": {
+              "surface": "gutter",
+              "id": "run-total"
+            },
+            "origins": [
+              {
+                "surface": "titlebar"
+              }
+            ],
+            "start": 1000,
+            "end": 1300,
+            "click_end": 1380
+          },
+          "documentation": null,
+          "clipboard": null,
+          "notification": "",
+          "panels": {
+            "test-results": {
+              "id": "test-results",
+              "title": "Test results \u00b7 Last run",
+              "position": "bottom",
+              "visible": false,
+              "text": "",
+              "status": "info"
+            }
+          },
+          "tokens": {
+            "test_total.py": "0"
+          }
+        },
+        "navigate": {}
+      },
+      {
+        "time": 1380,
+        "state": {
+          "files": {
+            "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+          },
+          "file_paths": {
+            "test_total.py": "test_total.py"
+          },
+          "editor_groups": null,
+          "saved_layouts": {},
+          "diff_view": null,
+          "annotations": {},
+          "injections": {},
+          "environment": {},
+          "settings": null,
+          "transcript": null,
+          "directories": [],
+          "source_roots": [],
+          "transaction": null,
+          "undo_stack": [],
+          "redo_stack": [],
+          "active_file": "test_total.py",
+          "selection": null,
+          "caret": null,
+          "diagnostics": [],
+          "menu": null,
+          "modal": null,
+          "gutters": {
+            "run-total": {
+              "file": "test_total.py",
+              "start": 0,
+              "end": 14,
+              "id": "run-total",
+              "label": "Run test_total"
+            }
+          },
+          "decision": null,
+          "chooser": null,
+          "completion": null,
+          "caption": "Review the result from a failed test, then update its expected value.",
+          "edit": null,
+          "mouse": {
+            "from": {
+              "surface": "titlebar"
+            },
+            "target": {
+              "surface": "gutter",
+              "id": "run-total"
+            },
+            "origins": [
+              {
+                "surface": "titlebar"
+              }
+            ],
+            "start": 1000,
+            "end": 1300,
+            "click_end": 1380
+          },
+          "documentation": null,
+          "clipboard": null,
+          "notification": "",
+          "panels": {
+            "test-results": {
+              "id": "test-results",
+              "title": "Test results \u00b7 Last run",
+              "position": "bottom",
+              "visible": true,
+              "text": "Running test_total.py::test_total",
+              "status": "running"
+            }
+          },
+          "tokens": {
+            "test_total.py": "0"
+          }
+        },
+        "navigate": {}
+      },
+      {
+        "time": 2580,
+        "state": {
+          "files": {
+            "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+          },
+          "file_paths": {
+            "test_total.py": "test_total.py"
+          },
+          "editor_groups": null,
+          "saved_layouts": {},
+          "diff_view": null,
+          "annotations": {},
+          "injections": {},
+          "environment": {},
+          "settings": null,
+          "transcript": null,
+          "directories": [],
+          "source_roots": [],
+          "transaction": null,
+          "undo_stack": [],
+          "redo_stack": [],
+          "active_file": "test_total.py",
+          "selection": null,
+          "caret": null,
+          "diagnostics": [],
+          "menu": null,
+          "modal": null,
+          "gutters": {
+            "run-total": {
+              "file": "test_total.py",
+              "start": 0,
+              "end": 14,
+              "id": "run-total",
+              "label": "Run test_total"
+            }
+          },
+          "decision": null,
+          "chooser": null,
+          "completion": null,
+          "caption": "Review the result from a failed test, then update its expected value.",
+          "edit": null,
+          "mouse": {
+            "from": {
+              "surface": "titlebar"
+            },
+            "target": {
+              "surface": "gutter",
+              "id": "run-total"
+            },
+            "origins": [
+              {
+                "surface": "titlebar"
+              }
+            ],
+            "start": 1000,
+            "end": 1300,
+            "click_end": 1380
+          },
+          "documentation": null,
+          "clipboard": null,
+          "notification": "",
+          "panels": {
+            "test-results": {
+              "id": "test-results",
+              "title": "Test results \u00b7 Last run",
+              "position": "bottom",
+              "visible": true,
+              "text": "test_total failed\nExpected: 25 \u2192 Actual: 30",
+              "status": "failed"
+            }
+          },
+          "tokens": {
+            "test_total.py": "0"
+          }
+        },
+        "navigate": {}
+      },
+      {
+        "time": 3780,
+        "state": {
+          "files": {
+            "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+          },
+          "file_paths": {
+            "test_total.py": "test_total.py"
+          },
+          "editor_groups": null,
+          "saved_layouts": {},
+          "diff_view": null,
+          "annotations": {},
+          "injections": {},
+          "environment": {},
+          "settings": null,
+          "transcript": null,
+          "directories": [],
+          "source_roots": [],
+          "transaction": null,
+          "undo_stack": [],
+          "redo_stack": [],
+          "active_file": "test_total.py",
+          "selection": null,
+          "caret": null,
+          "diagnostics": [],
+          "menu": null,
+          "modal": null,
+          "gutters": {
+            "run-total": {
+              "file": "test_total.py",
+              "start": 0,
+              "end": 14,
+              "id": "run-total",
+              "label": "Run test_total"
+            }
+          },
+          "decision": null,
+          "chooser": null,
+          "completion": null,
+          "caption": "Review the result from a failed test, then update its expected value.",
+          "edit": null,
+          "mouse": {
+            "from": {
+              "surface": "titlebar"
+            },
+            "target": {
+              "surface": "gutter",
+              "id": "run-total"
+            },
+            "origins": [
+              {
+                "surface": "titlebar"
+              }
+            ],
+            "start": 1000,
+            "end": 1300,
+            "click_end": 1380
+          },
+          "documentation": null,
+          "clipboard": null,
+          "notification": "",
+          "panels": {
+            "test-results": {
+              "id": "test-results",
+              "title": "Test results \u00b7 Last run",
+              "position": "bottom",
+              "visible": true,
+              "text": "test_total failed\nExpected: 25 \u2192 Actual: 30",
+              "status": "failed"
+            }
+          },
+          "tokens": {
+            "test_total.py": "0"
+          }
+        },
+        "navigate": {}
+      },
+      {
+        "time": 3781,
+        "state": {
+          "files": {
+            "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+          },
+          "file_paths": {
+            "test_total.py": "test_total.py"
+          },
+          "editor_groups": null,
+          "saved_layouts": {},
+          "diff_view": null,
+          "annotations": {},
+          "injections": {},
+          "environment": {},
+          "settings": null,
+          "transcript": null,
+          "directories": [],
+          "source_roots": [],
+          "transaction": null,
+          "undo_stack": [],
+          "redo_stack": [],
+          "active_file": "test_total.py",
+          "selection": null,
+          "caret": null,
+          "diagnostics": [
+            {
+              "file": "test_total.py",
+              "start": 76,
+              "end": 78,
+              "severity": "error",
+              "message": "AssertionError: expected 25, got 30"
+            }
+          ],
+          "menu": null,
+          "modal": null,
+          "gutters": {
+            "run-total": {
+              "file": "test_total.py",
+              "start": 0,
+              "end": 14,
+              "id": "run-total",
+              "label": "Run test_total"
+            }
+          },
+          "decision": null,
+          "chooser": null,
+          "completion": null,
+          "caption": "Review the result from a failed test, then update its expected value.",
+          "edit": null,
+          "mouse": {
+            "from": {
+              "surface": "titlebar"
+            },
+            "target": {
+              "surface": "gutter",
+              "id": "run-total"
+            },
+            "origins": [
+              {
+                "surface": "titlebar"
+              }
+            ],
+            "start": 1000,
+            "end": 1300,
+            "click_end": 1380
+          },
+          "documentation": null,
+          "clipboard": null,
+          "notification": "",
+          "panels": {
+            "test-results": {
+              "id": "test-results",
+              "title": "Test results \u00b7 Last run",
+              "position": "bottom",
+              "visible": true,
+              "text": "test_total failed\nExpected: 25 \u2192 Actual: 30",
+              "status": "failed"
+            }
+          },
+          "tokens": {
+            "test_total.py": "0"
+          }
+        },
+        "navigate": {}
+      },
+      {
+        "time": 4781,
+        "state": {
+          "files": {
+            "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+          },
+          "file_paths": {
+            "test_total.py": "test_total.py"
+          },
+          "editor_groups": null,
+          "saved_layouts": {},
+          "diff_view": null,
+          "annotations": {},
+          "injections": {},
+          "environment": {},
+          "settings": null,
+          "transcript": null,
+          "directories": [],
+          "source_roots": [],
+          "transaction": null,
+          "undo_stack": [],
+          "redo_stack": [],
+          "active_file": "test_total.py",
+          "selection": null,
+          "caret": null,
+          "diagnostics": [
+            {
+              "file": "test_total.py",
+              "start": 76,
+              "end": 78,
+              "severity": "error",
+              "message": "AssertionError: expected 25, got 30"
+            }
+          ],
+          "menu": null,
+          "modal": null,
+          "gutters": {
+            "run-total": {
+              "file": "test_total.py",
+              "start": 0,
+              "end": 14,
+              "id": "run-total",
+              "label": "Run test_total"
+            }
+          },
+          "decision": null,
+          "chooser": null,
+          "completion": null,
+          "caption": "The result is right. Update the expectation.",
+          "edit": null,
+          "mouse": {
+            "from": {
+              "surface": "titlebar"
+            },
+            "target": {
+              "surface": "gutter",
+              "id": "run-total"
+            },
+            "origins": [
+              {
+                "surface": "titlebar"
+              }
+            ],
+            "start": 1000,
+            "end": 1300,
+            "click_end": 1380
+          },
+          "documentation": null,
+          "clipboard": null,
+          "notification": "",
+          "panels": {
+            "test-results": {
+              "id": "test-results",
+              "title": "Test results \u00b7 Last run",
+              "position": "bottom",
+              "visible": true,
+              "text": "test_total failed\nExpected: 25 \u2192 Actual: 30",
+              "status": "failed"
+            }
+          },
+          "tokens": {
+            "test_total.py": "0"
+          }
+        },
+        "navigate": {}
+      },
+      {
+        "time": 5781,
+        "state": {
+          "files": {
+            "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+          },
+          "file_paths": {
+            "test_total.py": "test_total.py"
+          },
+          "editor_groups": null,
+          "saved_layouts": {},
+          "diff_view": null,
+          "annotations": {},
+          "injections": {},
+          "environment": {},
+          "settings": null,
+          "transcript": null,
+          "directories": [],
+          "source_roots": [],
+          "transaction": null,
+          "undo_stack": [],
+          "redo_stack": [],
+          "active_file": "test_total.py",
+          "selection": {
+            "file": "test_total.py",
+            "start": 76,
+            "end": 78
+          },
+          "caret": {
+            "file": "test_total.py",
+            "offset": 78
+          },
+          "diagnostics": [
+            {
+              "file": "test_total.py",
+              "start": 76,
+              "end": 78,
+              "severity": "error",
+              "message": "AssertionError: expected 25, got 30"
+            }
+          ],
+          "menu": null,
+          "modal": null,
+          "gutters": {
+            "run-total": {
+              "file": "test_total.py",
+              "start": 0,
+              "end": 14,
+              "id": "run-total",
+              "label": "Run test_total"
+            }
+          },
+          "decision": null,
+          "chooser": null,
+          "completion": null,
+          "caption": "The result is right. Update the expectation.",
+          "edit": null,
+          "mouse": {
+            "from": {
+              "surface": "gutter",
+              "id": "run-total"
+            },
+            "target": {
+              "surface": "caret"
+            },
+            "origins": [
+              {
+                "surface": "titlebar"
+              },
+              {
+                "surface": "titlebar"
+              }
+            ],
+            "start": 5781,
+            "end": 6081,
+            "click_end": 6161
+          },
+          "documentation": null,
+          "clipboard": null,
+          "notification": "",
+          "panels": {
+            "test-results": {
+              "id": "test-results",
+              "title": "Test results \u00b7 Last run",
+              "position": "bottom",
+              "visible": true,
+              "text": "test_total failed\nExpected: 25 \u2192 Actual: 30",
+              "status": "failed"
+            }
+          },
+          "tokens": {
+            "test_total.py": "0"
+          }
+        },
+        "navigate": {}
+      },
+      {
+        "time": 6161,
+        "state": {
+          "files": {
+            "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+          },
+          "file_paths": {
+            "test_total.py": "test_total.py"
+          },
+          "editor_groups": null,
+          "saved_layouts": {},
+          "diff_view": null,
+          "annotations": {},
+          "injections": {},
+          "environment": {},
+          "settings": null,
+          "transcript": null,
+          "directories": [],
+          "source_roots": [],
+          "transaction": null,
+          "undo_stack": [],
+          "redo_stack": [],
+          "active_file": "test_total.py",
+          "selection": {
+            "file": "test_total.py",
+            "start": 76,
+            "end": 78
+          },
+          "caret": {
+            "file": "test_total.py",
+            "offset": 78
+          },
+          "diagnostics": [
+            {
+              "file": "test_total.py",
+              "start": 76,
+              "end": 78,
+              "severity": "error",
+              "message": "AssertionError: expected 25, got 30"
+            }
+          ],
+          "menu": {
+            "kind": "context_menu",
+            "title": "Context actions",
+            "items": [
+              {
+                "id": "use-actual",
+                "label": "Use actual test outcome",
+                "shortcut": "Enter"
+              },
+              {
+                "id": "explain",
+                "label": "Explain inspection"
+              }
+            ],
+            "path": [],
+            "selected": null,
+            "anchor": {
+              "surface": "caret"
+            }
+          },
+          "modal": null,
+          "gutters": {
+            "run-total": {
+              "file": "test_total.py",
+              "start": 0,
+              "end": 14,
+              "id": "run-total",
+              "label": "Run test_total"
+            }
+          },
+          "decision": null,
+          "chooser": null,
+          "completion": null,
+          "caption": "The result is right. Update the expectation.",
+          "edit": null,
+          "mouse": {
+            "from": {
+              "surface": "gutter",
+              "id": "run-total"
+            },
+            "target": {
+              "surface": "caret"
+            },
+            "origins": [
+              {
+                "surface": "titlebar"
+              },
+              {
+                "surface": "titlebar"
+              }
+            ],
+            "start": 5781,
+            "end": 6081,
+            "click_end": 6161
+          },
+          "documentation": null,
+          "clipboard": null,
+          "notification": "",
+          "panels": {
+            "test-results": {
+              "id": "test-results",
+              "title": "Test results \u00b7 Last run",
+              "position": "bottom",
+              "visible": true,
+              "text": "test_total failed\nExpected: 25 \u2192 Actual: 30",
+              "status": "failed"
+            }
+          },
+          "tokens": {
+            "test_total.py": "0"
+          }
+        },
+        "dismiss": "__dismiss__/main/8",
+        "navigate": {}
+      },
+      {
+        "time": 7161,
+        "state": {
+          "files": {
+            "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+          },
+          "file_paths": {
+            "test_total.py": "test_total.py"
+          },
+          "editor_groups": null,
+          "saved_layouts": {},
+          "diff_view": null,
+          "annotations": {},
+          "injections": {},
+          "environment": {},
+          "settings": null,
+          "transcript": null,
+          "directories": [],
+          "source_roots": [],
+          "transaction": null,
+          "undo_stack": [],
+          "redo_stack": [],
+          "active_file": "test_total.py",
+          "selection": {
+            "file": "test_total.py",
+            "start": 76,
+            "end": 78
+          },
+          "caret": {
+            "file": "test_total.py",
+            "offset": 78
+          },
+          "diagnostics": [
+            {
+              "file": "test_total.py",
+              "start": 76,
+              "end": 78,
+              "severity": "error",
+              "message": "AssertionError: expected 25, got 30"
+            }
+          ],
+          "menu": {
+            "kind": "context_menu",
+            "title": "Context actions",
+            "items": [
+              {
+                "id": "use-actual",
+                "label": "Use actual test outcome",
+                "shortcut": "Enter"
+              },
+              {
+                "id": "explain",
+                "label": "Explain inspection"
+              }
+            ],
+            "path": [],
+            "selected": null,
+            "anchor": {
+              "surface": "caret"
+            }
+          },
+          "modal": null,
+          "gutters": {
+            "run-total": {
+              "file": "test_total.py",
+              "start": 0,
+              "end": 14,
+              "id": "run-total",
+              "label": "Run test_total"
+            }
+          },
+          "decision": null,
+          "chooser": null,
+          "completion": null,
+          "caption": "The result is right. Update the expectation.",
+          "edit": null,
+          "mouse": {
+            "from": {
+              "surface": "caret"
+            },
+            "target": {
+              "surface": "menu_item",
+              "id": "use-actual"
+            },
+            "origins": [
+              {
+                "surface": "gutter",
+                "id": "run-total"
+              },
+              {
+                "surface": "titlebar"
+              },
+              {
+                "surface": "titlebar"
+              }
+            ],
+            "start": 7161,
+            "end": 7461,
+            "click_end": 7541
+          },
+          "documentation": null,
+          "clipboard": null,
+          "notification": "",
+          "panels": {
+            "test-results": {
+              "id": "test-results",
+              "title": "Test results \u00b7 Last run",
+              "position": "bottom",
+              "visible": true,
+              "text": "test_total failed\nExpected: 25 \u2192 Actual: 30",
+              "status": "failed"
+            }
+          },
+          "tokens": {
+            "test_total.py": "0"
+          }
+        },
+        "dismiss": "__dismiss__/main/9",
+        "navigate": {}
+      },
+      {
+        "time": 7541,
+        "state": {
+          "files": {
+            "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+          },
+          "file_paths": {
+            "test_total.py": "test_total.py"
+          },
+          "editor_groups": null,
+          "saved_layouts": {},
+          "diff_view": null,
+          "annotations": {},
+          "injections": {},
+          "environment": {},
+          "settings": null,
+          "transcript": null,
+          "directories": [],
+          "source_roots": [],
+          "transaction": null,
+          "undo_stack": [],
+          "redo_stack": [],
+          "active_file": "test_total.py",
+          "selection": {
+            "file": "test_total.py",
+            "start": 76,
+            "end": 78
+          },
+          "caret": {
+            "file": "test_total.py",
+            "offset": 78
+          },
+          "diagnostics": [
+            {
+              "file": "test_total.py",
+              "start": 76,
+              "end": 78,
+              "severity": "error",
+              "message": "AssertionError: expected 25, got 30"
+            }
+          ],
+          "menu": {
+            "kind": "context_menu",
+            "title": "Context actions",
+            "items": [
+              {
+                "id": "use-actual",
+                "label": "Use actual test outcome",
+                "shortcut": "Enter"
+              },
+              {
+                "id": "explain",
+                "label": "Explain inspection"
+              }
+            ],
+            "path": [
+              "use-actual"
+            ],
+            "selected": "use-actual",
+            "anchor": {
+              "surface": "caret"
+            }
+          },
+          "modal": null,
+          "gutters": {
+            "run-total": {
+              "file": "test_total.py",
+              "start": 0,
+              "end": 14,
+              "id": "run-total",
+              "label": "Run test_total"
+            }
+          },
+          "decision": null,
+          "chooser": null,
+          "completion": null,
+          "caption": "The result is right. Update the expectation.",
+          "edit": null,
+          "mouse": {
+            "from": {
+              "surface": "caret"
+            },
+            "target": {
+              "surface": "menu_item",
+              "id": "use-actual"
+            },
+            "origins": [
+              {
+                "surface": "gutter",
+                "id": "run-total"
+              },
+              {
+                "surface": "titlebar"
+              },
+              {
+                "surface": "titlebar"
+              }
+            ],
+            "start": 7161,
+            "end": 7461,
+            "click_end": 7541
+          },
+          "documentation": null,
+          "clipboard": null,
+          "notification": "",
+          "panels": {
+            "test-results": {
+              "id": "test-results",
+              "title": "Test results \u00b7 Last run",
+              "position": "bottom",
+              "visible": true,
+              "text": "test_total failed\nExpected: 25 \u2192 Actual: 30",
+              "status": "failed"
+            }
+          },
+          "tokens": {
+            "test_total.py": "0"
+          }
+        },
+        "dismiss": "__dismiss__/main/10",
+        "navigate": {}
+      },
+      {
+        "time": 8541,
+        "state": {
+          "files": {
+            "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 25\n"
+          },
+          "file_paths": {
+            "test_total.py": "test_total.py"
+          },
+          "editor_groups": null,
+          "saved_layouts": {},
+          "diff_view": null,
+          "annotations": {},
+          "injections": {},
+          "environment": {},
+          "settings": null,
+          "transcript": null,
+          "directories": [],
+          "source_roots": [],
+          "transaction": null,
+          "undo_stack": [],
+          "redo_stack": [],
+          "active_file": "test_total.py",
+          "selection": {
+            "file": "test_total.py",
+            "start": 76,
+            "end": 78
+          },
+          "caret": {
+            "file": "test_total.py",
+            "offset": 78
+          },
+          "diagnostics": [
+            {
+              "file": "test_total.py",
+              "start": 76,
+              "end": 78,
+              "severity": "error",
+              "message": "AssertionError: expected 25, got 30"
+            }
+          ],
+          "menu": {
+            "kind": "context_menu",
+            "title": "Context actions",
+            "items": [
+              {
+                "id": "use-actual",
+                "label": "Use actual test outcome",
+                "shortcut": "Enter"
+              },
+              {
+                "id": "explain",
+                "label": "Explain inspection"
+              }
+            ],
+            "path": [
+              "use-actual"
+            ],
+            "selected": "use-actual",
+            "anchor": {
+              "surface": "caret"
+            }
+          },
+          "modal": null,
+          "gutters": {
+            "run-total": {
+              "file": "test_total.py",
+              "start": 0,
+              "end": 14,
+              "id": "run-total",
+              "label": "Run test_total"
+            }
+          },
+          "decision": null,
+          "chooser": null,
+          "completion": null,
+          "caption": "The result is right. Update the expectation.",
+          "edit": null,
+          "mouse": {
+            "from": {
+              "surface": "caret"
+            },
+            "target": {
+              "surface": "menu_item",
+              "id": "use-actual"
+            },
+            "origins": [
+              {
+                "surface": "gutter",
+                "id": "run-total"
+              },
+              {
+                "surface": "titlebar"
+              },
+              {
+                "surface": "titlebar"
+              }
+            ],
+            "start": 7161,
+            "end": 7461,
+            "click_end": 7541
+          },
+          "documentation": null,
+          "clipboard": null,
+          "notification": "",
+          "panels": {
+            "test-results": {
+              "id": "test-results",
+              "title": "Test results \u00b7 Last run",
+              "position": "bottom",
+              "visible": true,
+              "text": "test_total failed\nExpected: 25 \u2192 Actual: 30",
+              "status": "failed"
+            }
+          },
+          "tokens": {
+            "test_total.py": "0"
+          }
+        },
+        "dismiss": "__dismiss__/main/11",
+        "navigate": {}
+      },
+      {
+        "time": 9541,
+        "state": {
+          "files": {
+            "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 30\n"
+          },
+          "file_paths": {
+            "test_total.py": "test_total.py"
+          },
+          "editor_groups": null,
+          "saved_layouts": {},
+          "diff_view": null,
+          "annotations": {},
+          "injections": {},
+          "environment": {},
+          "settings": null,
+          "transcript": null,
+          "directories": [],
+          "source_roots": [],
+          "transaction": null,
+          "undo_stack": [],
+          "redo_stack": [],
+          "active_file": "test_total.py",
+          "selection": null,
+          "caret": {
+            "file": "test_total.py",
+            "offset": 76
+          },
+          "diagnostics": [],
+          "menu": null,
+          "modal": null,
+          "gutters": {},
+          "decision": null,
+          "chooser": null,
+          "completion": null,
+          "caption": "The result is right. Update the expectation.",
+          "edit": {
+            "file": "test_total.py",
+            "start": 76,
+            "end": 78,
+            "removed": "25",
+            "inserted": "30"
+          },
+          "mouse": {
+            "from": {
+              "surface": "caret"
+            },
+            "target": {
+              "surface": "menu_item",
+              "id": "use-actual"
+            },
+            "origins": [
+              {
+                "surface": "gutter",
+                "id": "run-total"
+              },
+              {
+                "surface": "titlebar"
+              },
+              {
+                "surface": "titlebar"
+              }
+            ],
+            "start": 7161,
+            "end": 7461,
+            "click_end": 7541
+          },
+          "documentation": null,
+          "clipboard": null,
+          "notification": "",
+          "panels": {
+            "test-results": {
+              "id": "test-results",
+              "title": "Test results \u00b7 Last run",
+              "position": "bottom",
+              "visible": true,
+              "text": "test_total failed\nExpected: 25 \u2192 Actual: 30",
+              "status": "failed"
+            }
+          },
+          "tokens": {
+            "test_total.py": "1"
+          }
+        },
+        "navigate": {}
+      },
+      {
+        "time": 10541,
+        "state": {
+          "files": {
+            "test_total.py": "def test_total():\n    total = calculate_total([10, 20])\n    assert total == 30\n"
+          },
+          "file_paths": {
+            "test_total.py": "test_total.py"
+          },
+          "editor_groups": null,
+          "saved_layouts": {},
+          "diff_view": null,
+          "annotations": {},
+          "injections": {},
+          "environment": {},
+          "settings": null,
+          "transcript": null,
+          "directories": [],
+          "source_roots": [],
+          "transaction": null,
+          "undo_stack": [],
+          "redo_stack": [],
+          "active_file": "test_total.py",
+          "selection": null,
+          "caret": {
+            "file": "test_total.py",
+            "offset": 76
+          },
+          "diagnostics": [],
+          "menu": null,
+          "modal": null,
+          "gutters": {},
+          "decision": null,
+          "chooser": null,
+          "completion": null,
+          "caption": "Expected value changed to 30. Test has not been rerun.",
+          "edit": null,
+          "mouse": {
+            "from": {
+              "surface": "caret"
+            },
+            "target": {
+              "surface": "menu_item",
+              "id": "use-actual"
+            },
+            "origins": [
+              {
+                "surface": "gutter",
+                "id": "run-total"
+              },
+              {
+                "surface": "titlebar"
+              },
+              {
+                "surface": "titlebar"
+              }
+            ],
+            "start": 7161,
+            "end": 7461,
+            "click_end": 7541
+          },
+          "documentation": null,
+          "clipboard": null,
+          "notification": "",
+          "panels": {
+            "test-results": {
+              "id": "test-results",
+              "title": "Test results \u00b7 Last run",
+              "position": "bottom",
+              "visible": true,
+              "text": "test_total failed\nExpected: 25 \u2192 Actual: 30",
+              "status": "failed"
+            }
+          },
+          "tokens": {
+            "test_total.py": "1"
+          }
+        },
+        "navigate": {}
+      }
+    ],
+    "token_streams": {
+      "0": [
+        {
+          "start": 0,
+          "end": 3,
+          "kind": "keyword"
+        },
+        {
+          "start": 3,
+          "end": 4,
+          "kind": "plain"
+        },
+        {
+          "start": 4,
+          "end": 14,
+          "kind": "function"
+        },
+        {
+          "start": 14,
+          "end": 15,
+          "kind": "punctuation"
+        },
+        {
+          "start": 15,
+          "end": 16,
+          "kind": "punctuation"
+        },
+        {
+          "start": 16,
+          "end": 17,
+          "kind": "punctuation"
+        },
+        {
+          "start": 17,
+          "end": 18,
+          "kind": "plain"
+        },
+        {
+          "start": 18,
+          "end": 22,
+          "kind": "plain"
+        },
+        {
+          "start": 22,
+          "end": 27,
+          "kind": "plain"
+        },
+        {
+          "start": 27,
+          "end": 28,
+          "kind": "plain"
+        },
+        {
+          "start": 28,
+          "end": 29,
+          "kind": "operator"
+        },
+        {
+          "start": 29,
+          "end": 30,
+          "kind": "plain"
+        },
+        {
+          "start": 30,
+          "end": 45,
+          "kind": "plain"
+        },
+        {
+          "start": 45,
+          "end": 46,
+          "kind": "punctuation"
+        },
+        {
+          "start": 46,
+          "end": 47,
+          "kind": "punctuation"
+        },
+        {
+          "start": 47,
+          "end": 49,
+          "kind": "number"
+        },
+        {
+          "start": 49,
+          "end": 50,
+          "kind": "punctuation"
+        },
+        {
+          "start": 50,
+          "end": 51,
+          "kind": "plain"
+        },
+        {
+          "start": 51,
+          "end": 53,
+          "kind": "number"
+        },
+        {
+          "start": 53,
+          "end": 54,
+          "kind": "punctuation"
+        },
+        {
+          "start": 54,
+          "end": 55,
+          "kind": "punctuation"
+        },
+        {
+          "start": 55,
+          "end": 56,
+          "kind": "plain"
+        },
+        {
+          "start": 56,
+          "end": 60,
+          "kind": "plain"
+        },
+        {
+          "start": 60,
+          "end": 66,
+          "kind": "keyword"
+        },
+        {
+          "start": 66,
+          "end": 67,
+          "kind": "plain"
+        },
+        {
+          "start": 67,
+          "end": 72,
+          "kind": "plain"
+        },
+        {
+          "start": 72,
+          "end": 73,
+          "kind": "plain"
+        },
+        {
+          "start": 73,
+          "end": 75,
+          "kind": "operator"
+        },
+        {
+          "start": 75,
+          "end": 76,
+          "kind": "plain"
+        },
+        {
+          "start": 76,
+          "end": 78,
+          "kind": "number"
+        },
+        {
+          "start": 78,
+          "end": 79,
+          "kind": "plain"
+        }
+      ],
+      "1": [
+        {
+          "start": 0,
+          "end": 3,
+          "kind": "keyword"
+        },
+        {
+          "start": 3,
+          "end": 4,
+          "kind": "plain"
+        },
+        {
+          "start": 4,
+          "end": 14,
+          "kind": "function"
+        },
+        {
+          "start": 14,
+          "end": 15,
+          "kind": "punctuation"
+        },
+        {
+          "start": 15,
+          "end": 16,
+          "kind": "punctuation"
+        },
+        {
+          "start": 16,
+          "end": 17,
+          "kind": "punctuation"
+        },
+        {
+          "start": 17,
+          "end": 18,
+          "kind": "plain"
+        },
+        {
+          "start": 18,
+          "end": 22,
+          "kind": "plain"
+        },
+        {
+          "start": 22,
+          "end": 27,
+          "kind": "plain"
+        },
+        {
+          "start": 27,
+          "end": 28,
+          "kind": "plain"
+        },
+        {
+          "start": 28,
+          "end": 29,
+          "kind": "operator"
+        },
+        {
+          "start": 29,
+          "end": 30,
+          "kind": "plain"
+        },
+        {
+          "start": 30,
+          "end": 45,
+          "kind": "plain"
+        },
+        {
+          "start": 45,
+          "end": 46,
+          "kind": "punctuation"
+        },
+        {
+          "start": 46,
+          "end": 47,
+          "kind": "punctuation"
+        },
+        {
+          "start": 47,
+          "end": 49,
+          "kind": "number"
+        },
+        {
+          "start": 49,
+          "end": 50,
+          "kind": "punctuation"
+        },
+        {
+          "start": 50,
+          "end": 51,
+          "kind": "plain"
+        },
+        {
+          "start": 51,
+          "end": 53,
+          "kind": "number"
+        },
+        {
+          "start": 53,
+          "end": 54,
+          "kind": "punctuation"
+        },
+        {
+          "start": 54,
+          "end": 55,
+          "kind": "punctuation"
+        },
+        {
+          "start": 55,
+          "end": 56,
+          "kind": "plain"
+        },
+        {
+          "start": 56,
+          "end": 60,
+          "kind": "plain"
+        },
+        {
+          "start": 60,
+          "end": 66,
+          "kind": "keyword"
+        },
+        {
+          "start": 66,
+          "end": 67,
+          "kind": "plain"
+        },
+        {
+          "start": 67,
+          "end": 72,
+          "kind": "plain"
+        },
+        {
+          "start": 72,
+          "end": 73,
+          "kind": "plain"
+        },
+        {
+          "start": 73,
+          "end": 75,
+          "kind": "operator"
+        },
+        {
+          "start": 75,
+          "end": 76,
+          "kind": "plain"
+        },
+        {
+          "start": 76,
+          "end": 78,
+          "kind": "number"
+        },
+        {
+          "start": 78,
+          "end": 79,
+          "kind": "plain"
+        }
+      ]
+    }
+  }
+]

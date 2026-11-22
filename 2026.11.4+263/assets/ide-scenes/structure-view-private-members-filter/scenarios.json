@@ -1,0 +1,1229 @@
+[
+  {
+    "version": 1,
+    "id": "structure",
+    "title": "Structure filters",
+    "description": "Hide private members while keeping the public interface visible.",
+    "link": "",
+    "files": {
+      "service.py": {
+        "before": "class Service:\n    def run(self): pass\n    def _helper(self): pass\n    def __repr__(self): return \"Service\"\n",
+        "after": "class Service:\n    def run(self): pass\n    def _helper(self): pass\n    def __repr__(self): return \"Service\"\n",
+        "language": "python"
+      }
+    },
+    "layout": {
+      "panels": [
+        {
+          "id": "structure",
+          "title": "Structure",
+          "position": "right"
+        }
+      ],
+      "editor": "service.py",
+      "project": "my_project"
+    },
+    "duration": 6760,
+    "boundaries": [
+      0,
+      1000,
+      2380,
+      3760,
+      4760,
+      6760
+    ],
+    "runs": [],
+    "segments": {},
+    "entry": 0,
+    "branches": {},
+    "frames": [
+      {
+        "time": 0,
+        "state": {
+          "files": {
+            "service.py": "class Service:\n    def run(self): pass\n    def _helper(self): pass\n    def __repr__(self): return \"Service\"\n"
+          },
+          "file_paths": {
+            "service.py": "service.py"
+          },
+          "editor_groups": null,
+          "saved_layouts": {},
+          "diff_view": null,
+          "annotations": {},
+          "injections": {},
+          "environment": {},
+          "settings": null,
+          "transcript": null,
+          "directories": [],
+          "source_roots": [],
+          "transaction": null,
+          "undo_stack": [],
+          "redo_stack": [],
+          "active_file": "service.py",
+          "selection": null,
+          "caret": null,
+          "diagnostics": [],
+          "menu": null,
+          "modal": null,
+          "gutters": {},
+          "decision": null,
+          "chooser": null,
+          "completion": null,
+          "caption": "Hide private members while keeping the public interface visible.",
+          "edit": null,
+          "mouse": {
+            "from": {
+              "surface": "titlebar"
+            },
+            "target": {
+              "surface": "titlebar"
+            },
+            "origins": [],
+            "start": 0,
+            "end": 0,
+            "click_end": null
+          },
+          "documentation": null,
+          "clipboard": null,
+          "notification": "",
+          "panels": {
+            "structure": {
+              "id": "structure",
+              "title": "Structure",
+              "position": "right",
+              "visible": false,
+              "text": "",
+              "status": "info"
+            }
+          },
+          "tokens": {
+            "service.py": "0"
+          }
+        },
+        "navigate": {}
+      },
+      {
+        "time": 1000,
+        "state": {
+          "files": {
+            "service.py": "class Service:\n    def run(self): pass\n    def _helper(self): pass\n    def __repr__(self): return \"Service\"\n"
+          },
+          "file_paths": {
+            "service.py": "service.py"
+          },
+          "editor_groups": null,
+          "saved_layouts": {},
+          "diff_view": null,
+          "annotations": {},
+          "injections": {},
+          "environment": {},
+          "settings": null,
+          "transcript": null,
+          "directories": [],
+          "source_roots": [],
+          "transaction": null,
+          "undo_stack": [],
+          "redo_stack": [],
+          "active_file": "service.py",
+          "selection": null,
+          "caret": null,
+          "diagnostics": [],
+          "menu": null,
+          "modal": null,
+          "gutters": {},
+          "decision": null,
+          "chooser": null,
+          "completion": null,
+          "caption": "Hide private members while keeping the public interface visible.",
+          "edit": null,
+          "mouse": {
+            "from": {
+              "surface": "titlebar"
+            },
+            "target": {
+              "surface": "control",
+              "id": "structure/expand/service"
+            },
+            "origins": [
+              {
+                "surface": "titlebar"
+              }
+            ],
+            "start": 1000,
+            "end": 1300,
+            "click_end": 1380
+          },
+          "documentation": null,
+          "clipboard": null,
+          "notification": "",
+          "panels": {
+            "structure": {
+              "id": "structure",
+              "title": "Structure",
+              "position": "right",
+              "visible": true,
+              "text": "",
+              "status": "ready",
+              "kind": "tree",
+              "rows": [
+                {
+                  "id": "service",
+                  "label": "Service",
+                  "icon": "C",
+                  "children": [
+                    {
+                      "id": "run",
+                      "label": "run",
+                      "icon": "f"
+                    },
+                    {
+                      "id": "helper",
+                      "label": "_helper",
+                      "icon": "f",
+                      "tags": [
+                        "private"
+                      ]
+                    },
+                    {
+                      "id": "repr",
+                      "label": "__repr__",
+                      "icon": "f"
+                    }
+                  ]
+                }
+              ],
+              "columns": [],
+              "tabs": [],
+              "toolbar": [
+                {
+                  "id": "private",
+                  "label": "Hide private",
+                  "kind": "filter",
+                  "tag": "private"
+                },
+                {
+                  "id": "sort",
+                  "label": "Sort alphabetically",
+                  "kind": "sort"
+                }
+              ],
+              "multi": false,
+              "message": "",
+              "source": "",
+              "view": {
+                "selected": [],
+                "expanded": [],
+                "filters": [],
+                "sort": "document",
+                "query": "",
+                "tab": null
+              }
+            }
+          },
+          "tokens": {
+            "service.py": "0"
+          }
+        },
+        "navigate": {}
+      },
+      {
+        "time": 1380,
+        "state": {
+          "files": {
+            "service.py": "class Service:\n    def run(self): pass\n    def _helper(self): pass\n    def __repr__(self): return \"Service\"\n"
+          },
+          "file_paths": {
+            "service.py": "service.py"
+          },
+          "editor_groups": null,
+          "saved_layouts": {},
+          "diff_view": null,
+          "annotations": {},
+          "injections": {},
+          "environment": {},
+          "settings": null,
+          "transcript": null,
+          "directories": [],
+          "source_roots": [],
+          "transaction": null,
+          "undo_stack": [],
+          "redo_stack": [],
+          "active_file": "service.py",
+          "selection": null,
+          "caret": null,
+          "diagnostics": [],
+          "menu": null,
+          "modal": null,
+          "gutters": {},
+          "decision": null,
+          "chooser": null,
+          "completion": null,
+          "caption": "Hide private members while keeping the public interface visible.",
+          "edit": null,
+          "mouse": {
+            "from": {
+              "surface": "titlebar"
+            },
+            "target": {
+              "surface": "control",
+              "id": "structure/expand/service"
+            },
+            "origins": [
+              {
+                "surface": "titlebar"
+              }
+            ],
+            "start": 1000,
+            "end": 1300,
+            "click_end": 1380
+          },
+          "documentation": null,
+          "clipboard": null,
+          "notification": "",
+          "panels": {
+            "structure": {
+              "id": "structure",
+              "title": "Structure",
+              "position": "right",
+              "visible": true,
+              "text": "",
+              "status": "ready",
+              "kind": "tree",
+              "rows": [
+                {
+                  "id": "service",
+                  "label": "Service",
+                  "icon": "C",
+                  "children": [
+                    {
+                      "id": "run",
+                      "label": "run",
+                      "icon": "f"
+                    },
+                    {
+                      "id": "helper",
+                      "label": "_helper",
+                      "icon": "f",
+                      "tags": [
+                        "private"
+                      ]
+                    },
+                    {
+                      "id": "repr",
+                      "label": "__repr__",
+                      "icon": "f"
+                    }
+                  ]
+                }
+              ],
+              "columns": [],
+              "tabs": [],
+              "toolbar": [
+                {
+                  "id": "private",
+                  "label": "Hide private",
+                  "kind": "filter",
+                  "tag": "private"
+                },
+                {
+                  "id": "sort",
+                  "label": "Sort alphabetically",
+                  "kind": "sort"
+                }
+              ],
+              "multi": false,
+              "message": "",
+              "source": "",
+              "view": {
+                "selected": [],
+                "expanded": [
+                  "service"
+                ],
+                "filters": [],
+                "sort": "document",
+                "query": "",
+                "tab": null
+              }
+            }
+          },
+          "tokens": {
+            "service.py": "0"
+          }
+        },
+        "navigate": {}
+      },
+      {
+        "time": 2380,
+        "state": {
+          "files": {
+            "service.py": "class Service:\n    def run(self): pass\n    def _helper(self): pass\n    def __repr__(self): return \"Service\"\n"
+          },
+          "file_paths": {
+            "service.py": "service.py"
+          },
+          "editor_groups": null,
+          "saved_layouts": {},
+          "diff_view": null,
+          "annotations": {},
+          "injections": {},
+          "environment": {},
+          "settings": null,
+          "transcript": null,
+          "directories": [],
+          "source_roots": [],
+          "transaction": null,
+          "undo_stack": [],
+          "redo_stack": [],
+          "active_file": "service.py",
+          "selection": null,
+          "caret": null,
+          "diagnostics": [],
+          "menu": null,
+          "modal": null,
+          "gutters": {},
+          "decision": null,
+          "chooser": null,
+          "completion": null,
+          "caption": "Hide private members while keeping the public interface visible.",
+          "edit": null,
+          "mouse": {
+            "from": {
+              "surface": "control",
+              "id": "structure/expand/service"
+            },
+            "target": {
+              "surface": "control",
+              "id": "structure/toolbar/private"
+            },
+            "origins": [
+              {
+                "surface": "titlebar"
+              },
+              {
+                "surface": "titlebar"
+              }
+            ],
+            "start": 2380,
+            "end": 2680,
+            "click_end": 2760
+          },
+          "documentation": null,
+          "clipboard": null,
+          "notification": "",
+          "panels": {
+            "structure": {
+              "id": "structure",
+              "title": "Structure",
+              "position": "right",
+              "visible": true,
+              "text": "",
+              "status": "ready",
+              "kind": "tree",
+              "rows": [
+                {
+                  "id": "service",
+                  "label": "Service",
+                  "icon": "C",
+                  "children": [
+                    {
+                      "id": "run",
+                      "label": "run",
+                      "icon": "f"
+                    },
+                    {
+                      "id": "helper",
+                      "label": "_helper",
+                      "icon": "f",
+                      "tags": [
+                        "private"
+                      ]
+                    },
+                    {
+                      "id": "repr",
+                      "label": "__repr__",
+                      "icon": "f"
+                    }
+                  ]
+                }
+              ],
+              "columns": [],
+              "tabs": [],
+              "toolbar": [
+                {
+                  "id": "private",
+                  "label": "Hide private",
+                  "kind": "filter",
+                  "tag": "private"
+                },
+                {
+                  "id": "sort",
+                  "label": "Sort alphabetically",
+                  "kind": "sort"
+                }
+              ],
+              "multi": false,
+              "message": "",
+              "source": "",
+              "view": {
+                "selected": [],
+                "expanded": [
+                  "service"
+                ],
+                "filters": [],
+                "sort": "document",
+                "query": "",
+                "tab": null
+              }
+            }
+          },
+          "tokens": {
+            "service.py": "0"
+          }
+        },
+        "navigate": {}
+      },
+      {
+        "time": 2760,
+        "state": {
+          "files": {
+            "service.py": "class Service:\n    def run(self): pass\n    def _helper(self): pass\n    def __repr__(self): return \"Service\"\n"
+          },
+          "file_paths": {
+            "service.py": "service.py"
+          },
+          "editor_groups": null,
+          "saved_layouts": {},
+          "diff_view": null,
+          "annotations": {},
+          "injections": {},
+          "environment": {},
+          "settings": null,
+          "transcript": null,
+          "directories": [],
+          "source_roots": [],
+          "transaction": null,
+          "undo_stack": [],
+          "redo_stack": [],
+          "active_file": "service.py",
+          "selection": null,
+          "caret": null,
+          "diagnostics": [],
+          "menu": null,
+          "modal": null,
+          "gutters": {},
+          "decision": null,
+          "chooser": null,
+          "completion": null,
+          "caption": "Hide private members while keeping the public interface visible.",
+          "edit": null,
+          "mouse": {
+            "from": {
+              "surface": "control",
+              "id": "structure/expand/service"
+            },
+            "target": {
+              "surface": "control",
+              "id": "structure/toolbar/private"
+            },
+            "origins": [
+              {
+                "surface": "titlebar"
+              },
+              {
+                "surface": "titlebar"
+              }
+            ],
+            "start": 2380,
+            "end": 2680,
+            "click_end": 2760
+          },
+          "documentation": null,
+          "clipboard": null,
+          "notification": "",
+          "panels": {
+            "structure": {
+              "id": "structure",
+              "title": "Structure",
+              "position": "right",
+              "visible": true,
+              "text": "",
+              "status": "ready",
+              "kind": "tree",
+              "rows": [
+                {
+                  "id": "service",
+                  "label": "Service",
+                  "icon": "C",
+                  "children": [
+                    {
+                      "id": "run",
+                      "label": "run",
+                      "icon": "f"
+                    },
+                    {
+                      "id": "helper",
+                      "label": "_helper",
+                      "icon": "f",
+                      "tags": [
+                        "private"
+                      ]
+                    },
+                    {
+                      "id": "repr",
+                      "label": "__repr__",
+                      "icon": "f"
+                    }
+                  ]
+                }
+              ],
+              "columns": [],
+              "tabs": [],
+              "toolbar": [
+                {
+                  "id": "private",
+                  "label": "Hide private",
+                  "kind": "filter",
+                  "tag": "private"
+                },
+                {
+                  "id": "sort",
+                  "label": "Sort alphabetically",
+                  "kind": "sort"
+                }
+              ],
+              "multi": false,
+              "message": "",
+              "source": "",
+              "view": {
+                "selected": [],
+                "expanded": [
+                  "service"
+                ],
+                "filters": [
+                  "private"
+                ],
+                "sort": "document",
+                "query": "",
+                "tab": null
+              }
+            }
+          },
+          "tokens": {
+            "service.py": "0"
+          }
+        },
+        "navigate": {}
+      },
+      {
+        "time": 3760,
+        "state": {
+          "files": {
+            "service.py": "class Service:\n    def run(self): pass\n    def _helper(self): pass\n    def __repr__(self): return \"Service\"\n"
+          },
+          "file_paths": {
+            "service.py": "service.py"
+          },
+          "editor_groups": null,
+          "saved_layouts": {},
+          "diff_view": null,
+          "annotations": {},
+          "injections": {},
+          "environment": {},
+          "settings": null,
+          "transcript": null,
+          "directories": [],
+          "source_roots": [],
+          "transaction": null,
+          "undo_stack": [],
+          "redo_stack": [],
+          "active_file": "service.py",
+          "selection": null,
+          "caret": null,
+          "diagnostics": [],
+          "menu": null,
+          "modal": null,
+          "gutters": {},
+          "decision": null,
+          "chooser": null,
+          "completion": null,
+          "caption": "Hide private members while keeping the public interface visible.",
+          "edit": null,
+          "mouse": {
+            "from": {
+              "surface": "control",
+              "id": "structure/expand/service"
+            },
+            "target": {
+              "surface": "control",
+              "id": "structure/toolbar/private"
+            },
+            "origins": [
+              {
+                "surface": "titlebar"
+              },
+              {
+                "surface": "titlebar"
+              }
+            ],
+            "start": 2380,
+            "end": 2680,
+            "click_end": 2760
+          },
+          "documentation": null,
+          "clipboard": null,
+          "notification": "",
+          "panels": {
+            "structure": {
+              "id": "structure",
+              "title": "Structure",
+              "position": "right",
+              "visible": true,
+              "text": "",
+              "status": "ready",
+              "kind": "tree",
+              "rows": [
+                {
+                  "id": "service",
+                  "label": "Service",
+                  "icon": "C",
+                  "children": [
+                    {
+                      "id": "run",
+                      "label": "run",
+                      "icon": "f"
+                    },
+                    {
+                      "id": "helper",
+                      "label": "_helper",
+                      "icon": "f",
+                      "tags": [
+                        "private"
+                      ]
+                    },
+                    {
+                      "id": "repr",
+                      "label": "__repr__",
+                      "icon": "f"
+                    }
+                  ]
+                }
+              ],
+              "columns": [],
+              "tabs": [],
+              "toolbar": [
+                {
+                  "id": "private",
+                  "label": "Hide private",
+                  "kind": "filter",
+                  "tag": "private"
+                },
+                {
+                  "id": "sort",
+                  "label": "Sort alphabetically",
+                  "kind": "sort"
+                }
+              ],
+              "multi": false,
+              "message": "",
+              "source": "",
+              "view": {
+                "selected": [],
+                "expanded": [
+                  "service"
+                ],
+                "filters": [
+                  "private"
+                ],
+                "sort": "document",
+                "query": "",
+                "tab": null
+              }
+            }
+          },
+          "tokens": {
+            "service.py": "0"
+          }
+        },
+        "navigate": {}
+      },
+      {
+        "time": 4760,
+        "state": {
+          "files": {
+            "service.py": "class Service:\n    def run(self): pass\n    def _helper(self): pass\n    def __repr__(self): return \"Service\"\n"
+          },
+          "file_paths": {
+            "service.py": "service.py"
+          },
+          "editor_groups": null,
+          "saved_layouts": {},
+          "diff_view": null,
+          "annotations": {},
+          "injections": {},
+          "environment": {},
+          "settings": null,
+          "transcript": null,
+          "directories": [],
+          "source_roots": [],
+          "transaction": null,
+          "undo_stack": [],
+          "redo_stack": [],
+          "active_file": "service.py",
+          "selection": null,
+          "caret": null,
+          "diagnostics": [],
+          "menu": null,
+          "modal": null,
+          "gutters": {},
+          "decision": null,
+          "chooser": null,
+          "completion": null,
+          "caption": "Private helpers are hidden. Dunder methods remain visible. Try the filter.",
+          "edit": null,
+          "mouse": {
+            "from": {
+              "surface": "control",
+              "id": "structure/expand/service"
+            },
+            "target": {
+              "surface": "control",
+              "id": "structure/toolbar/private"
+            },
+            "origins": [
+              {
+                "surface": "titlebar"
+              },
+              {
+                "surface": "titlebar"
+              }
+            ],
+            "start": 2380,
+            "end": 2680,
+            "click_end": 2760
+          },
+          "documentation": null,
+          "clipboard": null,
+          "notification": "",
+          "panels": {
+            "structure": {
+              "id": "structure",
+              "title": "Structure",
+              "position": "right",
+              "visible": true,
+              "text": "",
+              "status": "ready",
+              "kind": "tree",
+              "rows": [
+                {
+                  "id": "service",
+                  "label": "Service",
+                  "icon": "C",
+                  "children": [
+                    {
+                      "id": "run",
+                      "label": "run",
+                      "icon": "f"
+                    },
+                    {
+                      "id": "helper",
+                      "label": "_helper",
+                      "icon": "f",
+                      "tags": [
+                        "private"
+                      ]
+                    },
+                    {
+                      "id": "repr",
+                      "label": "__repr__",
+                      "icon": "f"
+                    }
+                  ]
+                }
+              ],
+              "columns": [],
+              "tabs": [],
+              "toolbar": [
+                {
+                  "id": "private",
+                  "label": "Hide private",
+                  "kind": "filter",
+                  "tag": "private"
+                },
+                {
+                  "id": "sort",
+                  "label": "Sort alphabetically",
+                  "kind": "sort"
+                }
+              ],
+              "multi": false,
+              "message": "",
+              "source": "",
+              "view": {
+                "selected": [],
+                "expanded": [
+                  "service"
+                ],
+                "filters": [
+                  "private"
+                ],
+                "sort": "document",
+                "query": "",
+                "tab": null
+              }
+            }
+          },
+          "tokens": {
+            "service.py": "0"
+          }
+        },
+        "navigate": {}
+      },
+      {
+        "time": 6760,
+        "state": {
+          "files": {
+            "service.py": "class Service:\n    def run(self): pass\n    def _helper(self): pass\n    def __repr__(self): return \"Service\"\n"
+          },
+          "file_paths": {
+            "service.py": "service.py"
+          },
+          "editor_groups": null,
+          "saved_layouts": {},
+          "diff_view": null,
+          "annotations": {},
+          "injections": {},
+          "environment": {},
+          "settings": null,
+          "transcript": null,
+          "directories": [],
+          "source_roots": [],
+          "transaction": null,
+          "undo_stack": [],
+          "redo_stack": [],
+          "active_file": "service.py",
+          "selection": null,
+          "caret": null,
+          "diagnostics": [],
+          "menu": null,
+          "modal": null,
+          "gutters": {},
+          "decision": null,
+          "chooser": null,
+          "completion": null,
+          "caption": "Private helpers are hidden. Dunder methods remain visible. Try the filter.",
+          "edit": null,
+          "mouse": {
+            "from": {
+              "surface": "control",
+              "id": "structure/expand/service"
+            },
+            "target": {
+              "surface": "control",
+              "id": "structure/toolbar/private"
+            },
+            "origins": [
+              {
+                "surface": "titlebar"
+              },
+              {
+                "surface": "titlebar"
+              }
+            ],
+            "start": 2380,
+            "end": 2680,
+            "click_end": 2760
+          },
+          "documentation": null,
+          "clipboard": null,
+          "notification": "",
+          "panels": {
+            "structure": {
+              "id": "structure",
+              "title": "Structure",
+              "position": "right",
+              "visible": true,
+              "text": "",
+              "status": "ready",
+              "kind": "tree",
+              "rows": [
+                {
+                  "id": "service",
+                  "label": "Service",
+                  "icon": "C",
+                  "children": [
+                    {
+                      "id": "run",
+                      "label": "run",
+                      "icon": "f"
+                    },
+                    {
+                      "id": "helper",
+                      "label": "_helper",
+                      "icon": "f",
+                      "tags": [
+                        "private"
+                      ]
+                    },
+                    {
+                      "id": "repr",
+                      "label": "__repr__",
+                      "icon": "f"
+                    }
+                  ]
+                }
+              ],
+              "columns": [],
+              "tabs": [],
+              "toolbar": [
+                {
+                  "id": "private",
+                  "label": "Hide private",
+                  "kind": "filter",
+                  "tag": "private"
+                },
+                {
+                  "id": "sort",
+                  "label": "Sort alphabetically",
+                  "kind": "sort"
+                }
+              ],
+              "multi": false,
+              "message": "",
+              "source": "",
+              "view": {
+                "selected": [],
+                "expanded": [
+                  "service"
+                ],
+                "filters": [
+                  "private"
+                ],
+                "sort": "document",
+                "query": "",
+                "tab": null
+              }
+            }
+          },
+          "tokens": {
+            "service.py": "0"
+          }
+        },
+        "navigate": {}
+      }
+    ],
+    "token_streams": {
+      "0": [
+        {
+          "start": 0,
+          "end": 5,
+          "kind": "keyword"
+        },
+        {
+          "start": 5,
+          "end": 6,
+          "kind": "plain"
+        },
+        {
+          "start": 6,
+          "end": 13,
+          "kind": "plain"
+        },
+        {
+          "start": 13,
+          "end": 14,
+          "kind": "punctuation"
+        },
+        {
+          "start": 14,
+          "end": 15,
+          "kind": "plain"
+        },
+        {
+          "start": 15,
+          "end": 19,
+          "kind": "plain"
+        },
+        {
+          "start": 19,
+          "end": 22,
+          "kind": "keyword"
+        },
+        {
+          "start": 22,
+          "end": 23,
+          "kind": "plain"
+        },
+        {
+          "start": 23,
+          "end": 26,
+          "kind": "function"
+        },
+        {
+          "start": 26,
+          "end": 27,
+          "kind": "punctuation"
+        },
+        {
+          "start": 27,
+          "end": 31,
+          "kind": "builtin"
+        },
+        {
+          "start": 31,
+          "end": 32,
+          "kind": "punctuation"
+        },
+        {
+          "start": 32,
+          "end": 33,
+          "kind": "punctuation"
+        },
+        {
+          "start": 33,
+          "end": 34,
+          "kind": "plain"
+        },
+        {
+          "start": 34,
+          "end": 38,
+          "kind": "keyword"
+        },
+        {
+          "start": 38,
+          "end": 39,
+          "kind": "plain"
+        },
+        {
+          "start": 39,
+          "end": 43,
+          "kind": "plain"
+        },
+        {
+          "start": 43,
+          "end": 46,
+          "kind": "keyword"
+        },
+        {
+          "start": 46,
+          "end": 47,
+          "kind": "plain"
+        },
+        {
+          "start": 47,
+          "end": 54,
+          "kind": "function"
+        },
+        {
+          "start": 54,
+          "end": 55,
+          "kind": "punctuation"
+        },
+        {
+          "start": 55,
+          "end": 59,
+          "kind": "builtin"
+        },
+        {
+          "start": 59,
+          "end": 60,
+          "kind": "punctuation"
+        },
+        {
+          "start": 60,
+          "end": 61,
+          "kind": "punctuation"
+        },
+        {
+          "start": 61,
+          "end": 62,
+          "kind": "plain"
+        },
+        {
+          "start": 62,
+          "end": 66,
+          "kind": "keyword"
+        },
+        {
+          "start": 66,
+          "end": 67,
+          "kind": "plain"
+        },
+        {
+          "start": 67,
+          "end": 71,
+          "kind": "plain"
+        },
+        {
+          "start": 71,
+          "end": 74,
+          "kind": "keyword"
+        },
+        {
+          "start": 74,
+          "end": 75,
+          "kind": "plain"
+        },
+        {
+          "start": 75,
+          "end": 83,
+          "kind": "function"
+        },
+        {
+          "start": 83,
+          "end": 84,
+          "kind": "punctuation"
+        },
+        {
+          "start": 84,
+          "end": 88,
+          "kind": "builtin"
+        },
+        {
+          "start": 88,
+          "end": 89,
+          "kind": "punctuation"
+        },
+        {
+          "start": 89,
+          "end": 90,
+          "kind": "punctuation"
+        },
+        {
+          "start": 90,
+          "end": 91,
+          "kind": "plain"
+        },
+        {
+          "start": 91,
+          "end": 97,
+          "kind": "keyword"
+        },
+        {
+          "start": 97,
+          "end": 98,
+          "kind": "plain"
+        },
+        {
+          "start": 98,
+          "end": 99,
+          "kind": "string"
+        },
+        {
+          "start": 99,
+          "end": 106,
+          "kind": "string"
+        },
+        {
+          "start": 106,
+          "end": 107,
+          "kind": "string"
+        },
+        {
+          "start": 107,
+          "end": 108,
+          "kind": "plain"
+        }
+      ]
+    }
+  }
+]

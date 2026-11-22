@@ -1,0 +1,5 @@
+@font-face { font-family:Manrope; src:url('../fonts/manrope-regular.ttf'); font-weight:400; font-display:swap; }
+@font-face { font-family:Manrope; src:url('../fonts/manrope-semibold.ttf'); font-weight:600; font-display:swap; }
+@font-face { font-family:'Geist Mono'; src:url('../fonts/geist-mono.ttf'); font-weight:400; font-display:swap; }
+:root { --is-font:Manrope,sans-serif; --is-code:'Geist Mono',monospace; }
+.ide-scenes { padding:8px 0; }
